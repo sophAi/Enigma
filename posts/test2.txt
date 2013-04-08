@@ -1,0 +1,9 @@
+.. title: test2
+.. slug: test2
+.. date: 2013/04/08 14:22:30
+.. tags: 
+.. link: 
+.. description: 
+
+
+Write your post here.
