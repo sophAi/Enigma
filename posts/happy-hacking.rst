@@ -1,8 +1,19 @@
-.. title: Happy Hacking
+.. title: happy-hacking.rst
 .. slug: happy-hacking
-.. date: 2013/04/04 14:32:20
+.. date: 2013-04-09 23:04:05
 .. tags: 
 .. link: 
-.. description: 
+.. description: Created at 2013-04-09 23:03:09
+.. 文章開頭
+大致重整好了，準備可以開始動筆了。
 
-測試一下,test,test
+.. 部落格分頁(Teaser)標籤
+.. TEASER_END
+
+
+.. 文章結尾
+
+.. 超連結(URL)目的區
+
+.. 註腳(Footnote)與引用(Citation)區
+
