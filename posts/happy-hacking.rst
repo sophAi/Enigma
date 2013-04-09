@@ -1,6 +1,6 @@
-.. title: happy-hacking.rst
+.. title: Happy Hacking
 .. slug: happy-hacking
-.. date: 2013-04-09 23:42:35
+.. date: 2013-04-09 23:45:35
 .. tags: 
 .. link: 
 .. description: Created at 2013-04-09 23:03:09
