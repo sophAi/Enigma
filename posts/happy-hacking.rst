@@ -1,6 +1,6 @@
 .. title: Happy Hacking
 .. slug: happy-hacking
-.. date: 2013-04-10 12:13:50
+.. date: 2013-04-10 12:54:41
 .. tags: 
 .. link: 
 .. description: Created at 2013-04-09 23:03:09
@@ -8,7 +8,6 @@
 
 大致重整好了，準備可以開始動筆了。
 
-不過，目前要先解決Lang問題。
 .. 部落格分頁(Teaser)標籤
 .. TEASER_END
 
