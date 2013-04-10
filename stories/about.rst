@@ -1,14 +1,21 @@
 .. title: 關於這裡 (v1.0)
 .. slug: about
-.. date: 2013-04-10 13:04:46
+.. date: 2013-04-10 13:17:06
 .. tags: 
 .. link: 
 .. description: Created at 2013-04-09 23:37:03
 .. 文章開頭
+
+********
+關於這裡
+********
+
 .. image:: ../../arch_2013/galleries/About/bibi_face.jpg
    :width: 240
 
 Hi， 大家好，我是這個部落格的作者OASYS。準備好要來一場驚奇之旅了嗎?讓我們一起來Hack Everything吧!
+
+______________________________
 
 .. TEASER_END
 
