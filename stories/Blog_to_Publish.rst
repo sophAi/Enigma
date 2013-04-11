@@ -1,6 +1,6 @@
 .. title: 在Linux下用BLOG寫書
 .. slug: Blog_to_Publish
-.. date: 2013-04-11 14:22:34
+.. date: 2013-04-11 14:54:17
 .. tags: draft
 .. link: 
 .. description: Created at 2013-04-11 13:48:16
@@ -34,6 +34,7 @@
  #. 同步到github
  #. Rasberry Pi
  #. 備份
+  i. dropbox與googledrive
 
 #. 靜態網頁產生器Nikola
 
