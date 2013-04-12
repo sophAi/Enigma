@@ -1,6 +1,6 @@
 .. title: 關於這裡 (v0.1)
 .. slug: about
-.. date: 2013-04-12 11:08:27
+.. date: 2013-04-12 11:15:27
 .. tags: 
 .. link: 
 .. description: Created at 2013-04-09 23:37:03
@@ -28,8 +28,11 @@ Hi, 我是這裡的作者OASYS。這裡紀錄著我學習的過程與心得，�
 
 OASYS 於20130412
 
-.. raw:: html
-LICENSE = """<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/ar/"><img alt="Creative Commons License BY-NC-ND"style="border-width:0; margin-bottom:12px;"src="http://i.creativecommons.org/l/by-nc-nd/2.5/ar/88x31.png"></a>"""
+
+.. figure:: http://i.creativecommons.org/l/by-nc-nd/2.5/ar/88x31.png
+   :align: center
+
+本站文章以創用CC，非商業，非轉載發佈，如要轉載文章請留言通知作者，謝謝。
 
 .. 文章結尾
 
