@@ -1,6 +1,6 @@
 .. title: 關於這裡 (v0.1)
 .. slug: about
-.. date: 2013-04-12 11:15:27
+.. date: 2013-04-12 11:19:28
 .. tags: 
 .. link: 
 .. description: Created at 2013-04-09 23:37:03
@@ -30,9 +30,8 @@ OASYS 於20130412
 
 
 .. figure:: http://i.creativecommons.org/l/by-nc-nd/2.5/ar/88x31.png
-   :align: center
 
-本站文章以創用CC，非商業，非轉載發佈，如要轉載文章請留言通知作者，謝謝。
+本站文章以遵照姓名標示、非商業性、禁止改作之創用CC方式發佈，如要轉載文章請留言通知作者，並完整保留作者姓名(OASYS)與出處，謝謝。
 
 .. 文章結尾
 
