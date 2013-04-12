@@ -1,6 +1,6 @@
 .. title: 關於這裡 (v0.1)
 .. slug: about
-.. date: 2013-04-12 10:42:02
+.. date: 2013-04-12 10:43:16
 .. tags: 
 .. link: 
 .. description: Created at 2013-04-09 23:37:03
@@ -18,12 +18,14 @@ Hi, 我是這裡的作者OASYS。這裡紀錄著我學習的過程與心得，�
 
 .. figure:: ../../arch_2013/galleries/About/arrow.jpg
    :align: center
+
 往下的箭號亮起，表示下面還有一篇文章。
 
 而留言系統是者裡的一大特色，他可以很方便的插入圖案，分享連結，可以使用twitter/google/Facebook等帳號登入，目前暫時不開放匿名留言，所以請大家多多包涵一下。如果各位覺得文章有錯誤，疏漏，不清楚的地方，歡迎留下您的意見，您會發現作者是一個很熱心回應的人喔！
 
 .. figure:: ../../arch_2013/galleries/About/comment.jpg
    :align: center
+
 留言畫面的左下角有插入圖片的圖案。
 
 
