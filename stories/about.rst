@@ -1,6 +1,6 @@
 .. title: 關於這裡 (v0.1)
 .. slug: about
-.. date: 2013-04-12 10:46:06
+.. date: 2013-04-12 11:08:27
 .. tags: 
 .. link: 
 .. description: Created at 2013-04-09 23:37:03
@@ -27,6 +27,9 @@ Hi, 我是這裡的作者OASYS。這裡紀錄著我學習的過程與心得，�
 作者在進行文章撰寫時，是採自由書寫的模式，因此一篇文章可能從粗糙的草稿開始，隨著時間而產生不同的面貌，每篇文章的標題旁，都會有文章的版本編號，如果編號是從0.1，0.2開始，表示文章還在草稿階段，時間允許的情況下，更新速度就會比較快，而您的鼓勵，也會讓小弟持續分享心得喔！
 
 OASYS 於20130412
+
+.. raw:: html
+LICENSE = """<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/ar/"><img alt="Creative Commons License BY-NC-ND"style="border-width:0; margin-bottom:12px;"src="http://i.creativecommons.org/l/by-nc-nd/2.5/ar/88x31.png"></a>"""
 
 .. 文章結尾
 
