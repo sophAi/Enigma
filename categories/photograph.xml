@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>~Enigma~</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 12 Apr 2013 11:40:29 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係</title><link>http://sophAi.github.com/Enigma/posts/shutter-angle.html</link><description>&lt;html&gt;&lt;body&gt;&lt;p&gt;開始前，先麻煩各位惡補一下interlaced跟progressive的分別，以及field(場)與frame(影格，禎)的區別&lt;/p&gt;
+<rss version="2.0"><channel><title>~Enigma~ (photograph)</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 12 Apr 2013 11:40:29 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係</title><link>http://sophAi.github.com/Enigma/posts/shutter-angle.html</link><description>&lt;html&gt;&lt;body&gt;&lt;p&gt;開始前，先麻煩各位惡補一下interlaced跟progressive的分別，以及field(場)與frame(影格，禎)的區別&lt;/p&gt;
 &lt;p&gt;可先參考wikipedia，而以下的解釋都以NTSC為例，如對應到PAL，請將30p/60i/60p或30fps改成25p/50i/50p及25fps:&lt;/p&gt;
 &lt;p&gt;首先我們先認識一下各個FHD/HD的寫法，根據EBU的規範:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -25,9 +25,4 @@
 &lt;p&gt;希望以上一次釐清所有跟錄影模式有關的問題。&lt;/p&gt;
 &lt;!-- 文章結尾 --&gt;
 &lt;!-- 超連結(URL)目的區 --&gt;
-&lt;!-- 註腳(Footnote)與引用(Citation)區 --&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/shutter-angle.html</guid><pubDate>Fri, 12 Apr 2013 03:38:09 GMT</pubDate></item><item><title>Happy Hacking</title><link>http://sophAi.github.com/Enigma/posts/happy-hacking.html</link><description>&lt;html&gt;&lt;body&gt;&lt;p&gt;大致重整好了，準備可以開始動筆了。&lt;/p&gt;
-&lt;!-- 部落格分頁(Teaser)標籤 --&gt;
-&lt;p&gt;&lt;a href="/posts/happy-hacking.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/happy-hacking.html</guid><pubDate>Fri, 12 Apr 2013 03:34:37 GMT</pubDate></item><item><title>生活與親子攝影入門須知--器材的選擇 (v0.1)</title><link>http://sophAi.github.com/Enigma/posts/select_camera.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div class="section" id="id2"&gt;
-&lt;h2&gt;前言&lt;/h2&gt;
-&lt;p&gt;不管是剛想踏入攝影這職業，或是剛成為新手爸媽，還是想替生活來點什麼紀錄的，第1件要考慮的事，就是如何選擇攝影器材，面對琳琅滿目的攝影產品，眼花撩亂的產品開箱文與測試報告，大部分的新手在第一步就迷失了方向，以下提供幾點讓所有想入門攝影的人參考，尤其是新手父母，希望看過後，對於自己的真正需求不再迷惘，而能找到自己得心應手的器材。&lt;/p&gt;
-&lt;p&gt;&lt;a href="/posts/select_camera.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/select_camera.html</guid><pubDate>Wed, 10 Apr 2013 07:58:44 GMT</pubDate></item></channel></rss>
+&lt;!-- 註腳(Footnote)與引用(Citation)區 --&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/shutter-angle.html</guid><pubDate>Fri, 12 Apr 2013 03:38:09 GMT</pubDate></item></channel></rss>
