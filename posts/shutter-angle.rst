@@ -1,6 +1,6 @@
-.. title: GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係
+.. title: GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係(v0.1)
 .. slug: shutter-angle
-.. date: 2013-04-12 11:40:24
+.. date: 2013-04-12 11:41:22
 .. tags: photograph
 .. link: 
 .. description: Created at 2013-04-12 11:35:57
