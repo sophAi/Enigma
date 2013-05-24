@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 2013-05-24 13:37:06"><meta name="author" content="Po-Jen Hsu"><title>Convolution(摺積)的物理意義 | ~Enigma~</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 2013-05-24 13:37:06"><meta name="author" content="Po-Jen Hsu"><title>Convolution(摺積)的物理意義 | ~Enigma~</title><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -41,7 +41,7 @@ MathJax.Hub.Config({
 
                 </li></ul><!-- Custom search --><form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
 <input type="hidden" name="sites" value="sophAi.github.io/Enigma"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;"><!-- End of custom search --><ul class="nav pull-right"><li>
-    <a href="convolution.rst" id="sourcelink">原始碼</a>
+    <a href="convolution.rst" id="sourcelink">Source</a>
     </li>
 
                 </ul></form></div>
@@ -57,40 +57,59 @@ MathJax.Hub.Config({
     <h1>Convolution(摺積)的物理意義</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-05-24T16:00:43+08:00">2013-05-24 16:00</time>
+        Posted: <time class="published" datetime="2013-05-24T16:00:43+08:00">2013-05-24 16:00</time>
         
 
         
-          |  更多相關文章：
+          |  More posts about
             <a class="tag" href="../categories/mathjax.html"><span class="badge badge-info">mathjax</span></a>
 
-    </medium><hr><div class="section" id="id1">
+    </medium><hr><!-- title: Convolution(摺積)的物理意義 --><!-- slug: convolution --><!-- date: 2013-05-24 16:00:43 --><!-- tags: mathjax --><!-- link: --><!-- description: Created at 2013-05-24 13:37:06 --><!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --><!-- 同時，別忘了加上tags喔! --><!-- 文章起始 --><div class="section" id="id1">
 <h2>問題</h2>
-<p>假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>g</mi><mo>(</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>)</mo><mo>,</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>=</mo><mn>0</mn><mo>→</mo><mo>∞</mo></mrow></math>，亦即當我們用隨時間輸出的單位脈衝電流<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>δ</mi><mo>(</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>)</mo></mrow></math>輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1)，所量到的輸出對應電流即為<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>g</mi><mo>(</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>)</mo></mrow></math>。</p>
+<p>假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為<span class="math">\(g(t''), t''=0 \rightarrow \infty\)</span>
+，亦即當我們用隨時間輸出的單位脈衝電流<span class="math">\(\delta(t'')\)</span>
+輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1)，所量到的輸出對應電流即為<span class="math">\(g(t'')\)</span>
+。</p>
 <!-- 部落格分頁(Teaser)標籤 -->
 <!-- TEASER_END -->
-<p>現在我們已經知道這個黑盒子對時間的operator特性，如今我們要量測一個待測物體，他的輸入電流是<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>τ</mi><mo>)</mo></mrow></math>，其中<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>τ</mi><mo>=</mo><mn>0</mn><mo>→</mo><mi>t</mi></mrow></math>，則他的輸出電流<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>(</mo><mi>t</mi><mo>)</mo></mrow></math>會是如何呢?</p>
-<p>首先，線性系統在時間t前的輸出是具有疊加性的，也就是t時間前的電流輸出疊加起來，假設f的時間尺度0到t的t時剛好和g(t")的t"時相同，即t"=t，因此<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>(</mo><mi>t</mi><mo>)</mo></mrow></math>相當於在t"的時間<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>t</mi><mo>-</mo><mi>τ</mi><mo>)</mo><mo>→</mo><mi>t</mi></mrow></math>的訊號疊加，因為f可能是從g的某一段插入進去的，因此以t=t"時為參考點倒推 ,在<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>t</mi><mo>'</mo><mo>'</mo><mo>=</mo><mi>t</mi><mo>-</mo><mi>τ</mi></mrow></math>時的電流輸出應該為<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>δ</mi><mo>(</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>)</mo></mrow></math>的<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>τ</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>t</mi><mo>-</mo><mi>τ</mi><mo>)</mo><mo>Δ</mo><mi>τ</mi></mrow></math>倍，也因為這個<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>Δ</mo><mi>τ</mi></mrow></math>的出現(即計算面積)，故回到t時間前的訊號疊加，可以寫成積分式</p>
-<div>
-<math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mtable><mtr><mtd><mi>y</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>≡</mo><mrow><mi>f</mi><mo>*</mo><mi>g</mi></mrow><mo>=</mo><msub><mover><mo>∫</mo><mrow><mi>t</mi></mrow></mover><mrow><mn>0</mn></mrow></msub><mi>f</mi><mo>(</mo><mi>τ</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>t</mi><mo>-</mo><mi>τ</mi><mo>)</mo><mi>d</mi><mi>τ</mi></mtd></mtr></mtable></math></div>
+<p>現在我們已經知道這個黑盒子對時間的operator特性，如今我們要量測一個待測物體，他的輸入電流是<span class="math">\(f(\tau)\)</span>
+，其中<span class="math">\(\tau=0\rightarrow t\)</span>
+，則他的輸出電流<span class="math">\(y(t)\)</span>
+會是如何呢?</p>
+<p>首先，線性系統在時間t前的輸出是具有疊加性的，也就是t時間前的電流輸出疊加起來，假設f的時間尺度0到t的t時剛好和g(t")的t"時相同，即t"=t，因此<span class="math">\(y(t)\)</span>
+相當於在t"的時間<span class="math">\((t-\tau)\rightarrow t\)</span>
+的訊號疊加，因為f可能是從g的某一段插入進去的，因此以t=t"時為參考點倒推 ,在<span class="math">\(t''=t-\tau\)</span>
+時的電流輸出應該為<span class="math">\(\delta(t'')\)</span>
+的<span class="math">\(f(\tau)g(t-\tau)\Delta\tau\)</span>
+倍，也因為這個<span class="math">\(\Delta\tau\)</span>
+的出現(即計算面積)，故回到t時間前的訊號疊加，可以寫成積分式</p>
+<div class="math">
+\begin{equation*}
+y(t)\equiv{f*g}=\int^{t}_{0}f(\tau)g(t-\tau)d\tau
+\end{equation*}
+</div>
 <p>由此可以知道convolution有moving integral的概念，同時也是藉由輸入單位衝量函數以預測一個線性系統下任意函數的輸出值!</p>
 <p>f(t)與g(t)的convolution寫成f(t)*g(t)，其Fourier Transformation為其個別Fourier transformation的product</p>
 <p>f(t)*g(t)==&gt;Fourier Trans==&gt;F(w)G(w)</p>
 </div>
 <div class="section" id="convolution-theorem">
 <h2>Convolution Theorem</h2>
-<p>如果寫成<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>C</mi><mi>o</mi><mi>r</mi><mi>r</mi><mo>(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo>)</mo><mo>≡</mo><msub><mover><mo>∫</mo><mrow><mi>t</mi></mrow></mover><mn>0</mn></msub><mi>f</mi><mo>(</mo><mi>τ</mi><mo>+</mo><mi>t</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>τ</mi><mo>)</mo><mi>d</mi><mi>τ</mi></mrow></math>則為Correlation:</p>
-<p>Corr(f,g)的Fourier Trans==&gt;<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>F</mi><mo>(</mo><mi>ω</mi><mo>)</mo><msup><mi>G</mi><mo>*</mo></msup><mo>(</mo><mi>ω</mi><mo>)</mo></mrow></math></p>
+<p>如果寫成<span class="math">\(Corr(f,g)\equiv \int^{t}_0 f(\tau+t)g(\tau)d\tau\)</span>
+則為Correlation:</p>
+<p>Corr(f,g)的Fourier Trans==&gt;<span class="math">\(F(\omega)G^*(\omega)\)</span>
+</p>
 </div>
 <div class="section" id="correlation-theorem">
 <h2>Correlation Theorem</h2>
 <p>如果f=g就是autocorrelation</p>
-<p>Corr(g,g)的Fourier Trans==&gt;<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>G</mi><mo>(</mo><mi>ω</mi><mo>)</mo><msup><mo>|</mo><mn>2</mn></msup></mrow></math>，即是Power Spectral Density(PSD)</p>
+<p>Corr(g,g)的Fourier Trans==&gt;<span class="math">\(|G(\omega)|^2\)</span>
+，即是Power Spectral Density(PSD)</p>
 </div>
 <div class="section" id="wiener-khinchin-theorem">
 <h2>Wiener-Khinchin Theorem</h2>
 <p>Parseval's theorem(怕什麼定理)說，對所有時域跟頻域的積分所得的total power應該要一樣。</p>
-<p>即Total Power <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>≡</mo><msub><mover><mo>∫</mo><mrow><mo>∞</mo></mrow></mover><mrow><mo>-</mo><mo>∞</mo></mrow></msub><mo>|</mo><mi>g</mi><mo>(</mo><mi>t</mi><mo>)</mo><msup><mo>|</mo><mn>2</mn></msup><mi>d</mi><mi>t</mi><mo>=</mo><msub><mover><mo>∫</mo><mrow><mo>∞</mo></mrow></mover><mrow><mo>-</mo><mo>∞</mo></mrow></msub><mo>|</mo><mi>G</mi><mo>(</mo><mi>ω</mi><mo>)</mo><msup><mo>|</mo><mn>2</mn></msup><mi>d</mi><mi>ω</mi></mrow></math>。</p>
+<p>即Total Power <span class="math">\(\equiv \int^{\infty}_{-\infty}|g(t)|^2 dt=\int^{\infty}_{-\infty}|G(\omega)|^2 d\omega\)</span>
+。</p>
 <p>大致上是這樣。</p>
 <!-- 文章結尾 -->
 <!-- 超連結(URL)目的區 -->
@@ -99,9 +118,9 @@ MathJax.Hub.Config({
     
     <div style="text-align:right">
         <ul class="pager"><li class="previous">
-                <a href="lucy.html">← 前一篇</a>
+                <a href="lucy.html">← Previous post</a>
             </li><li class="next">
-                <a href="mathjax.html">下一篇 →</a>
+                <a href="mathjax.html">Next post →</a>
         </li></ul></div>
 
     

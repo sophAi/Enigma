@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 2013-05-24 13:45:28"><meta name="author" content="Po-Jen Hsu"><title>使用mathjax與Latex數學 | ~Enigma~</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 2013-05-24 13:45:28"><meta name="author" content="Po-Jen Hsu"><title>使用mathjax與Latex數學 | ~Enigma~</title><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -41,7 +41,7 @@ MathJax.Hub.Config({
 
                 </li></ul><!-- Custom search --><form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
 <input type="hidden" name="sites" value="sophAi.github.io/Enigma"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;"><!-- End of custom search --><ul class="nav pull-right"><li>
-    <a href="mathjax.rst" id="sourcelink">原始碼</a>
+    <a href="mathjax.rst" id="sourcelink">Source</a>
     </li>
 
                 </ul></form></div>
@@ -57,20 +57,21 @@ MathJax.Hub.Config({
     <h1>使用mathjax與Latex數學</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-05-24T20:16:44+08:00">2013-05-24 20:16</time>
+        Posted: <time class="published" datetime="2013-05-24T20:16:44+08:00">2013-05-24 20:16</time>
         
 
         
-          |  更多相關文章：
+          |  More posts about
             <a class="tag" href="../categories/mathjax.html"><span class="badge badge-info">mathjax</span></a>
 
-    </medium><hr><p>只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。</p>
+    </medium><hr><!-- title: 使用mathjax與Latex數學 --><!-- slug: mathjax --><!-- date: 2013-05-24 20:16:44 --><!-- tags: mathjax --><!-- link: --><!-- description: Created at 2013-05-24 13:45:28 --><!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --><!-- 同時，別忘了加上tags喔! --><!-- 文章起始 --><p>只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。</p>
 <p>例如:</p>
 <pre class="literal-block">
 The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 </pre>
 <p>會顯示</p>
-<p>The first equation using mathjax is as following <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mo>=</mo><mi>β</mi><mo>+</mo><mi>γ</mi></mrow></math></p>
+<p>The first equation using mathjax is as following <span class="math">\(\alpha=\beta+\gamma\)</span>
+</p>
 <p>或是使用以下語法:</p>
 <pre class="literal-block">
 .. math::
@@ -78,8 +79,11 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
    \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
 </pre>
 <p>則如下</p>
-<div>
-<math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mtable><mtr><mtd><mo>∫</mo><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>a</mi></mrow></mfrac><mo>ln</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi><mo>)</mo><mo>+</mo><mi>C</mi></mtd></mtr></mtable></math></div>
+<div class="math">
+\begin{equation*}
+\int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
+\end{equation*}
+</div>
 <p>可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。</p>
 <p>FireFox原生支援MathJax所使用的MathML，但是無論其他瀏覽器就沒有，以至於數學式子只有FireFox表現最為正常，在Google Chrome還沒原生支援MathML之前，請先安裝<a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW">MathJax for Chrome</a>,就可以正常顯示數學式子了，IE，safari, opera的使用者可能就得多擔待一下，目前知道，如果要在所有的瀏覽器正常使用MathJax，則html必須包含:</p>
 <pre class="literal-block">
@@ -101,7 +105,7 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
     
     <div style="text-align:right">
         <ul class="pager"><li class="previous">
-                <a href="convolution.html">← 前一篇</a>
+                <a href="convolution.html">← Previous post</a>
         </li></ul></div>
 
     

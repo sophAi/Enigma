@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>~Enigma~ (mathjax)</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 24 May 2013 23:02:22 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>使用mathjax與Latex數學</title><link>http://sophAi.github.com/Enigma/posts/mathjax.html</link><description>&lt;html&gt;&lt;body&gt;&lt;p&gt;只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。&lt;/p&gt;
+<rss version="2.0"><channel><title>~Enigma~ (mathjax)</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 24 May 2013 23:51:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>使用mathjax與Latex數學</title><link>http://sophAi.github.com/Enigma/posts/mathjax.html</link><description>&lt;!-- title: 使用mathjax與Latex數學 --&gt;
+&lt;!-- slug: mathjax --&gt;
+&lt;!-- date: 2013-05-24 20:16:44 --&gt;
+&lt;!-- tags: mathjax --&gt;
+&lt;!-- link: --&gt;
+&lt;!-- description: Created at 2013-05-24 13:45:28 --&gt;
+&lt;!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --&gt;
+&lt;!-- 同時，別忘了加上tags喔! --&gt;
+&lt;!-- 文章起始 --&gt;
+&lt;p&gt;只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。&lt;/p&gt;
 &lt;p&gt;例如:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 &lt;/pre&gt;
 &lt;p&gt;會顯示&lt;/p&gt;
-&lt;p&gt;The first equation using mathjax is as following &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mrow&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;β&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;γ&lt;/mi&gt;&lt;/mrow&gt;&lt;/math&gt;&lt;/p&gt;
+&lt;p&gt;The first equation using mathjax is as following &lt;span class="math"&gt;\(\alpha=\beta+\gamma\)&lt;/span&gt;
+&lt;/p&gt;
 &lt;p&gt;或是使用以下語法:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 .. math::
@@ -13,8 +23,11 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
    \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
 &lt;/pre&gt;
 &lt;p&gt;則如下&lt;/p&gt;
-&lt;div&gt;
-&lt;math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"&gt;&lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mo&gt;∫&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;ln&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;/math&gt;&lt;/div&gt;
+&lt;div class="math"&gt;
+\begin{equation*}
+\int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
+\end{equation*}
+&lt;/div&gt;
 &lt;p&gt;可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。&lt;/p&gt;
 &lt;p&gt;FireFox原生支援MathJax所使用的MathML，但是無論其他瀏覽器就沒有，以至於數學式子只有FireFox表現最為正常，在Google Chrome還沒原生支援MathML之前，請先安裝&lt;a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW"&gt;MathJax for Chrome&lt;/a&gt;,就可以正常顯示數學式子了，IE，safari, opera的使用者可能就得多擔待一下，目前知道，如果要在所有的瀏覽器正常使用MathJax，則html必須包含:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -32,8 +45,11 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 &lt;p&gt;可以看到後者是直接使用用MathML，問題應該是出在template與生成mathjax程式碼的區塊，很明顯的也是第1種顯示方式最簡單漂亮，總之我會找時間解決這個問題。&lt;/p&gt;
 &lt;!-- 文章結尾 --&gt;
 &lt;!-- 超連結(URL)目的區 --&gt;
-&lt;!-- 註腳(Footnote)與引用(Citation)區 --&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/mathjax.html</guid><pubDate>Fri, 24 May 2013 12:16:44 GMT</pubDate></item><item><title>Convolution(摺積)的物理意義</title><link>http://sophAi.github.com/Enigma/posts/convolution.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div class="section" id="id1"&gt;
+&lt;!-- 註腳(Footnote)與引用(Citation)區 --&gt;</description><category>mathjax</category><guid>http://sophAi.github.com/Enigma/posts/mathjax.html</guid><pubDate>Fri, 24 May 2013 12:16:44 GMT</pubDate></item><item><title>Convolution(摺積)的物理意義</title><link>http://sophAi.github.com/Enigma/posts/convolution.html</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;問題&lt;/h2&gt;
-&lt;p&gt;假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mrow&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;mo&gt;∞&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;，亦即當我們用隨時間輸出的單位脈衝電流&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mrow&gt;&lt;mi&gt;δ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1)，所量到的輸出對應電流即為&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mrow&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;。&lt;/p&gt;
+&lt;p&gt;假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為&lt;span class="math"&gt;\(g(t''), t''=0 \rightarrow \infty\)&lt;/span&gt;
+，亦即當我們用隨時間輸出的單位脈衝電流&lt;span class="math"&gt;\(\delta(t'')\)&lt;/span&gt;
+輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1)，所量到的輸出對應電流即為&lt;span class="math"&gt;\(g(t'')\)&lt;/span&gt;
+。&lt;/p&gt;
 &lt;!-- 部落格分頁(Teaser)標籤 --&gt;
-&lt;p&gt;&lt;a href="/posts/convolution.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/convolution.html</guid><pubDate>Fri, 24 May 2013 08:00:43 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="/posts/convolution.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><guid>http://sophAi.github.com/Enigma/posts/convolution.html</guid><pubDate>Fri, 24 May 2013 08:00:43 GMT</pubDate></item></channel></rss>
