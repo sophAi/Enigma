@@ -49,8 +49,9 @@ MathJax.Hub.Config({
     <section><section><div class="postbox">
         <h1><a href="../posts/mathjax.html">使用MathJax與Latex數學</a>
         <small>  
-             Posted: <time class="published" datetime="2013-05-25T00:27:05+08:00">2013-05-25 00:27</time></small></h1>
-        <hr><!-- title: 使用MathJax與Latex數學 --><!-- slug: mathjax --><!-- date: 2013-05-25 00:27:05 --><!-- tags: mathjax --><!-- link: --><!-- description: Created at 2013-05-24 13:45:28 --><!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --><!-- 同時，別忘了加上tags喔! --><!-- 文章起始 --><p>要讓nikola編輯的文章載入MathJax很簡單，只要在tags裡加入mathjax即可。例如:</p>
+             Posted: <time class="published" datetime="2013-05-25T00:35:46+08:00">2013-05-25 00:35</time></small></h1>
+        <hr><!-- title: 使用MathJax與Latex數學 --><!-- slug: mathjax --><!-- date: 2013-05-25 00:35:46 --><!-- tags: mathjax --><!-- link: --><!-- description: Created at 2013-05-24 13:45:28 --><!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --><!-- 同時，別忘了加上tags喔! --><!-- 文章起始 --><p>MathJax是一個JAVA Script，他能在網頁裡顯示Latex的數學式子，不過使用上有許多要注意的地方。</p>
+<p>要讓nikola編輯的文章載入MathJax很簡單，只要在tags裡加入mathjax即可。例如:</p>
 <pre class="literal-block">
 .. tags: mathjax, my_other_tags, ...
 </pre>
@@ -75,7 +76,7 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 </div>
 <p>根據conf.py的設定，可以決定上式置中或是靠左，我是選擇置中，這樣看起來比較不會跟上下段落擠在一起。</p>
 <p>可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。</p>
-<p>這裡有個小插曲，第一次使用mathjax時發現數學式子只有FireFox表現最為正常，其他瀏覽器都無法正常載入mathjax，檢查一下原始碼，發現是因為用了MathML(只有FireFox原生支援)，Google Chrome使用者必須額外安裝<a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW">MathJax for Chrome</a>,才能正常顯示數學式子了，更不用說其他如IE，safari, opera等，應該都是無法正常顯示吧？如果用html-ccs的方式，則可以繞MathML的相容性，html必須包含:</p>
+<p>這裡有個小插曲，第一次使用MathJax時發現數學式子只有FireFox表現最為正常，其他瀏覽器都無法正常載入MathJax，檢查一下原始碼，發現是因為用了MathML(只有FireFox原生支援)，Google Chrome使用者必須額外安裝<a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW">MathJax for Chrome</a>,才能正常顯示數學式子了，更不用說其他如IE，safari, opera等，應該都是無法正常顯示吧？如果用html-ccs的方式，則可以繞MathML的相容性，html必須包含:</p>
 <pre class="literal-block">
 &lt;div class="math"&gt;
 \begin{equation*}
@@ -88,11 +89,13 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 &lt;div&gt;
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"&gt;&lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mo&gt;∫&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;ln&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;/math&gt;&lt;/div&gt;
 </pre>
-<p>因此稍微看一下html原始碼就能知道是使用何者，很明顯的第1種顯示方式最簡單漂亮，花了一個晚上嘗試，發現在安裝doit，docutils，mako等套件時，不能使用官方的套件，必須使用從nikola下載的套件，因為他們有針對nikola修改，因此最保險的方法就是將官方套件一個個移除後，重新使用:</p>
+<p>因此稍微看一下html原始碼就能知道是使用何者，很多人遇到顯示不正常的問題，通常是因為html內容採用後者，很明顯的第一種顯示方式最簡單漂亮，相容性也最廣，花了一個晚上嘗試，發現在安裝doit，docutils，mako等套件時，不能使用官方的套件，必須使用從nikola下載的套件，因為他們有針對nikola修改，因此最保險的方法就是將官方套件一個個移除後，重新使用:</p>
 <pre class="literal-block">
 sudo pip install https://github.com/ralsina/nikola/archive/master.zip --upgrade
 </pre>
 <p>--upgrade參數會一個個檢查子套件並更新；更新後，重build一次rst文件就能夠以第一種型式顯示數學式子，在Chrome裡也完全正常!!推測其他瀏覽器應該也是OK!</p>
+<p>雖然耗費一個晚上才找出解決方案！但是成就感滿滿，因為我知道每次的解決問題，都可以受用無窮呢！</p>
+<p>Happy Hacking！</p>
 <!-- 文章結尾 -->
 <!-- 超連結(URL)目的區 -->
 <!-- 註腳(Footnote)與引用(Citation)區 -->
