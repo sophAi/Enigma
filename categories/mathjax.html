@@ -47,9 +47,9 @@ MathJax.Hub.Config({
 <!--Body content-->
 <div class="reveal"><div class="slides">
     <section><section><div class="postbox">
-        <h1><a href="../posts/mathjax.html">測試mathjax與Latex數學</a>
+        <h1><a href="../posts/mathjax.html">使用mathjax與Latex數學</a>
         <small>  
-             發表於: <time class="published" datetime="2013-05-24T16:05:19+08:00">2013-05-24 16:05</time></small></h1>
+             發表於: <time class="published" datetime="2013-05-24T20:14:21+08:00">2013-05-24 20:14</time></small></h1>
         <hr><p>只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。</p>
 <p>例如:</p>
 <pre class="literal-block">
@@ -67,7 +67,20 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 <div>
 <math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mtable><mtr><mtd><mo>∫</mo><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>a</mi></mrow></mfrac><mo>ln</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi><mo>)</mo><mo>+</mo><mi>C</mi></mtd></mtr></mtable></math></div>
 <p>可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。</p>
-<p>而且為什麼google chrome的數學式子看起來如此醜啊~~~完全跟firefox不一樣,看來要加入Todo list了。</p>
+<p>FireFox原生支援MathJax所使用的MathML，但是無論其他瀏覽器就沒有，以至於數學式子只有FireFox表現最為正常，在Google Chrome還沒原生支援MathML之前，請先安裝<a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW">MathJax for Chrome</a>,就可以正常顯示數學式子了，IE，safari, opera的使用者可能就得多擔待一下，目前知道，如果要在所有的瀏覽器正常使用MathJax，則html必須包含:</p>
+<pre class="literal-block">
+&lt;div class="math"&gt;
+\begin{equation*}
+\int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
+\end{equation*}
+&lt;/div&gt;
+</pre>
+<p>這段，而我所產生的html檔裡，卻是這樣:</p>
+<pre class="literal-block">
+&lt;div&gt;
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"&gt;&lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mo&gt;∫&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;ln&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;/math&gt;&lt;/div&gt;
+</pre>
+<p>這就是問題所在，問題應該是出在template與生成mathjax程式碼的區塊，很明顯的也是第1種顯示方式最簡單漂亮，總之我會找時間解決這個問題。</p>
 <!-- 文章結尾 -->
 <!-- 超連結(URL)目的區 -->
 <!-- 註腳(Footnote)與引用(Citation)區 -->

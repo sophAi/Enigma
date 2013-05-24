@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>~Enigma~</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 24 May 2013 16:16:22 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>測試mathjax與Latex數學</title><link>http://sophAi.github.com/Enigma/posts/mathjax.html</link><description>&lt;html&gt;&lt;body&gt;&lt;p&gt;只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。&lt;/p&gt;
+<rss version="2.0"><channel><title>~Enigma~</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 24 May 2013 20:25:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>使用mathjax與Latex數學</title><link>http://sophAi.github.com/Enigma/posts/mathjax.html</link><description>&lt;html&gt;&lt;body&gt;&lt;p&gt;只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。&lt;/p&gt;
 &lt;p&gt;例如:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
@@ -16,10 +16,23 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 &lt;div&gt;
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"&gt;&lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mo&gt;∫&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;ln&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;/math&gt;&lt;/div&gt;
 &lt;p&gt;可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。&lt;/p&gt;
-&lt;p&gt;而且為什麼google chrome的數學式子看起來如此醜啊~~~完全跟firefox不一樣,看來要加入Todo list了。&lt;/p&gt;
+&lt;p&gt;FireFox原生支援MathJax所使用的MathML，但是無論其他瀏覽器就沒有，以至於數學式子只有FireFox表現最為正常，在Google Chrome還沒原生支援MathML之前，請先安裝&lt;a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW"&gt;MathJax for Chrome&lt;/a&gt;,就可以正常顯示數學式子了，IE，safari, opera的使用者可能就得多擔待一下，目前知道，如果要在所有的瀏覽器正常使用MathJax，則html必須包含:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;div class="math"&amp;gt;
+\begin{equation*}
+\int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
+\end{equation*}
+&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;這段，而我所產生的html檔裡，卻是這樣:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;div&amp;gt;
+&amp;lt;math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"&amp;gt;&amp;lt;mtable&amp;gt;&amp;lt;mtr&amp;gt;&amp;lt;mtd&amp;gt;&amp;lt;mo&amp;gt;∫&amp;lt;/mo&amp;gt;&amp;lt;mfrac&amp;gt;&amp;lt;mrow&amp;gt;&amp;lt;mi&amp;gt;d&amp;lt;/mi&amp;gt;&amp;lt;mi&amp;gt;x&amp;lt;/mi&amp;gt;&amp;lt;/mrow&amp;gt;&amp;lt;mrow&amp;gt;&amp;lt;mn&amp;gt;1&amp;lt;/mn&amp;gt;&amp;lt;mo&amp;gt;+&amp;lt;/mo&amp;gt;&amp;lt;mi&amp;gt;a&amp;lt;/mi&amp;gt;&amp;lt;mi&amp;gt;x&amp;lt;/mi&amp;gt;&amp;lt;/mrow&amp;gt;&amp;lt;/mfrac&amp;gt;&amp;lt;mo&amp;gt;=&amp;lt;/mo&amp;gt;&amp;lt;mfrac&amp;gt;&amp;lt;mrow&amp;gt;&amp;lt;mn&amp;gt;1&amp;lt;/mn&amp;gt;&amp;lt;/mrow&amp;gt;&amp;lt;mrow&amp;gt;&amp;lt;mi&amp;gt;a&amp;lt;/mi&amp;gt;&amp;lt;/mrow&amp;gt;&amp;lt;/mfrac&amp;gt;&amp;lt;mo&amp;gt;ln&amp;lt;/mo&amp;gt;&amp;lt;mo&amp;gt;(&amp;lt;/mo&amp;gt;&amp;lt;mn&amp;gt;1&amp;lt;/mn&amp;gt;&amp;lt;mo&amp;gt;+&amp;lt;/mo&amp;gt;&amp;lt;mi&amp;gt;a&amp;lt;/mi&amp;gt;&amp;lt;mi&amp;gt;x&amp;lt;/mi&amp;gt;&amp;lt;mo&amp;gt;)&amp;lt;/mo&amp;gt;&amp;lt;mo&amp;gt;+&amp;lt;/mo&amp;gt;&amp;lt;mi&amp;gt;C&amp;lt;/mi&amp;gt;&amp;lt;/mtd&amp;gt;&amp;lt;/mtr&amp;gt;&amp;lt;/mtable&amp;gt;&amp;lt;/math&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;這就是問題所在，問題應該是出在template與生成mathjax程式碼的區塊，很明顯的也是第1種顯示方式最簡單漂亮，總之我會找時間解決這個問題。&lt;/p&gt;
 &lt;!-- 文章結尾 --&gt;
 &lt;!-- 超連結(URL)目的區 --&gt;
-&lt;!-- 註腳(Footnote)與引用(Citation)區 --&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/mathjax.html</guid><pubDate>Fri, 24 May 2013 08:05:19 GMT</pubDate></item><item><title>Convolution(摺積)的物理意義</title><link>http://sophAi.github.com/Enigma/posts/convolution.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div class="section" id="id1"&gt;
+&lt;!-- 註腳(Footnote)與引用(Citation)區 --&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/mathjax.html</guid><pubDate>Fri, 24 May 2013 12:14:21 GMT</pubDate></item><item><title>Convolution(摺積)的物理意義</title><link>http://sophAi.github.com/Enigma/posts/convolution.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;問題&lt;/h2&gt;
 &lt;p&gt;假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mrow&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;mo&gt;∞&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;，亦即當我們用隨時間輸出的單位脈衝電流&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mrow&gt;&lt;mi&gt;δ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1)，所量到的輸出對應電流即為&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mrow&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;'&lt;/mo&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;。&lt;/p&gt;
 &lt;!-- 部落格分頁(Teaser)標籤 --&gt;
