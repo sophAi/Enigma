@@ -1,6 +1,6 @@
 .. title: 測試mathjax與Latex數學
 .. slug: mathjax
-.. date: 2013-05-24 13:46:41
+.. date: 2013-05-24 13:48:03
 .. tags: Latex
 .. link: 
 .. description: Created at 2013-05-24 13:45:28
@@ -16,7 +16,7 @@ mathjax測試
 
 測試Latex數學是否可以正常顯示
 
-\[\alpha=\beta+\gamma\]
+$\alpha=\beta+\gamma$
 
 .. 部落格分頁(Teaser)標籤
 .. TEASER_END
