@@ -1,6 +1,6 @@
 .. title: 關於這裡 (v0.1)
 .. slug: about
-.. date: 2013-05-24 16:19:16
+.. date: 2013-05-24 20:17:00
 .. tags: mathjax
 .. link: 
 .. description: Created at 2013-04-09 23:37:03

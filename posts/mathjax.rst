@@ -1,6 +1,6 @@
 .. title: 使用mathjax與Latex數學
 .. slug: mathjax
-.. date: 2013-05-24 20:14:21
+.. date: 2013-05-24 20:16:44
 .. tags: mathjax
 .. link: 
 .. description: Created at 2013-05-24 13:45:28
@@ -51,7 +51,7 @@ FireFox原生支援MathJax所使用的MathML，但是無論其他瀏覽器就沒
 	<div>
 	<math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mtable><mtr><mtd><mo>∫</mo><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>a</mi></mrow></mfrac><mo>ln</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi><mo>)</mo><mo>+</mo><mi>C</mi></mtd></mtr></mtable></math></div>
 
-這就是問題所在，問題應該是出在template與生成mathjax程式碼的區塊，很明顯的也是第1種顯示方式最簡單漂亮，總之我會找時間解決這個問題。
+可以看到後者是直接使用用MathML，問題應該是出在template與生成mathjax程式碼的區塊，很明顯的也是第1種顯示方式最簡單漂亮，總之我會找時間解決這個問題。
 
 .. 文章結尾
 
