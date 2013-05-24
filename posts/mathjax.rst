@@ -1,6 +1,6 @@
 .. title: 測試mathjax與Latex數學
 .. slug: mathjax
-.. date: 2013-05-24 13:48:03
+.. date: 2013-05-24 13:55:17
 .. tags: Latex
 .. link: 
 .. description: Created at 2013-05-24 13:45:28
@@ -14,9 +14,14 @@ mathjax測試
 
 .. 文章起始
 
-測試Latex數學是否可以正常顯示
+測試Latex數學是否可以正常顯示 
 
-$\alpha=\beta+\gamma$
+The first equation using mathjax as following :math: `\alpha=\beta+\gamma`
+
+or
+
+.. math::
+   \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
 
 .. 部落格分頁(Teaser)標籤
 .. TEASER_END
