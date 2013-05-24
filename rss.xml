@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>~Enigma~</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Sat, 25 May 2013 00:05:39 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>使用mathjax與Latex數學</title><link>http://sophAi.github.com/Enigma/posts/mathjax.html</link><description>&lt;!-- title: 使用mathjax與Latex數學 --&gt;
+<rss version="2.0"><channel><title>~Enigma~</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Sat, 25 May 2013 00:38:19 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>使用MathJax與Latex數學</title><link>http://sophAi.github.com/Enigma/posts/mathjax.html</link><description>&lt;!-- title: 使用MathJax與Latex數學 --&gt;
 &lt;!-- slug: mathjax --&gt;
-&lt;!-- date: 2013-05-24 20:16:44 --&gt;
+&lt;!-- date: 2013-05-25 00:27:05 --&gt;
 &lt;!-- tags: mathjax --&gt;
 &lt;!-- link: --&gt;
 &lt;!-- description: Created at 2013-05-24 13:45:28 --&gt;
 &lt;!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --&gt;
 &lt;!-- 同時，別忘了加上tags喔! --&gt;
 &lt;!-- 文章起始 --&gt;
-&lt;p&gt;只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。&lt;/p&gt;
-&lt;p&gt;例如:&lt;/p&gt;
+&lt;p&gt;要讓nikola編輯的文章載入MathJax很簡單，只要在tags裡加入mathjax即可。例如:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. tags: mathjax, my_other_tags, ...
+&lt;/pre&gt;
+&lt;p&gt;然後在段落裡插入math語法，例如:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 &lt;/pre&gt;
 &lt;p&gt;會顯示&lt;/p&gt;
 &lt;p&gt;The first equation using mathjax is as following &lt;span class="math"&gt;\(\alpha=\beta+\gamma\)&lt;/span&gt;
 &lt;/p&gt;
-&lt;p&gt;或是使用以下語法:&lt;/p&gt;
+&lt;p&gt;或是使用以下語法獨立顯示數學式子於一行:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 .. math::
 
@@ -28,8 +31,9 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
 \end{equation*}
 &lt;/div&gt;
+&lt;p&gt;根據conf.py的設定，可以決定上式置中或是靠左，我是選擇置中，這樣看起來比較不會跟上下段落擠在一起。&lt;/p&gt;
 &lt;p&gt;可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。&lt;/p&gt;
-&lt;p&gt;FireFox原生支援MathJax所使用的MathML，但是無論其他瀏覽器就沒有，以至於數學式子只有FireFox表現最為正常，在Google Chrome還沒原生支援MathML之前，請先安裝&lt;a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW"&gt;MathJax for Chrome&lt;/a&gt;,就可以正常顯示數學式子了，IE，safari, opera的使用者可能就得多擔待一下，目前知道，如果要在所有的瀏覽器正常使用MathJax，則html必須包含:&lt;/p&gt;
+&lt;p&gt;這裡有個小插曲，第一次使用mathjax時發現數學式子只有FireFox表現最為正常，其他瀏覽器都無法正常載入mathjax，檢查一下原始碼，發現是因為用了MathML(只有FireFox原生支援)，Google Chrome使用者必須額外安裝&lt;a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW"&gt;MathJax for Chrome&lt;/a&gt;,才能正常顯示數學式子了，更不用說其他如IE，safari, opera等，應該都是無法正常顯示吧？如果用html-ccs的方式，則可以繞MathML的相容性，html必須包含:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;div class="math"&amp;gt;
 \begin{equation*}
@@ -37,15 +41,19 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 \end{equation*}
 &amp;lt;/div&amp;gt;
 &lt;/pre&gt;
-&lt;p&gt;這段，而我所產生的html檔裡，卻是這樣:&lt;/p&gt;
+&lt;p&gt;而如果是使用MathML，在html檔是這樣的:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;div&amp;gt;
 &amp;lt;math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"&amp;gt;&amp;lt;mtable&amp;gt;&amp;lt;mtr&amp;gt;&amp;lt;mtd&amp;gt;&amp;lt;mo&amp;gt;∫&amp;lt;/mo&amp;gt;&amp;lt;mfrac&amp;gt;&amp;lt;mrow&amp;gt;&amp;lt;mi&amp;gt;d&amp;lt;/mi&amp;gt;&amp;lt;mi&amp;gt;x&amp;lt;/mi&amp;gt;&amp;lt;/mrow&amp;gt;&amp;lt;mrow&amp;gt;&amp;lt;mn&amp;gt;1&amp;lt;/mn&amp;gt;&amp;lt;mo&amp;gt;+&amp;lt;/mo&amp;gt;&amp;lt;mi&amp;gt;a&amp;lt;/mi&amp;gt;&amp;lt;mi&amp;gt;x&amp;lt;/mi&amp;gt;&amp;lt;/mrow&amp;gt;&amp;lt;/mfrac&amp;gt;&amp;lt;mo&amp;gt;=&amp;lt;/mo&amp;gt;&amp;lt;mfrac&amp;gt;&amp;lt;mrow&amp;gt;&amp;lt;mn&amp;gt;1&amp;lt;/mn&amp;gt;&amp;lt;/mrow&amp;gt;&amp;lt;mrow&amp;gt;&amp;lt;mi&amp;gt;a&amp;lt;/mi&amp;gt;&amp;lt;/mrow&amp;gt;&amp;lt;/mfrac&amp;gt;&amp;lt;mo&amp;gt;ln&amp;lt;/mo&amp;gt;&amp;lt;mo&amp;gt;(&amp;lt;/mo&amp;gt;&amp;lt;mn&amp;gt;1&amp;lt;/mn&amp;gt;&amp;lt;mo&amp;gt;+&amp;lt;/mo&amp;gt;&amp;lt;mi&amp;gt;a&amp;lt;/mi&amp;gt;&amp;lt;mi&amp;gt;x&amp;lt;/mi&amp;gt;&amp;lt;mo&amp;gt;)&amp;lt;/mo&amp;gt;&amp;lt;mo&amp;gt;+&amp;lt;/mo&amp;gt;&amp;lt;mi&amp;gt;C&amp;lt;/mi&amp;gt;&amp;lt;/mtd&amp;gt;&amp;lt;/mtr&amp;gt;&amp;lt;/mtable&amp;gt;&amp;lt;/math&amp;gt;&amp;lt;/div&amp;gt;
 &lt;/pre&gt;
-&lt;p&gt;可以看到後者是直接使用用MathML，問題應該是出在template與生成mathjax程式碼的區塊，很明顯的也是第1種顯示方式最簡單漂亮，總之我會找時間解決這個問題。&lt;/p&gt;
+&lt;p&gt;因此稍微看一下html原始碼就能知道是使用何者，很明顯的第1種顯示方式最簡單漂亮，花了一個晚上嘗試，發現在安裝doit，docutils，mako等套件時，不能使用官方的套件，必須使用從nikola下載的套件，因為他們有針對nikola修改，因此最保險的方法就是將官方套件一個個移除後，重新使用:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sudo pip install https://github.com/ralsina/nikola/archive/master.zip --upgrade
+&lt;/pre&gt;
+&lt;p&gt;--upgrade參數會一個個檢查子套件並更新；更新後，重build一次rst文件就能夠以第一種型式顯示數學式子，在Chrome裡也完全正常!!推測其他瀏覽器應該也是OK!&lt;/p&gt;
 &lt;!-- 文章結尾 --&gt;
 &lt;!-- 超連結(URL)目的區 --&gt;
-&lt;!-- 註腳(Footnote)與引用(Citation)區 --&gt;</description><category>mathjax</category><guid>http://sophAi.github.com/Enigma/posts/mathjax.html</guid><pubDate>Fri, 24 May 2013 12:16:44 GMT</pubDate></item><item><title>Convolution(摺積)的物理意義</title><link>http://sophAi.github.com/Enigma/posts/convolution.html</link><description>&lt;div class="section" id="id1"&gt;
+&lt;!-- 註腳(Footnote)與引用(Citation)區 --&gt;</description><category>mathjax</category><guid>http://sophAi.github.com/Enigma/posts/mathjax.html</guid><pubDate>Fri, 24 May 2013 16:27:05 GMT</pubDate></item><item><title>Convolution(摺積)的物理意義</title><link>http://sophAi.github.com/Enigma/posts/convolution.html</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;問題&lt;/h2&gt;
 &lt;p&gt;假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為&lt;span class="math"&gt;\(g(t''), t''=0 \rightarrow \infty\)&lt;/span&gt;
 ，亦即當我們用隨時間輸出的單位脈衝電流&lt;span class="math"&gt;\(\delta(t'')\)&lt;/span&gt;

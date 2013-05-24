@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 2013-05-24 13:45:28"><meta name="author" content="Po-Jen Hsu"><title>使用mathjax與Latex數學 | ~Enigma~</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 2013-05-24 13:45:28"><meta name="author" content="Po-Jen Hsu"><title>使用MathJax與Latex數學 | ~Enigma~</title><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -54,25 +54,28 @@ MathJax.Hub.Config({
 <div class="reveal"><div class="slides">
     <section><section><div class="postbox">
     
-    <h1>使用mathjax與Latex數學</h1>
+    <h1>使用MathJax與Latex數學</h1>
 
     <hr><medium>
-        Posted: <time class="published" datetime="2013-05-24T20:16:44+08:00">2013-05-24 20:16</time>
+        Posted: <time class="published" datetime="2013-05-25T00:27:05+08:00">2013-05-25 00:27</time>
         
 
         
           |  More posts about
             <a class="tag" href="../categories/mathjax.html"><span class="badge badge-info">mathjax</span></a>
 
-    </medium><hr><!-- title: 使用mathjax與Latex數學 --><!-- slug: mathjax --><!-- date: 2013-05-24 20:16:44 --><!-- tags: mathjax --><!-- link: --><!-- description: Created at 2013-05-24 13:45:28 --><!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --><!-- 同時，別忘了加上tags喔! --><!-- 文章起始 --><p>只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。</p>
-<p>例如:</p>
+    </medium><hr><!-- title: 使用MathJax與Latex數學 --><!-- slug: mathjax --><!-- date: 2013-05-25 00:27:05 --><!-- tags: mathjax --><!-- link: --><!-- description: Created at 2013-05-24 13:45:28 --><!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --><!-- 同時，別忘了加上tags喔! --><!-- 文章起始 --><p>要讓nikola編輯的文章載入MathJax很簡單，只要在tags裡加入mathjax即可。例如:</p>
+<pre class="literal-block">
+.. tags: mathjax, my_other_tags, ...
+</pre>
+<p>然後在段落裡插入math語法，例如:</p>
 <pre class="literal-block">
 The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 </pre>
 <p>會顯示</p>
 <p>The first equation using mathjax is as following <span class="math">\(\alpha=\beta+\gamma\)</span>
 </p>
-<p>或是使用以下語法:</p>
+<p>或是使用以下語法獨立顯示數學式子於一行:</p>
 <pre class="literal-block">
 .. math::
 
@@ -84,8 +87,9 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
 \end{equation*}
 </div>
+<p>根據conf.py的設定，可以決定上式置中或是靠左，我是選擇置中，這樣看起來比較不會跟上下段落擠在一起。</p>
 <p>可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。</p>
-<p>FireFox原生支援MathJax所使用的MathML，但是無論其他瀏覽器就沒有，以至於數學式子只有FireFox表現最為正常，在Google Chrome還沒原生支援MathML之前，請先安裝<a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW">MathJax for Chrome</a>,就可以正常顯示數學式子了，IE，safari, opera的使用者可能就得多擔待一下，目前知道，如果要在所有的瀏覽器正常使用MathJax，則html必須包含:</p>
+<p>這裡有個小插曲，第一次使用mathjax時發現數學式子只有FireFox表現最為正常，其他瀏覽器都無法正常載入mathjax，檢查一下原始碼，發現是因為用了MathML(只有FireFox原生支援)，Google Chrome使用者必須額外安裝<a class="reference external" href="https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW">MathJax for Chrome</a>,才能正常顯示數學式子了，更不用說其他如IE，safari, opera等，應該都是無法正常顯示吧？如果用html-ccs的方式，則可以繞MathML的相容性，html必須包含:</p>
 <pre class="literal-block">
 &lt;div class="math"&gt;
 \begin{equation*}
@@ -93,12 +97,16 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 \end{equation*}
 &lt;/div&gt;
 </pre>
-<p>這段，而我所產生的html檔裡，卻是這樣:</p>
+<p>而如果是使用MathML，在html檔是這樣的:</p>
 <pre class="literal-block">
 &lt;div&gt;
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"&gt;&lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mo&gt;∫&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;ln&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;/math&gt;&lt;/div&gt;
 </pre>
-<p>可以看到後者是直接使用用MathML，問題應該是出在template與生成mathjax程式碼的區塊，很明顯的也是第1種顯示方式最簡單漂亮，總之我會找時間解決這個問題。</p>
+<p>因此稍微看一下html原始碼就能知道是使用何者，很明顯的第1種顯示方式最簡單漂亮，花了一個晚上嘗試，發現在安裝doit，docutils，mako等套件時，不能使用官方的套件，必須使用從nikola下載的套件，因為他們有針對nikola修改，因此最保險的方法就是將官方套件一個個移除後，重新使用:</p>
+<pre class="literal-block">
+sudo pip install https://github.com/ralsina/nikola/archive/master.zip --upgrade
+</pre>
+<p>--upgrade參數會一個個檢查子套件並更新；更新後，重build一次rst文件就能夠以第一種型式顯示數學式子，在Chrome裡也完全正常!!推測其他瀏覽器應該也是OK!</p>
 <!-- 文章結尾 -->
 <!-- 超連結(URL)目的區 -->
 <!-- 註腳(Footnote)與引用(Citation)區 -->
@@ -114,7 +122,7 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
         <script type="text/javascript">
         var disqus_shortname ="enigma8850";
             var disqus_url="http://sophAi.github.com/Enigma/posts/mathjax.html";
-        var disqus_title="\u4f7f\u7528mathjax\u8207Latex\u6578\u5b78";
+        var disqus_title="\u4f7f\u7528MathJax\u8207Latex\u6578\u5b78";
         var disqus_identifier="cache/posts/mathjax.html";
         var disqus_config = function () {
             this.language = "en";
