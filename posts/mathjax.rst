@@ -1,6 +1,6 @@
 .. title: 測試mathjax與Latex數學
 .. slug: mathjax
-.. date: 2013-05-24 16:00:33
+.. date: 2013-05-24 16:05:19
 .. tags: mathjax
 .. link: 
 .. description: Created at 2013-05-24 13:45:28
@@ -37,6 +37,8 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
    \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
 
 可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。
+
+而且為什麼google chrome的數學式子看起來如此醜啊~~~完全跟firefox不一樣,看來要加入Todo list了。
 
 .. 文章結尾
 
