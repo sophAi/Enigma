@@ -1,7 +1,7 @@
 .. title: Convolution(摺積)的物理意義
 .. slug: convolution
-.. date: 2013-05-24 14:35:06
-.. tags: draft,數值計算
+.. date: 2013-05-24 14:35:49
+.. tags: mathjax
 .. link: 
 .. description: Created at 2013-05-24 13:37:06
 
