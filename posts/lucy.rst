@@ -1,6 +1,6 @@
-.. title: lucy.rst
+.. title: <(@￣︶￣@)>;適合陪伴，個性溫柔的中大型犬--Lucy
 .. slug: lucy
-.. date: 2013-05-24 13:25:59
+.. date: 2013-05-24 13:26:36
 .. tags: 
 .. link: 
 .. description: Created at 2013-05-24 12:43:42
