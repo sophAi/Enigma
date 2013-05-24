@@ -1,7 +1,7 @@
 .. title: 測試mathjax與Latex數學
 .. slug: mathjax
-.. date: 2013-05-24 13:55:17
-.. tags: Latex
+.. date: 2013-05-24 13:55:49
+.. tags: mathjax
 .. link: 
 .. description: Created at 2013-05-24 13:45:28
 
