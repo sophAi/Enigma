@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="It's a journey toward happiness"><meta name="author" content="Po-Jen Hsu"><title>文章分類 | ~Enigma~</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 2013-05-24 13:37:06"><meta name="author" content="Po-Jen Hsu"><title>Convolution(摺積)的物理意義 | ~Enigma~</title><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -36,11 +36,15 @@ MathJax.Hub.Config({
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
                 <ul class="nav"><li><a href="../archive.html">歷史存檔</a>
-            </li><li class="active"><a href="#">文章分類</a>
+            </li><li><a href="../categories/index.html">文章分類</a>
             </li><li><a href="../stories/about.html">關於這裡</a>
 
                 </li></ul><!-- Custom search --><form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
-<input type="hidden" name="sites" value="http://sophAi.github.io/Enigma/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;"><!-- End of custom search --><ul class="nav pull-right"></ul></form></div>
+<input type="hidden" name="sites" value="http://sophAi.github.io/Enigma/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;"><!-- End of custom search --><ul class="nav pull-right"><li>
+    <a href="convolution.rst" id="sourcelink">原始碼</a>
+    </li>
+
+                </ul></form></div>
         </div>
     </div>
 </div>
@@ -48,13 +52,43 @@ MathJax.Hub.Config({
 
 <!--Body content-->
 <div class="reveal"><div class="slides">
-    <section><!--Body content--><h1>文章分類</h1>
-    <ul class="unstyled bricks"><li><a class="reference" href="ren-sheng.html">人生</a></li>
-        <li><a class="reference" href="shu-zhi-ji-suan.html">數值計算</a></li>
-        <li><a class="reference" href="gou-gou.html">狗狗</a></li>
-        <li><a class="reference" href="cheng-shi.html">程式</a></li>
-        <li><a class="reference" href="qin-zi-she-ying-xiang-guan.html">親子攝影相關</a></li>
-    </ul><!--End of body content--></section></div></div>
+    <section><section><div class="postbox">
+    
+    <h1>Convolution(摺積)的物理意義</h1>
+
+    <hr><medium>
+        發表於: <time class="published" datetime="2013-05-24T13:38:56+08:00">2013-05-24 13:38</time>
+        
+
+        
+          |  更多相關文章：
+            <a class="tag" href="../categories/shu-zhi-ji-suan.html"><span class="badge badge-info">數值計算</span></a>
+
+    </medium><hr><div style="text-align:right">
+        <ul class="pager"><li class="previous">
+                <a href="lucy.html">← 前一篇</a>
+        </li></ul></div>
+
+    
+
+    </div>
+    </section><section><div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="enigma8850";
+            var disqus_url="http://sophAi.github.com/Enigma/posts/convolution.html";
+        var disqus_title="Convolution(\u647a\u7a4d)\u7684\u7269\u7406\u610f\u7fa9";
+        var disqus_identifier="cache/posts/convolution.html";
+        var disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </section></section></div></div>
 <!--End of body content-->
 
 
@@ -78,6 +112,12 @@ MathJax.Hub.Config({
     window.scrollTo(0,0);
     MathJax.Hub.Rerender(event.currentSlide);
     });
+    </script><script>
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true
+    })
     </script><div class="navbar navbar-fixed-bottom">
     <div class="navbar-inner">
         <div class="footerbox">
