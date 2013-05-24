@@ -1,6 +1,6 @@
 .. title: Convolution(摺積)的物理意義
 .. slug: convolution
-.. date: 2013-05-24 14:33:49
+.. date: 2013-05-24 14:35:06
 .. tags: draft,數值計算
 .. link: 
 .. description: Created at 2013-05-24 13:37:06
@@ -54,8 +54,7 @@ Wiener-Khinchin Theorem
 
 Parseval's theorem(怕什麼定理)說，對所有時域跟頻域的積分所得的total power應該要一樣。
 
-.. math::
-   \mbox{Total Power}\equiv \int^{\infty}_{-\infty}|g(t)|^2 dt=\int^{\infty}_{-\infty}|G(\omega)|^2 d\omega
+即Total Power :math:`\equiv \int^{\infty}_{-\infty}|g(t)|^2 dt=\int^{\infty}_{-\infty}|G(\omega)|^2 d\omega`\ 。
 
 大致上是這樣。
 
