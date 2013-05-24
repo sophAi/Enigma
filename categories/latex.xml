@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>~Enigma~ (Latex)</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 24 May 2013 13:57:46 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>測試mathjax與Latex數學</title><link>http://sophAi.github.com/Enigma/posts/mathjax.html</link><description>&lt;html&gt;&lt;body&gt;&lt;p&gt;測試Latex數學是否可以正常顯示&lt;/p&gt;
+&lt;p&gt;[alpha=beta+gamma]&lt;/p&gt;
+&lt;!-- 部落格分頁(Teaser)標籤 --&gt;
+&lt;p&gt;&lt;a href="/posts/mathjax.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description><guid>http://sophAi.github.com/Enigma/posts/mathjax.html</guid><pubDate>Fri, 24 May 2013 05:46:41 GMT</pubDate></item></channel></rss>
