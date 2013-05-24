@@ -1,6 +1,6 @@
 .. title: 使用MathJax與Latex數學
 .. slug: mathjax
-.. date: 2013-05-25 00:35:46
+.. date: 2013-05-25 00:38:23
 .. tags: mathjax
 .. link: 
 .. description: Created at 2013-05-24 13:45:28
@@ -15,6 +15,9 @@ mathjax測試
 .. 文章起始
 
 MathJax是一個JAVA Script，他能在網頁裡顯示Latex的數學式子，不過使用上有許多要注意的地方。
+
+.. 部落格分頁(Teaser)標籤
+.. TEASER_END
 
 要讓nikola編輯的文章載入MathJax很簡單，只要在tags裡加入mathjax即可。例如::
 
