@@ -1,7 +1,7 @@
 .. title: <(@￣︶￣@)>;適合陪伴，個性溫柔的中大型犬--Lucy
 .. slug: lucy
-.. date: 2013-05-24 13:28:31
-.. tags: Dogs, Family
+.. date: 2013-05-24 13:30:03
+.. tags: 狗狗,人生
 .. link: 
 .. description: Created at 2013-05-24 12:43:42
 
