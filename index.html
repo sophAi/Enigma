@@ -51,31 +51,12 @@ MathJax.Hub.Config({
     <section><section><div class="postbox">
         <h1><a href="posts/convolution.html">Convolution(摺積)的物理意義</a>
         <small>  
-             發表於: <time class="published" datetime="2013-05-24T14:35:49+08:00">2013-05-24 14:35</time></small></h1>
-        <hr><div>
-<math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mtable><mtr><mtd><mi>y</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>≡</mo><mi>f</mi><mo>*</mo><mi>g</mi><mo>=</mo><msub><mover><mo>∫</mo><mrow><mi>t</mi></mrow></mover><mrow><mn>0</mn></mrow></msub><mi>f</mi><mo>(</mo><mi>τ</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>t</mi><mo>-</mo><mi>τ</mi><mo>)</mo><mi>d</mi><mi>τ</mi></mtd></mtr></mtable></math></div>
-<p>由此可以知道convolution有moving integral的概念，同時也是藉由輸入單位衝量函數以預測一個線性系統下任意函數的輸出值!</p>
-<p>f(t)與g(t)的convolution寫成f(t)*g(t)，其Fourier Transformation為其個別Fourier transformation的product</p>
-<p>f(t)*g(t)==&gt;Fourier Trans==&gt;F(w)G(w)</p>
-<div class="section" id="convolution-theorem">
-<h2>Convolution Theorem</h2>
-<p>如果寫成<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>C</mi><mi>o</mi><mi>r</mi><mi>r</mi><mo>(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo>)</mo><mo>≡</mo><msub><mover><mo>∫</mo><mrow><mi>t</mi></mrow></mover><mn>0</mn></msub><mi>f</mi><mo>(</mo><mi>τ</mi><mo>+</mo><mi>t</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>τ</mi><mo>)</mo><mi>d</mi><mi>τ</mi></mrow></math>則為Correlation:</p>
-<p>Corr(f,g)的Fourier Trans==&gt;<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>F</mi><mo>(</mo><mi>ω</mi><mo>)</mo><msup><mi>G</mi><mo>*</mo></msup><mo>(</mo><mi>ω</mi><mo>)</mo></mrow></math></p>
-</div>
-<div class="section" id="correlation-theorem">
-<h2>Correlation Theorem</h2>
-<p>如果f=g就是autocorrelation</p>
-<p>Corr(g,g)的Fourier Trans==&gt;<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>G</mi><mo>(</mo><mi>ω</mi><mo>)</mo><msup><mo>|</mo><mn>2</mn></msup></mrow></math>，即是Power Spectral Density(PSD)</p>
-</div>
-<div class="section" id="wiener-khinchin-theorem">
-<h2>Wiener-Khinchin Theorem</h2>
-<p>Parseval's theorem(怕什麼定理)說，對所有時域跟頻域的積分所得的total power應該要一樣。</p>
-<p>即Total Power <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>≡</mo><msub><mover><mo>∫</mo><mrow><mo>∞</mo></mrow></mover><mrow><mo>-</mo><mo>∞</mo></mrow></msub><mo>|</mo><mi>g</mi><mo>(</mo><mi>t</mi><mo>)</mo><msup><mo>|</mo><mn>2</mn></msup><mi>d</mi><mi>t</mi><mo>=</mo><msub><mover><mo>∫</mo><mrow><mo>∞</mo></mrow></mover><mrow><mo>-</mo><mo>∞</mo></mrow></msub><mo>|</mo><mi>G</mi><mo>(</mo><mi>ω</mi><mo>)</mo><msup><mo>|</mo><mn>2</mn></msup><mi>d</mi><mi>ω</mi></mrow></math>。</p>
-<p>大致上是這樣。</p>
-<!-- 文章結尾 -->
-<!-- 超連結(URL)目的區 -->
-<!-- 註腳(Footnote)與引用(Citation)區 -->
-</div>
+             發表於: <time class="published" datetime="2013-05-24T14:50:20+08:00">2013-05-24 14:50</time></small></h1>
+        <hr><div class="section" id="id1">
+<h2>問題</h2>
+<p>假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>g</mi><mo>(</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>)</mo><mo>,</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>=</mo><mn>0</mn><mo>→</mo><mo>∞</mo></mrow></math>，亦即當我們用隨時間輸出的單位脈衝電流<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>δ</mi><mo>(</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>)</mo></mrow></math>輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1)，所量到的輸出對應電流即為<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>g</mi><mo>(</mo><mi>t</mi><mo>'</mo><mo>'</mo><mo>)</mo></mrow></math>。</p>
+<!-- 部落格分頁(Teaser)標籤 -->
+<p><a href="posts/convolution.html">繼續閱讀...</a></p></div>
         
     <p>
         <a href="posts/convolution.html#/0/1" data-disqus-identifier="cache/posts/convolution.html">Comments</a>
