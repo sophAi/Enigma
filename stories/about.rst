@@ -1,7 +1,7 @@
 .. title: 關於這裡 (v0.1)
 .. slug: about
-.. date: 2013-04-15 21:55:39
-.. tags: 
+.. date: 2013-05-24 16:19:16
+.. tags: mathjax
 .. link: 
 .. description: Created at 2013-04-09 23:37:03
 .. 文章開頭
@@ -23,6 +23,13 @@
 
 .. figure:: ../../arch_2013/galleries/About/comment.jpg
    :align: center
+
+
+有關數學式子的顯示，目前Firefox是最沒問題，也是最美觀的，如果您用google chrome或IE顯示底下的數學可能會不正常，請改用Firefox瀏覽
+
+.. math::
+
+   \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
  
 這裡的文章是採「自由書寫」的模式進行撰寫，因此一篇文章會隨著時間而產生不同的面，如果各位覺得文章有錯誤，疏漏，不清楚的地方，也歡迎留下您的意見，作者會盡力回答或修正問題，也歡迎抓錯字與不通順的句子喔。
 
