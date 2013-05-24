@@ -1,6 +1,6 @@
 .. title: 測試mathjax與Latex數學
 .. slug: mathjax
-.. date: 2013-05-24 14:00:52
+.. date: 2013-05-24 14:56:40
 .. tags: mathjax
 .. link: 
 .. description: Created at 2013-05-24 13:45:28
@@ -14,15 +14,15 @@ mathjax測試
 
 .. 文章起始
 
-測試Latex數學是否可以正常顯示，只要記得在tags裡加入mathjax即可自動載入mathjax java scripts。
+只要記得在tags裡加入mathjax即可自動載入mathjax JAVA scripts。
 
 例如::
 
-    The first equation using mathjax as following :math:`\alpha=\beta+\gamma`
+    The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 
 會顯示 
     
-The first equation using mathjax as following :math:`\alpha=\beta+\gamma`
+The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 
 或是使用以下語法::
 
@@ -34,7 +34,7 @@ The first equation using mathjax as following :math:`\alpha=\beta+\gamma`
 .. math::
    \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
 
-可惜的是Vst (VIM)還無法支援，所以暫時只能在網頁裏面看囉！
+可惜的是Vst (VIM)還無法支援，轉PDF時的數學式子方案還要再研究一下。
 
 .. 部落格分頁(Teaser)標籤
 .. TEASER_END
