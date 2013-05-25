@@ -1,6 +1,6 @@
 .. title: 適合陪伴，個性溫柔的中大型犬--Lucy
 .. slug: lucy
-.. date: 2013-05-24 15:49:35
+.. date: 2013-05-26 00:55:22
 .. tags: 狗狗,人生
 .. link: 
 .. description: Created at 2013-05-24 12:43:42
@@ -25,6 +25,7 @@
 .. figure:: ../../arch_2013/files_2013/lucy/lucy1.jpg
    :width: 320
    :align: center
+   :target: ../../arch_2013/files_2013/lucy/lucy1.jpg
 
 Lucy在前年(2008年)1月17日去世了。
 
@@ -47,6 +48,7 @@ ______________________________________________
 .. figure:: ../../arch_2013/files_2013/lucy/lucy2.jpg
    :width: 320
    :align: center
+   :target: ../../arch_2013/files_2013/lucy/lucy2.jpg
 
 長時間的和lucy相處下來，發現經過時間的洗鍊後，她竟是這麼溫柔，個性恬靜的狗.......
 
@@ -56,12 +58,14 @@ Lucy是史上最溫馴的大型犬,她不會拖著您跑,也不會撲您,更不�
 .. figure:: ../../arch_2013/files_2013/lucy/lucy1.jpg
    :width: 320
    :align: center
+   :target: ../../arch_2013/files_2013/lucy/lucy1.jpg
 
 Lucy的年紀已經不小了,所吃的苦或許不是我們能想像的,不過她既勇敢又溫柔,撐過了許多大手術,也帶給我們許多鼓舞,撿到她的時候,她全身瘦得讓人覺得可怕, 後腳也被車子撞到露出骨頭了,跛腳的她腹下更垂著兩個拳頭大的乳房瘤….
 
 .. figure:: ../../arch_2013/files_2013/lucy/lucy3.jpg
    :width: 320
    :align: center
+   :target: ../../arch_2013/files_2013/lucy/lucy3.jpg
 
 (第一次看到lucy，就是這樣瘦的讓人驚訝與心疼)
 
@@ -74,11 +78,13 @@ Lucy的年紀已經不小了,所吃的苦或許不是我們能想像的,不過�
 .. figure:: ../../arch_2013/files_2013/lucy/lucy4.jpg
    :width: 320
    :align: center
+   :target: ../../arch_2013/files_2013/lucy/lucy4.jpg
 
 
 .. figure:: ../../arch_2013/files_2013/lucy/lucy5.jpg
    :width: 320
    :align: center
+   :target: ../../arch_2013/files_2013/lucy/lucy5.jpg
 
 Lucy 早年可能是繁殖場的狗，當老了生病了沒價值後，便被丟出任其流浪自生自滅。由於長期的未與人互動與與生俱來的高度穩定性，造就了Lucy不懂覓食不懂乞食 的個性，也才會讓她被我們發現時，瘦的如此嚴重....待在籠子十幾年,注定就是生狗狗生一輩子的她,眼神總是特別卑下,頭總是低低的,好像在默默地控訴 著繁殖場帶給所有狗狗的苦難,照顧一直到一兩個月後,她才漸漸開朗起來,眼神不再冷漠，而漸漸溫柔.....
 
@@ -112,6 +118,7 @@ _______________________________________________
 .. figure:: ../../arch_2013/files_2013/lucy/lucy6.jpg
    :width: 320
    :align: center
+   :target: ../../arch_2013/files_2013/lucy/lucy6.jpg
 
 .. 文章結尾
 

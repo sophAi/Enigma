@@ -1,6 +1,6 @@
 .. title: Convolution(摺積)的物理意義
 .. slug: convolution
-.. date: 2013-05-24 16:00:43
+.. date: 2013-05-26 00:54:03
 .. tags: mathjax
 .. link: 
 .. description: Created at 2013-05-24 13:37:06
@@ -18,7 +18,7 @@ Convolution(摺積)的物理意義
 問題
 ========
 
-假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為\ :math:`g(t''), t''=0 \rightarrow \infty`\ ，亦即當我們用隨時間輸出的單位脈衝電流\ :math:`\delta(t'')`\ 輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1)，所量到的輸出對應電流即為\ :math:`g(t'')`\ 。
+假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為\ :math:`g(t''), t''=0 \rightarrow \infty`\ ，亦即當我們用隨時間輸出的單位脈衝電流\ :math:`\delta(t'')`\ 輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1，所量到的輸出對應電流即為\ :math:`g(t'')`\ 。
 
 
 .. 部落格分頁(Teaser)標籤
