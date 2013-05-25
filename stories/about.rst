@@ -1,6 +1,6 @@
 .. title: 關於這裡 (v0.1)
 .. slug: about
-.. date: 2013-05-25 08:47:20
+.. date: 2013-05-25 08:58:56
 .. tags: mathjax
 .. link: 
 .. description: Created at 2013-04-09 23:37:03
@@ -25,7 +25,7 @@
    :align: center
 
 
-有關數學式子的顯示，目前Firefox是最沒問題，也是最美觀的，如果您用google chrome/IE/Safari/Opera等無法正常顯示以下數學式子，請安裝MathJax相關套件，或改用Firefox瀏覽以達最佳效果。
+數學式子的顯示在Firefox裡最沒問題，也是最美觀的，如果您用google chrome/IE/Safari/Opera等無法正常顯示以下數學式子，請安裝MathJax相關套件，或改用Firefox瀏覽以達最佳效果。
 
 .. math::
    \int \frac{dx}{1+ax}=\frac{1}{a}\ln(1+ax)+C
