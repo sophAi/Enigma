@@ -1,6 +1,6 @@
 .. title: 書寫的發展史
 .. slug: start_rest
-.. date: 2013-04-12 14:24:27
+.. date: 2013-05-27 10:11:25
 .. tags: draft
 .. link: 
 .. description: Created at 2013-04-12 14:10:45
