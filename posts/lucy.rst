@@ -1,9 +1,9 @@
 .. title: 適合陪伴，個性溫柔的中大型犬--Lucy
 .. slug: lucy
-.. date: 2013-05-26 00:55:22
+.. date: 20130529 14:55:19
 .. tags: 狗狗,人生
 .. link: 
-.. description: Created at 2013-05-24 12:43:42
+.. description: Created at 20130524 12:43:42
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!

@@ -1,9 +1,9 @@
 .. title: 使用MathJax與Latex數學
 .. slug: mathjax
-.. date: 2013-05-25 00:38:23
+.. date: 20130529 14:55:40
 .. tags: mathjax
 .. link: 
-.. description: Created at 2013-05-24 13:45:28
+.. description: Created at 20130524 13:45:28
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!
