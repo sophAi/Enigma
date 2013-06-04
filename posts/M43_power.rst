@@ -1,6 +1,6 @@
 .. title: 解放M43相機的實力
 .. slug: M43_power
-.. date: 20130604 15:02:14
+.. date: 20130604 15:03:06
 .. tags: 
 .. link: 
 .. description: Created at 20130604 13:46:32
@@ -26,8 +26,8 @@
 
    (RAW轉JPEG)
 
-.. figure:: http://farm8.staticflickr.com/7446/8944799671_433a53f617.jpg"
-   :target: http://farm8.staticflickr.com/7446/8944799671_433a53f617.jpg"
+.. figure:: http://farm8.staticflickr.com/7446/8944799671_433a53f617.jpg
+   :target: http://farm8.staticflickr.com/7446/8944799671_433a53f617.jpg
    :width 500px
    :align: center
 
