@@ -1,9 +1,9 @@
 .. title: 在Linux下用BLOG寫書
 .. slug: Blog_to_Publish
-.. date: 2013-04-11 14:54:17
+.. date: 20130529 14:59:21
 .. tags: draft
 .. link: 
-.. description: Created at 2013-04-11 13:48:16
+.. description: Created at 20130411 13:48:16
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!

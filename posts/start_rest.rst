@@ -1,9 +1,9 @@
 .. title: 書寫的發展史
 .. slug: start_rest
-.. date: 2013-05-27 10:11:25
+.. date: 20130529 14:58:42
 .. tags: draft
 .. link: 
-.. description: Created at 2013-04-12 14:10:45
+.. description: Created at 20130412 14:10:45
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!

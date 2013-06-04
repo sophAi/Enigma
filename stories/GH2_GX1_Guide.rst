@@ -1,9 +1,9 @@
 .. title: GH2/GX1 找回攝影的本質與樂趣
 .. slug: GH2_GX1_Guide
-.. date: 2013-05-25 00:36:19
+.. date: 20130529 14:59:33
 .. tags: draft
 .. link: 
-.. description: Created at 2013-04-11 13:50:03
+.. description: Created at 20130411 13:50:03
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!

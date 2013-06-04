@@ -1,9 +1,9 @@
 .. title: 有關影像銳利度
 .. slug: mtf
-.. date: 2013-04-15 21:46:44
+.. date: 20130529 14:57:34
 .. tags: draft 
 .. link: 
-.. description: Created at 2013-04-15 15:03:22
+.. description: Created at 20130415 15:03:22
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!

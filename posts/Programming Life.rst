@@ -1,9 +1,9 @@
 .. title: 人生有如一場程式
 .. slug: Programming Life
-.. date: 2013-04-17 13:46:17
+.. date: 20130529 14:58:06
 .. tags: 程式, 人生
 .. link: 
-.. description: Created at 2013-04-17 10:47:12
+.. description: Created at 20130417 10:47:12
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!
