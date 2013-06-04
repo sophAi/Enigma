@@ -1,7 +1,7 @@
 .. title: 解放M43相機的實力
 .. slug: M43_power
-.. date: 20130604 15:03:50
-.. tags: 
+.. date: 20130604 15:04:57
+.. tags: 生活紀錄 
 .. link: 
 .. description: Created at 20130604 13:46:32
 .. ===================================Metadata↑================================================
@@ -11,6 +11,7 @@
 
 從GF1開始，一直都沒有好好使用過GF1的Raw檔格式，因為主要是用Linux，還沒有時間好好研究，一直到第二個小baby快出生了，才比較有心去研究一下什麼是Raw檔，測試的結果發現Raw檔轉換成jpeg果然好太多，jpeg直出顏色有點怪異且平淡，而且能救的部份有限，看看下圖的差異(點選放大):
 
+.. TEASER_END
 
 .. figure:: http://farm8.staticflickr.com/7355/8944800437_40bf61f216.jpg
    :target: http://farm8.staticflickr.com/7355/8944800437_40bf61f216.jpg
