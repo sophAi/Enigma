@@ -1,6 +1,6 @@
 .. title: 解放M43相機的實力
 .. slug: M43_power
-.. date: 20130604 14:20:30
+.. date: 20130604 14:33:46
 .. tags: 
 .. link: 
 .. description: Created at 20130604 13:46:32
@@ -13,25 +13,29 @@
 
 JPEG直出:
 
- RAW轉JPEG:
+RAW轉JPEG:
 
 JPEG直出:
 
- RAW轉JPEG
+RAW轉JPEG
 
 可以觀察到RAW轉JPEG的細節其實更多，立體感也更好，膚色也很容易調到想要的樣子，此外GH2的RAW檔似乎照的範圍比JPEG還要再廣些，可以觀察畫面邊緣，JPEG感覺好像是被裁剪過一點點，如此一來或許以14mm的焦段配合16:9的比例，照出來的等效焦距還能比14mm更廣。(補充:後來知道這個裁切是因為機身數位修正變形的緣故)
 
 RAW檔還有一個更大的好處，就是那些什麼機身的色彩啦，白平衡什麼blahblah的設定都可以不用去管他了，只要注意3個地方就好:
 
-    光圈值
-    快門值
-    ISO值
+#. 光圈值
+#. 快門值
+#. ISO值
+
+
 
 這樣最大的好處就是把拍照的手續降到最低，只要專心在構圖跟準確曝光就夠了~當然由於線性Gamma的特性，其實最正確的曝光應該是離過曝裁切再低一點才能確保色階的平滑以及減少暗部雜訊，普通認為寧可暗不可接近過曝的觀點其實不儘正確，因此記得也把相機的histogram功能打開，時時注意到有沒有亮部裁切就行了，這些在Raw聖經這本書裏面都有詳細解說，簡單設定好後，對於相機日文介面苦手的老婆，真是一大福音，我也可以把有限Fn鈕分配給曝光跟對焦相關的功能，例如:
 
-    Fn1為曝光模式，用來決定點測光還是中央重點測光等.。
-    Fn2為對焦模式(Off/Q-AF/C-AF)
-    Fn3為畫面比例(16:9/4:3/3:2/1:1)
+#. Fn1為曝光模式，用來決定點測光還是中央重點測光等.。
+#. Fn2為對焦模式(Off/Q-AF/C-AF)
+#. Fn3為畫面比例(16:9/4:3/3:2/1:1)
+
+
 
 原本1跟2是分配給ExTele擴展望遠跟色彩調整，改用Raw檔後這兩個設定就沒有意義了，所以最後改成以上的設定了~只是如此一來我要考慮要不要乾脆把IResolution跟IDynamic功能關掉...還能節省點電量加快反應速度
 
@@ -39,11 +43,12 @@ RAW檔還有一個更大的好處，就是那些什麼機身的色彩啦，白�
 
 Linux下支援Raw檔的編輯軟體其實不少，例如ufraw, Rawstudio跟RawTherapee，其中只有Rawstudio有PPA，其他兩者的最新版都要用Source去編譯，其實編譯的方法並不難，只要在configure時觀察看看少了哪些標頭檔，再去apt-get安裝對應的Library(選有dev的字樣的)就行了，有機會再詳述吧~總之ufraw在configure時要將lensfun的選項開啟，不然預設是關閉的，而RawTherapee似乎不支援lensfun，所以暫時忽略，目前就是ufraw跟Rawstudio交替使用，兩者在處理raw檔都還蠻佔資源的，不像處理jpeg那樣即時，其中ufraw對於細部的調整參數最詳細，可以切換的algorithm也最多，而Rawstudio就有點簡單些，不過基本的gamma曲線跟denoise還是有，兩者都支援Lens correction，其實他們的操作都跟Windows下的Camara Raw或是Lightroom差不多，而Rawstudio的批次處理功能比較完整，同時也可以上傳到Picasa，所以算是目前的主力~上面那些照片就是用Rawstudio完成的~雖然可調參數稍微少些，但其實就算參數多如Lightroom，也大多是對應到Gamma曲線，所以其實只要會調Gamma曲線就夠了，同時，Rawstudio也支援Copy/Paste Setting，雖然處理每個檔要花的時間不少，但通常處理完第一個檔案，就可以把Setting copy到剩下的圖檔，再微調即可，反而省下更多的時間。
 
-.. image:: http://rawstudio.org/screenshots/RS2-copy_settings.png
-   :width: 480
+.. figure:: http://rawstudio.org/screenshots/RS2-copy_settings.png
+   :scale: 80
    :align: center
+   :target: http://rawstudio.org/screenshots/RS2-copy_settings.png
 
- (截至RawStudio網站)
+(截至RawStudio網站)
 
 從這裡也可以證實我長久以來的疑慮，就是Panasonic的發色問題根本就出在白平衡上，利用Raw檔就可以跳過這個問題，即使是GF1在白熱燈泡下白平衡也不儘正確，雖然說都可以用一張白紙來自訂白平衡，終究還是多一道手續，所以想想不如還是放棄使用機身本身的矯正白平衡功能，專心拍照比較重要，其他的就留給後製吧!新機種G3已經發表了，有不少人在爭論jpeg色調的問題，我想一切都是幻覺..改用Raw吧!
 
@@ -62,29 +67,34 @@ PS.我用來處理GH2的電腦是採用KDE(強烈建議)，一般工作則是用
 截幾張RawStudio的圖來:
 
 .. image:: http://rawstudio.org/screenshots/RS2-loupe.png
-   :width: 480
+   :scale: 50
    :align: center
+   :target: http://rawstudio.org/screenshots/RS2-loupe.png
 
-還可以upload到Facebook,flickr跟picasa
+還可以upload到Facebook,flickr:
 
 .. image:: http://rawstudio.org/screenshots/RS2-flickr.png
-   :width: 480
+   :scale: 50
    :align: center
+   :target: http://rawstudio.org/screenshots/RS2-flickr.png
+
+跟Picasa:
 
 .. image:: http://rawstudio.org/screenshots/RS2-picasa.png
-   :width: 480
+   :scale: 50
    :align: center
+   :target: http://rawstudio.org/screenshots/RS2-picasa.png
 
 
 其他截圖請參考\ `RawStudio Screenshot`_\
 
-Lensfun_: http://lensfun.berlios.de/manual/
+.. _Lensfun: http://lensfun.berlios.de/manual/
 
-RawStudio PPA_: https://launchpad.net/~rawstudio/+archive/ppa
+.. _RawStudio PPA: https://launchpad.net/~rawstudio/+archive/ppa
 
-RawStudio Screenshot_: http://rawstudio.org/screenshots.php
+.. _RawStudio Screenshot: http://rawstudio.org/screenshots.php
 
-ufraw_: http://ufraw.sourceforge.net/Guide.html
+.. _ufraw: http://ufraw.sourceforge.net/Guide.html
 
 .. ===================================文章結束↑/語法備忘錄↓====================================
 .. ● 格式1 ― 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ )
