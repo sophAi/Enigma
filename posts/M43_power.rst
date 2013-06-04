@@ -1,6 +1,6 @@
 .. title: 解放M43相機的實力
 .. slug: M43_power
-.. date: 20130604 14:33:46
+.. date: 20130604 15:02:14
 .. tags: 
 .. link: 
 .. description: Created at 20130604 13:46:32
@@ -11,13 +11,34 @@
 
 從GF1開始，一直都沒有好好使用過GF1的Raw檔格式，因為主要是用Linux，還沒有時間好好研究，一直到第二個小baby快出生了，才比較有心去研究一下什麼是Raw檔，測試的結果發現Raw檔轉換成jpeg果然好太多，jpeg直出顏色有點怪異且平淡，而且能救的部份有限，看看下圖的差異(點選放大):
 
-JPEG直出:
 
-RAW轉JPEG:
+.. figure:: http://farm8.staticflickr.com/7355/8944800437_40bf61f216.jpg
+   :target: http://farm8.staticflickr.com/7355/8944800437_40bf61f216.jpg
+   :width: 500px
+   :align: center
 
-JPEG直出:
+   (相機輸出JPEG)
 
-RAW轉JPEG
+.. figure:: http://farm9.staticflickr.com/8261/8945422564_950e569a95.jpg
+   :target: http://farm9.staticflickr.com/8261/8945422564_950e569a95.jpg
+   :width: 500px
+   :align: center
+
+   (RAW轉JPEG)
+
+.. figure:: http://farm8.staticflickr.com/7446/8944799671_433a53f617.jpg"
+   :target: http://farm8.staticflickr.com/7446/8944799671_433a53f617.jpg"
+   :width 500px
+   :align: center
+
+   (JPEG直出)
+
+.. figure:: http://farm8.staticflickr.com/7378/8944799319_1d841c923b.jpg
+   :target: http://farm8.staticflickr.com/7378/8944799319_1d841c923b.jpg
+   :width: 500px
+   :align: center
+
+   (RAW轉JPEG)
 
 可以觀察到RAW轉JPEG的細節其實更多，立體感也更好，膚色也很容易調到想要的樣子，此外GH2的RAW檔似乎照的範圍比JPEG還要再廣些，可以觀察畫面邊緣，JPEG感覺好像是被裁剪過一點點，如此一來或許以14mm的焦段配合16:9的比例，照出來的等效焦距還能比14mm更廣。(補充:後來知道這個裁切是因為機身數位修正變形的緣故)
 
@@ -44,7 +65,6 @@ RAW檔還有一個更大的好處，就是那些什麼機身的色彩啦，白�
 Linux下支援Raw檔的編輯軟體其實不少，例如ufraw, Rawstudio跟RawTherapee，其中只有Rawstudio有PPA，其他兩者的最新版都要用Source去編譯，其實編譯的方法並不難，只要在configure時觀察看看少了哪些標頭檔，再去apt-get安裝對應的Library(選有dev的字樣的)就行了，有機會再詳述吧~總之ufraw在configure時要將lensfun的選項開啟，不然預設是關閉的，而RawTherapee似乎不支援lensfun，所以暫時忽略，目前就是ufraw跟Rawstudio交替使用，兩者在處理raw檔都還蠻佔資源的，不像處理jpeg那樣即時，其中ufraw對於細部的調整參數最詳細，可以切換的algorithm也最多，而Rawstudio就有點簡單些，不過基本的gamma曲線跟denoise還是有，兩者都支援Lens correction，其實他們的操作都跟Windows下的Camara Raw或是Lightroom差不多，而Rawstudio的批次處理功能比較完整，同時也可以上傳到Picasa，所以算是目前的主力~上面那些照片就是用Rawstudio完成的~雖然可調參數稍微少些，但其實就算參數多如Lightroom，也大多是對應到Gamma曲線，所以其實只要會調Gamma曲線就夠了，同時，Rawstudio也支援Copy/Paste Setting，雖然處理每個檔要花的時間不少，但通常處理完第一個檔案，就可以把Setting copy到剩下的圖檔，再微調即可，反而省下更多的時間。
 
 .. figure:: http://rawstudio.org/screenshots/RS2-copy_settings.png
-   :scale: 80
    :align: center
    :target: http://rawstudio.org/screenshots/RS2-copy_settings.png
 
@@ -67,21 +87,18 @@ PS.我用來處理GH2的電腦是採用KDE(強烈建議)，一般工作則是用
 截幾張RawStudio的圖來:
 
 .. image:: http://rawstudio.org/screenshots/RS2-loupe.png
-   :scale: 50
    :align: center
    :target: http://rawstudio.org/screenshots/RS2-loupe.png
 
 還可以upload到Facebook,flickr:
 
 .. image:: http://rawstudio.org/screenshots/RS2-flickr.png
-   :scale: 50
    :align: center
    :target: http://rawstudio.org/screenshots/RS2-flickr.png
 
 跟Picasa:
 
 .. image:: http://rawstudio.org/screenshots/RS2-picasa.png
-   :scale: 50
    :align: center
    :target: http://rawstudio.org/screenshots/RS2-picasa.png
 
