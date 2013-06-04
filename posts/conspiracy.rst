@@ -1,6 +1,6 @@
-.. title: conspiracy.rst
+.. title: 共謀
 .. slug: conspiracy
-.. date: 20130604 11:46:38
+.. date: 20130604 11:48:12
 .. tags: 人生, 閱讀
 .. link: 
 .. description: Created at 20130604 10:14:03
