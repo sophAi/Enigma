@@ -3,7 +3,7 @@ font-size: 19px;
 }
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
 margin: 0 0 0 0;
-line-height: 3em;
+line-height: 160%;
 }
 .reveal h1 { 
 font-size: 2em;
@@ -19,7 +19,7 @@ font-size: 1.2em;
 .reveal pre {
 font-size: 80%;
 width: auto;
-padding: 4px;
+padding: 2px;
 padding-bottom: 6px;
 }
 .reveal .slides {
