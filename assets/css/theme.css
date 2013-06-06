@@ -1,6 +1,6 @@
 body {
   padding-top: 60px;
-  margin: 20px;
+  margin: 0 auto;
 }
 @media (max-width: 979px) {
   body {
@@ -9,7 +9,7 @@ body {
 }
 #container {
     width: 960px;
-    margin: 50 auto;
+    margin: 0 auto;
 }
 
 #contentcolumn {
