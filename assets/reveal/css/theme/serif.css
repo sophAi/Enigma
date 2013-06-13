@@ -53,8 +53,10 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #51483d;
+/*  color: #51483d;*/
+  color: #437EA0;
   text-decoration: none;
+  text-shadow: 0px 0px 1px #46688c;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   -ms-transition: color .15s ease;
@@ -63,9 +65,11 @@ body {
 }
 
 .reveal a:not(.image):hover {
-  color: #8b7c69;
-  text-shadow: none;
+/*  color: #8b7c69;*/
+  color: #2398EC;
+  text-shadow: 0px 0px 1px #338EEF;
   border: none;
+  text-decoration: underline;
 }
 
 .reveal .roll span:after {
