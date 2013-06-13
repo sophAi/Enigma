@@ -1,18 +1,17 @@
 .. title: GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係(v0.1)
 .. slug: shutter-angle
-.. date: 20130529 14:58:30
+.. date: 20130613 14:24:37
 .. tags: 生活紀錄
 .. link: 
 .. description: Created at 20130412 11:35:57
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!
+.. <body>
 
 *****************
 各式錄影規格
 *****************
-
-.. 文章起始
 
 5/23更新，有人提到以GH2錄影時，60i或60p比24p還流暢，其實是忽略了錄影階段shutter speed才是真正的影響因素，不然現今的電影錄製(24p)都不能應用在動作片上了。GH2比GX1以及其他類似的相機方便的地方就是，他的shutter speed是可以手動選擇的，GX1則只能在1/50s,1/60s,1/100s,以及1/120s間切換，至於其他不能手動調整快門速度的相機呢?我猜frame rate是多少，快門速度就固定是多少吧!另外，日光燈下的水波紋也是跟shutter speed有關，例如GX1的PAL機身，只要將shutter speed設成1/60s的倍數，就可以消除60Hz電壓頻率下日光燈的閃爍紋。那為什麼有人會強調只有NTSC的機身才能消除呢?原因在於這些機身的shutter speed都是固定在frame rate的倍數無法調整， 總而言之，GX1以後的Panasonic M43相機應該就不會再有PAL或NTSC的日光燈水波紋問題了，最後內文小更新有關高frame rate對slow motion的幫助。
 
@@ -64,10 +63,5 @@ http://www.100fps.com/
 
 希望以上一次釐清所有跟錄影模式有關的問題。
 
-
-.. 文章結尾
-
-.. 超連結(URL)目的區
-
-.. 註腳(Footnote)與引用(Citation)區
+.. </body>
 

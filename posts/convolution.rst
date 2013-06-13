@@ -1,18 +1,18 @@
 .. title: Convolution(摺積)的物理意義
 .. slug: convolution
-.. date: 20130529 14:55:01
+.. date: 20130613 14:14:58
 .. tags: mathjax
 .. link: 
 .. description: Created at 20130524 13:37:06
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!
+.. <body>
 
 ******************************************
 Convolution(摺積)的物理意義
 ******************************************
 
-.. 文章起始
 
 ========
 問題
@@ -20,8 +20,6 @@ Convolution(摺積)的物理意義
 
 假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為\ :math:`g(t''), t''=0 \rightarrow \infty`\ ，亦即當我們用隨時間輸出的單位脈衝電流\ :math:`\delta(t'')`\ 輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1，所量到的輸出對應電流即為\ :math:`g(t'')`\ 。
 
-
-.. 部落格分頁(Teaser)標籤
 .. TEASER_END
 
 現在我們已經知道這個黑盒子對時間的operator特性，如今我們要量測一個待測物體，他的輸入電流是\ :math:`f(\tau)`\ ，其中\ :math:`\tau=0\rightarrow t`\ ，則他的輸出電流\ :math:`y(t)`\ 會是如何呢?
@@ -64,9 +62,6 @@ Parseval's theorem(怕什麼定理)說，對所有時域跟頻域的積分所得
 
 大致上是這樣。
 
-.. 文章結尾
+.. </body>
 
-.. 超連結(URL)目的區
-
-.. 註腳(Footnote)與引用(Citation)區
 

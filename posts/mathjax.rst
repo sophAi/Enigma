@@ -1,22 +1,20 @@
 .. title: 使用MathJax與Latex數學
 .. slug: mathjax
-.. date: 20130529 14:55:40
+.. date: 20130613 14:16:56
 .. tags: mathjax
 .. link: 
 .. description: Created at 20130524 13:45:28
 
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!
+.. <body>
 
 ******************
 mathjax測試
 ******************
 
-.. 文章起始
-
 MathJax是一個JAVA Script，他能在網頁裡顯示Latex的數學式子，不過使用上有許多要注意的地方。
 
-.. 部落格分頁(Teaser)標籤
 .. TEASER_END
 
 要讓nikola編輯的文章載入MathJax很簡單，只要在tags裡加入mathjax即可。例如::
@@ -70,11 +68,10 @@ The first equation using mathjax is as following :math:`\alpha=\beta+\gamma`
 
 Happy Hacking！
 
-.. 文章結尾
+.. </body>
 
-.. 超連結(URL)目的區
+.. <url>
 
 .. _MathJax for Chrome: https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=zh-TW
 
-.. 註腳(Footnote)與引用(Citation)區
-
+.. </url>

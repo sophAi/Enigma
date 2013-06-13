@@ -1,18 +1,16 @@
 .. title: 書寫的發展史
 .. slug: start_rest
-.. date: 20130529 14:58:42
+.. date: 20130613 14:25:11
 .. tags: draft
 .. link: 
 .. description: Created at 20130412 14:10:45
-
 .. 請記得加上slug，會以slug名稱產生副檔名為.html的文章
 .. 同時，別忘了加上tags喔!
+.. <body>
 
 *************************
 關於ReStructureText
 *************************
-
-.. 文章起始
 
 視窗 vs. 文字介面
 --------------------
@@ -30,13 +28,8 @@ BLOG時代
 
 回歸原始，靜態網頁的BLOG
 
-.. 部落格分頁(Teaser)標籤
 .. TEASER_END
 
 
-.. 文章結尾
-
-.. 超連結(URL)目的區
-
-.. 註腳(Footnote)與引用(Citation)區
+.. </body>
 
