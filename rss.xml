@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>~Enigma~</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Tue, 18 Jun 2013 12:30:38 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>overexposure.rst</title><link>http://sophAi.github.com/Enigma/posts/動態範圍與高光過曝.html</link><description>&lt;!-- title: overexposure.rst --&gt;
-&lt;!-- slug: 動態範圍與高光過曝 --&gt;
-&lt;!-- date: 20130618 11:42:25 --&gt;
+<rss version="2.0"><channel><title>~Enigma~</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Tue, 18 Jun 2013 12:32:45 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>動態範圍與高光過曝</title><link>http://sophAi.github.com/Enigma/posts/overexposure.rst.html</link><description>&lt;!-- title: 動態範圍與高光過曝 --&gt;
+&lt;!-- slug: overexposure.rst --&gt;
+&lt;!-- date: 20130618 12:22:50 --&gt;
 &lt;!-- tags: 生活紀錄 --&gt;
 &lt;!-- link: --&gt;
 &lt;!-- description: Created at 20130618 09:50:13 --&gt;
@@ -46,7 +46,7 @@
 &lt;!-- ● 插入本機的程式碼 ― ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --&gt;
 &lt;!-- ● 插入特定原始碼 ― ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --&gt;
 &lt;!-- ● 插入gist ― ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --&gt;
-&lt;!-- ============================================================================================ --&gt;</description><category>生活紀錄</category><guid>http://sophAi.github.com/Enigma/posts/動態範圍與高光過曝.html</guid><pubDate>Tue, 18 Jun 2013 03:42:25 GMT</pubDate></item><item><title>寫作第一步，純文字檔的好處</title><link>http://sophAi.github.com/Enigma/posts/writing_beginner.html</link><description>&lt;div&gt;&lt;p&gt;用慣word等排版軟體的人，可能比較難以理解純文字檔的好處，因此我們從一個Office使用者的角度，來分析使用純文字寫作有哪些好處：&lt;/p&gt;
+&lt;!-- ============================================================================================ --&gt;</description><category>生活紀錄</category><guid>http://sophAi.github.com/Enigma/posts/overexposure.rst.html</guid><pubDate>Tue, 18 Jun 2013 04:22:50 GMT</pubDate></item><item><title>寫作第一步，純文字檔的好處</title><link>http://sophAi.github.com/Enigma/posts/writing_beginner.html</link><description>&lt;div&gt;&lt;p&gt;用慣word等排版軟體的人，可能比較難以理解純文字檔的好處，因此我們從一個Office使用者的角度，來分析使用純文字寫作有哪些好處：&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/writing_beginner.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>自由軟體</category><category>寫作</category><guid>http://sophAi.github.com/Enigma/posts/writing_beginner.html</guid><pubDate>Thu, 13 Jun 2013 06:34:56 GMT</pubDate></item><item><title>GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係(v0.1)</title><link>http://sophAi.github.com/Enigma/posts/shutter-angle.html</link><description>&lt;div&gt;&lt;p&gt;5/23更新，有人提到以GH2錄影時，60i或60p比24p還流暢，其實是忽略了錄影階段shutter speed才是真正的影響因素，不然現今的電影錄製(24p)都不能應用在動作片上了。GH2比GX1以及其他類似的相機方便的地方就是，他的shutter speed是可以手動選擇的，GX1則只能在1/50s,1/60s,1/100s,以及1/120s間切換，至於其他不能手動調整快門速度的相機呢?我猜frame rate是多少，快門速度就固定是多少吧!另外，日光燈下的水波紋也是跟shutter speed有關，例如GX1的PAL機身，只要將shutter speed設成1/60s的倍數，就可以消除60Hz電壓頻率下日光燈的閃爍紋。那為什麼有人會強調只有NTSC的機身才能消除呢?原因在於這些機身的shutter speed都是固定在frame rate的倍數無法調整， 總而言之，GX1以後的Panasonic M43相機應該就不會再有PAL或NTSC的日光燈水波紋問題了，最後內文小更新有關高frame rate對slow motion的幫助。&lt;/p&gt;
 &lt;p&gt;5/10更新，把一些該加上去的連結都補上了。&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/shutter-angle.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活紀錄</category><guid>http://sophAi.github.com/Enigma/posts/shutter-angle.html</guid><pubDate>Thu, 13 Jun 2013 06:24:37 GMT</pubDate></item><item><title>生活與親子攝影入門須知--器材的選擇 (v0.1)</title><link>http://sophAi.github.com/Enigma/posts/select_camera.html</link><description>&lt;div class="section" id="id2"&gt;
