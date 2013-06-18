@@ -165,6 +165,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://sophAi.github.com/posts/overexposure.html</loc>
+  <lastmod>2013-06-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://sophAi.github.com/posts/select_camera.html</loc>
   <lastmod>2013-06-14</lastmod>
   <priority>0.5000</priority>
@@ -176,11 +181,6 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/posts/writing_beginner.html</loc>
-  <lastmod>2013-06-18</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/posts/動態範圍與高光過曝.html</loc>
   <lastmod>2013-06-18</lastmod>
   <priority>0.5000</priority>
  </url>
