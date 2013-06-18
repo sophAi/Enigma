@@ -6,7 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://sophAi.github.com/</loc>
-  <lastmod>2013-06-13</lastmod>
+  <lastmod>2013-06-14</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -41,7 +41,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/2013/06/index.html</loc>
-  <lastmod>2013-06-14</lastmod>
+  <lastmod>2013-06-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -91,7 +91,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/sheng-huo-ji-lu.html</loc>
-  <lastmod>2013-06-14</lastmod>
+  <lastmod>2013-06-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -121,7 +121,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/index.html</loc>
-  <lastmod>2013-06-14</lastmod>
+  <lastmod>2013-06-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -176,7 +176,12 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/posts/writing_beginner.html</loc>
-  <lastmod>2013-06-14</lastmod>
+  <lastmod>2013-06-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/posts/動態範圍與高光過曝.html</loc>
+  <lastmod>2013-06-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
