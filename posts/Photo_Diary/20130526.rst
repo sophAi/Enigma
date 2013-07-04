@@ -1,6 +1,6 @@
-.. title:
+.. title: 看怪手 - 2013/05/26
 .. slug: 20130526
-.. date: 20130705 00:37:26
+.. date: 20130705 00:50:43
 .. tags: 
 .. link: 
 .. description: Created at 20130705 00:32:29
