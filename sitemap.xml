@@ -6,12 +6,12 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://sophAi.github.com/</loc>
-  <lastmod>2013-06-14</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/2013/</loc>
-  <lastmod>2013-06-04</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -45,8 +45,18 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://sophAi.github.com/2013/07/</loc>
+  <lastmod>2013-07-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/2013/07/index.html</loc>
+  <lastmod>2013-07-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://sophAi.github.com/2013/index.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -56,27 +66,27 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/</loc>
-  <lastmod>2013-06-05</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/cheng-shi.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/gou-gou.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/index.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/mathjax.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -86,27 +96,32 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/ren-sheng.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/sheng-huo-ji-lu.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/categories/sheng-huo-ri-ji.html</loc>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/xie-zuo.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/yue-du.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/zi-you-ruan-ti.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -120,8 +135,13 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://sophAi.github.com/index-1.html</loc>
+  <lastmod>2013-07-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://sophAi.github.com/index.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -132,6 +152,11 @@
  <url>
   <loc>http://sophAi.github.com/listings/index.html</loc>
   <lastmod>2013-06-06</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/posts/20130526_看怪手.html</loc>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -166,7 +191,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/posts/overexposure.html</loc>
-  <lastmod>2013-07-01</lastmod>
+  <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>

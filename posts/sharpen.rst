@@ -1,7 +1,7 @@
 .. title: flickr縮圖銳化探討
 .. slug: sharpen
-.. date: 20130627 14:31:05
-.. tags: draft 
+.. date: 20130704 21:55:35
+.. tags: draft
 .. link: 
 .. description: Created at 20130620 20:38:34
 .. ===================================Metadata↑================================================
@@ -27,47 +27,65 @@ imagemagick是一個發展已久的自由軟體，他廣為被許多網頁與自
 #. 非常方便的保留縮圖銳化的結果，當然你也可以先把原始照片上傳到Flickr，再下載回來。
 #. 理論上，網路相簿的銳化只有在縮圖過程才會進行，因此這代表只要您正確選擇上傳圖檔的比例(例如640x480)，圖片是不會經過網站的縮圖程序(假設你已經先縮圖並銳化好了)
 
-.. figure:: https://farm3.staticflickr.com/2813/9090855119_67e346febf_c.jpg
-   :target: https://farm3.staticflickr.com/2813/9090855119_67e346febf_c.jpg
-   :width: 800px
+以縮圖為寬高最大640px為例，使用參數為::
+
+convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort
+Resize 640x640 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality
+100 縮圖檔名.jpg
+
+.. figure:: ../../arch_2013/file_2013/sharpen/640_P1370103.jpg
+   :target: ../../arch_2013/file_2013/sharpen/640_P1370103.jpg
    :align: center
 
-   flickr - unsharpen
-   
-.. figure:: https://farm8.staticflickr.com/7302/9090916969_78f2679d8f_c.jpg
-   :target: https://farm8.staticflickr.com/7302/9090916969_78f2679d8f_c.jpg
-   :width: 800px
-   :align: center
+   imagemagick 未銳化
 
-   flickr - sharpen by RawStudio
-
-.. figure:: https://farm3.staticflickr.com/2869/9090848005_2acdb60f3c_c.jpg
-   :target: https://farm3.staticflickr.com/2869/9090848005_2acdb60f3c_c.jpg
-   :width: 800px
-   :align: center
-
-   flickr - unsharpen
-
-.. figure:: https://farm8.staticflickr.com/7402/9093134142_58ea69c6b4_c.jpg
-   :target: https://farm8.staticflickr.com/7402/9093134142_58ea69c6b4_c.jpg
-   :width: 800px
-   :align: center
-
-   flickr - sharpen by RawStudio
-
-.. figure:: https://farm6.staticflickr.com/5507/9093049812_147e24f950_c.jpg
-   :target: https://farm6.staticflickr.com/5507/9093049812_147e24f950_c.jpg
-   :width: 800px
-   :align: center
-
-   flickr - unsharpen
 
 .. figure:: https://farm6.staticflickr.com/5504/9093131904_94d84757d5_c.jpg
    :target: https://farm6.staticflickr.com/5504/9093131904_94d84757d5_c.jpg
-   :width: 800px
+   :width: 640px
+   :align: center
+      
+   未銳化，上傳至flickr
+
+.. figure:: ../../arch_2013/file_2013/sharpen/640_P1370103_sharpen.jpg
+   :target: ../../arch_2013/file_2013/sharpen/640_P1370103_sharpen.jpg
    :align: center
 
-   flickr - sharpen by RawStudio
+   imagemagick 銳化
+
+
+接著來看800px解析度的結果，使用無銳化的縮圖參數::
+
+convert P1370032_sharpen.jpg -colorspace RGB -filter LanczosSharp -distort Resize 800x800 -colorspace sRGB -border 10 -quality 100 800_P1370032.jpg
+
+.. figure:: ../../arch_2013/file_2013/sharpen/800_P1370032.jpg
+   :target: ../../arch_2013/file_2013/sharpen/800_P1370032.jpg
+   :align: center
+ 
+   imagemagick 縮圖未銳化
+
+未銳化的原圖，上傳至flickr後，縮圖至800px
+
+.. figure:: https://farm8.staticflickr.com/7402/9093134142_58ea69c6b4_c.jpg
+   :target: https://farm8.staticflickr.com/7402/9093134142_58ea69c6b4_c.jpg
+   :align: center
+   :width: 800px
+
+   未銳化，原圖上傳至flickr
+
+
+以縮圖為寬高最大800px為例，使用參數為::
+
+convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort
+Resize 800x800 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality
+100 縮圖檔名.jpg
+
+.. figure:: ../../arch_2013/file_2013/sharpen/800_P1370032_sharpen.jpg
+   :target: ../../arch_2013/file_2013/sharpen/800_P1370032_sharpen.jpg
+   :align: center
+
+   imagemagick 縮圖銳化
+
 
 也許您會說，既然有Flickr，為何要自找麻煩，其實我也使用Flickr好一陣子，由於他並不是完全免費，在介面與速度上也有諸多限制，而網路科技日躍千里，很多服務經常突然的關閉，改朝換代，或是轉換重心，雖然目前Flickr看起來仍是很受歡迎的網路相簿，短期內應該不至於出現什麼問題，但是他所使用的技術與服務其實都不是我們所能掌控的，隨著他的功能擴充，嘗試跨足社交領域等，無論是執行效率以及網頁體積也出現緩慢與肥大的症狀，歸功於日益複雜化的功能與介面(聽起來很耳熟，不是嗎?)，同時我們也必須適應不斷改變的新介面。換言之，使用這類網路服務，我們是處於被動的狀態，只有接受與不接受兩種選擇，他也不斷承受競爭者的壓力，勢必讓功能愈來愈複雜以免遭到取代，如果未來有個新的網路相簿，提供跟Flickr一樣好的縮圖畫質，介面更快，我們是不是反而得花更多時間轉移相片呢?說穿了，我們其實是用一時的方便換取未來的選擇性，如果有個方法，可以讓我們複製某些網路相簿的優勢，同時排除其帶給我們的限制，所需要的代價僅是「學習」一個可以受用無盡技術，這不是最好的方式嗎?這也是Hacker的基本精神，我一直不覺得學習這些東西會帶來任何困擾，真正的阻礙其實是來自沒有門路或良好的學習管道，還有一點點的惰性與對於改變所產生的不安。
 
