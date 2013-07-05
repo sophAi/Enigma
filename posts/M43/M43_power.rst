@@ -1,6 +1,6 @@
 .. title: 解放M43相機的實力
 .. slug: M43_power
-.. date: 20130613 14:16:13
+.. date: 20130705 13:59:28
 .. tags: 生活紀錄 
 .. link: 
 .. description: Created at 20130604 13:46:32
@@ -14,30 +14,26 @@
 
 .. TEASER_END
 
-.. figure:: http://farm8.staticflickr.com/7355/8944800437_40bf61f216.jpg
-   :target: http://farm8.staticflickr.com/7355/8944800437_40bf61f216.jpg
-   :width: 500px
+.. figure:: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110223.JPG
+   :target: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110223.JPG
    :align: center
 
    (相機輸出JPEG)
 
-.. figure:: http://farm9.staticflickr.com/8261/8945422564_950e569a95.jpg
-   :target: http://farm9.staticflickr.com/8261/8945422564_950e569a95.jpg
-   :width: 500px
+.. figure:: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110223_2011-07-02.jpg
+   :target: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110223_2011-07-02.jpg
    :align: center
 
    (RAW轉JPEG)
 
-.. figure:: http://farm8.staticflickr.com/7446/8944799671_433a53f617.jpg
-   :target: http://farm8.staticflickr.com/7446/8944799671_433a53f617.jpg
-   :width: 500px
+.. figure:: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110225.JPG
+   :target: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110225.JPG
    :align: center
 
    (JPEG直出)
 
-.. figure:: http://farm8.staticflickr.com/7378/8944799319_1d841c923b.jpg
-   :target: http://farm8.staticflickr.com/7378/8944799319_1d841c923b.jpg
-   :width: 500px
+.. figure:: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110225_2011-07-02.jpg
+   :target: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110225_2011-07-02.jpg
    :align: center
 
    (RAW轉JPEG)
