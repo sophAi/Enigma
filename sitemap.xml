@@ -115,6 +115,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://sophAi.github.com/categories/xue-xi.html</loc>
+  <lastmod>2013-07-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://sophAi.github.com/categories/yue-du.html</loc>
   <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
@@ -155,11 +160,6 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://sophAi.github.com/posts/Coding/Programming Life.html</loc>
-  <lastmod>2013-07-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://sophAi.github.com/posts/Dogs/lucy.html</loc>
   <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
@@ -180,27 +180,7 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://sophAi.github.com/posts/Life/conspiracy.html</loc>
-  <lastmod>2013-07-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://sophAi.github.com/posts/M43/M43_power.html</loc>
-  <lastmod>2013-07-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/posts/M43/overexposure.html</loc>
-  <lastmod>2013-07-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/posts/M43/select_camera.html</loc>
-  <lastmod>2013-07-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/posts/M43/shutter-angle.html</loc>
   <lastmod>2013-07-05</lastmod>
   <priority>0.5000</priority>
  </url>
