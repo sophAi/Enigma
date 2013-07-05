@@ -1,6 +1,6 @@
 .. title: 解放M43相機的實力
 .. slug: M43_power
-.. date: 20130705 13:59:28
+.. date: 20130705 16:59:25
 .. tags: 生活紀錄 
 .. link: 
 .. description: Created at 20130604 13:46:32
@@ -17,24 +17,28 @@
 .. figure:: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110223.JPG
    :target: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110223.JPG
    :align: center
+   :width: 640px
 
    (相機輸出JPEG)
 
 .. figure:: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110223_2011-07-02.jpg
    :target: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110223_2011-07-02.jpg
    :align: center
+   :width: 640px
 
    (RAW轉JPEG)
 
 .. figure:: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110225.JPG
    :target: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110225.JPG
    :align: center
+   :width: 640px
 
    (JPEG直出)
 
 .. figure:: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110225_2011-07-02.jpg
    :target: ../../../arch_2013/files_2013/M43/raw_studio/800/800_P1110225_2011-07-02.jpg
    :align: center
+   :width: 640px
 
    (RAW轉JPEG)
 
