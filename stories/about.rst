@@ -1,6 +1,6 @@
 .. title: 關於這裡 (v0.1)
 .. slug: about
-.. date: 20130705 13:29:36
+.. date: 20130705 13:30:23
 .. tags: mathjax, about
 .. link: 
 .. description: Created at 20130409 23:37:03
@@ -42,7 +42,7 @@ ______________________________
 
 .. _自由書寫: http://shiuhli.pixnet.net/blog/post/14436677-自由書寫─紙上的奔跑
 
-.. _Facebook社群: https://www.facebook.com/pages/M43%E8%A6%AA%E5%AD%90%E8%88%87%E7%94%9F%E6%B4%BB%E6%94%9D%E5%BD%B1/1376430142576595
+.. _「M43親子與生活攝影」Facebook頁面: https://www.facebook.com/pages/M43%E8%A6%AA%E5%AD%90%E8%88%87%E7%94%9F%E6%B4%BB%E6%94%9D%E5%BD%B1/1376430142576595
 
 .. 註腳(Footnote)與引用(Citation)區
 
