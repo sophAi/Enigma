@@ -1,7 +1,7 @@
 .. title: 人生有如一場程式
 .. slug: Programming Life
-.. date: 20130613 14:23:36
-.. tags: 程式, 人生
+.. date: 20130705 10:37:38
+.. tags: draft, 程式人生
 .. link: 
 .. description: Created at 20130417 10:47:12
 

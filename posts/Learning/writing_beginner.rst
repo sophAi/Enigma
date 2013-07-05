@@ -1,6 +1,6 @@
 .. title: 寫作第一步，純文字檔的好處
 .. slug: writing_beginner
-.. date: 20130613 14:34:56
+.. date: 20130705 10:42:06
 .. tags: 自由軟體, 寫作
 .. link:
 .. description: Created at 20130605 12:14:46

@@ -1,7 +1,7 @@
-.. title: 適合陪伴，個性溫柔的中大型犬--Lucy
+.. title: 適合陪伴，個性溫柔的中大型犬―Lucy
 .. slug: lucy
-.. date: 20130705 00:38:55
-.. tags: 狗狗,人生
+.. date: 20130705 10:41:01
+.. tags: 狗狗
 .. link: 
 .. description: Created at 20130524 12:43:42
 
@@ -14,18 +14,18 @@
 *********************************************************************
 
 
-2013/05/24 更新 by OASYS (Xanadu)
+2013/05/24 更新 by 文遠爸 (Xanadu)
 
 沒想到時間過得那麼快，5年過去了，我們有了二個小孩，而Lucy跟我們的照片仍然放在櫃子上，只是稍微褪色了點。她對我們的影響至今仍持續著，這幾年，我們不斷回到原點，檢視著我們人生的目的，不斷地回味著Lucy所教我們的一切，她永遠都是我們家的一份子。
 
-2010/07/27 更新 by Gino
+2010/07/27 更新 by 吉諾 (Gino)
 
 此篇文章用以紀念最乖巧最溫柔的狗狗―Lucy
 
-.. figure:: ../../arch_2013/files_2013/Dogs/lucy/lucy1.jpg
+.. figure:: ../../../arch_2013/files_2013/Dogs/lucy/lucy1.jpg
    :width: 320
    :align: center
-   :target: ../../arch_2013/files_2013/Dogs/lucy/lucy1.jpg
+   :target: ../../../arch_2013/files_2013/Dogs/lucy/lucy1.jpg
 
 Lucy在前年(2008年)1月17日去世了。
 
@@ -44,27 +44,27 @@ ______________________________________________
 我不知道lucy的前半生是怎麼過的，很幸福嗎？很可憐嗎? 我只知道，我看到她的時候當時lucy只有16公斤，右後腳有一深可見骨的傷口，但是流不出血，也因過於瘦弱，長不出肉，傷口附近常常吸引一堆蒼蠅飛來飛去，腳也都不能正常放下走路，腹部兩側都有乳房瘤。且與人的互動是異常的冷漠......不是害怕，是冷漠!
 
 
-.. figure:: ../../arch_2013/files_2013/Dogs/lucy/lucy2.jpg
+.. figure:: ../../../arch_2013/files_2013/Dogs/lucy/lucy2.jpg
    :width: 320
    :align: center
-   :target: ../../arch_2013/files_2013/Dogs/lucy/lucy2.jpg
+   :target: ../../../arch_2013/files_2013/Dogs/lucy/lucy2.jpg
 
 長時間的和lucy相處下來，發現經過時間的洗鍊後，她竟是這麼溫柔，個性恬靜的狗.......
 
 Lucy是史上最溫馴的大型犬,她不會拖著您跑,也不會撲您,更不會亂叫(叫的次數屈指可數，聲音也非常小聲!),只要輕輕呼喚她就會立刻回到您身邊(即使跑遠了也可以叫得回來喔!)個性穩定,服從性高,只是年紀大了,冬天有點怕冷,記得要給他加一塊布墊喔!
 
 
-.. figure:: ../../arch_2013/files_2013/Dogs/lucy/lucy1.jpg
+.. figure:: ../../../arch_2013/files_2013/Dogs/lucy/lucy1.jpg
    :width: 320
    :align: center
-   :target: ../../arch_2013/files_2013/Dogs/lucy/lucy1.jpg
+   :target: ../../../arch_2013/files_2013/Dogs/lucy/lucy1.jpg
 
 Lucy的年紀已經不小了,所吃的苦或許不是我們能想像的,不過她既勇敢又溫柔,撐過了許多大手術,也帶給我們許多鼓舞,撿到她的時候,她全身瘦得讓人覺得可怕, 後腳也被車子撞到露出骨頭了,跛腳的她腹下更垂著兩個拳頭大的乳房瘤….
 
-.. figure:: ../../arch_2013/files_2013/Dogs/lucy/lucy3.jpg
+.. figure:: ../../../arch_2013/files_2013/Dogs/lucy/lucy3.jpg
    :width: 320
    :align: center
-   :target: ../../arch_2013/files_2013/Dogs/lucy/lucy3.jpg
+   :target: ../../../arch_2013/files_2013/Dogs/lucy/lucy3.jpg
 
 (第一次看到lucy，就是這樣瘦的讓人驚訝與心疼)
 
@@ -74,16 +74,16 @@ Lucy的年紀已經不小了,所吃的苦或許不是我們能想像的,不過�
 
 現在的她已經恢復元氣與體力,而她的腳傷,經過調養也好了,現在走路跑步都一切正常了呢!
 
-.. figure:: ../../arch_2013/files_2013/Dogs/lucy/lucy4.jpg
+.. figure:: ../../../arch_2013/files_2013/Dogs/lucy/lucy4.jpg
    :width: 320
    :align: center
-   :target: ../../arch_2013/files_2013/Dogs/lucy/lucy4.jpg
+   :target: ../../../arch_2013/files_2013/Dogs/lucy/lucy4.jpg
 
 
-.. figure:: ../../arch_2013/files_2013/Dogs/lucy/lucy5.jpg
+.. figure:: ../../../arch_2013/files_2013/Dogs/lucy/lucy5.jpg
    :width: 320
    :align: center
-   :target: ../../arch_2013/files_2013/Dogs/lucy/lucy5.jpg
+   :target: ../../../arch_2013/files_2013/Dogs/lucy/lucy5.jpg
 
 Lucy 早年可能是繁殖場的狗，當老了生病了沒價值後，便被丟出任其流浪自生自滅。由於長期的未與人互動與與生俱來的高度穩定性，造就了Lucy不懂覓食不懂乞食 的個性，也才會讓她被我們發現時，瘦的如此嚴重....待在籠子十幾年,注定就是生狗狗生一輩子的她,眼神總是特別卑下,頭總是低低的,好像在默默地控訴 著繁殖場帶給所有狗狗的苦難,照顧一直到一兩個月後,她才漸漸開朗起來,眼神不再冷漠，而漸漸溫柔.....
 
@@ -114,10 +114,10 @@ _______________________________________________
 當您是符合以上條件的好主人,相信溫柔的Lucy所能帶給您的遠超過您的付出
 
 
-.. figure:: ../../arch_2013/files_2013/Dogs/lucy/lucy6.jpg
+.. figure:: ../../../arch_2013/files_2013/Dogs/lucy/lucy6.jpg
    :width: 320
    :align: center
-   :target: ../../arch_2013/files_2013/Dogs/lucy/lucy6.jpg
+   :target: ../../../arch_2013/files_2013/Dogs/lucy/lucy6.jpg
 
 .. </body>
 

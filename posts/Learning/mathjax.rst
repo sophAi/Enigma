@@ -1,7 +1,7 @@
 .. title: 使用MathJax與Latex數學
 .. slug: mathjax
-.. date: 20130613 14:16:56
-.. tags: mathjax
+.. date: 20130705 10:41:33
+.. tags: mathjax,學習
 .. link: 
 .. description: Created at 20130524 13:45:28
 

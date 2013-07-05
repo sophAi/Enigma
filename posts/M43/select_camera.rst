@@ -1,7 +1,7 @@
 .. title: 生活與親子攝影入門須知--器材的選擇 (v0.1)
 .. slug: select_camera
-.. date: 20130613 14:24:01
-.. tags: 生活紀錄
+.. date: 20130705 10:45:29
+.. tags: draft,學習與閱讀
 .. link: 
 .. description: Created at 20130410 15:49:18
 
