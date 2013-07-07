@@ -1,6 +1,6 @@
 .. title: 今日Photo Diary - 2013/05/11
 .. slug: 20130511
-.. date: 20130707 08:43:31
+.. date: 20130707 09:26:28
 .. tags: 生活日記 
 .. link: 
 .. description: Created at 20130707 08:30:14
@@ -18,6 +18,7 @@
 
    Shannon最喜歡把玩具丟到桌子上，然後再爬上去撿回來。因此每一次都要耐著性子把他請下去。
 
+.. TEASER_END
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130511/800/800_02_P1160492_4427685-07.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130511/800/800_02_P1160492_4427685-07.jpg
