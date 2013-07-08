@@ -1,6 +1,6 @@
 .. title: 今日Photo Diary - 2013/05/13
 .. slug: 20130513
-.. date: 20130708 21:59:22
+.. date: 20130708 22:03:37
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130707 08:30:55
@@ -16,6 +16,7 @@
 
    這是兄弟倆第一次玩吹泡泡，兩人非常新奇地追著泡泡跑。
 
+.. TEASER_END
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130513/800/800_02_P1160605_4446298-04.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130513/800/800_02_P1160605_4446298-04.jpg
