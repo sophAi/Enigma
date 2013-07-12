@@ -57,19 +57,19 @@ MathJax.Hub.Config({
     <h1>自動化縮圖與生成文章檔案</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-07-13T00:11:50+08:00">2013-07-13 00:11</time>
+        發表於: <time class="published" datetime="2013-07-13T00:24:31+08:00">2013-07-13 00:24</time>
         
 
         
           |  更多相關文章：
             <a class="tag" href="../../categories/zi-you-de-cheng-shi-ren-sheng.html"><span class="badge badge-info">自由的程式人生</span></a>
 
-    </medium><hr><!-- title: 自動化縮圖與生成文章檔案 --><!-- slug: jpg2rst --><!-- date: 20130713 00:11:50 --><!-- tags: 自由的程式人生 --><!-- link: --><!-- description: Created at 20130712 23:17:53 --><!-- ===================================Metadata↑================================================ --><!-- 記得加tags: 人生省思,流浪動物,生活日記,學習與閱讀,英文,mathjax,自由的程式人生,書寫人生,理財 --><!-- 記得加slug(無副檔名)，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><p>在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:</p>
+    </medium><hr><!-- title: 自動化縮圖與生成文章檔案 --><!-- slug: jpg2rst --><!-- date: 20130713 00:24:31 --><!-- tags: 自由的程式人生 --><!-- link: --><!-- description: Created at 20130712 23:17:53 --><!-- ===================================Metadata↑================================================ --><!-- 記得加tags: 人生省思,流浪動物,生活日記,學習與閱讀,英文,mathjax,自由的程式人生,書寫人生,理財 --><!-- 記得加slug(無副檔名)，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><p>在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:</p>
 <ol class="arabic simple"><li>將滑鼠點擊的次數降到最低。</li>
 <li>跨平台的可能性。</li>
 <li>未來應用的擴充性。</li>
 <li>方便性。</li>
-</ol><p>這裡筆者以python程式進行上述目標的實作，請先去<a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php#iOS">Imagemagick</a> <a class="footnote-reference" href="jpg2rst.html#id2" id="id1">[1]</a>網站下載convert套件並安裝好，確定他可以執行如下的縮圖指令:</p>
+</ol><!-- TEASER_END --><p>這裡筆者以python程式進行上述目標的實作，請先去<a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php#iOS">Imagemagick</a> <a class="footnote-reference" href="jpg2rst.html#id2" id="id1">[1]</a>網站下載convert套件並安裝好，確定他可以執行如下的縮圖指令:</p>
 <pre class="literal-block">
 convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort Resize 800x800 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality 100 縮圖檔名.j    pg
 </pre>
