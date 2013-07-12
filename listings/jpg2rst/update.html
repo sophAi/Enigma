@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="It's a journey toward happiness"><meta name="author" content="文遠爸"><title>2013年July月文章 | ~Enigma~   文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="update"><meta name="author" content="文遠爸"><title>update | ~Enigma~   文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -48,27 +48,20 @@ MathJax.Hub.Config({
 
 <!--Body content-->
 <div class="reveal"><div class="slides">
-    <section><!--Body content--><div class="postbox">
-        <h1>2013年July月文章</h1>
-        <ul class="unstyled"><li><a href="../../posts/Coding/jpg2rst.html">[2013-07-13 00:11] 自動化縮圖與生成文章檔案</a>
-            </li><li><a href="../../posts/M43/resize.html">[2013-07-12 22:36] 感光元件的差異對縮圖的影響</a>
-            </li><li><a href="../../posts/M43/sharpen.html">[2013-07-12 22:17] 探討網路照片的奧秘</a>
-            </li><li><a href="../../posts/Learning/mathjax.html">[2013-07-12 15:19] 使用MathJax與Latex數學</a>
-            </li><li><a href="../../posts/Photo_Diary/20130525.html">[2013-07-12 13:45] 今日Photo Diary - 2013/05/25</a>
-            </li><li><a href="../../posts/Photo_Diary/20130531.html">[2013-07-12 13:18] 今日Photo Diary - 2013/05/31</a>
-            </li><li><a href="../../posts/Learning/writing_beginner.html">[2013-07-10 22:01] 寫作第一步，純文字檔的好處</a>
-            </li><li><a href="../../posts/Photo_Diary/20130524.html">[2013-07-10 19:19] 今日Photo Diary - 2013/05/24</a>
-            </li><li><a href="../../posts/Photo_Diary/20130518.html">[2013-07-09 23:54] 今日Photo Diary - 2013/05/18</a>
-            </li><li><a href="../../posts/Photo_Diary/20130513.html">[2013-07-08 22:21] 今日Photo Diary - 2013/05/13</a>
-            </li><li><a href="../../posts/Photo_Diary/20130512.html">[2013-07-07 11:00] NL10與14-45mm隨手寫真 - 2013/05/12</a>
-            </li><li><a href="../../posts/Photo_Diary/20130511.html">[2013-07-07 10:26] 今日Photo Diary - 2013/05/11</a>
-            </li><li><a href="../../posts/Photo_Diary/20130526.html">[2013-07-05 11:26] 好奇的造橋工程 - 2013/05/26</a>
-            </li><li><a href="../../posts/Learning/convolution.html">[2013-07-05 10:41] Convolution(摺積)的物理意義</a>
-            </li><li><a href="../../posts/Dogs/lucy.html">[2013-07-05 10:41] 適合陪伴，個性溫柔的中大型犬―Lucy</a>
-        </li></ul></div>
-        <!--End of body content-->
-
-    </section></div></div>
+    <section><ul class="breadcrumb"><li><a href="../">/listings</a>
+        </li><li><a href=".">/jpg2rst</a>
+        </li><li><a href="#">/update.html</a>
+</li></ul><ul class="unstyled"></ul><table class="codetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="update.html#setuppy-1">1</a>
+<a href="update.html#setuppy-2">2</a>
+<a href="update.html#setuppy-3">3</a>
+<a href="update.html#setuppy-4">4</a>
+<a href="update.html#setuppy-5">5</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a>#!/bin/bash
+<a name="setuppy-2"></a>python setup.py bdist_egg
+<a name="setuppy-3"></a>sudo easy_install dist/*
+<a name="setuppy-4"></a>rm -rf build/
+<a name="setuppy-5"></a>rm -rf dist/
+</pre></div>
+</td></tr></table></section></div></div>
 <!--End of body content-->
 
 

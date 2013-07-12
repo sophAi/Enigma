@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="It's a journey toward happiness"><meta name="author" content="文遠爸"><title>2013年July月文章 | ~Enigma~   文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="setup.py"><meta name="author" content="文遠爸"><title>setup.py | ~Enigma~   文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -48,27 +48,54 @@ MathJax.Hub.Config({
 
 <!--Body content-->
 <div class="reveal"><div class="slides">
-    <section><!--Body content--><div class="postbox">
-        <h1>2013年July月文章</h1>
-        <ul class="unstyled"><li><a href="../../posts/Coding/jpg2rst.html">[2013-07-13 00:11] 自動化縮圖與生成文章檔案</a>
-            </li><li><a href="../../posts/M43/resize.html">[2013-07-12 22:36] 感光元件的差異對縮圖的影響</a>
-            </li><li><a href="../../posts/M43/sharpen.html">[2013-07-12 22:17] 探討網路照片的奧秘</a>
-            </li><li><a href="../../posts/Learning/mathjax.html">[2013-07-12 15:19] 使用MathJax與Latex數學</a>
-            </li><li><a href="../../posts/Photo_Diary/20130525.html">[2013-07-12 13:45] 今日Photo Diary - 2013/05/25</a>
-            </li><li><a href="../../posts/Photo_Diary/20130531.html">[2013-07-12 13:18] 今日Photo Diary - 2013/05/31</a>
-            </li><li><a href="../../posts/Learning/writing_beginner.html">[2013-07-10 22:01] 寫作第一步，純文字檔的好處</a>
-            </li><li><a href="../../posts/Photo_Diary/20130524.html">[2013-07-10 19:19] 今日Photo Diary - 2013/05/24</a>
-            </li><li><a href="../../posts/Photo_Diary/20130518.html">[2013-07-09 23:54] 今日Photo Diary - 2013/05/18</a>
-            </li><li><a href="../../posts/Photo_Diary/20130513.html">[2013-07-08 22:21] 今日Photo Diary - 2013/05/13</a>
-            </li><li><a href="../../posts/Photo_Diary/20130512.html">[2013-07-07 11:00] NL10與14-45mm隨手寫真 - 2013/05/12</a>
-            </li><li><a href="../../posts/Photo_Diary/20130511.html">[2013-07-07 10:26] 今日Photo Diary - 2013/05/11</a>
-            </li><li><a href="../../posts/Photo_Diary/20130526.html">[2013-07-05 11:26] 好奇的造橋工程 - 2013/05/26</a>
-            </li><li><a href="../../posts/Learning/convolution.html">[2013-07-05 10:41] Convolution(摺積)的物理意義</a>
-            </li><li><a href="../../posts/Dogs/lucy.html">[2013-07-05 10:41] 適合陪伴，個性溫柔的中大型犬―Lucy</a>
-        </li></ul></div>
-        <!--End of body content-->
-
-    </section></div></div>
+    <section><ul class="breadcrumb"><li><a href="../">/listings</a>
+        </li><li><a href=".">/jpg2rst</a>
+        </li><li><a href="#">/setup.py.html</a>
+</li></ul><ul class="unstyled"></ul><table class="codetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="setup.py.html#setuppy-1"> 1</a>
+<a href="setup.py.html#setuppy-2"> 2</a>
+<a href="setup.py.html#setuppy-3"> 3</a>
+<a href="setup.py.html#setuppy-4"> 4</a>
+<a href="setup.py.html#setuppy-5"> 5</a>
+<a href="setup.py.html#setuppy-6"> 6</a>
+<a href="setup.py.html#setuppy-7"> 7</a>
+<a href="setup.py.html#setuppy-8"> 8</a>
+<a href="setup.py.html#setuppy-9"> 9</a>
+<a href="setup.py.html#setuppy-10">10</a>
+<a href="setup.py.html#setuppy-11">11</a>
+<a href="setup.py.html#setuppy-12">12</a>
+<a href="setup.py.html#setuppy-13">13</a>
+<a href="setup.py.html#setuppy-14">14</a>
+<a href="setup.py.html#setuppy-15">15</a>
+<a href="setup.py.html#setuppy-16">16</a>
+<a href="setup.py.html#setuppy-17">17</a>
+<a href="setup.py.html#setuppy-18">18</a>
+<a href="setup.py.html#setuppy-19">19</a>
+<a href="setup.py.html#setuppy-20">20</a>
+<a href="setup.py.html#setuppy-21">21</a>
+<a href="setup.py.html#setuppy-22">22</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
+<a name="setuppy-2"></a><span class="c"># =======================================================================</span>
+<a name="setuppy-3"></a><span class="c"># File Name     : setup.py</span>
+<a name="setuppy-4"></a><span class="c"># Creation Time : 20130708 10:15:21</span>
+<a name="setuppy-5"></a><span class="c"># Last Modified : 20130712 23:33:04</span>
+<a name="setuppy-6"></a><span class="c"># =======================================================================</span>
+<a name="setuppy-7"></a><span class="c"># Copyright (c),2012-, Po-Jen Hsu. Contact: clusterga@gmail.com</span>
+<a name="setuppy-8"></a><span class="c"># This software is distributed under the GNU General Public License.</span>
+<a name="setuppy-9"></a><span class="c"># See the README file in the top-level directory.</span>
+<a name="setuppy-10"></a><span class="c"># =======================================================================</span>
+<a name="setuppy-11"></a><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
+<a name="setuppy-12"></a><span class="n">setup</span><span class="p">(</span>
+<a name="setuppy-13"></a>    <span class="n">name</span> <span class="o">=</span> <span class="s">'jpg2rst'</span><span class="p">,</span>
+<a name="setuppy-14"></a>    <span class="n">version</span> <span class="o">=</span> <span class="s">'0.1'</span><span class="p">,</span>
+<a name="setuppy-15"></a>    <span class="n">author</span> <span class="o">=</span> <span class="s">'Po-Jen Hsu'</span><span class="p">,</span>
+<a name="setuppy-16"></a>    <span class="n">author_email</span> <span class="o">=</span> <span class="s">'clusterga@gmail.com'</span><span class="p">,</span>
+<a name="setuppy-17"></a>    <span class="n">description</span> <span class="o">=</span> <span class="s">'Tools for Restructured Text Documentation'</span><span class="p">,</span>
+<a name="setuppy-18"></a>    <span class="n">license</span><span class="o">=</span><span class="s">'GPL'</span><span class="p">,</span>
+<a name="setuppy-19"></a>    <span class="n">py_modules</span> <span class="o">=</span> <span class="p">[</span><span class="s">'jpg2rst'</span><span class="p">,</span> <span class="s">'fig_tools'</span><span class="p">,</span> <span class="s">'file_tools'</span><span class="p">,</span> <span class="s">'rst_tools'</span><span class="p">],</span>
+<a name="setuppy-20"></a>    <span class="n">zip_safe</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+<a name="setuppy-21"></a><span class="c">#    packages = find_packages(),</span>
+<a name="setuppy-22"></a>   <span class="p">)</span>
+</pre></div>
+</td></tr></table></section></div></div>
 <!--End of body content-->
 
 

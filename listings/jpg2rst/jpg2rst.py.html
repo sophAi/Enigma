@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="jpg2rst.py"><meta name="author" content="文遠爸"><title>jpg2rst.py | ~Enigma~   文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'center', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--></head><body><p>
+        http://sophAi.github.io/Enigma/rss.xml
+            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+    document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script><!--[if lt IE 9]>
+    <script src="/assets/reveal/lib/js/html5shiv.js"></script>
+    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></p>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../../">
+            ~Enigma~   文以載道，寧靜以致遠
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
+            </li><li><a href="../../categories/index.html">文章分類</a>
+            </li><li><a href="../../stories/about.html">關於這裡</a>
+
+                </li></ul><!-- Custom search --><form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="sophAi.github.io/Enigma"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;"><!-- End of custom search --><ul class="nav pull-right"></ul></form></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+
+<!--Body content-->
+<div class="reveal"><div class="slides">
+    <section><ul class="breadcrumb"><li><a href="../">/listings</a>
+        </li><li><a href=".">/jpg2rst</a>
+        </li><li><a href="#">/jpg2rst.py.html</a>
+</li></ul><ul class="unstyled"></ul><table class="codetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="jpg2rst.py.html#setuppy-1"> 1</a>
+<a href="jpg2rst.py.html#setuppy-2"> 2</a>
+<a href="jpg2rst.py.html#setuppy-3"> 3</a>
+<a href="jpg2rst.py.html#setuppy-4"> 4</a>
+<a href="jpg2rst.py.html#setuppy-5"> 5</a>
+<a href="jpg2rst.py.html#setuppy-6"> 6</a>
+<a href="jpg2rst.py.html#setuppy-7"> 7</a>
+<a href="jpg2rst.py.html#setuppy-8"> 8</a>
+<a href="jpg2rst.py.html#setuppy-9"> 9</a>
+<a href="jpg2rst.py.html#setuppy-10">10</a>
+<a href="jpg2rst.py.html#setuppy-11">11</a>
+<a href="jpg2rst.py.html#setuppy-12">12</a>
+<a href="jpg2rst.py.html#setuppy-13">13</a>
+<a href="jpg2rst.py.html#setuppy-14">14</a>
+<a href="jpg2rst.py.html#setuppy-15">15</a>
+<a href="jpg2rst.py.html#setuppy-16">16</a>
+<a href="jpg2rst.py.html#setuppy-17">17</a>
+<a href="jpg2rst.py.html#setuppy-18">18</a>
+<a href="jpg2rst.py.html#setuppy-19">19</a>
+<a href="jpg2rst.py.html#setuppy-20">20</a>
+<a href="jpg2rst.py.html#setuppy-21">21</a>
+<a href="jpg2rst.py.html#setuppy-22">22</a>
+<a href="jpg2rst.py.html#setuppy-23">23</a>
+<a href="jpg2rst.py.html#setuppy-24">24</a>
+<a href="jpg2rst.py.html#setuppy-25">25</a>
+<a href="jpg2rst.py.html#setuppy-26">26</a>
+<a href="jpg2rst.py.html#setuppy-27">27</a>
+<a href="jpg2rst.py.html#setuppy-28">28</a>
+<a href="jpg2rst.py.html#setuppy-29">29</a>
+<a href="jpg2rst.py.html#setuppy-30">30</a>
+<a href="jpg2rst.py.html#setuppy-31">31</a>
+<a href="jpg2rst.py.html#setuppy-32">32</a>
+<a href="jpg2rst.py.html#setuppy-33">33</a>
+<a href="jpg2rst.py.html#setuppy-34">34</a>
+<a href="jpg2rst.py.html#setuppy-35">35</a>
+<a href="jpg2rst.py.html#setuppy-36">36</a>
+<a href="jpg2rst.py.html#setuppy-37">37</a>
+<a href="jpg2rst.py.html#setuppy-38">38</a>
+<a href="jpg2rst.py.html#setuppy-39">39</a>
+<a href="jpg2rst.py.html#setuppy-40">40</a>
+<a href="jpg2rst.py.html#setuppy-41">41</a>
+<a href="jpg2rst.py.html#setuppy-42">42</a>
+<a href="jpg2rst.py.html#setuppy-43">43</a>
+<a href="jpg2rst.py.html#setuppy-44">44</a>
+<a href="jpg2rst.py.html#setuppy-45">45</a>
+<a href="jpg2rst.py.html#setuppy-46">46</a>
+<a href="jpg2rst.py.html#setuppy-47">47</a>
+<a href="jpg2rst.py.html#setuppy-48">48</a>
+<a href="jpg2rst.py.html#setuppy-49">49</a>
+<a href="jpg2rst.py.html#setuppy-50">50</a>
+<a href="jpg2rst.py.html#setuppy-51">51</a>
+<a href="jpg2rst.py.html#setuppy-52">52</a>
+<a href="jpg2rst.py.html#setuppy-53">53</a>
+<a href="jpg2rst.py.html#setuppy-54">54</a>
+<a href="jpg2rst.py.html#setuppy-55">55</a>
+<a href="jpg2rst.py.html#setuppy-56">56</a>
+<a href="jpg2rst.py.html#setuppy-57">57</a>
+<a href="jpg2rst.py.html#setuppy-58">58</a>
+<a href="jpg2rst.py.html#setuppy-59">59</a>
+<a href="jpg2rst.py.html#setuppy-60">60</a>
+<a href="jpg2rst.py.html#setuppy-61">61</a>
+<a href="jpg2rst.py.html#setuppy-62">62</a>
+<a href="jpg2rst.py.html#setuppy-63">63</a>
+<a href="jpg2rst.py.html#setuppy-64">64</a>
+<a href="jpg2rst.py.html#setuppy-65">65</a>
+<a href="jpg2rst.py.html#setuppy-66">66</a>
+<a href="jpg2rst.py.html#setuppy-67">67</a>
+<a href="jpg2rst.py.html#setuppy-68">68</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
+<a name="setuppy-2"></a><span class="c"># =======================================================================</span>
+<a name="setuppy-3"></a><span class="c"># File Name     : jpg2rst.py</span>
+<a name="setuppy-4"></a><span class="c"># Creation Time : 20130629 23:45:54</span>
+<a name="setuppy-5"></a><span class="c"># Last Modified : 20130711 12:03:11</span>
+<a name="setuppy-6"></a><span class="c"># =======================================================================</span>
+<a name="setuppy-7"></a><span class="c"># Copyright (c),2012-, Po-Jen Hsu. Contact: clusterga@gmail.com</span>
+<a name="setuppy-8"></a><span class="c"># This software is distributed under the GNU General Public License.</span>
+<a name="setuppy-9"></a><span class="c"># See the README file in the top-level directory.</span>
+<a name="setuppy-10"></a><span class="c"># =======================================================================</span>
+<a name="setuppy-11"></a>
+<a name="setuppy-12"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<a name="setuppy-13"></a>    <span class="sd">''' Transfer jpg files to resized files and write the figure codes to a rst file'''</span>
+<a name="setuppy-14"></a>    <span class="kn">import</span> <span class="nn">file_tools</span> <span class="kn">as</span> <span class="nn">file_mod</span>
+<a name="setuppy-15"></a>    <span class="kn">import</span> <span class="nn">rst_tools</span> <span class="kn">as</span> <span class="nn">rst_mod</span>
+<a name="setuppy-16"></a>    <span class="kn">import</span> <span class="nn">fig_tools</span> <span class="kn">as</span> <span class="nn">fig_mod</span>
+<a name="setuppy-17"></a>    <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">subprocess</span>
+<a name="setuppy-18"></a>
+<a name="setuppy-19"></a><span class="c">#   Determine the fig_path for figures within inner subdirectory</span>
+<a name="setuppy-20"></a>
+<a name="setuppy-21"></a>    <span class="n">root_dir</span> <span class="o">=</span> <span class="s">'arch_2013'</span>
+<a name="setuppy-22"></a>
+<a name="setuppy-23"></a>    <span class="n">file_dir</span> <span class="o">=</span> <span class="s">'files'</span>
+<a name="setuppy-24"></a>
+<a name="setuppy-25"></a>    <span class="n">sub_dir_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()[</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">file_dir</span><span class="p">)</span><span class="o">+</span><span class="nb">len</span><span class="p">(</span><span class="n">file_dir</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">'/'</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+<a name="setuppy-26"></a>
+<a name="setuppy-27"></a>    <span class="n">sub_dir_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sub_dir_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">))</span>
+<a name="setuppy-28"></a>
+<a name="setuppy-29"></a>    <span class="n">fig_path</span> <span class="o">=</span> <span class="n">sub_dir_num</span><span class="o">*</span><span class="s">'../'</span><span class="o">+</span><span class="n">root_dir</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span><span class="o">+</span><span class="s">'/'</span><span class="o">+</span><span class="n">sub_dir_path</span>
+<a name="setuppy-30"></a>
+<a name="setuppy-31"></a>    <span class="n">resolution_opt</span><span class="o">=</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">"Please input the maximal resolution of height and width (ex: 640, or none to skip resize procedure):</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<a name="setuppy-32"></a>
+<a name="setuppy-33"></a>    <span class="n">recursive_opt</span> <span class="o">=</span> <span class="s">'n'</span>
+<a name="setuppy-34"></a>    <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s">'.'</span><span class="p">):</span>
+<a name="setuppy-35"></a>        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="ow">and</span> <span class="n">file_name</span> <span class="o">!=</span> <span class="n">resolution_opt</span><span class="p">:</span> <span class="c"># Avoid duplicate resized figures</span>
+<a name="setuppy-36"></a>            <span class="n">recursive_opt</span><span class="o">=</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">"Would you like to apply to all the subdirectories (y/n)?</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<a name="setuppy-37"></a>            <span class="k">break</span>
+<a name="setuppy-38"></a>
+<a name="setuppy-39"></a>
+<a name="setuppy-40"></a>    <span class="n">fig_path_opt</span><span class="o">=</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">"Use the default path: "</span><span class="o">+</span><span class="n">fig_path</span><span class="o">+</span><span class="s">" (y/n)?</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<a name="setuppy-41"></a>
+<a name="setuppy-42"></a>    <span class="k">if</span> <span class="n">fig_path_opt</span> <span class="o">==</span> <span class="s">'n'</span><span class="p">:</span>
+<a name="setuppy-43"></a>        <span class="n">fig_path</span><span class="o">=</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">"Please input the path of figures (ex: ../gallaries/):</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<a name="setuppy-44"></a>
+<a name="setuppy-45"></a>
+<a name="setuppy-46"></a>    <span class="k">if</span> <span class="n">fig_path</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s">'/'</span><span class="p">:</span>
+<a name="setuppy-47"></a>      <span class="n">fig_path</span> <span class="o">=</span> <span class="s">""</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">fig_path</span><span class="p">,</span><span class="s">'/'</span><span class="p">])</span>
+<a name="setuppy-48"></a>
+<a name="setuppy-49"></a>    <span class="n">file_list</span><span class="o">=</span><span class="n">file_mod</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">keyword</span><span class="o">=</span><span class="s">'*.jpg'</span><span class="p">,</span><span class="n">recursive</span><span class="o">=</span><span class="n">recursive_opt</span><span class="p">)</span>
+<a name="setuppy-50"></a>
+<a name="setuppy-51"></a><span class="c">#    fig_mod.log(log_file='fig_list.log',jpg_list=file_list)</span>
+<a name="setuppy-52"></a><span class="c">#    print(file_list)</span>
+<a name="setuppy-53"></a>
+<a name="setuppy-54"></a>    <span class="n">rst_jpg_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<a name="setuppy-55"></a>    <span class="k">if</span> <span class="n">resolution_opt</span> <span class="o">==</span> <span class="s">'none'</span><span class="p">:</span>
+<a name="setuppy-56"></a>        <span class="k">for</span> <span class="n">jpg_file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+<a name="setuppy-57"></a>            <span class="n">rst_jpg_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fig_path</span><span class="o">+</span><span class="n">jpg_file_name</span><span class="p">)</span>
+<a name="setuppy-58"></a>
+<a name="setuppy-59"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="setuppy-60"></a>        <span class="n">resize_jpg_list</span><span class="o">=</span><span class="n">fig_mod</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="n">resolution_opt</span><span class="p">,</span><span class="n">jpg_list</span><span class="o">=</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-61"></a>        <span class="k">for</span> <span class="n">jpg_file_name</span> <span class="ow">in</span> <span class="n">resize_jpg_list</span><span class="p">:</span>
+<a name="setuppy-62"></a>            <span class="n">rst_jpg_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fig_path</span><span class="o">+</span><span class="n">jpg_file_name</span><span class="p">)</span>
+<a name="setuppy-63"></a>
+<a name="setuppy-64"></a>
+<a name="setuppy-65"></a>    <span class="n">rst_file</span><span class="o">=</span><span class="n">rst_mod</span><span class="o">.</span><span class="n">add_fig</span><span class="p">(</span><span class="n">fig_list</span><span class="o">=</span><span class="n">rst_jpg_list</span><span class="p">)</span>
+<a name="setuppy-66"></a>
+<a name="setuppy-67"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<a name="setuppy-68"></a>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></section></div></div>
+<!--End of body content-->
+
+
+    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+    // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    controls: false,
+    progress: false,
+    history: false,
+    keyboard: false,
+    rollingLinks: false,
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/linear/none
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
+    ]
+    });
+    </script><script>
+    Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.scrollTo(0,0);
+    MathJax.Hub.Rerender(event.currentSlide);
+    });
+    </script><div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <div class="footerbox">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  Contents © 2013 <a href="https://www.facebook.com/M43Happiness">文遠爸</a> with <a href="http://nikola.ralsina.com.ar">Nikola</a> - It is a journey toward happiness.  <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"></a> <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml">訂閱RSS</a>  <a href="http://feeds.feedburner.com/github/NODC"><img src="http://feeds.feedburner.com/~fc/github/NODC?bg=FFFFFF&amp;fg=444444&amp;anim=1" height="26" width="88" style="border:0" alt=""></a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style" style="bottom:45px;right:0px;left:30px">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul></div>
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>

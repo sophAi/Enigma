@@ -51,7 +51,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/2013/07/index.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -66,7 +66,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/</loc>
-  <lastmod>2013-07-10</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -76,17 +76,17 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/gou-gou.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/index.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/mathjax.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -106,22 +106,22 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/sheng-huo-ri-ji.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/xie-zuo.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/xue-xi-yu-yue-du.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/xue-xi.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -130,8 +130,13 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://sophAi.github.com/categories/zi-you-de-cheng-shi-ren-sheng.html</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://sophAi.github.com/categories/zi-you-ruan-ti.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -146,22 +151,67 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/index-1.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/index.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/listings/</loc>
-  <lastmod>2013-05-25</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/listings/index.html</loc>
   <lastmod>2013-06-06</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/listings/jpg2rst/</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/listings/jpg2rst/fig_tools.py.html</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/listings/jpg2rst/file_tools.py.html</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/listings/jpg2rst/index.html</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/listings/jpg2rst/jpg2rst.py.html</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/listings/jpg2rst/rst_tools.py.html</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/listings/jpg2rst/setup.py.html</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/listings/jpg2rst/update.html</loc>
+  <lastmod>2013-07-13</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/posts/Coding/jpg2rst.html</loc>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -186,7 +236,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/posts/M43/resize.html</loc>
-  <lastmod>2013-07-12</lastmod>
+  <lastmod>2013-07-13</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
