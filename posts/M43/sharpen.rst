@@ -1,6 +1,6 @@
 .. title: 探討網路照片的奧秘
 .. slug: sharpen
-.. date: 20130712 15:53:32
+.. date: 20130712 22:17:30
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130620 20:38:34
@@ -17,6 +17,8 @@
    :align: center
 
    原始圖檔縮小至640px，上傳至github。
+
+.. TEASER_END
 
 .. figure:: https://lh4.googleusercontent.com/-P554w0SP0GE/Ud-TC2G5TSI/AAAAAAAA-0g/8EPfB0i7z24/s640/P1370103_4429113-08.jpg
    :target: https://lh4.googleusercontent.com/-P554w0SP0GE/Ud-TC2G5TSI/AAAAAAAA-0g/8EPfB0i7z24/s640/P1370103_4429113-08.jpg
@@ -100,8 +102,7 @@ imagemagick的參數如下::
 看到這裡，我們對網路上所廣為流傳的許多資訊應該會更有概念，例如:
 
 #. 為什麼非縮圖不可?
-#. 1:1靜態檢視照片的必要性?
-#. 為什麼1:1檢視影片非常重要?現今主流螢幕的解析度?
+#. 1:1檢視靜態照片與1:1檢視動態影片，何者才有必要性?現今主流螢幕的解析度?
 #. 相機所提供的高畫素，目的為何?
 #. 鏡頭的銳利度(MTF-50)，片幅的大小(135, APS, 4/3,...)，感光元件(Bayer, Foveon X3)的種類等差異，在縮圖的情況下是否還能夠呈現?
 #. 數位相機的總畫素平均遠高於Full HD(1080p)的解析度，因此錄影的影像品質會不會受到縮圖(down sample)方式極大的影響?

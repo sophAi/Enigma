@@ -1,224 +1,135 @@
-.. title: 縮圖下銳利度的差別？
-.. slug: resize 
-.. date: 20130710 10:29:53
-.. tags: draft,學習與閱讀
+.. title: 感光元件的差異對縮圖的影響
+.. slug: resize
+.. date: 20130712 22:17:17
+.. tags: 學習與閱讀
 .. link: 
-.. description: Created at 20130709 21:33:52
+.. description: Created at 20130712 16:37:44
 .. ===================================Metadata↑================================================
 .. 記得加tags: 人生省思,流浪動物,生活日記,學習與閱讀,英文,mathjax,自由的程式人生,書寫人生,理財
 .. 記得加slug(無副檔名)，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。
 .. ===================================文章起始↓================================================
 .. <body>
 
-承蒙Mobile01網友Happyspirit的協助，我得以取得三台相機的測試照片，其中一台，是使用著名的FoveonX3感光元件的Sigma DP2 Merrill(DP2M)，另外一台則是Panasonic GH2，最後則是智慧型手機HTC New One，之所以會把這三台完全無法搭在一起的相機放在一起，主要是想要釐清一個問題―縮圖下銳利度的差距能降低到多少呢?
+感謝Happyspirit兄二話不說大力相助，提供這三張測試照片，分別是採用\ `Foveon X3`_\ 的Sigma DP2 Merrill (DP2M)\ [#]_\ ，採用一般常見的\ `Bayer`_ [#]_\ 排列\ `live MOS`_ [#]_\ 的Panasonic GH2搭配20mm F1.7餅乾鏡，以及具有\ `Ultra Pixel`_\ 感光元件的智慧型手機HTC New One，這三台性格迥異的相機正好讓小弟實驗縮圖情況下不同感光元件所呈現的差異，由於每台相機的自動白平衡有些許差異，使用的鏡頭也不同，因此我們將重點放在畫面的中心部位的清晰度，也就是理論上最能夠呈現照片解析力的地方，以下是這三張圖片，經過一般的銳利化過程，也就是我們先前所使用Flickr銳化參數所得到的成品。
 
-以影像的精細度來說，在Foveon X3感光元件的加持下，DP2M無疑具有最大的優勢(3:2, 4704x3136)，而GH2則屬於可換鏡頭相機中解析度中下的(測試照為16:9, 4976x2800)，至於HTC New One的拍攝結果(16:9, 2688x1520)，則應該貼近大多數的智慧型手機，如果說，以DP2M為一個目標，透過縮圖與銳化的處理，而能達到接近的銳利感，
-
-由於這三台照相機的解析度，與鏡頭的焦距，最大開放光圈都不同，因此比較起來會稍微麻煩點，同時要如何比較更是一大問號，這裡我們儘量把變因降到最低，只裁切中央最清晰的部份，並試著將三張照片的白平衡調整至一致，然後同時縮圖到長寬最大800px，這樣的步驟，其實跟把照片縮小，然後再分享到網路上相同，我們先來看看原圖直接縮圖到800px的結果，這裡我們使用等同於flickr相簿的一般銳化縮圖參數::
-
--unsharp 1x0.55+1.5+0.002
-
-.. figure:: ../galleries/800/800_01_DP2M.jpg
-   :target: ../galleries/800/800_01_DP2M.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/800_01_DP2M.jpg
+   :target: ../../../arch_2013/files_2013/M43/sharpen/800_01_DP2M.jpg
    :align: center
 
-   DP2M 原圖，一般銳化
+   DP2M測試照，原始圖檔的尺寸為4704x3136(3:2)。
 
+.. TEASER_END
 
-.. figure:: ../galleries/800/800_02_GH2_20mm.jpg
-   :target: ../galleries/800/800_02_GH2_20mm.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/800_02_GH2_20mm.JPG
+   :target: ../../../arch_2013/files_2013/M43/sharpen/800_02_GH2_20mm.JPG
    :align: center
 
-   GH2 原圖，一般銳化
+   GH2測試照，原始圖檔的尺寸為4976x2800(16:9)。
 
-
-.. figure:: ../galleries/800/800_03_new_one.jpg
-   :target: ../galleries/800/800_03_new_one.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/800_03_new_one.jpg
+   :target: ../../../arch_2013/files_2013/M43/sharpen/800_03_new_one.jpg
    :align: center
 
-   New One 原圖，一般銳化
+   HTC New One測試照，原始圖檔為2688x1520(16:9)。
 
 
-接著裁切中央最清晰的部位，儘量消除視角的差距，同樣使用相同的一般銳化參數。
+裁切出中心部位後，我們先來看1:1檢視的部份:
 
-.. figure:: ../galleries/800/800_04_DP2M_crop.jpg
-   :target: ../galleries/800/800_04_DP2M_crop.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/DP2M_1_to_1.png
+   :target: ../../../arch_2013/files_2013/M43/sharpen/DP2M_1_to_1.png
    :align: center
 
-   DP2M 中央裁切，一般銳化
+   DP2M 中央以1:1呈現，未經縮圖與銳化。
 
-
-.. figure:: ../galleries/800/800_05_GH2_20mm_crop.jpg
-   :target: ../galleries/800/800_05_GH2_20mm_crop.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/GH2_1_to_1.png
+   :target: ../../../arch_2013/files_2013/M43/sharpen/GH2_1_to_1.png
    :align: center
 
-   GH2 中央裁切，一般銳化
+   GH2 中央以1:1呈現，未經縮圖與銳化。
 
-
-.. figure:: ../galleries/800/800_06_new_one_crop.jpg
-   :target: ../galleries/800/800_06_new_one_crop.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/New_One_1_to_1.png
+   :target: ../../../arch_2013/files_2013/M43/sharpen/New_One_1_to_1.png
    :align: center
 
-   New One 中央裁切，一般銳化
+   New One 中央以1:1呈現，未經過縮圖與銳化。
 
-我們會發現，在縮圖至800px的情況下，三者的差距其實不明顯，尤其是布料的質感。
+為了方便比較，我將縮圖銳化的中央裁切部位放在一起，圖中所指的一般銳化為先前提到的Flickr銳化標準參數::
 
+    -unsharp 1x0.55+1.5+0.002
 
-.. .. figure:: ../galleries/800/800_07_DP2M_bw.jpg
-..    :target: ../galleries/800/800_07_DP2M_bw.jpg
-..    :align: center
+而加強銳化的參數為::
 
+    -unsharp 1x0.72+1.5+0.002
 
+這裡我們分成兩階段測試，如下圖
 
-
-.. .. figure:: ../galleries/800/800_08_GH2_20mm_bw.jpg
-..    :target: ../galleries/800/800_08_GH2_20mm_bw.jpg
-..    :align: center
-
-
-
-
-.. .. figure:: ../galleries/800/800_09_new_one_bw.jpg
-..    :target: ../galleries/800/800_09_new_one_bw.jpg
-..    :align: center
-
-
-
-.. .. figure:: ../galleries/800/800_07_DP2M_bw.jpg
-..    :target: ../galleries/800/800_07_DP2M_bw.jpg
-..    :align: center
-
-..    DP2M org
-
-.. .. figure:: ../galleries/800/800_08_GH2_20mm_bw_sharpen.jpg
-..    :target: ../galleries/800/800_08_GH2_20mm_bw_sharpen.jpg
-..    :align: center
-
-..    GH2 sharpen
-
-.. .. figure:: ../galleries/800/800_09_new_one_bw_sharpen.jpg
-..    :target: ../galleries/800/800_09_new_one_bw_sharpen.jpg
-..    :align: center
-
-..    New One sharpen
-
-以上的圖檔均使用一般銳化參數(flickr參數)::
-
--unsharp 1x0.55+1.5+0.002
-
-.. figure:: ../galleries/800/800_04_DP2M_crop.jpg
-   :target: ../galleries/800/800_04_DP2M_crop.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/Enhanced_sharpen_crop.png
+   :target: ../../../arch_2013/files_2013/M43/sharpen/Enhanced_sharpen_crop.png
    :align: center
 
-   DP2M 中央裁切，一般銳化
+   先裁切出中央花樣的部份，然後再縮圖銳化至800px
 
-.. figure:: ../galleries/800/800_05_GH2_20mm_crop_sharpen.jpg
-   :target: ../galleries/800/800_05_GH2_20mm_crop_sharpen.jpg
+
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/Enhanced_sharpen_zoom.png
+   :target: ../../../arch_2013/files_2013/M43/sharpen/Enhanced_sharpen_zoom.png
    :align: center
 
-   GH2 中央裁切，加強銳化
+   先將原圖縮圖至800px，然後裁切出中央花樣的部位。
 
-使用參數::
+最後我們將套用加強銳化參數的GH2與New One照片，與一般銳化的DP2M照片做總結。
 
--unsharp 1x0.7+1.5+0.002
 
-.. figure:: ../galleries/800/800_06_new_one_crop_sharpen.jpg
-   :target: ../galleries/800/800_06_new_one_crop_sharpen.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/800_01_DP2M.jpg
+   :target: ../../../arch_2013/files_2013/M43/sharpen/800_01_DP2M.jpg
    :align: center
 
-   New One 中央裁切，加強銳化
+   DP2M測試照，一般銳化，以800px呈現。
 
-使用參數::
-
--unsharp 1x0.7+1.5+0.002
-
-
-最後將一般銳化跟加強銳化放在一起比較:
-
-.. figure:: ../galleries/800/800_05_GH2_20mm_crop.jpg
-   :target: ../galleries/800/800_05_GH2_20mm_crop.jpg
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/800_02_GH2_20mm_sharpen.jpg
+   :target: ../../../arch_2013/files_2013/M43/sharpen/800_02_GH2_20mm_sharpen.jpg
    :align: center
 
-   GH2 中央裁切，一般銳化
-
-.. figure:: ../galleries/800/800_05_GH2_20mm_crop_sharpen.jpg
-   :target: ../galleries/800/800_05_GH2_20mm_crop_sharpen.jpg
-   :align: center
-
-   GH2 中央裁切，加強銳化
-
-.. figure:: ../galleries/800/800_06_new_one_crop.jpg
-   :target: ../galleries/800/800_06_new_one_crop.jpg
-   :align: center
-
-   New One 中央裁切，一般銳化
-
-.. figure:: ../galleries/800/800_06_new_one_crop_sharpen.jpg
-   :target: ../galleries/800/800_06_new_one_crop_sharpen.jpg
-   :align: center
-
-   New One 中央裁切，加強銳化
-
-最後看看銳化後的GH2與New One:
+   GH2測試照，加強銳化，以800px呈現。
 
 
-.. figure:: ../galleries/800/800_01_DP2M.jpg
-   :target: ../galleries/800/800_01_DP2M.jpg
-   :align: center
+.. figure:: ../../../arch_2013/files_2013/M43/sharpen/800_03_new_one_sharpen.jpg
+   :target: ../../../arch_2013/files_2013/M43/sharpen/800_03_new_one_sharpen.jpg
+   :align: center 
 
-   DP2M 原圖，一般銳化
+   New One測試照，加強銳化，以800px呈現。
 
+這些測試雖然不能稱得上定量，不過至少能為以下的問題提供些思考方向:
 
-.. figure:: ../galleries/800/800_02_GH2_20mm_sharpen.jpg
-   :target: ../galleries/800/800_02_GH2_20mm_sharpen.jpg
-   :align: center
+#. 感光元件的差異，在縮圖下是否可以分辨得出來?
+#. 縮圖銳化的效果，有沒有可能遠大於鏡頭與感光元件，以及片幅的差別?
+#. 為什麼要縮圖?
+#. 是否有不後製的數位照片存在?
 
-   GH2 原圖，加強銳化
-
-
-.. figure:: ../galleries/800/800_03_new_one_sharpen.jpg
-   :target: ../galleries/800/800_03_new_one_sharpen.jpg
-   :align: center
-
-   New One 原圖，加強銳化
-
-
-以影像的精細度來說，在Foveon X3感光元件的加持下，DP2M無疑具有最大的優勢(3:2, 4704x3136)，而GH2則屬於可換鏡頭相機中解析度中下的(測試照為16:9, 4976x2800)，至於HTC New One的拍攝結果(16:9, 2688x1520)，則應該貼近大多數的智慧型手機，如果說，以DP2M為一個目標，透過縮圖與銳化的處理，而能達到接近的銳利感，
-
-有趣的是DP2M的解析度其實與GH2很接近(如果GH2採用3:2則解析度為4768x3184)，理論上兩者能提供的影像細節是很相當的，差別可能在DP2M在處理紋理上，由於沒有低通濾鏡，理論上會比較有優勢
-
-
-.. figure:: ../galleries/800/DP2M_zoom.jpg
-   :target: ../galleries/800/DP2M_zoom.jpg
-   :align: center
-
-   DP2M 原圖，1:1裁切
-
-
-.. figure:: ../galleries/800/GH2_zoom.jpg
-   :target: ../galleries/800/GH2_zoom.jpg
-   :align: center
-
-   GH2 原圖，1:1裁切
-
-
-.. figure:: ../galleries/800/New_One_zoom.jpg
-   :target: ../galleries/800/New_One_zoom.jpg
-   :align: center
-
-   New One 原圖，1:1裁切
-
-如果以「手機照可以越級挑戰高階相機」這個結論來看，其實還言之過早，我們也可以觀察到，在色階的呈現上，手機損失的部位較多，因此以編輯照片的寬容度來說，仍是較高階的相機較有彈性，但總體來說，一張照片的畫質，其實感光元件只能提供20%的助力，光是縮圖這部份，就會產生極大的不確定性喔!
+最後我們仍要提醒的是，筆者並不是「頂級器材無用論」的信奉者，例如這個實驗中，我們可以發現，即使清晰度藉由銳化過程達到相似的等級，部份照片在高光以及暗部的細節其實是喪失很多，並不利於進一步的後製與還原影像資訊，筆者認為對於高階器材正確的認知，或許不是在於畫質的保證，而是「更高的後製寬容度」，這也是目前主流觀念裡經常產生誤解的地方―不管我們使用了多少位元的AD轉換，使用了多高的位元紀錄色階，使用多銳利的鏡頭與多精細的感光元件，最後的成品總是會遇到必然的限制，就是縮圖與降低位元(動態範圍)，有如湖泊有大有小，但是他們最終都只有一樣大小的出水口，因此不是所有資訊都得以保留，甚至我們可以說，愈豐富的原始Raw資料，在轉換成JPG並縮至可以觀看的照片尺寸的過程中，損失的資訊量其實是愈大的。以GH2或是DP2M將近1600萬畫素的JPG照片，若以300dpi輸出，其實能印刷至A3尺寸，遠大於正常照片所需的解析度，在我們縮圖至能夠正常觀看的大小時，其實捨棄了將近80~90%\ `[#]_`\ 以上的畫素資訊，就這點就足以讓人重新思考所謂的畫質在數位攝影裡所代表的意義。
 
 .. </body>
 .. <url>
 
+.. _Foveon X3: http://en.wikipedia.org/wiki/Foveon_X3
 
+.. _Bayer: http://en.wikipedia.org/wiki/Bayer_filter
+
+.. _live Mos: http://en.wikipedia.org/wiki/Live_MOS
+
+.. _Ultra Pixel: http://en.wikipedia.org/wiki/Ultra_Pixel_Technology
 
 .. </url>
 .. <footnote>
 
+.. [#] http://en.wikipedia.org/wiki/Foveon_X3
 
+.. [#] http://en.wikipedia.org/wiki/Bayer_filter
+
+.. [#] http://en.wikipedia.org/wiki/Live_MOS
+
+.. [#] http://en.wikipedia.org/wiki/Ultra_Pixel_Technology
+
+.. [#] 以主流寬螢幕1920x1080的解析度(16:9)，約為207萬像素，因此1600萬像素(4:3或3:2比例)縮圖至螢幕可以顯示的最大範圍，將低於207萬畫素，也就是捨棄掉將近87%以上的畫素，更不用說一般在網路相簿分享的照片，是遠小於螢幕最大可顯示的範圍。
 
 .. </footnote>
 .. <citation>
