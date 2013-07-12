@@ -1,6 +1,6 @@
 .. title: 今日Photo Diary - 2013/05/31
 .. slug: 20130531
-.. date: 20130712 13:15:47
+.. date: 20130712 13:18:11
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130712 12:55:26
@@ -42,7 +42,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130531/800/800_05_P1360599_4449622-09.jpg
    :align: center
 
-   一盞燈屹立在黑暗中。
+   猶如一盞明燈無視環繞的黑暗。
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130531/800/800_06_P1360647_4449622-09.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130531/800/800_06_P1360647_4449622-09.jpg
