@@ -51,8 +51,8 @@ MathJax.Hub.Config({
     <section><section><div class="postbox">
         <h1><a href="posts/M43/sharpen.html">探討網路照片的奧秘</a>
         <small>  
-             發表於: <time class="published" datetime="2013-07-12T15:13:23+08:00">2013-07-12 15:13</time></small></h1>
-        <hr><!-- title: 探討網路照片的奧秘 --><!-- slug: sharpen --><!-- date: 20130712 15:13:23 --><!-- tags: 學習與閱讀 --><!-- link: --><!-- description: Created at 20130620 20:38:34 --><!-- ===================================Metadata↑================================================ --><!-- ● 記得加上tags: 人生，狗狗，程式，生活紀錄，英文，閱讀，教養，科學，mathjax --><!-- ● 記得加上slug，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><p>我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:</p>
+             發表於: <time class="published" datetime="2013-07-12T15:16:08+08:00">2013-07-12 15:16</time></small></h1>
+        <hr><!-- title: 探討網路照片的奧秘 --><!-- slug: sharpen --><!-- date: 20130712 15:16:08 --><!-- tags: 學習與閱讀 --><!-- link: --><!-- description: Created at 20130620 20:38:34 --><!-- ===================================Metadata↑================================================ --><!-- ● 記得加上tags: 人生，狗狗，程式，生活紀錄，英文，閱讀，教養，科學，mathjax --><!-- ● 記得加上slug，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><p>我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../arch_2013/file_2013/M43/sharpen/640_P1370103.jpg"><img alt="../../../arch_2013/file_2013/M43/sharpen/640_P1370103.jpg" src="../arch_2013/file_2013/M43/sharpen/640_P1370103.jpg"></a>
 <p class="caption">原始圖檔縮小至640px，上傳至github。</p>
@@ -87,15 +87,13 @@ MathJax.Hub.Config({
 <p class="caption">imagemagick 縮圖至800px並銳化，上傳至github。</p>
 </div>
 <p>imagemagick的參數如下:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 73)</p>
-Literal block expected; none found.</div>
-<p>convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort Resize 800x800 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality 100 縮圖檔名.jpg</p>
+<pre class="literal-block">
+convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort Resize 800x800 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality 100 縮圖檔名.jpg
+</pre>
 <p>縮圖最重要的兩個環節，就是避免鋸齒化以及像素捨去(down sample)所產生的模糊化，這兩者無論是對於靜態影像或是動態影像都是非常重要的，對於去鋸齒化，我們參考<a class="reference external" href="http://www.imagemagick.org/Usage/filter/nicolas/">Nicolas Robidoux</a><a class="footnote-reference" href="posts/M43/sharpen.html#id5" id="id1">[1]</a>教授所建議的參數，使用distort Resize搭配-filter LanczosSharp，LanczosSharp其實是屬於Windowed SincFast演算法，可以用Verbose模式將細部的設定列出，例如在命令列下達:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 77)</p>
-Literal block expected; none found.</div>
-<p>convert null: -filter LanczosSharp -define filter:verbose=1 -resize 2 null: | grep '^#'</p>
+<pre class="literal-block">
+convert null: -filter LanczosSharp -define filter:verbose=1 -resize 2 null: | grep '^#'
+</pre>
 <p>則會顯示:</p>
 <pre class="literal-block">
 # Resize Filter (for graphing)
