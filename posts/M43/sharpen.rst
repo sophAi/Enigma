@@ -1,6 +1,6 @@
 .. title: 探討網路照片的奧秘
 .. slug: sharpen
-.. date: 20130712 15:08:00
+.. date: 20130712 15:09:16
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130620 20:38:34
@@ -39,7 +39,7 @@
    Imagemagick 縮圖至640px並銳化，上傳到github。
 
 
-接著來看800px解析度下的結果
+接著來看800px解析度下的結果:
 
 .. figure:: ../../arch_2013/file_2013/M43/sharpen/800_P1370032.jpg
    :target: ../../arch_2013/file_2013/M43/sharpen/800_P1370032.jpg
@@ -112,13 +112,13 @@ convert null: -filter LanczosSharp -define filter:verbose=1 -resize 2 null: | gr
 .. </body>
 .. <url>
 
-.. Nicolas Robidoux: http://www.imagemagick.org/Usage/filter/nicolas/
+.. _Nicolas Robidoux: http://www.imagemagick.org/Usage/filter/nicolas/
 
-.. Resampling Filters: http://www.imagemagick.org/Usage/filter/#gaussian_other
+.. _Resampling Filters: http://www.imagemagick.org/Usage/filter/#gaussian_other
 
-.. Smart Sharpen: http://gimpguru.org/Tutorials/SmartSharpening2/
+.. _Smart Sharpen: http://gimpguru.org/Tutorials/SmartSharpening2/
 
-.. Eric Jeschke: http://redskiesatnight.com/2005/04/06/sharpening-using-image-magick/
+.. _Eric Jeschke: http://redskiesatnight.com/2005/04/06/sharpening-using-image-magick/
 
 .. </url>
 .. <footnote>
