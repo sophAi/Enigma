@@ -1,6 +1,6 @@
 .. title: 探討網路照片的奧秘
 .. slug: sharpen
-.. date: 20130712 15:09:16
+.. date: 20130712 15:09:41
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130620 20:38:34
@@ -47,7 +47,7 @@
  
    原始圖檔直接縮小至800px，上傳至github。
 
-.. figre:: https://lh5.googleusercontent.com/-Fh9yCjBNUF0/Ud-pSM5JRnI/AAAAAAAA-0s/WSAKPSTyzgY/s800/P1370032_4429113-08.jpg
+.. figure:: https://lh5.googleusercontent.com/-Fh9yCjBNUF0/Ud-pSM5JRnI/AAAAAAAA-0s/WSAKPSTyzgY/s800/P1370032_4429113-08.jpg
    :target: https://lh5.googleusercontent.com/-Fh9yCjBNUF0/Ud-pSM5JRnI/AAAAAAAA-0s/WSAKPSTyzgY/s800/P1370032_4429113-08.jpg
    :align: center
    :width: 800px
