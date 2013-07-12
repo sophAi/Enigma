@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>~Enigma~   文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 12 Jul 2013 15:34:01 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>探討網路照片的奧秘</title><link>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</link><description>&lt;!-- title: 探討網路照片的奧秘 --&gt;
+<rss version="2.0"><channel><title>~Enigma~   文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Fri, 12 Jul 2013 15:34:36 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>使用MathJax與Latex數學</title><link>http://sophAi.github.com/Enigma/posts/Learning/mathjax.html</link><description>&lt;div&gt;&lt;p&gt;MathJax是一個JAVA Script，他能在網頁裡顯示Latex的數學式子，不過使用上有許多要注意的地方。&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/Learning/mathjax.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><category>學習與閱讀</category><guid>http://sophAi.github.com/Enigma/posts/Learning/mathjax.html</guid><pubDate>Fri, 12 Jul 2013 07:19:39 GMT</pubDate></item><item><title>探討網路照片的奧秘</title><link>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</link><description>&lt;!-- title: 探討網路照片的奧秘 --&gt;
 &lt;!-- slug: sharpen --&gt;
 &lt;!-- date: 20130712 15:19:05 --&gt;
 &lt;!-- tags: 學習與閱讀 --&gt;
@@ -113,9 +114,4 @@ convert null: -filter LanczosSharp -define filter:verbose=1 -resize 2 null: | gr
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130511/800/800_01_P1160503_4427685-07.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130511/800/800_01_P1160503_4427685-07.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130511/800/800_01_P1160503_4427685-07.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;Shannon最喜歡把玩具丟到桌子上，然後再爬上去撿回來。因此每一次都要耐著性子把他請下去。&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130511.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130511.html</guid><pubDate>Sun, 07 Jul 2013 02:26:55 GMT</pubDate></item><item><title>好奇的造橋工程 - 2013/05/26</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130526.html</link><description>&lt;div&gt;&lt;p&gt;帶James出去買午餐時，途中橋面正在施工，我跟他停下來目不轉睛地看著怪手在河面上來來往往。&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130526/800/800_00_P1170045_4448673-01.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130526/800/800_00_P1170045_4448673-01.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130526/800/800_00_P1170045_4448673-01.jpg"&gt;&lt;/a&gt;
-&lt;p class="caption"&gt;跟怪手合影，唔，看不是很清楚。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130526.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130526.html</guid><pubDate>Fri, 05 Jul 2013 03:26:19 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130511.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130511.html</guid><pubDate>Sun, 07 Jul 2013 02:26:55 GMT</pubDate></item></channel></rss>
