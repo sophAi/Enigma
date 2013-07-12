@@ -57,14 +57,14 @@ MathJax.Hub.Config({
     <h1>探討網路照片的奧秘</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-07-12T15:19:05+08:00">2013-07-12 15:19</time>
+        發表於: <time class="published" datetime="2013-07-12T15:53:32+08:00">2013-07-12 15:53</time>
         
 
         
           |  更多相關文章：
             <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
 
-    </medium><hr><!-- title: 探討網路照片的奧秘 --><!-- slug: sharpen --><!-- date: 20130712 15:19:05 --><!-- tags: 學習與閱讀 --><!-- link: --><!-- description: Created at 20130620 20:38:34 --><!-- ===================================Metadata↑================================================ --><!-- ● 記得加上tags: 人生，狗狗，程式，生活紀錄，英文，閱讀，教養，科學，mathjax --><!-- ● 記得加上slug，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><p>我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:</p>
+    </medium><hr><!-- title: 探討網路照片的奧秘 --><!-- slug: sharpen --><!-- date: 20130712 15:53:32 --><!-- tags: 學習與閱讀 --><!-- link: --><!-- description: Created at 20130620 20:38:34 --><!-- ===================================Metadata↑================================================ --><!-- ● 記得加上tags: 人生，狗狗，程式，生活紀錄，英文，閱讀，教養，科學，mathjax --><!-- ● 記得加上slug，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><p>我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"><img alt="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg" src="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"></a>
 <p class="caption">原始圖檔縮小至640px，上傳至github。</p>
@@ -98,6 +98,7 @@ MathJax.Hub.Config({
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/sharpen/800_P1370032_sharpen.jpg"><img alt="../../../arch_2013/files_2013/M43/sharpen/800_P1370032_sharpen.jpg" src="../../../arch_2013/files_2013/M43/sharpen/800_P1370032_sharpen.jpg"></a>
 <p class="caption">imagemagick 縮圖至800px並銳化，上傳至github。</p>
 </div>
+<p>不知道各位比較喜歡那一種呈現方式呢?</p>
 <p>imagemagick的參數如下:</p>
 <pre class="literal-block">
 convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort Resize 800x800 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality 100 縮圖檔名.jpg
@@ -122,26 +123,26 @@ convert null: -filter LanczosSharp -define filter:verbose=1 -resize 2 null: | gr
 <pre class="literal-block">
 -unsharp 1x0.55+1.5+0.002
 </pre>
-<p>所使用的四個數字分別是Gaussian Mask的Radius(銳化時，每個像素周圍列入銳化計算的像素範圍)、Sigma(Gaussian遮罩的半高寬，或是Standard Deviation)、Amount(將遮罩疊回原圖的比例)、以及Threshold(像素間對比差異要高於這個值才會列入銳化的計算)。在Eric的文章裡提到很多Radius與Sigma的計算方式，不過我們這邊取的參數，是筆者經過多次嘗試，而得到與Flickr縮圖銳化最接近的參數，同時，銳化與縮圖也有先後次序，筆者建議先進行縮圖在銳化，因為要做到與Flickr相簿同樣的效果，先銳化時，必須要大大加強銳化的強度，容易讓照片產生不自然的顆粒，同時縮圖的速度也會比較慢。</p>
+<p>所使用的四個數字分別是Gaussian Mask的Radius(銳化時，每個像素周圍列入銳化計算的像素範圍)、Sigma(Gaussian遮罩的半高寬，或是Standard Deviation)、Amount(將遮罩疊回原圖的比例)、以及Threshold(像素間對比差異要高於這個值才會列入銳化的計算)。在Eric的文章裡提到很多Radius與Sigma的計算方式，不過我們這邊取的參數，是筆者經過多次嘗試，而得到與Flickr縮圖銳化最接近的參數，同時，銳化與縮圖也有先後次序，筆者建議先進行縮圖再銳化，因為要做到與Flickr相簿同樣的效果，先銳化時必須要大大加強銳化的強度，容易讓照片產生不自然的顆粒，同時縮圖的速度也會比較慢。</p>
 <p>看到這裡，我們對網路上所廣為流傳的許多資訊應該會更有概念，例如:</p>
-<ol class="arabic simple"><li>1:1檢視照片的必要性?為什麼非縮圖不可?</li>
+<ol class="arabic simple"><li>為什麼非縮圖不可?</li>
+<li>1:1靜態檢視照片的必要性?</li>
+<li>為什麼1:1檢視影片非常重要?現今主流螢幕的解析度?</li>
 <li>相機所提供的高畫素，目的為何?</li>
 <li>鏡頭的銳利度(MTF-50)，片幅的大小(135, APS, 4/3,...)，感光元件(Bayer, Foveon X3)的種類等差異，在縮圖的情況下是否還能夠呈現?</li>
-<li>數位相機的總畫素平均遠高於Full HD(1080p)的解析度，因此錄影的影像品質會不會受到縮圖(down sample)方式極大的影響。</li>
+<li>數位相機的總畫素平均遠高於Full HD(1080p)的解析度，因此錄影的影像品質會不會受到縮圖(down sample)方式極大的影響?</li>
 <li>您有沒有在網路上見過高檔，大片幅相機拍攝的的數位照片，清晰度竟然比一般DC還差?</li>
-<li>您有沒有遇到過片幅比較大的數位相機，其錄影畫清晰度竟然比片幅小的畫質還差?</li>
+<li>您有沒有遇到過片幅比較大的數位相機，其錄製的影片清晰度竟然比片幅小的數位相機還低?</li>
 <li>數位照片是否都是後製過的?</li>
 </ol><p>這些問題，筆者先不作進一步說明，留給各位思考。</p>
-<p>接著我們將示範如何撰寫python程式來利用imagemagick實現自動化的批次縮圖銳化，我們的目的是將一個目錄下的所有jpg檔予以縮圖並銳化，然後自動生成包含圖片連結的Restructured TEXT的文章範例，換句話說，在網路文章裡插入圖片，不再需要繁複的上傳照片與拷貝連結等手續，僅需要將要包含的圖片按照順序集中在一個資料夾裡，執行程式就可以自動生成文章，照片也會依照順序排列，剩下的工作就僅是補上文字而已。同時，我們也不用擔心只有經過Flickr相簿處理過的縮圖照片才有最好的品質，在任何網站裡，我們都可以呈現出品質良好的縮圖照片。</p>
+<p>接著我們將示範如何撰寫python程式來利用imagemagick實現大量自動化的縮圖銳化工作，我們的目的是將集中在一個目錄下的所有jpg檔予以縮圖並銳化，然後自動生成包含圖片連結的Restructured TEXT的文章範例，換句話說，在網路文章裡插入圖片，不再需要繁複的上傳照片與拷貝連結等手續，僅需要將要包含的圖片按照順序集中在一個資料夾裡，執行程式就可以自動生成文章，照片也會依照順序排列，剩下的工作就僅是補上文字而已。同時，我們也不用擔心網站所提供的圖床會將照片品質劣化，只要事先將圖片縮好，任何網站都可以呈現出品質良好的縮圖照片。</p>
 <!-- </body> -->
 <!-- <url> -->
 <!-- </url> -->
 <!-- <footnote> -->
 <table class="docutils footnote" frame="void" id="id5" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="sharpen.html#id1">[1]</a></td><td><a class="reference external" href="http://www.imagemagick.org/Usage/filter/nicolas/">http://www.imagemagick.org/Usage/filter/nicolas/</a></td></tr></tbody></table><table class="docutils footnote" frame="void" id="id6" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="sharpen.html#id2">[2]</a></td><td><a class="reference external" href="http://www.imagemagick.org/Usage/filter/#gaussian_other">http://www.imagemagick.org/Usage/filter/#gaussian_other</a></td></tr></tbody></table><table class="docutils footnote" frame="void" id="id7" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="sharpen.html#id3">[3]</a></td><td><a class="reference external" href="http://gimpguru.org/Tutorials/SmartSharpening2/">http://gimpguru.org/Tutorials/SmartSharpening2/</a></td></tr></tbody></table><table class="docutils footnote" frame="void" id="id8" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="sharpen.html#id4">[4]</a></td><td><a class="reference external" href="http://redskiesatnight.com/2005/04/06/sharpening-using-image-magick/">http://redskiesatnight.com/2005/04/06/sharpening-using-image-magick/</a></td></tr></tbody></table><!-- </footnote> --><!-- <citation> --><!-- </citation> --><!-- ===================================文章結束↑/語法備忘錄↓==================================== --><!-- ● 格式1 ― 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) --><!-- ● 格式2 ― 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` --><!-- ● 項目 ― #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 --><!-- ● 插入teaser分頁 ― .. TEASER_END --><!-- ● 插入latex數學 ― 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 --><!-- ● 插入figure ― .. figure:: 路徑(換行):width: 320(換行):align: center(換行):target: 路徑 --><!-- ● 插入slides ― .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) --><!-- ● 插入youtube ― ..youtube:: 影片的hash string --><!-- ● 插入url ― 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) --><!-- ● 插入直接url ― \ `連結字串` <網址或路徑>`_ \    (包含< >) --><!-- ● 插入footnote ― 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 --><!-- ● 插入citation ― 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 --><!-- ● 插入sidebar ― ..sidebar:: (空一行) 內容 --><!-- ● 插入contents ― ..contents:: (換行) :depth: 目錄深入第幾層 --><!-- ● 插入原始文字區塊 ― 在段落尾端使用:: (空一行) 內容 (空一行) --><!-- ● 插入本機的程式碼 ― ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --><!-- ● 插入特定原始碼 ― ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --><!-- ● 插入gist ― ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --><!-- ============================================================================================ --><div style="text-align:right">
         <ul class="pager"><li class="previous">
-                <a href="../Photo_Diary/20130525.html">← 上一篇</a>
-            </li><li class="next">
-                <a href="../Learning/mathjax.html">下一篇 →</a>
+                <a href="../Learning/mathjax.html">← 上一篇</a>
         </li></ul></div>
 
     
