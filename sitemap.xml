@@ -51,7 +51,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/2013/07/index.html</loc>
-  <lastmod>2013-07-10</lastmod>
+  <lastmod>2013-07-12</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -106,7 +106,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/sheng-huo-ri-ji.html</loc>
-  <lastmod>2013-07-10</lastmod>
+  <lastmod>2013-07-12</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -146,12 +146,12 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/index-1.html</loc>
-  <lastmod>2013-07-05</lastmod>
+  <lastmod>2013-07-12</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/index.html</loc>
-  <lastmod>2013-07-10</lastmod>
+  <lastmod>2013-07-12</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -181,7 +181,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/posts/Learning/writing_beginner.html</loc>
-  <lastmod>2013-07-10</lastmod>
+  <lastmod>2013-07-12</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -207,6 +207,11 @@
  <url>
   <loc>http://sophAi.github.com/posts/Photo_Diary/20130524.html</loc>
   <lastmod>2013-07-10</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/posts/Photo_Diary/20130525.html</loc>
+  <lastmod>2013-07-12</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
