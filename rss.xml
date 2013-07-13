@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>~Enigma~   文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Sat, 13 Jul 2013 00:48:29 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>自動化縮圖與生成文章檔案</title><link>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</link><description>&lt;div&gt;&lt;p&gt;在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:&lt;/p&gt;
+<rss version="2.0"><channel><title>~Enigma~   文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey toward happiness</description><lastBuildDate>Sat, 13 Jul 2013 08:54:44 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>自動化縮圖與生成文章檔案</title><link>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</link><description>&lt;div&gt;&lt;p&gt;在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;&lt;li&gt;將滑鼠點擊的次數降到最低。&lt;/li&gt;
 &lt;li&gt;跨平台的可能性。&lt;/li&gt;
 &lt;li&gt;未來應用的擴充性。&lt;/li&gt;
 &lt;li&gt;方便性。&lt;/li&gt;
-&lt;/ol&gt;&lt;p&gt;&lt;a href="/posts/Coding/jpg2rst.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>自由的程式人生</category><guid>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</guid><pubDate>Fri, 12 Jul 2013 16:33:28 GMT</pubDate></item><item><title>探討網路照片的奧秘</title><link>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</link><description>&lt;div&gt;&lt;p&gt;我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:&lt;/p&gt;
+&lt;/ol&gt;&lt;p&gt;&lt;a href="/posts/Coding/jpg2rst.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>自由的程式人生</category><guid>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</guid><pubDate>Sat, 13 Jul 2013 00:39:38 GMT</pubDate></item><item><title>探討網路照片的奧秘</title><link>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</link><description>&lt;div&gt;&lt;p&gt;我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg" src="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;原始圖檔縮小至640px，上傳至github。&lt;/p&gt;
