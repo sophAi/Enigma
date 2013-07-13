@@ -57,14 +57,17 @@ MathJax.Hub.Config({
     <h1>自動化縮圖與生成文章檔案</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-07-13T08:39:38+08:00">2013-07-13 08:39</time>
+        發表於: <time class="published" datetime="2013-07-13T10:14:27+08:00">2013-07-13 10:14</time>
         
 
         
           |  更多相關文章：
             <a class="tag" href="../../categories/zi-you-de-cheng-shi-ren-sheng.html"><span class="badge badge-info">自由的程式人生</span></a>
 
-    </medium><hr><!-- title: 自動化縮圖與生成文章檔案 --><!-- slug: jpg2rst --><!-- date: 20130713 08:39:38 --><!-- tags: 自由的程式人生 --><!-- link: --><!-- description: Created at 20130712 23:17:53 --><!-- ===================================Metadata↑================================================ --><!-- 記得加tags: 人生省思,流浪動物,生活日記,學習與閱讀,英文,mathjax,自由的程式人生,書寫人生,理財 --><!-- 記得加slug(無副檔名)，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><p>在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:</p>
+    </medium><hr><!-- title: 自動化縮圖與生成文章檔案 --><!-- slug: jpg2rst --><!-- date: 20130713 10:14:27 --><!-- tags: 自由的程式人生 --><!-- link: --><!-- description: Created at 20130712 23:17:53 --><!-- ===================================Metadata↑================================================ --><!-- 記得加tags: 人生省思,流浪動物,生活日記,學習與閱讀,英文,mathjax,自由的程式人生,書寫人生,理財 --><!-- 記得加slug(無副檔名)，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"><img alt="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg" src="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"></a>
+</div>
+<p>在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:</p>
 <ol class="arabic simple"><li>將滑鼠點擊的次數降到最低。</li>
 <li>跨平台的可能性。</li>
 <li>未來應用的擴充性。</li>
@@ -100,7 +103,6 @@ def search(keyword='.jpg',recursive='n'):
     if recursive == 'y': 
         for root, dirs, files in os.walk('.'):
             for file_name in files:
-#                if os.path.join(root,file_name).lower().lstrip('./').find(keyword.lower()) &gt; -1:       
                 if fnmatch(os.path.join(root,
                     file_name).lower().lstrip('./'),keyword.lower()):
                     file_list.append(os.path.join(root,file_name).lstrip('./'))  #Using walk, the file name would start with './dir/file.dat'. Use lstrip('./') to remove the string. 
@@ -109,7 +111,6 @@ def search(keyword='.jpg',recursive='n'):
 
     else:
         for file_name in os.listdir('.'):
-#            if file_name.lower().lstrip('./').find(keyword.lower()) &gt; -1:
             if fnmatch(file_name.lower().lstrip('./'),keyword.lower()):
                 file_list.append(file_name)
 
@@ -207,7 +208,6 @@ def resize(resolution,jpg_list):
     elif type(resolution).__name__ == 'list':
         resize_res_list=resolution
        
-#    print(jpg_list)
     for resize_res in resize_res_list:
         if os.path.isdir(resize_res):
             print (resize_res+'/'+" directory exist! Cleaning it\n")
@@ -220,8 +220,6 @@ def resize(resolution,jpg_list):
                 resize_file_name=file_name.split('/')[0:-1]
                 resize_file_name.append(resize_res+'/'+resize_res+'_'+file_name.split('/')[-1])
                 resize_file_name = string.join(resize_file_name,'/')
-#                convert_command=['convert','-colorspace','sRGB','-unsharp','10x3.5+1.3+0.003','-resize',resolution+'x'+resolution,'-filter','Lanczos2','-border','10','-quality','90',file_name,resize_file_name]
-#                convert_command=['convert','-colorspace','sRGB','-resize',resolution+'x'+resolution,'-filter','Lanczos','-unsharp','1x0.3+1.7+0.03','-border','10','-quality','100',file_name,resize_file_name]
                 convert_command=['convert',file_name,'-colorspace','RGB','-filter','LanczosSharp','-distort','Resize',resize_res+'x'+resize_res,'-unsharp','1x0.55+1.5+0.002','-colorspace','sRGB','-border','10','-quality','95',resize_file_name]
                 print(" ".join(convert_command)+"\n")
                 cmd_status = subprocess.call(convert_command)
@@ -282,16 +280,12 @@ def add_fig(fig_list):
         line_info = rst_temp_file_obj.readline()
         while line_info != '.\n':
             line_info = rst_temp_file_obj.readline()
-#            if line_info.find('slug:') &gt; -1:
             if fnmatch(line_info,'*slug:*'):
                 jpg2rst_temp_file_obj.write('.. slug: '+rst_slug+'\n')
-#            elif line_info.find('data:') &gt; -1:
             elif fnmatch(line_info,'*data:*'):
                 jpg2rst_temp_file_obj.write('.. data: '+time_label+'\n')
-#            elif line_info.find('description:') &gt; -1:
             elif fnmatch(line_info,'*description:*'):
                 jpg2rst_temp_file_obj.write('.. description: Created at '+time_label+'\n')
-#            elif line_info.find('&lt;body&gt;') &gt; -1:
             elif fnmatch(line_info,'*&lt;body&gt;*'):
                 #Insert codes of resized figure here       
                 jpg2rst_temp_file_obj.write(line_info)
@@ -313,19 +307,6 @@ def add_fig(fig_list):
         rst_temp_file_obj.close()
         return rst_file
 
-#def append_text():
-
-#def replace_text():
-
-#def append_fig():
-
-#def replace_fig():
-
-#def rst2html():
-
-#def rst2pdf():
-
-#def rst_deploy():
 
 def main():
      add_fig()
@@ -350,9 +331,7 @@ if __name__ == "__main__":
 <!-- <footnote> -->
 <table class="docutils footnote" frame="void" id="id2" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="jpg2rst.html#id1">[1]</a></td><td><a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php#iOS">http://www.imagemagick.org/script/binary-releases.php#iOS</a></td></tr></tbody></table><!-- </footnote> --><!-- <citation> --><!-- </citation> --><!-- ===================================文章結束↑/語法備忘錄↓==================================== --><!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) --><!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` --><!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 --><!-- 插入teaser分頁: .. TEASER_END --><!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 --><!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 --><!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) --><!-- 插入youtube: ..youtube:: 影片的hash string --><!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) --><!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) --><!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 --><!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 --><!-- 插入sidebar: ..sidebar:: (空一行) 內容 --><!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 --><!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) --><!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --><!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --><!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --><!-- ============================================================================================ --><div style="text-align:right">
         <ul class="pager"><li class="previous">
-                <a href="../M43/sharpen.html">← 上一篇</a>
-            </li><li class="next">
-                <a href="../M43/resize.html">下一篇 →</a>
+                <a href="../M43/resize.html">← 上一篇</a>
         </li></ul></div>
 
     
