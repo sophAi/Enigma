@@ -1,6 +1,6 @@
 .. title: 感光元件的差異對縮圖的影響
 .. slug: resize
-.. date: 20130713 08:51:26
+.. date: 20130713 09:27:27
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130712 16:37:44
