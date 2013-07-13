@@ -101,24 +101,7 @@ MathJax.Hub.Config({
 <a href="rst_tools.py.html#setuppy-48">48</a>
 <a href="rst_tools.py.html#setuppy-49">49</a>
 <a href="rst_tools.py.html#setuppy-50">50</a>
-<a href="rst_tools.py.html#setuppy-51">51</a>
-<a href="rst_tools.py.html#setuppy-52">52</a>
-<a href="rst_tools.py.html#setuppy-53">53</a>
-<a href="rst_tools.py.html#setuppy-54">54</a>
-<a href="rst_tools.py.html#setuppy-55">55</a>
-<a href="rst_tools.py.html#setuppy-56">56</a>
-<a href="rst_tools.py.html#setuppy-57">57</a>
-<a href="rst_tools.py.html#setuppy-58">58</a>
-<a href="rst_tools.py.html#setuppy-59">59</a>
-<a href="rst_tools.py.html#setuppy-60">60</a>
-<a href="rst_tools.py.html#setuppy-61">61</a>
-<a href="rst_tools.py.html#setuppy-62">62</a>
-<a href="rst_tools.py.html#setuppy-63">63</a>
-<a href="rst_tools.py.html#setuppy-64">64</a>
-<a href="rst_tools.py.html#setuppy-65">65</a>
-<a href="rst_tools.py.html#setuppy-66">66</a>
-<a href="rst_tools.py.html#setuppy-67">67</a>
-<a href="rst_tools.py.html#setuppy-68">68</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
+<a href="rst_tools.py.html#setuppy-51">51</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
 <a name="setuppy-2"></a><span class="k">def</span> <span class="nf">add_fig</span><span class="p">(</span><span class="n">fig_list</span><span class="p">):</span>
 <a name="setuppy-3"></a>    <span class="sd">'''Form template rst file including the codes for the resized figures</span>
 <a name="setuppy-4"></a><span class="sd">    return rst_file (str), fig_num (int)</span>
@@ -136,56 +119,39 @@ MathJax.Hub.Config({
 <a name="setuppy-16"></a>        <span class="n">line_info</span> <span class="o">=</span> <span class="n">rst_temp_file_obj</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <a name="setuppy-17"></a>        <span class="k">while</span> <span class="n">line_info</span> <span class="o">!=</span> <span class="s">'.</span><span class="se">\n</span><span class="s">'</span><span class="p">:</span>
 <a name="setuppy-18"></a>            <span class="n">line_info</span> <span class="o">=</span> <span class="n">rst_temp_file_obj</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="setuppy-19"></a><span class="c">#            if line_info.find('slug:') &gt; -1:</span>
-<a name="setuppy-20"></a>            <span class="k">if</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">line_info</span><span class="p">,</span><span class="s">'*slug:*'</span><span class="p">):</span>
-<a name="setuppy-21"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'.. slug: '</span><span class="o">+</span><span class="n">rst_slug</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="setuppy-22"></a><span class="c">#            elif line_info.find('data:') &gt; -1:</span>
-<a name="setuppy-23"></a>            <span class="k">elif</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">line_info</span><span class="p">,</span><span class="s">'*data:*'</span><span class="p">):</span>
-<a name="setuppy-24"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'.. data: '</span><span class="o">+</span><span class="n">time_label</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="setuppy-25"></a><span class="c">#            elif line_info.find('description:') &gt; -1:</span>
-<a name="setuppy-26"></a>            <span class="k">elif</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">line_info</span><span class="p">,</span><span class="s">'*description:*'</span><span class="p">):</span>
-<a name="setuppy-27"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'.. description: Created at '</span><span class="o">+</span><span class="n">time_label</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="setuppy-28"></a><span class="c">#            elif line_info.find('&lt;body&gt;') &gt; -1:</span>
-<a name="setuppy-29"></a>            <span class="k">elif</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">line_info</span><span class="p">,</span><span class="s">'*&lt;body&gt;*'</span><span class="p">):</span>
-<a name="setuppy-30"></a>                <span class="c">#Insert codes of resized figure here       </span>
-<a name="setuppy-31"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line_info</span><span class="p">)</span>
-<a name="setuppy-32"></a>                <span class="n">fig_number</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">fig_list</span><span class="p">)</span>
-<a name="setuppy-33"></a>                <span class="k">for</span> <span class="n">rst_figure</span> <span class="ow">in</span> <span class="n">fig_list</span><span class="p">:</span>
-<a name="setuppy-34"></a>                    <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">.. figure:: '</span><span class="o">+</span><span class="n">rst_figure</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="setuppy-35"></a>                    <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'   :target: '</span><span class="o">+</span><span class="n">rst_figure</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="setuppy-36"></a>                    <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'   :align: center</span><span class="se">\n\n\n\n</span><span class="s">'</span><span class="p">)</span>
-<a name="setuppy-37"></a><span class="c">#                    jpg2rst_temp_file_obj.write('   :width: 640'+'\n\n')</span>
-<a name="setuppy-38"></a>
-<a name="setuppy-39"></a>            <span class="k">elif</span> <span class="n">line_info</span> <span class="o">==</span> <span class="s">'.</span><span class="se">\n</span><span class="s">'</span><span class="p">:</span>
-<a name="setuppy-40"></a>                <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Make '</span><span class="o">+</span><span class="n">rst_file</span><span class="o">+</span><span class="s">' complete</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="setuppy-41"></a>            <span class="k">else</span><span class="p">:</span>
-<a name="setuppy-42"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line_info</span><span class="p">)</span>
-<a name="setuppy-43"></a>
-<a name="setuppy-44"></a>
-<a name="setuppy-45"></a>    <span class="k">finally</span><span class="p">:</span>
-<a name="setuppy-46"></a>        <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="setuppy-47"></a>        <span class="n">rst_temp_file_obj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="setuppy-48"></a>        <span class="k">return</span> <span class="n">rst_file</span>
+<a name="setuppy-19"></a>            <span class="k">if</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">line_info</span><span class="p">,</span><span class="s">'*slug:*'</span><span class="p">):</span>
+<a name="setuppy-20"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'.. slug: '</span><span class="o">+</span><span class="n">rst_slug</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-21"></a>            <span class="k">elif</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">line_info</span><span class="p">,</span><span class="s">'*data:*'</span><span class="p">):</span>
+<a name="setuppy-22"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'.. data: '</span><span class="o">+</span><span class="n">time_label</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-23"></a>            <span class="k">elif</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">line_info</span><span class="p">,</span><span class="s">'*description:*'</span><span class="p">):</span>
+<a name="setuppy-24"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'.. description: Created at '</span><span class="o">+</span><span class="n">time_label</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-25"></a>            <span class="k">elif</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">line_info</span><span class="p">,</span><span class="s">'*&lt;body&gt;*'</span><span class="p">):</span>
+<a name="setuppy-26"></a>                <span class="c">#Insert codes of resized figure here       </span>
+<a name="setuppy-27"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line_info</span><span class="p">)</span>
+<a name="setuppy-28"></a>                <span class="n">fig_number</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">fig_list</span><span class="p">)</span>
+<a name="setuppy-29"></a>                <span class="k">for</span> <span class="n">rst_figure</span> <span class="ow">in</span> <span class="n">fig_list</span><span class="p">:</span>
+<a name="setuppy-30"></a>                    <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">.. figure:: '</span><span class="o">+</span><span class="n">rst_figure</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-31"></a>                    <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'   :target: '</span><span class="o">+</span><span class="n">rst_figure</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-32"></a>                    <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'   :align: center</span><span class="se">\n\n\n\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-33"></a><span class="c">#                    jpg2rst_temp_file_obj.write('   :width: 640'+'\n\n')</span>
+<a name="setuppy-34"></a>
+<a name="setuppy-35"></a>            <span class="k">elif</span> <span class="n">line_info</span> <span class="o">==</span> <span class="s">'.</span><span class="se">\n</span><span class="s">'</span><span class="p">:</span>
+<a name="setuppy-36"></a>                <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Make '</span><span class="o">+</span><span class="n">rst_file</span><span class="o">+</span><span class="s">' complete</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-37"></a>            <span class="k">else</span><span class="p">:</span>
+<a name="setuppy-38"></a>                <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line_info</span><span class="p">)</span>
+<a name="setuppy-39"></a>
+<a name="setuppy-40"></a>
+<a name="setuppy-41"></a>    <span class="k">finally</span><span class="p">:</span>
+<a name="setuppy-42"></a>        <span class="n">jpg2rst_temp_file_obj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="setuppy-43"></a>        <span class="n">rst_temp_file_obj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="setuppy-44"></a>        <span class="k">return</span> <span class="n">rst_file</span>
+<a name="setuppy-45"></a>
+<a name="setuppy-46"></a>
+<a name="setuppy-47"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<a name="setuppy-48"></a>     <span class="n">add_fig</span><span class="p">()</span>
 <a name="setuppy-49"></a>
-<a name="setuppy-50"></a><span class="c">#def append_text():</span>
-<a name="setuppy-51"></a>
-<a name="setuppy-52"></a><span class="c">#def replace_text():</span>
-<a name="setuppy-53"></a>
-<a name="setuppy-54"></a><span class="c">#def append_fig():</span>
-<a name="setuppy-55"></a>
-<a name="setuppy-56"></a><span class="c">#def replace_fig():</span>
-<a name="setuppy-57"></a>
-<a name="setuppy-58"></a><span class="c">#def rst2html():</span>
-<a name="setuppy-59"></a>
-<a name="setuppy-60"></a><span class="c">#def rst2pdf():</span>
-<a name="setuppy-61"></a>
-<a name="setuppy-62"></a><span class="c">#def rst_deploy():</span>
-<a name="setuppy-63"></a>
-<a name="setuppy-64"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-<a name="setuppy-65"></a>     <span class="n">add_fig</span><span class="p">()</span>
-<a name="setuppy-66"></a>
-<a name="setuppy-67"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
-<a name="setuppy-68"></a>    <span class="n">main</span><span class="p">()</span>
+<a name="setuppy-50"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="setuppy-51"></a>    <span class="n">main</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></section></div></div>
 <!--End of body content-->

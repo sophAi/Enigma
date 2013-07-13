@@ -147,9 +147,7 @@ MathJax.Hub.Config({
 <a href="file_tools.py.html#setuppy-94">94</a>
 <a href="file_tools.py.html#setuppy-95">95</a>
 <a href="file_tools.py.html#setuppy-96">96</a>
-<a href="file_tools.py.html#setuppy-97">97</a>
-<a href="file_tools.py.html#setuppy-98">98</a>
-<a href="file_tools.py.html#setuppy-99">99</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
+<a href="file_tools.py.html#setuppy-97">97</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
 <a name="setuppy-2"></a><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">keyword</span><span class="o">=</span><span class="s">'.jpg'</span><span class="p">,</span><span class="n">recursive</span><span class="o">=</span><span class="s">'n'</span><span class="p">):</span>
 <a name="setuppy-3"></a>    <span class="sd">''' Search for the file (default=.jpg) including the recursive directory and return a list of the full file name.</span>
 <a name="setuppy-4"></a><span class="sd">    return: file_list (str list)</span>
@@ -162,92 +160,90 @@ MathJax.Hub.Config({
 <a name="setuppy-11"></a>    <span class="k">if</span> <span class="n">recursive</span> <span class="o">==</span> <span class="s">'y'</span><span class="p">:</span> 
 <a name="setuppy-12"></a>        <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="s">'.'</span><span class="p">):</span>
 <a name="setuppy-13"></a>            <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
-<a name="setuppy-14"></a><span class="c">#                if os.path.join(root,file_name).lower().lstrip('./').find(keyword.lower()) &gt; -1:       </span>
-<a name="setuppy-15"></a>                <span class="k">if</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span>
-<a name="setuppy-16"></a>                    <span class="n">file_name</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">),</span><span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
-<a name="setuppy-17"></a>                    <span class="n">file_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">file_name</span><span class="p">)</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">))</span>  <span class="c">#Using walk, the file name would start with './dir/file.dat'. Use lstrip('./') to remove the string. </span>
+<a name="setuppy-14"></a>                <span class="k">if</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span>
+<a name="setuppy-15"></a>                    <span class="n">file_name</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">),</span><span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+<a name="setuppy-16"></a>                    <span class="n">file_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">file_name</span><span class="p">)</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">))</span>  <span class="c">#Using walk, the file name would start with './dir/file.dat'. Use lstrip('./') to remove the string. </span>
+<a name="setuppy-17"></a>
 <a name="setuppy-18"></a>
 <a name="setuppy-19"></a>
-<a name="setuppy-20"></a>
-<a name="setuppy-21"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="setuppy-22"></a>        <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s">'.'</span><span class="p">):</span>
-<a name="setuppy-23"></a><span class="c">#            if file_name.lower().lstrip('./').find(keyword.lower()) &gt; -1:</span>
-<a name="setuppy-24"></a>            <span class="k">if</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">file_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">),</span><span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
-<a name="setuppy-25"></a>                <span class="n">file_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-<a name="setuppy-26"></a>
-<a name="setuppy-27"></a>
-<a name="setuppy-28"></a>    <span class="n">file_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<a name="setuppy-29"></a>    <span class="k">return</span> <span class="n">file_list</span>
-<a name="setuppy-30"></a>
-<a name="setuppy-31"></a><span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="n">file_list</span><span class="p">):</span>
-<a name="setuppy-32"></a>    <span class="sd">''' Delete the files listed in the file_list. Use search_file() first to determine the file_list'''</span>
-<a name="setuppy-33"></a>    <span class="kn">import</span> <span class="nn">os</span>
-<a name="setuppy-34"></a>    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span> <span class="o">==</span> <span class="s">'str'</span><span class="p">:</span>
-<a name="setuppy-35"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Delete '</span><span class="o">+</span><span class="n">file_list</span><span class="p">)</span>
-<a name="setuppy-36"></a>        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
-<a name="setuppy-37"></a>    <span class="k">elif</span> <span class="n">tpye</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span> <span class="o">==</span> <span class="s">'list'</span><span class="p">:</span>
-<a name="setuppy-38"></a>        <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
-<a name="setuppy-39"></a>            <span class="k">print</span><span class="p">(</span><span class="s">'Delete '</span><span class="o">+</span><span class="n">file_name</span><span class="p">)</span>
-<a name="setuppy-40"></a>            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-<a name="setuppy-41"></a>   
-<a name="setuppy-42"></a>
-<a name="setuppy-43"></a><span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
-<a name="setuppy-44"></a>    <span class="sd">''' Copy the files listed in the file_list to the destinate_list. Use search_file() first to</span>
-<a name="setuppy-45"></a><span class="sd">    determine the file_list. </span>
-<a name="setuppy-46"></a><span class="sd">    destinate_list may be a string(dir_path) or a file list with path</span>
-<a name="setuppy-47"></a><span class="sd">    To copy the file in the current directory, specify ',' as destinate_list'''</span>
-<a name="setuppy-48"></a>    <span class="kn">import</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
-<a name="setuppy-49"></a>    <span class="n">file_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
-<a name="setuppy-50"></a>    <span class="n">file_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
-<a name="setuppy-51"></a>    <span class="n">destinate_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
-<a name="setuppy-52"></a>    <span class="n">destinate_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">)</span>
-<a name="setuppy-53"></a>    <span class="k">if</span> <span class="n">file_list</span> <span class="o">!=</span> <span class="n">destinate_list</span><span class="p">:</span>
-<a name="setuppy-54"></a>        <span class="k">if</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">file_len</span> <span class="o">==</span> <span class="n">destinate_len</span><span class="p">:</span>
-<a name="setuppy-55"></a>            <span class="n">I0</span><span class="o">=</span><span class="mi">0</span>
-<a name="setuppy-56"></a>            <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
-<a name="setuppy-57"></a>                <span class="k">print</span><span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span><span class="n">file_name</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">destinate_list</span><span class="p">[</span><span class="n">I0</span><span class="p">])</span>
-<a name="setuppy-58"></a>                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">[</span><span class="n">I0</span><span class="p">])</span>  
-<a name="setuppy-59"></a>                <span class="n">I0</span><span class="o">=</span><span class="n">I0</span><span class="o">+</span><span class="mi">1</span>
-<a name="setuppy-60"></a>      
-<a name="setuppy-61"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">):</span>
-<a name="setuppy-62"></a><span class="c"># A list of files copied to a directory</span>
-<a name="setuppy-63"></a>           <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
-<a name="setuppy-64"></a>                <span class="k">print</span><span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span><span class="n">file_name</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">destinate_list</span><span class="p">)</span>
-<a name="setuppy-65"></a>                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>
-<a name="setuppy-66"></a>
-<a name="setuppy-67"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'str'</span><span class="p">:</span>
-<a name="setuppy-68"></a><span class="c"># Copy one file</span>
-<a name="setuppy-69"></a>            <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>  
-<a name="setuppy-70"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'list'</span><span class="p">:</span>
-<a name="setuppy-71"></a>            <span class="n">multi_target_opt</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">"Copy one file to multiple targets. Are you sure? (y/n)</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
-<a name="setuppy-72"></a>            <span class="k">if</span> <span class="n">multi_target_opt</span> <span class="o">==</span> <span class="s">'y'</span><span class="p">:</span>
-<a name="setuppy-73"></a>                <span class="k">for</span> <span class="n">target_file_name</span> <span class="ow">in</span> <span class="n">destinate_list</span><span class="p">:</span>
-<a name="setuppy-74"></a>                    <span class="k">print</span> <span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span> <span class="n">file_list</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">target_file_name</span><span class="p">)</span>
-<a name="setuppy-75"></a>                    <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">target_file_name</span><span class="p">)</span>
-<a name="setuppy-76"></a>
-<a name="setuppy-77"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="setuppy-78"></a>            <span class="k">print</span> <span class="p">(</span><span class="s">"Error occurs!Exit!"</span><span class="p">)</span>
-<a name="setuppy-79"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<a name="setuppy-80"></a>
-<a name="setuppy-81"></a>
-<a name="setuppy-82"></a><span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
-<a name="setuppy-83"></a>    <span class="sd">''' Move the files listed in the file_list to destinate_list. Use searh_file() to determine</span>
-<a name="setuppy-84"></a><span class="sd">    the file_list'''</span>
-<a name="setuppy-85"></a>    <span class="k">print</span> <span class="p">(</span><span class="s">'Copying files...'</span><span class="p">)</span>
-<a name="setuppy-86"></a>    <span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>
-<a name="setuppy-87"></a>    <span class="n">remove_opt</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">'Delete the source files?(y/n)</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="setuppy-88"></a>    <span class="k">if</span> <span class="n">remove_opt</span> <span class="o">==</span> <span class="s">'y'</span><span class="p">:</span>
-<a name="setuppy-89"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Deleting files...'</span><span class="p">)</span>
-<a name="setuppy-90"></a>        <span class="n">clear</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-20"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="setuppy-21"></a>        <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s">'.'</span><span class="p">):</span>
+<a name="setuppy-22"></a>            <span class="k">if</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">file_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">),</span><span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+<a name="setuppy-23"></a>                <span class="n">file_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+<a name="setuppy-24"></a>
+<a name="setuppy-25"></a>
+<a name="setuppy-26"></a>    <span class="n">file_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<a name="setuppy-27"></a>    <span class="k">return</span> <span class="n">file_list</span>
+<a name="setuppy-28"></a>
+<a name="setuppy-29"></a><span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="n">file_list</span><span class="p">):</span>
+<a name="setuppy-30"></a>    <span class="sd">''' Delete the files listed in the file_list. Use search_file() first to determine the file_list'''</span>
+<a name="setuppy-31"></a>    <span class="kn">import</span> <span class="nn">os</span>
+<a name="setuppy-32"></a>    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span> <span class="o">==</span> <span class="s">'str'</span><span class="p">:</span>
+<a name="setuppy-33"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Delete '</span><span class="o">+</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-34"></a>        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-35"></a>    <span class="k">elif</span> <span class="n">tpye</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span> <span class="o">==</span> <span class="s">'list'</span><span class="p">:</span>
+<a name="setuppy-36"></a>        <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+<a name="setuppy-37"></a>            <span class="k">print</span><span class="p">(</span><span class="s">'Delete '</span><span class="o">+</span><span class="n">file_name</span><span class="p">)</span>
+<a name="setuppy-38"></a>            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+<a name="setuppy-39"></a>   
+<a name="setuppy-40"></a>
+<a name="setuppy-41"></a><span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
+<a name="setuppy-42"></a>    <span class="sd">''' Copy the files listed in the file_list to the destinate_list. Use search_file() first to</span>
+<a name="setuppy-43"></a><span class="sd">    determine the file_list. </span>
+<a name="setuppy-44"></a><span class="sd">    destinate_list may be a string(dir_path) or a file list with path</span>
+<a name="setuppy-45"></a><span class="sd">    To copy the file in the current directory, specify ',' as destinate_list'''</span>
+<a name="setuppy-46"></a>    <span class="kn">import</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<a name="setuppy-47"></a>    <span class="n">file_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
+<a name="setuppy-48"></a>    <span class="n">file_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-49"></a>    <span class="n">destinate_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
+<a name="setuppy-50"></a>    <span class="n">destinate_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">)</span>
+<a name="setuppy-51"></a>    <span class="k">if</span> <span class="n">file_list</span> <span class="o">!=</span> <span class="n">destinate_list</span><span class="p">:</span>
+<a name="setuppy-52"></a>        <span class="k">if</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">file_len</span> <span class="o">==</span> <span class="n">destinate_len</span><span class="p">:</span>
+<a name="setuppy-53"></a>            <span class="n">I0</span><span class="o">=</span><span class="mi">0</span>
+<a name="setuppy-54"></a>            <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+<a name="setuppy-55"></a>                <span class="k">print</span><span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span><span class="n">file_name</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">destinate_list</span><span class="p">[</span><span class="n">I0</span><span class="p">])</span>
+<a name="setuppy-56"></a>                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">[</span><span class="n">I0</span><span class="p">])</span>  
+<a name="setuppy-57"></a>                <span class="n">I0</span><span class="o">=</span><span class="n">I0</span><span class="o">+</span><span class="mi">1</span>
+<a name="setuppy-58"></a>      
+<a name="setuppy-59"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">):</span>
+<a name="setuppy-60"></a><span class="c"># A list of files copied to a directory</span>
+<a name="setuppy-61"></a>           <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+<a name="setuppy-62"></a>                <span class="k">print</span><span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span><span class="n">file_name</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">destinate_list</span><span class="p">)</span>
+<a name="setuppy-63"></a>                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>
+<a name="setuppy-64"></a>
+<a name="setuppy-65"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'str'</span><span class="p">:</span>
+<a name="setuppy-66"></a><span class="c"># Copy one file</span>
+<a name="setuppy-67"></a>            <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>  
+<a name="setuppy-68"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'list'</span><span class="p">:</span>
+<a name="setuppy-69"></a>            <span class="n">multi_target_opt</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">"Copy one file to multiple targets. Are you sure? (y/n)</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<a name="setuppy-70"></a>            <span class="k">if</span> <span class="n">multi_target_opt</span> <span class="o">==</span> <span class="s">'y'</span><span class="p">:</span>
+<a name="setuppy-71"></a>                <span class="k">for</span> <span class="n">target_file_name</span> <span class="ow">in</span> <span class="n">destinate_list</span><span class="p">:</span>
+<a name="setuppy-72"></a>                    <span class="k">print</span> <span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span> <span class="n">file_list</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">target_file_name</span><span class="p">)</span>
+<a name="setuppy-73"></a>                    <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">target_file_name</span><span class="p">)</span>
+<a name="setuppy-74"></a>
+<a name="setuppy-75"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="setuppy-76"></a>            <span class="k">print</span> <span class="p">(</span><span class="s">"Error occurs!Exit!"</span><span class="p">)</span>
+<a name="setuppy-77"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a name="setuppy-78"></a>
+<a name="setuppy-79"></a>
+<a name="setuppy-80"></a><span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
+<a name="setuppy-81"></a>    <span class="sd">''' Move the files listed in the file_list to destinate_list. Use searh_file() to determine</span>
+<a name="setuppy-82"></a><span class="sd">    the file_list'''</span>
+<a name="setuppy-83"></a>    <span class="k">print</span> <span class="p">(</span><span class="s">'Copying files...'</span><span class="p">)</span>
+<a name="setuppy-84"></a>    <span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>
+<a name="setuppy-85"></a>    <span class="n">remove_opt</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">'Delete the source files?(y/n)</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-86"></a>    <span class="k">if</span> <span class="n">remove_opt</span> <span class="o">==</span> <span class="s">'y'</span><span class="p">:</span>
+<a name="setuppy-87"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Deleting files...'</span><span class="p">)</span>
+<a name="setuppy-88"></a>        <span class="n">clear</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-89"></a>
+<a name="setuppy-90"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Moving files complete!'</span><span class="p">)</span>
 <a name="setuppy-91"></a>
-<a name="setuppy-92"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Moving files complete!'</span><span class="p">)</span>
-<a name="setuppy-93"></a>
-<a name="setuppy-94"></a>
-<a name="setuppy-95"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-<a name="setuppy-96"></a>     <span class="n">search</span><span class="p">()</span>
-<a name="setuppy-97"></a>
-<a name="setuppy-98"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
-<a name="setuppy-99"></a>    <span class="n">main</span><span class="p">()</span>
+<a name="setuppy-92"></a>
+<a name="setuppy-93"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<a name="setuppy-94"></a>     <span class="n">search</span><span class="p">()</span>
+<a name="setuppy-95"></a>
+<a name="setuppy-96"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="setuppy-97"></a>    <span class="n">main</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></section></div></div>
 <!--End of body content-->

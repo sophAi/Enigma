@@ -117,12 +117,11 @@ MathJax.Hub.Config({
 <a href="jpg2rst.py.html#setuppy-64">64</a>
 <a href="jpg2rst.py.html#setuppy-65">65</a>
 <a href="jpg2rst.py.html#setuppy-66">66</a>
-<a href="jpg2rst.py.html#setuppy-67">67</a>
-<a href="jpg2rst.py.html#setuppy-68">68</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
+<a href="jpg2rst.py.html#setuppy-67">67</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
 <a name="setuppy-2"></a><span class="c"># =======================================================================</span>
 <a name="setuppy-3"></a><span class="c"># File Name     : jpg2rst.py</span>
 <a name="setuppy-4"></a><span class="c"># Creation Time : 20130629 23:45:54</span>
-<a name="setuppy-5"></a><span class="c"># Last Modified : 20130711 12:03:11</span>
+<a name="setuppy-5"></a><span class="c"># Last Modified : 20130713 08:45:36</span>
 <a name="setuppy-6"></a><span class="c"># =======================================================================</span>
 <a name="setuppy-7"></a><span class="c"># Copyright (c),2012-, Po-Jen Hsu. Contact: clusterga@gmail.com</span>
 <a name="setuppy-8"></a><span class="c"># This software is distributed under the GNU General Public License.</span>
@@ -136,7 +135,7 @@ MathJax.Hub.Config({
 <a name="setuppy-16"></a>    <span class="kn">import</span> <span class="nn">fig_tools</span> <span class="kn">as</span> <span class="nn">fig_mod</span>
 <a name="setuppy-17"></a>    <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">subprocess</span>
 <a name="setuppy-18"></a>
-<a name="setuppy-19"></a><span class="c">#   Determine the fig_path for figures within inner subdirectory</span>
+<a name="setuppy-19"></a><span class="c">#   Determine the fig_path for figures within the inner sub-directories</span>
 <a name="setuppy-20"></a>
 <a name="setuppy-21"></a>    <span class="n">root_dir</span> <span class="o">=</span> <span class="s">'arch_2013'</span>
 <a name="setuppy-22"></a>
@@ -152,7 +151,7 @@ MathJax.Hub.Config({
 <a name="setuppy-32"></a>
 <a name="setuppy-33"></a>    <span class="n">recursive_opt</span> <span class="o">=</span> <span class="s">'n'</span>
 <a name="setuppy-34"></a>    <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s">'.'</span><span class="p">):</span>
-<a name="setuppy-35"></a>        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="ow">and</span> <span class="n">file_name</span> <span class="o">!=</span> <span class="n">resolution_opt</span><span class="p">:</span> <span class="c"># Avoid duplicate resized figures</span>
+<a name="setuppy-35"></a>        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="ow">and</span> <span class="n">file_name</span> <span class="o">!=</span> <span class="n">resolution_opt</span><span class="p">:</span> <span class="c"># Avoid duplicating resized figures</span>
 <a name="setuppy-36"></a>            <span class="n">recursive_opt</span><span class="o">=</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">"Would you like to apply to all the subdirectories (y/n)?</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
 <a name="setuppy-37"></a>            <span class="k">break</span>
 <a name="setuppy-38"></a>
@@ -169,23 +168,22 @@ MathJax.Hub.Config({
 <a name="setuppy-49"></a>    <span class="n">file_list</span><span class="o">=</span><span class="n">file_mod</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">keyword</span><span class="o">=</span><span class="s">'*.jpg'</span><span class="p">,</span><span class="n">recursive</span><span class="o">=</span><span class="n">recursive_opt</span><span class="p">)</span>
 <a name="setuppy-50"></a>
 <a name="setuppy-51"></a><span class="c">#    fig_mod.log(log_file='fig_list.log',jpg_list=file_list)</span>
-<a name="setuppy-52"></a><span class="c">#    print(file_list)</span>
-<a name="setuppy-53"></a>
-<a name="setuppy-54"></a>    <span class="n">rst_jpg_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-<a name="setuppy-55"></a>    <span class="k">if</span> <span class="n">resolution_opt</span> <span class="o">==</span> <span class="s">'none'</span><span class="p">:</span>
-<a name="setuppy-56"></a>        <span class="k">for</span> <span class="n">jpg_file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
-<a name="setuppy-57"></a>            <span class="n">rst_jpg_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fig_path</span><span class="o">+</span><span class="n">jpg_file_name</span><span class="p">)</span>
-<a name="setuppy-58"></a>
-<a name="setuppy-59"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="setuppy-60"></a>        <span class="n">resize_jpg_list</span><span class="o">=</span><span class="n">fig_mod</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="n">resolution_opt</span><span class="p">,</span><span class="n">jpg_list</span><span class="o">=</span><span class="n">file_list</span><span class="p">)</span>
-<a name="setuppy-61"></a>        <span class="k">for</span> <span class="n">jpg_file_name</span> <span class="ow">in</span> <span class="n">resize_jpg_list</span><span class="p">:</span>
-<a name="setuppy-62"></a>            <span class="n">rst_jpg_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fig_path</span><span class="o">+</span><span class="n">jpg_file_name</span><span class="p">)</span>
+<a name="setuppy-52"></a>
+<a name="setuppy-53"></a>    <span class="n">rst_jpg_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<a name="setuppy-54"></a>    <span class="k">if</span> <span class="n">resolution_opt</span> <span class="o">==</span> <span class="s">'none'</span><span class="p">:</span>
+<a name="setuppy-55"></a>        <span class="k">for</span> <span class="n">jpg_file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+<a name="setuppy-56"></a>            <span class="n">rst_jpg_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fig_path</span><span class="o">+</span><span class="n">jpg_file_name</span><span class="p">)</span>
+<a name="setuppy-57"></a>
+<a name="setuppy-58"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="setuppy-59"></a>        <span class="n">resize_jpg_list</span><span class="o">=</span><span class="n">fig_mod</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="n">resolution_opt</span><span class="p">,</span><span class="n">jpg_list</span><span class="o">=</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-60"></a>        <span class="k">for</span> <span class="n">jpg_file_name</span> <span class="ow">in</span> <span class="n">resize_jpg_list</span><span class="p">:</span>
+<a name="setuppy-61"></a>            <span class="n">rst_jpg_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fig_path</span><span class="o">+</span><span class="n">jpg_file_name</span><span class="p">)</span>
+<a name="setuppy-62"></a>
 <a name="setuppy-63"></a>
-<a name="setuppy-64"></a>
-<a name="setuppy-65"></a>    <span class="n">rst_file</span><span class="o">=</span><span class="n">rst_mod</span><span class="o">.</span><span class="n">add_fig</span><span class="p">(</span><span class="n">fig_list</span><span class="o">=</span><span class="n">rst_jpg_list</span><span class="p">)</span>
-<a name="setuppy-66"></a>
-<a name="setuppy-67"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-<a name="setuppy-68"></a>    <span class="n">main</span><span class="p">()</span>
+<a name="setuppy-64"></a>    <span class="n">rst_file</span><span class="o">=</span><span class="n">rst_mod</span><span class="o">.</span><span class="n">add_fig</span><span class="p">(</span><span class="n">fig_list</span><span class="o">=</span><span class="n">rst_jpg_list</span><span class="p">)</span>
+<a name="setuppy-65"></a>
+<a name="setuppy-66"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<a name="setuppy-67"></a>    <span class="n">main</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></section></div></div>
 <!--End of body content-->
