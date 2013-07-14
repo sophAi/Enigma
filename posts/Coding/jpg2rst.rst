@@ -1,6 +1,6 @@
 .. title: 自動化縮圖與生成文章檔案
 .. slug: jpg2rst
-.. date: 20130713 10:14:27
+.. date: 20130714 23:08:40
 .. tags: 自由的程式人生
 .. link: 
 .. description: Created at 20130712 23:17:53
@@ -27,7 +27,7 @@
 
 這裡筆者以python程式進行上述目標的實作，請先去\ `Imagemagick`_ [#]_\ 網站下載convert套件並安裝好，確定他可以執行如下的縮圖指令::
 
-   convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort Resize 800x800 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality 100 縮圖檔名.j    pg
+   convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort Resize 800x800 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality 100 縮圖檔名.jpg
 
 
 接著下載並安裝筆者的jpg2rst套件::
