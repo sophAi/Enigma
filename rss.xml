@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness</description><lastBuildDate>Mon, 15 Jul 2013 10:57:06 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>今日Photo Diary - 2013/06/01 (二)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601b.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness</description><lastBuildDate>Mon, 15 Jul 2013 14:26:42 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>自動化縮圖與生成文章檔案</title><link>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg" src="/../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;&lt;li&gt;將滑鼠點擊的次數降到最低。&lt;/li&gt;
+&lt;li&gt;跨平台的可能性。&lt;/li&gt;
+&lt;li&gt;未來應用的擴充性。&lt;/li&gt;
+&lt;li&gt;方便性。&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;&lt;a href="/posts/Coding/jpg2rst.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>自由的程式人生</category><guid>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</guid><pubDate>Mon, 15 Jul 2013 06:11:09 GMT</pubDate></item><item><title>今日Photo Diary - 2013/06/01 (二)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601b.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130601/800/800_05_P1360818_4455138-04.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130601/800/800_05_P1360818_4455138-04.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130601/800/800_05_P1360818_4455138-04.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;烈日裡的水龍頭藏著清涼啊!感覺小孩長好快!不久之前還是那個什麼事都要大人幫忙的小伙子，現在已經愈來愈能自理許多事了。&lt;/p&gt;
 &lt;/div&gt;
@@ -13,15 +21,7 @@
 ，亦即當我們用隨時間輸出的單位脈衝電流&lt;span class="math"&gt;\(\delta(t'')\)&lt;/span&gt;
 輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1，所量到的輸出對應電流即為&lt;span class="math"&gt;\(g(t'')\)&lt;/span&gt;
 。&lt;/p&gt;
-&lt;p&gt;&lt;a href="/posts/Learning/convolution.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><category>學習與閱讀</category><guid>http://sophAi.github.com/Enigma/posts/Learning/convolution.html</guid><pubDate>Sun, 14 Jul 2013 15:23:13 GMT</pubDate></item><item><title>自動化縮圖與生成文章檔案</title><link>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg" src="/../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;&lt;li&gt;將滑鼠點擊的次數降到最低。&lt;/li&gt;
-&lt;li&gt;跨平台的可能性。&lt;/li&gt;
-&lt;li&gt;未來應用的擴充性。&lt;/li&gt;
-&lt;li&gt;方便性。&lt;/li&gt;
-&lt;/ol&gt;&lt;p&gt;&lt;a href="/posts/Coding/jpg2rst.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>自由的程式人生</category><guid>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</guid><pubDate>Sun, 14 Jul 2013 15:08:40 GMT</pubDate></item><item><title>探討網路照片的奧秘</title><link>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</link><description>&lt;div&gt;&lt;p&gt;我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/Learning/convolution.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><category>學習與閱讀</category><guid>http://sophAi.github.com/Enigma/posts/Learning/convolution.html</guid><pubDate>Sun, 14 Jul 2013 15:23:13 GMT</pubDate></item><item><title>探討網路照片的奧秘</title><link>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</link><description>&lt;div&gt;&lt;p&gt;我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg" src="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;原始圖檔縮小至640px，上傳至github。&lt;/p&gt;

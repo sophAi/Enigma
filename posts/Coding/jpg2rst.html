@@ -57,14 +57,14 @@ MathJax.Hub.Config({
     <h1>自動化縮圖與生成文章檔案</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-07-14T23:08:40+08:00">2013-07-14 23:08</time>
+        發表於: <time class="published" datetime="2013-07-15T14:11:09+08:00">2013-07-15 14:11</time>
         
 
         
           |  更多相關文章：
             <a class="tag" href="../../categories/zi-you-de-cheng-shi-ren-sheng.html"><span class="badge badge-info">自由的程式人生</span></a>
 
-    </medium><hr><!-- title: 自動化縮圖與生成文章檔案 --><!-- slug: jpg2rst --><!-- date: 20130714 23:08:40 --><!-- tags: 自由的程式人生 --><!-- link: --><!-- description: Created at 20130712 23:17:53 --><!-- ===================================Metadata↑================================================ --><!-- 記得加tags: 人生省思,流浪動物,生活日記,學習與閱讀,英文,mathjax,自由的程式人生,書寫人生,理財 --><!-- 記得加slug(無副檔名)，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><div class="figure align-center">
+    </medium><hr><!-- title: 自動化縮圖與生成文章檔案 --><!-- slug: jpg2rst --><!-- date: 20130715 14:11:09 --><!-- tags: 自由的程式人生 --><!-- link: --><!-- description: Created at 20130712 23:17:53 --><!-- ===================================Metadata↑================================================ --><!-- 記得加tags: 人生省思,流浪動物,生活日記,學習與閱讀,英文,mathjax,自由的程式人生,書寫人生,理財 --><!-- 記得加slug(無副檔名)，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"><img alt="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg" src="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"></a>
 </div>
 <p>在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:</p>
@@ -80,7 +80,7 @@ convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort Resize 80
 <pre class="literal-block">
 git clone https://github.com/sophAi/jpg2rst.git jpg2rst
 cd jpg2rst
-easy_install *.egg
+sudo easy_install *.egg
 </pre>
 <p>工作流程如下:</p>
 <ol class="arabic simple"><li>把想要縮圖的照片集中在一個目錄下。</li>
@@ -324,16 +324,14 @@ if __name__ == "__main__":
 </pre>
 <p>由於search()會自動依照檔案名稱排序，一個小技巧就是於檔名開頭加上01、02、03...等編號。</p>
 <p>您可以將ReST範例檔其儲存在~/.vim/template/temp_rst.txt檔案裡，有關vim的自動文件範例檔我們會另外說明，簡單來說，他可以偵測您創造的文字檔是屬於哪種格式(C++, Python, Latex...等)，然後利用對應的範例檔生成文件，是個非常強大且高效率的功能。</p>
-<p>最後是jpg2rst.py這個程式，其實就是用來整合上面3個函式，讓我們的工作流程得以實現，裏面有些目錄的設定，可以依照需求修改;不難發現，任何一個函式都可以獨立運作，例如我們可以單獨使用resize()來測試縮圖銳化的參數，也可以用search()來蒐集任何檔案，或是用add_fig()來重整文章的圖片連結，除了幫我們省去不少功夫縮圖銳化的功夫，更可以在其餘工作裡派上用場，等於是辛苦一次受用無窮的工具，當我們不斷進行例行性的操作時，一個良好的自動化工具可以大大提高工作效率，讓我們有更多時間陪陪家人，或是喝杯咖啡思考一下。</p>
+<p>最後是jpg2rst.py這個程式，其實就是用來整合上面3個函式，讓我們的工作流程得以實現，裏面有些目錄的設定，可以依照需求修改;不難發現，任何一個函式都可以獨立運作，例如我們可以單獨使用resize()來測試縮圖銳化的參數，也可以用search()來蒐集任何檔案，或是用add_fig()來重整文章的圖片連結，除了幫我們省去不少縮圖銳化的功夫，更可以在其餘工作裡派上用場，等於是辛苦一次受用無窮的工具，當我們不斷進行例行性的操作時，一個良好的自動化工具可以大大提高工作效率，讓我們有更多時間陪陪家人，或是喝杯咖啡思考一下。</p>
 <!-- </body> -->
 <!-- <url> -->
 <!-- </url> -->
 <!-- <footnote> -->
 <table class="docutils footnote" frame="void" id="id2" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="jpg2rst.html#id1">[1]</a></td><td><a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php#iOS">http://www.imagemagick.org/script/binary-releases.php#iOS</a></td></tr></tbody></table><!-- </footnote> --><!-- <citation> --><!-- </citation> --><!-- ===================================文章結束↑/語法備忘錄↓==================================== --><!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) --><!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` --><!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 --><!-- 插入teaser分頁: .. TEASER_END --><!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 --><!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 --><!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) --><!-- 插入youtube: ..youtube:: 影片的hash string --><!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) --><!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) --><!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 --><!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 --><!-- 插入sidebar: ..sidebar:: (空一行) 內容 --><!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 --><!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) --><!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --><!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --><!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --><!-- ============================================================================================ --><div style="text-align:right">
         <ul class="pager"><li class="previous">
-                <a href="../M43/sharpen.html">← 上一篇</a>
-            </li><li class="next">
-                <a href="../Learning/convolution.html">下一篇 →</a>
+                <a href="../Photo_Diary/20130601b.html">← 上一篇</a>
         </li></ul></div>
 
     
