@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness</description><lastBuildDate>Wed, 17 Jul 2013 09:22:38 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>今日Photo Diary - 2013/06/02</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130602.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130602/800/800_01_P1170379_4456001-11.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130602/800/800_01_P1170379_4456001-11.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130602/800/800_01_P1170379_4456001-11.jpg"&gt;&lt;/a&gt;
-&lt;p class="caption"&gt;小時候最喜歡在電扇前面唱歌了，兄弟倆也是，雖然五音不全，但是非常投入。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130602.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130602.html</guid><pubDate>Wed, 17 Jul 2013 01:06:37 GMT</pubDate></item><item><title>今日Photo Diary - 2013/06/01 (三)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601c.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130601/800/800_10_P1170339_4452971-05.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130601/800/800_10_P1170339_4452971-05.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130601/800/800_10_P1170339_4452971-05.jpg"&gt;&lt;/a&gt;
-&lt;p class="caption"&gt;鯨魚船，出發囉~&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130601c.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活紀錄</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601c.html</guid><pubDate>Tue, 16 Jul 2013 05:11:22 GMT</pubDate></item><item><title>自動化縮圖與生成文章檔案</title><link>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness</description><lastBuildDate>Wed, 17 Jul 2013 10:23:44 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>自動化縮圖與生成文章檔案</title><link>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg" src="/../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:&lt;/p&gt;
@@ -15,7 +7,15 @@
 &lt;li&gt;跨平台的可能性。&lt;/li&gt;
 &lt;li&gt;未來應用的擴充性。&lt;/li&gt;
 &lt;li&gt;方便性。&lt;/li&gt;
-&lt;/ol&gt;&lt;p&gt;&lt;a href="/posts/Coding/jpg2rst.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>自由的程式人生</category><guid>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</guid><pubDate>Mon, 15 Jul 2013 06:11:09 GMT</pubDate></item><item><title>今日Photo Diary - 2013/06/01 (二)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601b.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+&lt;/ol&gt;&lt;p&gt;&lt;a href="/posts/Coding/jpg2rst.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>自由的程式人生</category><guid>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</guid><pubDate>Wed, 17 Jul 2013 02:23:33 GMT</pubDate></item><item><title>今日Photo Diary - 2013/06/02</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130602.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130602/800/800_01_P1170379_4456001-11.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130602/800/800_01_P1170379_4456001-11.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130602/800/800_01_P1170379_4456001-11.jpg"&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;小時候最喜歡在電扇前面唱歌了，兄弟倆也是，雖然五音不全，但是非常投入。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130602.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130602.html</guid><pubDate>Wed, 17 Jul 2013 01:06:37 GMT</pubDate></item><item><title>今日Photo Diary - 2013/06/01 (三)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601c.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130601/800/800_10_P1170339_4452971-05.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130601/800/800_10_P1170339_4452971-05.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130601/800/800_10_P1170339_4452971-05.jpg"&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;鯨魚船，出發囉~&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130601c.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活紀錄</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601c.html</guid><pubDate>Tue, 16 Jul 2013 05:11:22 GMT</pubDate></item><item><title>今日Photo Diary - 2013/06/01 (二)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601b.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130601/800/800_05_P1360818_4455138-04.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130601/800/800_05_P1360818_4455138-04.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130601/800/800_05_P1360818_4455138-04.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;烈日裡的水龍頭藏著清涼啊!感覺小孩長好快!不久之前還是那個什麼事都要大人幫忙的小伙子，現在已經愈來愈能自理許多事了。&lt;/p&gt;
 &lt;/div&gt;
