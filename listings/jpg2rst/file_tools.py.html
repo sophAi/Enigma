@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="file_tools.py"><meta name="author" content="文遠爸"><title>file_tools.py | ~Enigma~   文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="file_tools.py"><meta name="author" content="文遠爸"><title>file_tools.py | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -31,7 +31,7 @@ MathJax.Hub.Config({
         </a>
 
             <a class="brand" href="../../">
-            ~Enigma~   文以載道，寧靜以致遠
+            文以載道，寧靜以致遠
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
@@ -149,7 +149,7 @@ MathJax.Hub.Config({
 <a href="file_tools.py.html#setuppy-96">96</a>
 <a href="file_tools.py.html#setuppy-97">97</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
 <a name="setuppy-2"></a><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">keyword</span><span class="o">=</span><span class="s">'.jpg'</span><span class="p">,</span><span class="n">recursive</span><span class="o">=</span><span class="s">'n'</span><span class="p">):</span>
-<a name="setuppy-3"></a>    <span class="sd">''' Search for the file (default=.jpg) including the recursive directory and return a list of the full file name.</span>
+<a name="setuppy-3"></a>    <span class="sd">''' Search for the files (default=.jpg) in the current or recursive directories and return a list of the full paths.</span>
 <a name="setuppy-4"></a><span class="sd">    return: file_list (str list)</span>
 <a name="setuppy-5"></a><span class="sd">    usage: search_file(str keyword,str recursive)</span>
 <a name="setuppy-6"></a><span class="sd">    example: search_file(keyword='*.jpg',recursive='y')</span>
@@ -176,7 +176,7 @@ MathJax.Hub.Config({
 <a name="setuppy-27"></a>    <span class="k">return</span> <span class="n">file_list</span>
 <a name="setuppy-28"></a>
 <a name="setuppy-29"></a><span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="n">file_list</span><span class="p">):</span>
-<a name="setuppy-30"></a>    <span class="sd">''' Delete the files listed in the file_list. Use search_file() first to determine the file_list'''</span>
+<a name="setuppy-30"></a>    <span class="sd">''' Delete the files by the file_list. Use search() first to determine the file_list'''</span>
 <a name="setuppy-31"></a>    <span class="kn">import</span> <span class="nn">os</span>
 <a name="setuppy-32"></a>    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span> <span class="o">==</span> <span class="s">'str'</span><span class="p">:</span>
 <a name="setuppy-33"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Delete '</span><span class="o">+</span><span class="n">file_list</span><span class="p">)</span>
@@ -188,10 +188,10 @@ MathJax.Hub.Config({
 <a name="setuppy-39"></a>   
 <a name="setuppy-40"></a>
 <a name="setuppy-41"></a><span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
-<a name="setuppy-42"></a>    <span class="sd">''' Copy the files listed in the file_list to the destinate_list. Use search_file() first to</span>
+<a name="setuppy-42"></a>    <span class="sd">''' Copy the files listed in the file_list to the destinate_list. Use search() first to</span>
 <a name="setuppy-43"></a><span class="sd">    determine the file_list. </span>
-<a name="setuppy-44"></a><span class="sd">    destinate_list may be a string(dir_path) or a file list with path</span>
-<a name="setuppy-45"></a><span class="sd">    To copy the file in the current directory, specify ',' as destinate_list'''</span>
+<a name="setuppy-44"></a><span class="sd">    destinate_list may be a string(dir_path) or a list of full paths</span>
+<a name="setuppy-45"></a><span class="sd">    To copy the file in the current directory, specify '.' as the destinate_list'''</span>
 <a name="setuppy-46"></a>    <span class="kn">import</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
 <a name="setuppy-47"></a>    <span class="n">file_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
 <a name="setuppy-48"></a>    <span class="n">file_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
@@ -227,7 +227,7 @@ MathJax.Hub.Config({
 <a name="setuppy-78"></a>
 <a name="setuppy-79"></a>
 <a name="setuppy-80"></a><span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
-<a name="setuppy-81"></a>    <span class="sd">''' Move the files listed in the file_list to destinate_list. Use searh_file() to determine</span>
+<a name="setuppy-81"></a>    <span class="sd">''' Move the files listed in the file_list to destinate_list. Use searh() to determine</span>
 <a name="setuppy-82"></a><span class="sd">    the file_list'''</span>
 <a name="setuppy-83"></a>    <span class="k">print</span> <span class="p">(</span><span class="s">'Copying files...'</span><span class="p">)</span>
 <a name="setuppy-84"></a>    <span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>
@@ -272,7 +272,7 @@ MathJax.Hub.Config({
     </script><div class="navbar navbar-fixed-bottom">
     <div class="navbar-inner">
         <div class="footerbox">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  Contents © 2013 <a href="https://www.facebook.com/M43Happiness">文遠爸</a> with <a href="http://nikola.ralsina.com.ar">Nikola</a> - It is a journey toward happiness.  <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"></a> <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml">訂閱RSS</a>  <a href="http://feeds.feedburner.com/github/NODC"><img src="http://feeds.feedburner.com/~fc/github/NODC?bg=FFFFFF&amp;fg=444444&amp;anim=1" height="26" width="88" style="border:0" alt=""></a>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  Contents © 2013 <a href="https://www.facebook.com/M43Happiness">文遠爸</a> with <a href="http://nikola.ralsina.com.ar">Nikola</a> - It is a journey towards happiness.  <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"></a> <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml">訂閱RSS</a>  <a href="http://feeds.feedburner.com/github/NODC"><img src="http://feeds.feedburner.com/~fc/github/NODC?bg=FFFFFF&amp;fg=444444&amp;anim=1" height="26" width="88" style="border:0" alt=""></a>
         </div>
     </div>
 </div>
