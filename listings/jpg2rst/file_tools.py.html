@@ -149,7 +149,7 @@ MathJax.Hub.Config({
 <a href="file_tools.py.html#setuppy-96">96</a>
 <a href="file_tools.py.html#setuppy-97">97</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
 <a name="setuppy-2"></a><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">keyword</span><span class="o">=</span><span class="s">'.jpg'</span><span class="p">,</span><span class="n">recursive</span><span class="o">=</span><span class="s">'n'</span><span class="p">):</span>
-<a name="setuppy-3"></a>    <span class="sd">''' Search for the files (default=.jpg) in the current or recursive directories and return a list of the full paths.</span>
+<a name="setuppy-3"></a>    <span class="sd">''' Search for the files (default=.jpg) in the current or the subdirectories and return a list of the full paths.</span>
 <a name="setuppy-4"></a><span class="sd">    return: file_list (str list)</span>
 <a name="setuppy-5"></a><span class="sd">    usage: search_file(str keyword,str recursive)</span>
 <a name="setuppy-6"></a><span class="sd">    example: search_file(keyword='*.jpg',recursive='y')</span>
@@ -191,7 +191,7 @@ MathJax.Hub.Config({
 <a name="setuppy-42"></a>    <span class="sd">''' Copy the files listed in the file_list to the destinate_list. Use search() first to</span>
 <a name="setuppy-43"></a><span class="sd">    determine the file_list. </span>
 <a name="setuppy-44"></a><span class="sd">    destinate_list may be a string(dir_path) or a list of full paths</span>
-<a name="setuppy-45"></a><span class="sd">    To copy the file in the current directory, specify '.' as the destinate_list'''</span>
+<a name="setuppy-45"></a><span class="sd">    To copy the file to the current directory, specify '.' as the destinate_list'''</span>
 <a name="setuppy-46"></a>    <span class="kn">import</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
 <a name="setuppy-47"></a>    <span class="n">file_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
 <a name="setuppy-48"></a>    <span class="n">file_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
@@ -227,7 +227,7 @@ MathJax.Hub.Config({
 <a name="setuppy-78"></a>
 <a name="setuppy-79"></a>
 <a name="setuppy-80"></a><span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
-<a name="setuppy-81"></a>    <span class="sd">''' Move the files listed in the file_list to destinate_list. Use searh() to determine</span>
+<a name="setuppy-81"></a>    <span class="sd">''' Move the files listed in the file_list to the destinate_list. Use searh() to determine</span>
 <a name="setuppy-82"></a><span class="sd">    the file_list'''</span>
 <a name="setuppy-83"></a>    <span class="k">print</span> <span class="p">(</span><span class="s">'Copying files...'</span><span class="p">)</span>
 <a name="setuppy-84"></a>    <span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>
