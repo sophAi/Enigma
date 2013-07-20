@@ -1,6 +1,6 @@
 .. title: 今日Photo Diary - 2013/06/15
 .. slug: 20130615
-.. date: 20130720 23:47:45
+.. date: 20130720 23:55:35
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130720 23:04:35
@@ -58,7 +58,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130615/800/800_07_P1370135_4429113-08.jpg
    :align: center
 
-   雖然不是跳得很高，但是比Ya的神情卻很認真。
+   雖然不是跳得很高，但是比Ya的神情卻很認真呢!
 
 
 .. </body>
