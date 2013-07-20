@@ -6,7 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://sophAi.github.com/</loc>
-  <lastmod>2013-07-17</lastmod>
+  <lastmod>2013-07-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -51,7 +51,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/2013/07/index.html</loc>
-  <lastmod>2013-07-19</lastmod>
+  <lastmod>2013-07-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -106,12 +106,12 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/sheng-huo-ri-ji-1.html</loc>
-  <lastmod>2013-07-19</lastmod>
+  <lastmod>2013-07-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/categories/sheng-huo-ri-ji.html</loc>
-  <lastmod>2013-07-19</lastmod>
+  <lastmod>2013-07-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -156,12 +156,17 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/index-1.html</loc>
-  <lastmod>2013-07-19</lastmod>
+  <lastmod>2013-07-21</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/index-2.html</loc>
+  <lastmod>2013-07-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/index.html</loc>
-  <lastmod>2013-07-19</lastmod>
+  <lastmod>2013-07-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -311,7 +316,12 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/posts/Photo_Diary/20130608b.html</loc>
-  <lastmod>2013-07-19</lastmod>
+  <lastmod>2013-07-21</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/posts/Photo_Diary/20130615.html</loc>
+  <lastmod>2013-07-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
