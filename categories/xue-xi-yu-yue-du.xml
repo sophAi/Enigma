@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>文以載道，寧靜以致遠 (學習與閱讀)</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness</description><lastBuildDate>Thu, 18 Jul 2013 10:53:18 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Convolution(摺積)的物理意義</title><link>http://sophAi.github.com/Enigma/posts/Learning/convolution.html</link><description>&lt;div class="section" id="id1"&gt;
+<rss version="2.0"><channel><title>文以載道，寧靜以致遠 (學習與閱讀)</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness</description><lastBuildDate>Sun, 21 Jul 2013 23:05:53 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Convolution(摺積)的物理意義</title><link>http://sophAi.github.com/Enigma/posts/Learning/convolution.html</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;問題&lt;/h2&gt;
 &lt;p&gt;假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為&lt;span class="math"&gt;\(g(t''), t''=0 \rightarrow \infty\)&lt;/span&gt;
 ，亦即當我們用隨時間輸出的單位脈衝電流&lt;span class="math"&gt;\(\delta(t'')\)&lt;/span&gt;
