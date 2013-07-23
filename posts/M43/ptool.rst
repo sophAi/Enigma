@@ -1,6 +1,6 @@
 .. title: 提升GH2與GX1的錄影畫質
 .. slug: ptool
-.. date: 20130723 23:52:36
+.. date: 20130724 00:00:28
 .. tags: draft,學習與閱讀
 .. link: 
 .. description: Created at 20130722 22:47:23
@@ -221,11 +221,11 @@
 
 .. _Ptool3: http://www.gh1-hack.info/ptool3d.zip
 
-.. _GH2官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html
+.. _GH2的官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html
 
 .. _GH2的Ptool設定檔: http://sophai.github.io/arch_2013/files_2013/M43/ptool_settings/seta.ini
 
-.. _GX1官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html
+.. _GX1的官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html
 
 .. _GX1的Ptool設定檔: http://sophai.github.io/arch_2013/files_2013/M43/ptool_settings/setb.ini
 
