@@ -1,6 +1,6 @@
 .. title: 今日Photo Diary - 2013/06/16 (三)
 .. slug: 20130616c
-.. date: 20130723 20:39:38
+.. date: 20130723 23:58:32
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130723 20:32:14
