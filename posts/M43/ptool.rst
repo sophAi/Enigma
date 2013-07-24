@@ -1,6 +1,6 @@
 .. title: 提升GH2與GX1的錄影畫質
 .. slug: ptool
-.. date: 20130724 00:01:32
+.. date: 20130725 00:06:05
 .. tags: draft,學習與閱讀
 .. link: 
 .. description: Created at 20130722 22:47:23
@@ -24,6 +24,46 @@
    :align: center
 
    這是原始的影片截圖，色階明顯平順許多。
+
+.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
+   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
+   :align: center
+
+
+
+
+.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
+   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
+   :align: center
+
+
+
+
+.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png
+   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png
+   :align: center
+
+
+
+.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png
+   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png
+   :align: center
+
+
+
+
+.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png
+   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png
+   :align: center
+
+
+
+
+.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png
+   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png
+   :align: center
+
+
 
 在\ `探討網路照片的奧秘`_\ 一文中，我們提到了縮圖對於數位影像的重要性，也提到了目前的Full HD規格，在主流的螢幕下相當於1:1的檢視，動態影片的畫質差異，會比更高畫素的靜態照片還要明顯，無論是縮圖的方式，或是影像壓縮的技術，都會以100%的比例呈現在螢幕上。例如上面兩張圖，都是1:1的截圖，可以很明顯的察覺到差別，也讓提升錄影畫質更具意義。除了改善錄影畫質，軔體的破解也能開啟一些原先軔體封閉的功能，例如日文版本的機身，可以透過軔體破解新增英文語言介面，以及提供PAL與NTSC之間的切換，歐規的數位相機，其錄影大多有30分鐘的限制，也能透過破解移除，在記憶卡的效能容許下，提升的流量以及良好的Scaling Matrix都能有效的讓影片中的瑕疵降到最低，整體來說，甚至有機會凌駕於專業的錄影機之上。
 
