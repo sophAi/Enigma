@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130726 20:48:14
+.. date: 20130726 21:28:25
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -14,7 +14,7 @@ DREWnet T9 by Driftwood - 2013/07/26更新
 
 環境: GX1+Sandisk 45MB/s USH-I與GH2+Toshiba Class 10白卡
 
-我使用Ptool論壇上driftwood所調整的\ `DREWnet T8`_\ 已經很久了，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的\ `DREWnet T9`_\ 參數檔，使用了新的scaling matrix，第1時間就馬上更新來嘗試!基本上錄影畫質的破解，需要流量(bit rate)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片更不同的是影片檔經常是在1:1的情況下觀看的，這是因為當今主流螢幕的解析度(大於等於1920x1080)，就是為了能完整播放FullHD的影片，因此錄影畫質的提升效果明顯，然而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，例如DREWnet就針對Scaling matrix做了許多調整，在維持流量不暴增的前提下提升畫面的細節，平均錄影檔增加了約1.7倍容量，對於一般生活錄影來說已經是很可觀的增幅，而這還是平均流量在40Mbps的情形下。
+我使用Ptool論壇上\ `driftwood`_\ 所調整的\ `DREWnet T8`_\ 已經很久了，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的\ `DREWnet T9`_\ 參數檔，使用了新的scaling matrix，第1時間就馬上更新來嘗試!基本上錄影畫質的破解，需要流量(bit rate)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片更不同的是影片檔經常是在1:1的情況下觀看的，這是因為當今主流螢幕的解析度(大於等於1920x1080)，就是為了能完整播放FullHD的影片，因此錄影畫質的提升效果明顯，然而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，例如DREWnet就針對Scaling matrix做了許多調整，在維持流量不暴增的前提下提升畫面的細節，平均錄影檔增加了約1.7倍容量，對於一般生活錄影來說已經是很可觀的增幅，而這還是平均流量在40Mbps的情形下。
 
 .. TEASER_END
 
@@ -71,7 +71,7 @@ DREWnet T9 by Driftwood - 2013/07/26更新
    這是原始的影片截圖，幾乎跟直接將靜態照片縮圖到FullHD大小的品質一樣!色階平順漂亮。
 
 
-我還沒有時間好好觀察24p還有破解前後AVCHD畫質的差異，總括來說，只要Quantization的瑕疵不易被發覺，就是很棒的畫質了，這也是錄影破解主要的目的。如果真的要探究的話，下面列出driftwood量化的測試，其用一個灰階圖格來反映Quantization後的成像，顏色愈淡，表示影像品質愈好。
+我還沒有時間好好觀察24p還有破解前後AVCHD畫質的差異，總括來說，只要Quantization的瑕疵不易被發覺，就達到破解的目了。如果真的要探究的話，下面列出driftwood量化的測試，其用一個灰階圖格來反映Quantization後的成像，顏色愈淡，表示影像品質愈好。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png
@@ -93,14 +93,15 @@ DREWnet T9 by Driftwood - 2013/07/26更新
 
    結果是最好的就是DREWnet，也可以說，已經超過了GH3非All-I模式所能達到的等級。
 
-當然，無論是使用DREWnet的GH2，或是GH3，他們的硬體能力都還沒有被徹底發揮，例如driftwood的moon T7(ALL-I)可以說是跟GH3的All-I模式打對臺，使用的流量遠遠超越GH3所使用的，Ｓpizz與Nebula都是low GOP的設定，理論上畫質都比DREWnet還更上乘，將來GH3也破解了，應該也能得到更好的品質，只是回到實用性的現實面，以及基於檔案容量與穩定性的考量，在生活與親子錄影這塊，DREWnet是我所認為最平衡且實用的參數設定，在不過度暴增的影片容量下，大概只有GH2跟All-I模式下的GH3可以得到比DREWnet更佳的錄影畫質了。
+當然，無論是使用DREWnet的GH2或是GH3，他們的硬體能力都還沒有被徹底發揮，例如driftwood的moon T7(ALL-I)可以說是跟GH3的All-I模式打對臺，使用的流量甚至遠遠超越GH3，Spizz與Nebula都是low GOP的設定，理論上畫質都比DREWnet還更上乘，將來GH3也破解了，應該也能得到同等的品質，只是回到實用性的現實面，以及基於檔案容量與穩定性的考量，在生活紀錄這方面，DREWnet是我所認為最平衡且實用的參數設定，在不過度暴增影片的容量下，大概只有破解的GH2跟All-I模式下的GH3可以得到比DREWnet更佳的錄影畫質了。
 
-目前還沒發生任何問題，以前使用DREWnet T8時，偶爾會發生無法在機身播放影片的現象，不過重新開機就正常了，同時影片本身也都是正常的，可以安心使用。錄影當然不是只有畫質2的追求，還有拍攝手法，故事性，分鏡，以及畫面穩定性等，因此畫質足夠就好，其他方面也是要努力兼顧喔!
+目前還沒發生任何問題，以前使用DREWnet T8時，偶爾會發生無法在機身播放影片的現象，不過重新開機就正常了，同時影片本身也都是正常的，可以安心使用。錄影當然不是只有畫質的追求，還有拍攝手法，故事性，分鏡，以及畫面穩定性等，因此畫質足夠就好，其他方面也是要努力兼顧喔!
 
 
 .. </body>
 .. <url>
 
+.. _driftwood: http://www.personal-view.com/talks/discussion/7580/driftwood-cluster-x-series-3moon-t7Ѕrіzz-t6nebula-t7drewnet-t9/p1
 
 .. _DREWnet T8: ../../../arch_2013/files_2013/M43/ptool_settings/seta.ini
 
