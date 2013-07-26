@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20130524 13:37:06"><meta name="author" content="文遠爸"><title>Convolution(摺積)的物理意義 | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'center', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--></head><body><p>
+        http://sophAi.github.io/Enigma/rss.xml
+            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+    document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script><!--[if lt IE 9]>
+    <script src="/assets/reveal/lib/js/html5shiv.js"></script>
+    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></p>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../../">
+            文以載道，寧靜以致遠
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
+            </li><li><a href="../../categories/index.html">標籤分類</a>
+            </li><li><a href="../../stories/about.html">關於這裡</a>
+
+                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+<!-- End of custom search -->
+
+                <ul class="nav pull-right"></ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+
+<!--Body content-->
+<div class="reveal"><div class="slides">
+    <section><section><div class="postbox">
+    
+    <h1>Convolution(摺積)的物理意義</h1>
+
+    <hr><medium>
+        發表於: <time class="published" datetime="2013-07-14T23:23:13+08:00">2013-07-14 23:23</time>
+        
+
+        
+          |  更多相關文章：
+            <a class="tag" href="../../categories/mathjax.html"><span class="badge badge-info">mathjax</span></a>
+            <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
+
+    </medium><hr><!-- title: Convolution(摺積)的物理意義 --><!-- slug: convolution --><!-- date: 20130714 23:23:13 --><!-- tags: mathjax, 學習與閱讀 --><!-- link: --><!-- description: Created at 20130524 13:37:06 --><!-- 請記得加上slug，會以slug名稱產生副檔名為.html的文章 --><!-- 同時，別忘了加上tags喔! --><!-- <body> --><div class="section" id="id1">
+<h2>問題</h2>
+<p>假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為<span class="math">\(g(t''), t''=0 \rightarrow \infty\)</span>
+，亦即當我們用隨時間輸出的單位脈衝電流<span class="math">\(\delta(t'')\)</span>
+輸入這個black box(因為是單位脈衝unit impulse，所以每個脈衝大小均為1，所量到的輸出對應電流即為<span class="math">\(g(t'')\)</span>
+。</p>
+<!-- TEASER_END -->
+<p>現在我們已經知道這個黑盒子對時間的operator特性，如今我們要量測一個待測物體，他的輸入電流是<span class="math">\(f(\tau)\)</span>
+，其中<span class="math">\(\tau=0\rightarrow t\)</span>
+，則他的輸出電流<span class="math">\(y(t)\)</span>
+會是如何呢?</p>
+<p>首先，線性系統在時間t前的輸出是具有疊加性的，也就是t時間前的電流輸出疊加起來，假設f的時間尺度0到t的t時剛好和g(t")的t"時相同，即t"=t，因此<span class="math">\(y(t)\)</span>
+相當於在t"的時間<span class="math">\((t-\tau)\rightarrow t\)</span>
+的訊號疊加，因為f可能是從g的某一段插入進去的，因此以t=t"時為參考點倒推 ,在<span class="math">\(t''=t-\tau\)</span>
+時的電流輸出應該為<span class="math">\(\delta(t'')\)</span>
+的<span class="math">\(f(\tau)g(t-\tau)\Delta\tau\)</span>
+倍，也因為這個<span class="math">\(\Delta\tau\)</span>
+的出現(即計算面積)，故回到t時間前的訊號疊加，可以寫成積分式</p>
+<div class="math">
+\begin{equation*}
+y(t)\equiv{f*g}=\int^{t}_{0}f(\tau)g(t-\tau)d\tau
+\end{equation*}
+</div>
+<p>由此可以知道convolution有moving integral的概念，同時也是藉由輸入單位衝量函數以預測一個線性系統下任意函數的輸出值!</p>
+<p>f(t)與g(t)的convolution寫成f(t)*g(t)，其Fourier Transformation為其個別Fourier transformation的product</p>
+<p>f(t)*g(t)==&gt;Fourier Trans==&gt;F(w)G(w)</p>
+</div>
+<div class="section" id="convolution-theorem">
+<h2>Convolution Theorem</h2>
+<p>如果寫成<span class="math">\(Corr(f,g)\equiv \int^{t}_0 f(\tau+t)g(\tau)d\tau\)</span>
+則為Correlation:</p>
+<p>Corr(f,g)的Fourier Trans==&gt;<span class="math">\(F(\omega)G^*(\omega)\)</span>
+</p>
+</div>
+<div class="section" id="correlation-theorem">
+<h2>Correlation Theorem</h2>
+<p>如果f=g就是autocorrelation</p>
+<p>Corr(g,g)的Fourier Trans==&gt;<span class="math">\(|G(\omega)|^2\)</span>
+，即是Power Spectral Density(PSD)</p>
+</div>
+<div class="section" id="wiener-khinchin-theorem">
+<h2>Wiener-Khinchin Theorem</h2>
+<p>Parseval's theorem(怕什麼定理)說，對所有時域跟頻域的積分所得的total power應該要一樣。</p>
+<p>即Total Power <span class="math">\(\equiv \int^{\infty}_{-\infty}|g(t)|^2 dt=\int^{\infty}_{-\infty}|G(\omega)|^2 d\omega\)</span>
+。</p>
+<p>大致上是這樣。</p>
+<!-- </body> -->
+</div>
+    
+    <div style="text-align:right">
+        <ul class="pager"><li class="previous">
+                <a href="../M43/resize.html">← 上一篇</a>
+            </li><li class="next">
+                <a href="../Photo_Diary/20130601a.html">下一篇 →</a>
+        </li></ul></div>
+
+    
+        <script src="../../assets/js/mathjax.js" type="text/javascript"></script></div>
+    <br><div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="enigma8850";
+            var disqus_url="http://sophAi.github.com/Enigma/posts/Learning/convolution.html";
+        var disqus_title="Convolution(\u647a\u7a4d)\u7684\u7269\u7406\u610f\u7fa9";
+        var disqus_identifier="cache/posts/Learning/convolution.html";
+        var disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section></section></div></div>
+<!--End of body content-->
+
+
+    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+    // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    controls: false,
+    progress: false,
+    history: false,
+    keyboard: false,
+    rollingLinks: false,
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/linear/none
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
+    ]
+    });
+    </script><script>
+    Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.scrollTo(0,0);
+    MathJax.Hub.Rerender(event.currentSlide);
+    });
+    </script><script>
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true
+    })
+    </script><div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <div class="footerbox">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  Contents © 2013 <a href="https://www.facebook.com/M43Happiness">文遠爸</a> with <a href="http://nikola.ralsina.com.ar">Nikola</a> - It is a journey towards happiness.  <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"></a> <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml">RSS</a>  <a href="http://feeds.feedburner.com/github/NODC"><img src="http://feeds.feedburner.com/~fc/github/NODC?bg=FFFFFF&amp;fg=444444&amp;anim=1" height="26" width="88" style="border:0" alt=""></a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style" style="bottom:45px;right:0px;left:30px">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul></div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
