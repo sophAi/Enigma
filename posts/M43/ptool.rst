@@ -1,7 +1,7 @@
-.. title: 提升GH2與GX1的錄影畫質
+.. title: Ptool更新軔體程序
 .. slug: ptool
-.. date: 20130725 00:06:05
-.. tags: draft,學習與閱讀
+.. date: 20130726 20:37:31
+.. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130722 22:47:23
 .. ===================================Metadata↑================================================
@@ -10,70 +10,20 @@
 .. ===================================文章起始↓================================================
 .. <body>
 
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/29_youtube.png
-      :target: ../../../arch_2013/files_2013/M43/ptool_settings/29_youtube.png
-   :align: center
+更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如平行輸入自香港的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改，即可隨時在PAL與NTSC(~30fps,1080p60或720p60)規格間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同，而容易在錄影中產生黃色移動的條紋，而NTSC規格比較不容易產生，不過後其的機種已經能透過更改快門速度來解決這個問題了。
 
-   這是上傳到Youtube後的畫面截圖，可以看到不自然的色塊產生
+這裡我們以GH2與GX1為例來進行軔體修改與升級的分解步驟，詳細的相關資訊請參考\ `Ptool wiki`_\ 的原文頁面:
 
-.. TEASER_END
+#. 務必使用「充飽電力」的「原廠電池」，請勿使用副廠電池。
+#. 請下載\ `Ptool3`_\ ，這是用來修改軔體參數的程式(ptool3.exe)。
+#. 請下載\ `GH2的官方軔體`_\ 或\ `GX1的官方軔體`_\ ，我們將利用Ptool來更改軔體的參數(例如:GX1__V11.bin)。
+#. \ `Ptool參數檔`_\ ，由於參數檔隨時更新，我將其集中在另一篇討論(例如setc.ini)。
 
+確實檢查上述的步驟，並確保下載的檔案完整，我們即可開始進行軔體修改與更新的動作，如果參數檔設定錯誤，頂多是讓相機動作不正常(例如錄影中斷)，並不至於導致相機故障，以我在論壇的經驗，也未曾聽聞過類似事件，唯一有可能造成故障的因素是使用「未充飽」或「非原廠」的電池，嚴重者可能會造成無法正常開機，所以請大家謹記這個守則，更新前務必檢查電池並確實充電，同時不要在軔體更新過程中關閉相機電源或進行任何操作，就可以安心進行破解程序了。另外更新後的相機，請不要進入所謂的「工程模式」，會使相機運作不正常，諸如抓不到鏡頭，如果不小心進入工程模式，只要跳出工程模式後，按照下列步驟重新更新一次軔體即可恢復正常。
 
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/30_GX1_MTS.png
-      :target: ../../../arch_2013/files_2013/M43/ptool_settings/30_GX1_MTS.png
-   :align: center
+由於中文字型是由相機上的ROM而非軔體提供，因此日文介面的Panasonic相機，在經過軔體修改後僅能出現英文介面，中文字型是無法正常顯示的，而原本已有中文介面的相機，更新軔體前後均不受影響，中文與各式語言介面都可以保留。
 
-   這是原始的影片截圖，色階明顯平順許多。
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
-   :align: center
-
-
-
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
-   :align: center
-
-
-
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png
-   :align: center
-
-
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png
-   :align: center
-
-
-
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png
-   :align: center
-
-
-
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png
-   :align: center
-
-
-
-在\ `探討網路照片的奧秘`_\ 一文中，我們提到了縮圖對於數位影像的重要性，也提到了目前的Full HD規格，在主流的螢幕下相當於1:1的檢視，動態影片的畫質差異，會比更高畫素的靜態照片還要明顯，無論是縮圖的方式，或是影像壓縮的技術，都會以100%的比例呈現在螢幕上。例如上面兩張圖，都是1:1的截圖，可以很明顯的察覺到差別，也讓提升錄影畫質更具意義。除了改善錄影畫質，軔體的破解也能開啟一些原先軔體封閉的功能，例如日文版本的機身，可以透過軔體破解新增英文語言介面，以及提供PAL與NTSC之間的切換，歐規的數位相機，其錄影大多有30分鐘的限制，也能透過破解移除，在記憶卡的效能容許下，提升的流量以及良好的Scaling Matrix都能有效的讓影片中的瑕疵降到最低，整體來說，甚至有機會凌駕於專業的錄影機之上。
-
-這裡我們以GH2與GX1為例，有關破解的相關資訊請參考\ `Ptool wiki`_\ 的頁面，我們需要以下檔案:
-
-#. \ `Ptool3`_\ 。
-#. \ `GH2的官方軔體`_\ 或\ `GX1的官方軔體`_\ 。
-#. \ `GH2的Ptool設定檔`_\ 或\ `GX1的Ptool設定檔`_\。
-
-如果您是使用GX1，請下載GX1的官方軔體，以及GX1的Ptool設定檔，同理，GH2請下載相關檔案。
+以下是軔體修改的分解動作:
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/01_Ptool1.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/01_Ptool1.png
@@ -227,35 +177,11 @@
 
    更改成NTSC。如此一來，也比較能夠減輕室內日光燈下錄到閃爍燈頻的機率。
 
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png
-   :align: center
-
-   這是Ptool論壇的Driftwood所做的Quantization parameter測試，途中的顏色愈淺，表示QP愈佳，此圖為原廠GH2的24p模式。
-
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/24_GH3_24p.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/24_GH3_24p.png
-   :align: center
-
-   這個則是GH3原廠24p模式的測試結果(非All-I)。
-
-
-.. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/25_GH2_ClusterX.png
-   :target: ../../../arch_2013/files_2013/M43/ptool_settings/25_GH2_ClusterX.png
-   :align: center
-
-   這個則是經過Driftwood的破解設定所產生的結果，可以看到QP是最低的，結果是最好的一個。
-
-
-
+Ptool的參數檔是標準的ini檔案，有興趣的人可以使用記事本或編輯器檢視裏面的內容，或是直接將設定值複製與貼上，在Ptool論壇上也有許許多多不同的參數檔可供選擇，建議大家有興趣可以多方嘗試。
 
 
 .. </body>
 .. <url>
-
-.. _探討網路照片的奧秘: sharpen.html
 
 .. _Ptool wiki: http://www.gh1-hack.info/wiki/PToolSoftware
 
@@ -263,11 +189,9 @@
 
 .. _GH2的官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html
 
-.. _GH2的Ptool設定檔: http://sophai.github.io/arch_2013/files_2013/M43/ptool_settings/seta.ini
-
 .. _GX1的官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html
 
-.. _GX1的Ptool設定檔: http://sophai.github.io/arch_2013/files_2013/M43/ptool_settings/setb.ini
+.. _Ptool參數檔: ptool_settings.html
 
 .. </url>
 .. <footnote>
