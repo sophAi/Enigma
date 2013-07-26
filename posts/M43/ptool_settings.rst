@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130727 00:02:57
+.. date: 20130727 00:03:43
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -14,6 +14,7 @@
 
 
 DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新
+-----------------------------------------------------------
 
 環境: GX1+Sandisk 45MB/s USH-I與GH2+Toshiba Class 10 23MB/s 白卡
 

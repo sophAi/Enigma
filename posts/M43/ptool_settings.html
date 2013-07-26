@@ -56,7 +56,7 @@ MathJax.Hub.Config({
     <h1>GX1與GH2破解設定資訊</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-07-27T00:02:57+08:00">2013-07-27 00:02</time>
+        發表於: <time class="published" datetime="2013-07-27T00:03:43+08:00">2013-07-27 00:03</time>
         
 
         
@@ -64,7 +64,8 @@ MathJax.Hub.Config({
             <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
 
     </medium><hr><p>由於破解軔體的步驟大同小異，我將其獨立於<a class="reference external" href="ptool.html">Ptool更新軔體程序</a>一文，本文則不定時分享最新的破解參數設定，搭配Ptool則可進行錄影畫質的修改。</p>
-<p>DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新</p>
+<div class="section" id="drewnet-t9-trial-9-by-driftwood-2013-07-26">
+<h2>DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新</h2>
 <p>環境: GX1+Sandisk 45MB/s USH-I與GH2+Toshiba Class 10 23MB/s 白卡</p>
 <p>我使用Ptool論壇<a class="reference external" href="http://www.personal-view.com/talks/discussion/7580/driftwood-cluster-x-series-3moon-t7%D0%85r%D1%96zz-t6nebula-t7drewnet-t9/p1">driftwood</a>所調整的<a class="reference external" href="../../../arch_2013/files_2013/M43/ptool_settings/seta.ini">DREWnet T8</a>錄影參數已經很久了，driftwood近期的設定檔算是Ptool論壇成立以來集大成之作，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的<a class="reference external" href="../../../arch_2013/files_2013/M43/ptool_settings/setc.ini">DREWnet T9</a>參數檔，使用了新的scaling matrix，對我來說是一大消息，也讓這篇Ptool的資訊分享延期。錄影畫質的破解，需要流量(bit rate, 8 bit=1 Byte)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片不同的是影片檔經常是在1:1的情況下觀看的，因為當今主流螢幕所提供的解析度(大於或等於1920x1080)，就是為了能完整播放FullHD的影片，因此影片畫質的差別很容易以肉眼分辨，而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，而選擇DREWnet最重要的原因是其針對Scaling matrix做了許多調整，將流量平均分配給I/P/B frame，而非僅僅拉抬流量(通常也要設定auto quantizer)。流量過高往往也會降低錄影的穩定性，太複雜的場景容易使錄影中斷，因此在流量不過度暴增的前提下提升畫面的細節才是最聰明的辦法，在driftwood的描述裡，DREWnet T9具有以下特性:</p>
 <ol class="arabic simple"><li>80Mbps constant in 24p modes for exceptional quality.</li>
@@ -149,6 +150,7 @@ MathJax.Hub.Config({
 <!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
 <!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
 <!-- ============================================================================================ -->
+</div>
     
     <div style="text-align:right">
         <ul class="pager"><li class="previous">
