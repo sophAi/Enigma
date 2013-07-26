@@ -52,137 +52,15 @@ MathJax.Hub.Config({
 <!--Body content-->
 <div class="reveal"><div class="slides">
     <section><section><div class="postbox">
-        <h1><a href="posts/M43/ptool.html">Ptool更新軔體程序</a>
+        <h1><a href="posts/M43/ptool_settings.html">GX1與GH2破解設定資訊</a>
         <small>  
-             發表於: <time class="published" datetime="2013-07-26T20:37:31+08:00">2013-07-26 20:37</time></small></h1>
-        <hr><p>更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如平行輸入自香港的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改，即可隨時在PAL與NTSC(~30fps,1080p60或720p60)規格間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同，而容易在錄影中產生黃色移動的條紋，而NTSC規格比較不容易產生，不過後其的機種已經能透過更改快門速度來解決這個問題了。</p>
-<p>這裡我們以GH2與GX1為例來進行軔體修改與升級的分解步驟，詳細的相關資訊請參考<a class="reference external" href="http://www.gh1-hack.info/wiki/PToolSoftware">Ptool wiki</a>的原文頁面:</p>
-<ol class="arabic simple"><li>務必使用「充飽電力」的「原廠電池」，請勿使用副廠電池。</li>
-<li>請下載<a class="reference external" href="http://www.gh1-hack.info/ptool3d.zip">Ptool3</a>，這是用來修改軔體參數的程式(ptool3.exe)。</li>
-<li>請下載<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html">GH2的官方軔體</a>或<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html">GX1的官方軔體</a>，我們將利用Ptool來更改軔體的參數(例如:GX1__V11.bin)。</li>
-<li><a class="reference external" href="posts/M43/ptool_settings.html">Ptool參數檔</a>，由於參數檔隨時更新，我將其集中在另一篇討論(例如setc.ini)。</li>
-</ol><p>確實檢查上述的步驟，並確保下載的檔案完整，我們即可開始進行軔體修改與更新的動作，如果參數檔設定錯誤，頂多是讓相機動作不正常(例如錄影中斷)，並不至於導致相機故障，以我在論壇的經驗，也未曾聽聞過類似事件，唯一有可能造成故障的因素是使用「未充飽」或「非原廠」的電池，嚴重者可能會造成無法正常開機，所以請大家謹記這個守則，更新前務必檢查電池並確實充電，同時不要在軔體更新過程中關閉相機電源或進行任何操作，就可以安心進行破解程序了。另外更新後的相機，請不要進入所謂的「工程模式」，會使相機運作不正常，諸如抓不到鏡頭，如果不小心進入工程模式，只要跳出工程模式後，按照下列步驟重新更新一次軔體即可恢復正常。</p>
-<p>由於中文字型是由相機上的ROM而非軔體提供，因此日文介面的Panasonic相機，在經過軔體修改後僅能出現英文介面，中文字型是無法正常顯示的，而原本已有中文介面的相機，更新軔體前後均不受影響，中文與各式語言介面都可以保留。</p>
-<p>以下是軔體修改的分解動作:</p>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/01_Ptool1.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/01_Ptool1.png" src="../arch_2013/files_2013/M43/ptool_settings/01_Ptool1.png"></a>
-<p class="caption">Windows下直接執行ptool3.exe，Linux與Mac則安裝wine來開啟。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png" src="../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png"></a>
-<p class="caption">點選Load Firmware後，讀取由Panasonic官方網站所下載的軔體檔(.bin檔)。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png" src="../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png"></a>
-<p class="caption">如果設定檔(.ini檔)與Ptool放在同一個目錄下，則讀取軔體後，下方A~J的按鈕會亮起綠燈，分別對應seta.ini~setj.ini。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png" src="../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png"></a>
-<p class="caption">若要讀取seta.ini的設定，則用滑鼠按一下A的綠色按鈕即可將設定讀取進來。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png" src="../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png"></a>
-<p class="caption">檢查一下幾個重要的設定，例如Version increment一定要勾選，Interface與Movie related restrictions都勾選。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png" src="../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png"></a>
-<p class="caption">在專家設定裡，也修改了Scaling tables，這是與Quantization Parameter有關的設定。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png" src="../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png"></a>
-<p class="caption">這些專家選項是畫質與檔案流量維持平衡的關鍵。原則上選項應該都已經設定好，不需要做任何手動的更改。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png" src="../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png"></a>
-<p class="caption">選擇Save Firmware，將修改過後的軔體檔存成GX1__V12.bin或GH2__V12.bin，將原來軔體編號加1即可，請勿將原始軔體覆蓋以備日後修改或還原。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/09_Ptool9.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/09_Ptool9.png" src="../arch_2013/files_2013/M43/ptool_settings/09_Ptool9.png"></a>
-<p class="caption">將一張由相機格式化過的SD卡連接上電腦，將剛剛的新軔體複製到記憶卡的根目錄。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/10_GH2_playback.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/10_GH2_playback.JPG" src="../arch_2013/files_2013/M43/ptool_settings/10_GH2_playback.JPG"></a>
-<p class="caption">將SD卡插回相機，開啟電源，確保使用原廠充飽的電池，按下播放鈕(Playback)。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/11_GH2_update.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/11_GH2_update.JPG" src="../arch_2013/files_2013/M43/ptool_settings/11_GH2_update.JPG"></a>
-<p class="caption">如果是日文介面，則應該如圖所示，選擇第一個選項進行更新軔體。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/12_GX1_update2.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/12_GX1_update2.JPG" src="../arch_2013/files_2013/M43/ptool_settings/12_GX1_update2.JPG"></a>
-<p class="caption">更新過程千萬不要中斷電源，或進行任何操作，放在安全的地方靜靜地等他完成。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/13_GX1_ver.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/13_GX1_ver.JPG" src="../arch_2013/files_2013/M43/ptool_settings/13_GX1_ver.JPG"></a>
-<p class="caption">更新完後，版本應該不會改變。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/14_GH2_lang.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/14_GH2_lang.JPG" src="../arch_2013/files_2013/M43/ptool_settings/14_GH2_lang.JPG"></a>
-<p class="caption">如果原本是日文機，更新完會多出語言選項，也會出現繁體中文的選項。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/15_GH2_miss_ch.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/15_GH2_miss_ch.JPG" src="../arch_2013/files_2013/M43/ptool_settings/15_GH2_miss_ch.JPG"></a>
-<p class="caption">但是中文字型是與軔體分開來的，也就是說，日文機身並不包含中文字型，所以即使出現中文選項，也無法正常顯示中文，所有的日文機應該都是這樣。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/16_GH2_en.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/16_GH2_en.JPG" src="../arch_2013/files_2013/M43/ptool_settings/16_GH2_en.JPG"></a>
-<p class="caption">因此如果您的相機是日文機種，還是選擇英文介面吧!</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/17_GH2_lang_en.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/17_GH2_lang_en.JPG" src="../arch_2013/files_2013/M43/ptool_settings/17_GH2_lang_en.JPG"></a>
-<p class="caption">如果是來自香港的平輸機器，機身已經包含中文字型，無論如何，中文介面都不會受到影響，可以安心使用。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/18_GX1_ntsc_format.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/18_GX1_ntsc_format.JPG" src="../arch_2013/files_2013/M43/ptool_settings/18_GX1_ntsc_format.JPG"></a>
-<p class="caption">更新軔體有可能會遇到這樣的錯誤訊息，其實是因為機身切換了視訊格式所致，不需要太擔心。只要在相機上重新格式化SD卡即可。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/19_GX1_video_out.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/19_GX1_video_out.JPG" src="../arch_2013/files_2013/M43/ptool_settings/19_GX1_video_out.JPG"></a>
-<p class="caption">香港是採用PAL規格，可以利用這個選項切換成適用於台灣的NTSC規格。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/20_GX1_ntsc.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/20_GX1_ntsc.JPG" src="../arch_2013/files_2013/M43/ptool_settings/20_GX1_ntsc.JPG"></a>
-<p class="caption">這是GX1的設定，更改成NTSC即可。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/21_GH2_video_out.jpg"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/21_GH2_video_out.jpg" src="../arch_2013/files_2013/M43/ptool_settings/21_GH2_video_out.jpg"></a>
-<p class="caption">GH2也是一樣。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg" src="../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg"></a>
-<p class="caption">更改成NTSC。如此一來，也比較能夠減輕室內日光燈下錄到閃爍燈頻的機率。</p>
-</div>
-<p>Ptool的參數檔是標準的ini檔案，有興趣的人可以使用記事本或編輯器檢視裏面的內容，或是直接將設定值複製與貼上，在Ptool論壇上也有許許多多不同的參數檔可供選擇，建議大家有興趣可以多方嘗試。</p>
-<!-- </body> -->
-<!-- <url> -->
-<!-- </url> -->
-<!-- <footnote> -->
-<!-- </footnote> -->
-<!-- <citation> -->
-<!-- </citation> -->
-<!-- ===================================文章結束↑/語法備忘錄↓==================================== -->
-<!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) -->
-<!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` -->
-<!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 -->
-<!-- 插入teaser分頁: .. TEASER_END -->
-<!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 -->
-<!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 -->
-<!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) -->
-<!-- 插入youtube: ..youtube:: 影片的hash string -->
-<!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) -->
-<!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) -->
-<!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 -->
-<!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 -->
-<!-- 插入sidebar: ..sidebar:: (空一行) 內容 -->
-<!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 -->
-<!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) -->
-<!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) -->
-<!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
-<!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
-<!-- ============================================================================================ -->
+             發表於: <time class="published" datetime="2013-07-26T20:39:41+08:00">2013-07-26 20:39</time></small></h1>
+        <hr><div><p>DREWnet T9 by Driftwood - 2013/07/26更新</p>
+<p>我使用Ptool論壇上driftwood所調整的<a class="reference external" href="../arch_2013/files_2013/M43/ptool_settings/seta.ini">DREWnet T8</a>已經很久了，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的<a class="reference external" href="../arch_2013/files_2013/M43/ptool_settings/setc.ini">DREWnet T9</a>參數檔，使用了新的scaling matrix，第1時間就馬上更新來嘗試!基本上錄影畫質的破解，需要流量(bit rate)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片更不同的是影片檔經常是在1:1的情況下觀看的，這是因為當今主流螢幕的解析度(大於等於1920x1080)，就是為了能完整播放FullHD的影片，因此錄影畫質的提升效果明顯，然而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，例如將DREWnet套用在GX1上時，平均錄影檔增加了約1.7倍容量，其實對於一般生活錄影來說已經是很可觀的增幅，而這還是平均流量在40Mbps的情形下。</p>
+<p><a href="posts/M43/ptool_settings.html">繼續閱讀...</a></p></div>
         
     <p>
-        <a href="posts/M43/ptool.html#/0/1" data-disqus-identifier="cache/posts/M43/ptool.html">Comments</a>
+        <a href="posts/M43/ptool_settings.html#/0/1" data-disqus-identifier="cache/posts/M43/ptool_settings.html">Comments</a>
 
         
 </p><div style="text-align:right">
@@ -192,88 +70,14 @@ MathJax.Hub.Config({
 
         </div>
         </section><section><div class="postbox">
-        <h1><a href="posts/M43/ptool_settings.html">GX1與GH2破解設定資訊</a>
+        <h1><a href="posts/M43/ptool.html">Ptool更新軔體程序</a>
         <small>  
-             發表於: <time class="published" datetime="2013-07-26T20:37:20+08:00">2013-07-26 20:37</time></small></h1>
-        <hr><p>DREWnet T9 by Driftwood - 2013/07/26更新</p>
-<p>我使用Ptool論壇，driftwood所調整的<a class="reference external" href="../arch_2013/files_2013/M43/ptool_settings/seta.ini">DREWnet T8</a>已經很久了，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的<a class="reference external" href="../arch_2013/files_2013/M43/ptool_settings/setc.ini">DREWnet T9</a>參數檔，使用了新的scaling matrix，第1時間就馬上更新來嘗試!基本上錄影畫質的破解，需要流量(bit rate)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片更不同的是影片檔經常是在1:1的情況下觀看的，這是因為當今主流螢幕的解析度(大於等於1920x1080)，就是為了能完整播放FullHD的影片，因此錄影畫質的提升效果明顯，然而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，例如將DREWnet套用在GX1上時，平均錄影檔增加了約1.7倍容量，其實對於一般生活錄影來說已經是很可觀的增幅，而這還是平均流量在40Mbps的情形下。</p>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png" src="../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png"></a>
-<p class="caption">通常在充滿細節的畫面，最容易出現塊狀瑕疵，不過1:1檢視下，無論是椅子上的網點，還是布偶的毛料，DREWnet T9幾乎看不到這個問題。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png" src="../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png"></a>
-</div>
-<p>　 偽色或英文所稱的bending，最常出現在色階原本應該連續的地方，所謂的斷階出現的不自然色彩，其實是macroblock所產生的，即使是低光下，皮膚的色階表現也很不錯。</p>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png" src="../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png"></a>
-<p class="caption">除了皮膚的色階表現良好，直線也不容易察覺到鋸齒狀，即使是動態場景(B/P frame)，表現也超乎想像的好。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png" src="../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png"></a>
-<p class="caption">雖然GX1的MP4出廠值流量比AVCHD高(20Mbps比17Mbps)，很明顯的塊狀瑕疵一覽無遺。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png" src="../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png"></a>
-<p class="caption">椅子的網格幾乎是糊成一團。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png" src="../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png"></a>
-<p class="caption">毛料也糊成一團，直線也出現鋸齒，Ptool對於MP4的破解並不完全，會造成機身無法正常播放，因此MP4的參數保留出廠值，平常使用AVCHD就足夠了。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/29_youtube.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/29_youtube.png" src="../arch_2013/files_2013/M43/ptool_settings/29_youtube.png"></a>
-<p class="caption">上傳到Youtube後，影片會被轉成MP4格式，原始檔案保留的細節愈多，愈可以減輕畫質劣化的情況。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/30_GX1_MTS.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/30_GX1_MTS.png" src="../arch_2013/files_2013/M43/ptool_settings/30_GX1_MTS.png"></a>
-<p class="caption">這是原始的影片截圖，幾乎跟直接將靜態照片縮圖到FullHD大小的品質一樣!色階平順漂亮。</p>
-</div>
-<p>我還沒有時間好好觀察24p還有破解前後AVCHD畫質的差異，總括來說，只要Quantization的瑕疵不易被發覺，就是很棒的畫質了，這也是錄影破解主要的目的。如果真的要探究的話，下面列出driftwood量化的測試，其用一個灰階圖格來反映Quantization後的成像，顏色愈淡，表示影像品質愈好。</p>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png" src="../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png"></a>
-<p class="caption">此圖為原廠GH2的24p模式，在driftwood的測試裡排名第3。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/24_GH3_24p.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/24_GH3_24p.png" src="../arch_2013/files_2013/M43/ptool_settings/24_GH3_24p.png"></a>
-<p class="caption">排名第2的則是GH3原廠24p模式(非All-I)。</p>
-</div>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/M43/ptool_settings/25_GH2_ClusterX.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/25_GH2_ClusterX.png" src="../arch_2013/files_2013/M43/ptool_settings/25_GH2_ClusterX.png"></a>
-<p class="caption">結果是最好的就是DREWnet，也可以說，已經超過了GH3非All-I模式所能達到的等級。</p>
-</div>
-<p>當然，無論是使用DREWnet的GH2，或是GH3，他們的硬體能力都還沒有被徹底發揮，例如driftwood的moon T7(ALL-I)可以說是跟GH3的All-I模式打對臺，使用的流量遠遠超越GH3所使用的，Ｓpizz與Nebula都是low GOP的設定，理論上畫質都比DREWnet還更上乘，將來GH3也破解了，應該也能得到更好的品質，只是回到實用性的現實面，以及基於檔案容量與穩定性的考量，在生活與親子錄影這塊，DREWnet是我所認為最平衡且實用的參數設定，在不過度暴增的影片容量下，大概只有GH2跟All-I模式下的GH3可以得到比DREWnet更佳的錄影畫質了。</p>
-<p>錄影當然不是只有畫質這方面，還有拍攝手法，故事性，分鏡，以及畫面穩定性等，因此除了畫質，其他方面也是要努力兼顧喔!</p>
-<!-- </body> -->
-<!-- <url> -->
-<!-- </url> -->
-<!-- <footnote> -->
-<!-- </footnote> -->
-<!-- <citation> -->
-<!-- </citation> -->
-<!-- ===================================文章結束↑/語法備忘錄↓==================================== -->
-<!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) -->
-<!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` -->
-<!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 -->
-<!-- 插入teaser分頁: .. TEASER_END -->
-<!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 -->
-<!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 -->
-<!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) -->
-<!-- 插入youtube: ..youtube:: 影片的hash string -->
-<!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) -->
-<!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) -->
-<!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 -->
-<!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 -->
-<!-- 插入sidebar: ..sidebar:: (空一行) 內容 -->
-<!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 -->
-<!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) -->
-<!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) -->
-<!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
-<!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
-<!-- ============================================================================================ -->
+             發表於: <time class="published" datetime="2013-07-26T20:38:58+08:00">2013-07-26 20:38</time></small></h1>
+        <hr><div><p>更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如平行輸入自香港的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改，即可隨時在PAL與NTSC(~30fps,1080p60或720p60)規格間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同，而容易在錄影中產生黃色移動的條紋，而NTSC規格比較不容易產生，不過後其的機種已經能透過更改快門速度來解決這個問題了。</p>
+<p><a href="posts/M43/ptool.html">繼續閱讀...</a></p></div>
         
     <p>
-        <a href="posts/M43/ptool_settings.html#/0/1" data-disqus-identifier="cache/posts/M43/ptool_settings.html">Comments</a>
+        <a href="posts/M43/ptool.html#/0/1" data-disqus-identifier="cache/posts/M43/ptool.html">Comments</a>
 
         
 </p><div style="text-align:right">

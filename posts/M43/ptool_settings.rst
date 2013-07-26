@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130726 20:37:20
+.. date: 20130726 20:39:41
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -12,8 +12,9 @@
 
 DREWnet T9 by Driftwood - 2013/07/26更新
 
-我使用Ptool論壇，driftwood所調整的\ `DREWnet T8`_\ 已經很久了，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的\ `DREWnet T9`_\ 參數檔，使用了新的scaling matrix，第1時間就馬上更新來嘗試!基本上錄影畫質的破解，需要流量(bit rate)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片更不同的是影片檔經常是在1:1的情況下觀看的，這是因為當今主流螢幕的解析度(大於等於1920x1080)，就是為了能完整播放FullHD的影片，因此錄影畫質的提升效果明顯，然而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，例如將DREWnet套用在GX1上時，平均錄影檔增加了約1.7倍容量，其實對於一般生活錄影來說已經是很可觀的增幅，而這還是平均流量在40Mbps的情形下。
+我使用Ptool論壇上driftwood所調整的\ `DREWnet T8`_\ 已經很久了，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的\ `DREWnet T9`_\ 參數檔，使用了新的scaling matrix，第1時間就馬上更新來嘗試!基本上錄影畫質的破解，需要流量(bit rate)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片更不同的是影片檔經常是在1:1的情況下觀看的，這是因為當今主流螢幕的解析度(大於等於1920x1080)，就是為了能完整播放FullHD的影片，因此錄影畫質的提升效果明顯，然而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，例如將DREWnet套用在GX1上時，平均錄影檔增加了約1.7倍容量，其實對於一般生活錄影來說已經是很可觀的增幅，而這還是平均流量在40Mbps的情形下。
 
+.. TEASER_END
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
