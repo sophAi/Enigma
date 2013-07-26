@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130726 21:28:25
+.. date: 20130726 22:32:23
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -14,48 +14,60 @@ DREWnet T9 by Driftwood - 2013/07/26更新
 
 環境: GX1+Sandisk 45MB/s USH-I與GH2+Toshiba Class 10白卡
 
-我使用Ptool論壇上\ `driftwood`_\ 所調整的\ `DREWnet T8`_\ 已經很久了，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的\ `DREWnet T9`_\ 參數檔，使用了新的scaling matrix，第1時間就馬上更新來嘗試!基本上錄影畫質的破解，需要流量(bit rate)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片更不同的是影片檔經常是在1:1的情況下觀看的，這是因為當今主流螢幕的解析度(大於等於1920x1080)，就是為了能完整播放FullHD的影片，因此錄影畫質的提升效果明顯，然而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，例如DREWnet就針對Scaling matrix做了許多調整，在維持流量不暴增的前提下提升畫面的細節，平均錄影檔增加了約1.7倍容量，對於一般生活錄影來說已經是很可觀的增幅，而這還是平均流量在40Mbps的情形下。
+我使用Ptool論壇\ `driftwood`_\ 所調整的\ `DREWnet T8`_\ 錄影參數已經很久了，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的\ `DREWnet T9`_\ 參數檔，使用了新的scaling matrix，對我來說是一大消息，也讓Ptool的資訊延後分享。錄影畫質的破解，需要流量(bit rate)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片不同的是影片檔經常是在1:1的情況下觀看的，因為當今主流螢幕所提供的解析度(大於或等於1920x1080)，就是為了能完整播放FullHD的影片，因此錄影畫質的差別很容易以肉眼分辨，而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，而選擇DREWnet最重要的原因是其針對Scaling matrix做了許多調整，將流量平均分配給I/P/B frame，而非緊緊拉抬流量(通常也要設定auto quantizer)。流量過高往往也會降低錄影的穩定性，太複雜的場景容易使錄影中斷，因此在流量不過度暴增的前提下提升畫面的細節才是最聰明的辦法，在driftwood的描述裡，DREWnet T9具有以下特性:
+
+#. 80Mbps constant in 24p modes for exceptional quality.
+
+#. 1080i/FSH Maybe only around 40Mbps but the quantisation and PSNR is brilliant!
+
+#. 720p modes Just the best there is. (事實上1080i/FSH(同時也是GH2的HBR以及GX1的FSH)所採用的scaling matrices跟720p是相同的)。
+
+由於平常我是GH2與GX1混合拍攝，為了將混合格式轉檔(pull down)所需的成本降到最低，大多偏向採用1080p30(FSH)的錄影格式，使用DREWnet讓1080p30的錄影檔平均增加了約1.7倍的容量，對於生活錄影來說已經是很可觀的增長。24p無疑畫質更佳，但是所需的記憶卡空間也更多，如果各位拍攝影片的頻率非常高，例如紀錄小孩的成長，出外旅遊紀錄，同時還要兼顧靜態照片所需的額外容量，則FSH模式已經是綽綽有餘。不管是靜態還是動態攝影，「剛剛好」是很重要的原則。
 
 .. TEASER_END
 
-以下我們以GX1的MTS檔1:1截圖，來檢視影片的畫質。
+為了讓各位對於錄影畫質的提升有點概念，以下我們以GX1的MTS檔1:1截圖來檢視之，使用FSH(1080p30)模式錄影。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
    :align: center
 
-   GX1的MTS檔 ―通常在充滿細節的畫面，最容易出現塊狀瑕疵，不過1:1檢視下，無論是椅子上的網點，還是布偶的毛料，DREWnet T9幾乎看不到這個問題。
+   GX1的MTS檔。通常在充滿細節的畫面，最容易出現塊狀瑕疵，不過1:1檢視下，無論是椅子上的網點，還是布偶的毛料，DREWnet T9幾乎觀察不到色塊的存在。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
    :align: center
 
-　 偽色或英文所稱的bending，最常出現在色階原本應該連續的地方，所謂的斷階出現的不自然色彩，其實是macroblock所產生的，即使是低光下，皮膚的色階表現也很不錯。
+　 偽色或英文所稱的color bending，最常出現在色階不連續的地方，其產生的不自然色彩，其實是macroblock所造成的，破解後的GX1，即使是低光下，皮膚的色階表現也很不錯。
 
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png
    :align: center
 
-   除了皮膚的色階表現良好，直線也不容易察覺到鋸齒狀，即使是動態場景(B/P frame)，表現也超乎想像的好。
+   除了皮膚的色階表現良好，直線也不容易產生鋸齒，即使是動態場景(B/P frame)，表現也超乎想像的好。
+
+接著我們來檢視GX1原廠的MP4錄影，場景相同，流量為20Mbps。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_01.png
    :align: center
 
-   GX1的MP4檔 ―雖然GX1的MP4出廠值流量比AVCHD高(20Mbps比17Mbps)，很明顯的塊狀瑕疵一覽無遺。
+   雖然GX1的MP4出廠值流量比AVCHD高(20Mbps比17Mbps)，很明顯全螢幕播放塊狀瑕疵一覽無遺。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_02.png
    :align: center
 
-   椅子的網格幾乎是糊成一團。
+   椅子的網格幾乎是糊成一團，對比DREWnet幾乎是完整呈現紋理，差距實在是太大了。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_mp4_03.png
    :align: center
 
-   毛料也糊成一團，直線也出現鋸齒，Ptool對於MP4的破解並不完全，會造成機身無法正常播放，因此MP4的參數保留出廠值，平常使用AVCHD就足夠了。
+   毛料也糊成一團，直線也出現鋸齒，Ptool對於MP4的破解並不完全，會造成機身無法正常播放，同時考量到記憶卡空間不夠時，也需要一個小巧的錄影格式，因此MP4的參數完全沒有更動，正常情況下使用MTS就足夠了。
+
+下面是上傳到youtube後全螢幕的截圖，當時還是使用DREWnet T8。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/29_youtube.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/29_youtube.png
@@ -68,16 +80,16 @@ DREWnet T9 by Driftwood - 2013/07/26更新
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/30_GX1_MTS.png
    :align: center
 
-   這是原始的影片截圖，幾乎跟直接將靜態照片縮圖到FullHD大小的品質一樣!色階平順漂亮。
+   這是原始的影片截圖，幾乎跟直接將靜態照片縮圖到FullHD大小的品質一樣!色階平順漂亮，細節保留完整。
 
 
-我還沒有時間好好觀察24p還有破解前後AVCHD畫質的差異，總括來說，只要Quantization的瑕疵不易被發覺，就達到破解的目了。如果真的要探究的話，下面列出driftwood量化的測試，其用一個灰階圖格來反映Quantization後的成像，顏色愈淡，表示影像品質愈好。
+我還沒有時間好好觀察24p還有破解前後AVCHD畫質的差異，總括來說，只要Quantization的瑕疵不易被發覺，就達到破解的目了。真的要探究的話，下面列出driftwood量化的測試，其用一個灰階圖格來反映Quantization後的成像，顏色愈淡，表示影像品質愈好。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png
    :align: center
 
-   此圖為原廠GH2的24p模式，在driftwood的測試裡排名第3。
+   此圖為GH2原廠的24p模式，在driftwood的測試裡排名第3。
 
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/24_GH3_24p.png
@@ -91,11 +103,11 @@ DREWnet T9 by Driftwood - 2013/07/26更新
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/25_GH2_ClusterX.png
    :align: center
 
-   結果是最好的就是DREWnet，也可以說，已經超過了GH3非All-I模式所能達到的等級。
+   排名第1的是DREWnet與GH2，換句話說，已經超過了GH3非All-I模式所能達到的程度。
 
-當然，無論是使用DREWnet的GH2或是GH3，他們的硬體能力都還沒有被徹底發揮，例如driftwood的moon T7(ALL-I)可以說是跟GH3的All-I模式打對臺，使用的流量甚至遠遠超越GH3，Spizz與Nebula都是low GOP的設定，理論上畫質都比DREWnet還更上乘，將來GH3也破解了，應該也能得到同等的品質，只是回到實用性的現實面，以及基於檔案容量與穩定性的考量，在生活紀錄這方面，DREWnet是我所認為最平衡且實用的參數設定，在不過度暴增影片的容量下，大概只有破解的GH2跟All-I模式下的GH3可以得到比DREWnet更佳的錄影畫質了。
+當然，無論是使用DREWnet的GH2或是GH3，他們的硬體能力都還沒有被徹底發揮，例如driftwood的moon T7(ALL-I)可以說是跟GH3的All-I同性質的模式，使用的流量甚至遠遠超越GH3，Spizz與Nebula都是low GOP的設定，理論上畫質都比DREWnet還更上乘，將來GH3能夠破解了，應該也能得到同等的品質，只是回到現實面，以及基於檔案容量與穩定性的考量，在生活紀錄這方面，DREWnet是我所認為最平衡且最實用的參數設定，市面上大概只有破解的GH2，All-I模式下的GH3，還有高價位的專業錄影設備可以得到比DREWnet更佳的錄影畫質了。
 
-目前還沒發生任何問題，以前使用DREWnet T8時，偶爾會發生無法在機身播放影片的現象，不過重新開機就正常了，同時影片本身也都是正常的，可以安心使用。錄影當然不是只有畫質的追求，還有拍攝手法，故事性，分鏡，以及畫面穩定性等，因此畫質足夠就好，其他方面也是要努力兼顧喔!
+使用兩天了，還沒發生任何問題，先前使用DREWnet T8時，偶爾會發生無法在機身立即播放影片的現象，重新開機就可以順利預覽了，這現象並不會造成影片故障，是個可以忽略的小問題，而使用T9版本還沒有碰到類似情況，有進一步的發現再分享囉！錄影不是只有畫質的追求，還有拍攝手法，故事性，分鏡，以及畫面穩定性等，因此畫質「足夠」即可，其他方面也是要努力兼顧喔!
 
 
 .. </body>
