@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130727 00:03:43
+.. date: 20130727 00:22:08
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -18,7 +18,7 @@ DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新
 
 環境: GX1+Sandisk 45MB/s USH-I與GH2+Toshiba Class 10 23MB/s 白卡
 
-我使用Ptool論壇\ `driftwood`_\ 所調整的\ `DREWnet T8`_\ 錄影參數已經很久了，driftwood近期的設定檔算是Ptool論壇成立以來集大成之作，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的\ `DREWnet T9`_\ 參數檔，使用了新的scaling matrix，對我來說是一大消息，也讓這篇Ptool的資訊分享延期。錄影畫質的破解，需要流量(bit rate, 8 bit=1 Byte)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片不同的是影片檔經常是在1:1的情況下觀看的，因為當今主流螢幕所提供的解析度(大於或等於1920x1080)，就是為了能完整播放FullHD的影片，因此影片畫質的差別很容易以肉眼分辨，而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，而選擇DREWnet最重要的原因是其針對Scaling matrix做了許多調整，將流量平均分配給I/P/B frame，而非僅僅拉抬流量(通常也要設定auto quantizer)。流量過高往往也會降低錄影的穩定性，太複雜的場景容易使錄影中斷，因此在流量不過度暴增的前提下提升畫面的細節才是最聰明的辦法，在driftwood的描述裡，DREWnet T9具有以下特性:
+我使用Ptool論壇\ `driftwood`_\ 所調整的\ `DREWnet T8`_\ 錄影參數已經很久了，driftwood近期的設定檔算是Ptool論壇成立以來集大成之作，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的\ `DREWnet T9`_\ 參數檔，使用了新的scaling matrix，對我來說是一大消息，也讓這篇Ptool的資訊分享延期。錄影畫質的破解，需要流量(bit rate, 8 bit=1 Byte)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片不同的是影片檔經常是在1:1的情況下觀看的，因為當今主流螢幕所提供的解析度(大於或等於1920x1080)，就是為了能完整播放FullHD的影片，因此畫質的差別很容易以肉眼分辨，要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，選擇DREWnet最重要的原因是其針對Scaling matrix做了許多調整，將流量平均分配給I/P/B frame，而非僅僅拉抬流量(通常也要設定auto quantizer)。流量過高往往也會降低錄影的穩定性，太複雜的場景容易使錄影中斷，因此在流量不過度暴增的前提下提升畫面的細節才是最聰明的辦法，在driftwood的描述裡，DREWnet T9具有以下特性:
 
 #. 80Mbps constant in 24p modes for exceptional quality.
 
