@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130727 00:26:08
+.. date: 20130727 00:33:33
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -107,7 +107,7 @@ DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/25_GH2_ClusterX.png
    :align: center
 
-   排名第1的是DREWnet與GH2，換句話說，已經超過了GH3非All-I模式所能達到的程度。
+   排名第1的是DREWnet與GH2，換句話說，已經超越了GH3非All-I模式所能達到的程度。
 
 當然，無論是使用DREWnet的GH2或是GH3，他們的硬體能力都還沒有被徹底發揮，例如driftwood的moon T7(ALL-I)可以說是跟GH3的All-I同性質的設定，採用的流量甚至遠遠超越GH3，Spizz與Nebula都是low GOP的設定，理論上畫質都比DREWnet還更上乘，有興趣的人可以嘗試看看，將來GH3能夠破解了，應該也能得到同等的品質，只是回到現實面，以及基於檔案容量與穩定性的考量，在生活紀錄這方面，DREWnet是我認為最平衡且最實用的參數設定，最大80Mbps的流量(約10MB/s)幾乎適用於所有class 10的SD卡，市面上大概只有破解的GH2，All-I模式下的GH3，還有高價位的專業錄影設備可以得到比DREWnet更佳的錄影畫質了。這也說明軟體的因素，在數位攝影裡經常是遠大於硬體的差別，同樣的觀念在\ `探討網路照片的奧秘`_\ 一文中也清楚地揭示。
 
