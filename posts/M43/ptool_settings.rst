@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130727 00:02:18
+.. date: 20130727 00:02:57
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -115,6 +115,8 @@ DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新
 
 .. </body>
 .. <url>
+
+.. _Ptool更新軔體程序: ptool.html
 
 .. _driftwood: http://www.personal-view.com/talks/discussion/7580/driftwood-cluster-x-series-3moon-t7Ѕrіzz-t6nebula-t7drewnet-t9/p1
 
