@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="file_tools.py"><meta name="author" content="文遠爸"><title>file_tools.py | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'center', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--></head><body><p>
+        http://sophAi.github.io/Enigma/rss.xml
+            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+    document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script><!--[if lt IE 9]>
+    <script src="/assets/reveal/lib/js/html5shiv.js"></script>
+    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></p>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../../">
+            文以載道，寧靜以致遠
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
+            </li><li><a href="../../categories/index.html">標籤分類</a>
+            </li><li><a href="../../stories/about.html">關於這裡</a>
+
+                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+<!-- End of custom search -->
+
+                <ul class="nav pull-right"></ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+
+<!--Body content-->
+<div class="reveal"><div class="slides">
+    <section><ul class="breadcrumb"><li><a href="../">/listings</a>
+        </li><li><a href=".">/jpg2rst</a>
+        </li><li><a href="#">/file_tools.py.html</a>
+</li></ul><ul class="unstyled"></ul><table class="codetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="file_tools.py.html#setuppy-1"> 1</a>
+<a href="file_tools.py.html#setuppy-2"> 2</a>
+<a href="file_tools.py.html#setuppy-3"> 3</a>
+<a href="file_tools.py.html#setuppy-4"> 4</a>
+<a href="file_tools.py.html#setuppy-5"> 5</a>
+<a href="file_tools.py.html#setuppy-6"> 6</a>
+<a href="file_tools.py.html#setuppy-7"> 7</a>
+<a href="file_tools.py.html#setuppy-8"> 8</a>
+<a href="file_tools.py.html#setuppy-9"> 9</a>
+<a href="file_tools.py.html#setuppy-10">10</a>
+<a href="file_tools.py.html#setuppy-11">11</a>
+<a href="file_tools.py.html#setuppy-12">12</a>
+<a href="file_tools.py.html#setuppy-13">13</a>
+<a href="file_tools.py.html#setuppy-14">14</a>
+<a href="file_tools.py.html#setuppy-15">15</a>
+<a href="file_tools.py.html#setuppy-16">16</a>
+<a href="file_tools.py.html#setuppy-17">17</a>
+<a href="file_tools.py.html#setuppy-18">18</a>
+<a href="file_tools.py.html#setuppy-19">19</a>
+<a href="file_tools.py.html#setuppy-20">20</a>
+<a href="file_tools.py.html#setuppy-21">21</a>
+<a href="file_tools.py.html#setuppy-22">22</a>
+<a href="file_tools.py.html#setuppy-23">23</a>
+<a href="file_tools.py.html#setuppy-24">24</a>
+<a href="file_tools.py.html#setuppy-25">25</a>
+<a href="file_tools.py.html#setuppy-26">26</a>
+<a href="file_tools.py.html#setuppy-27">27</a>
+<a href="file_tools.py.html#setuppy-28">28</a>
+<a href="file_tools.py.html#setuppy-29">29</a>
+<a href="file_tools.py.html#setuppy-30">30</a>
+<a href="file_tools.py.html#setuppy-31">31</a>
+<a href="file_tools.py.html#setuppy-32">32</a>
+<a href="file_tools.py.html#setuppy-33">33</a>
+<a href="file_tools.py.html#setuppy-34">34</a>
+<a href="file_tools.py.html#setuppy-35">35</a>
+<a href="file_tools.py.html#setuppy-36">36</a>
+<a href="file_tools.py.html#setuppy-37">37</a>
+<a href="file_tools.py.html#setuppy-38">38</a>
+<a href="file_tools.py.html#setuppy-39">39</a>
+<a href="file_tools.py.html#setuppy-40">40</a>
+<a href="file_tools.py.html#setuppy-41">41</a>
+<a href="file_tools.py.html#setuppy-42">42</a>
+<a href="file_tools.py.html#setuppy-43">43</a>
+<a href="file_tools.py.html#setuppy-44">44</a>
+<a href="file_tools.py.html#setuppy-45">45</a>
+<a href="file_tools.py.html#setuppy-46">46</a>
+<a href="file_tools.py.html#setuppy-47">47</a>
+<a href="file_tools.py.html#setuppy-48">48</a>
+<a href="file_tools.py.html#setuppy-49">49</a>
+<a href="file_tools.py.html#setuppy-50">50</a>
+<a href="file_tools.py.html#setuppy-51">51</a>
+<a href="file_tools.py.html#setuppy-52">52</a>
+<a href="file_tools.py.html#setuppy-53">53</a>
+<a href="file_tools.py.html#setuppy-54">54</a>
+<a href="file_tools.py.html#setuppy-55">55</a>
+<a href="file_tools.py.html#setuppy-56">56</a>
+<a href="file_tools.py.html#setuppy-57">57</a>
+<a href="file_tools.py.html#setuppy-58">58</a>
+<a href="file_tools.py.html#setuppy-59">59</a>
+<a href="file_tools.py.html#setuppy-60">60</a>
+<a href="file_tools.py.html#setuppy-61">61</a>
+<a href="file_tools.py.html#setuppy-62">62</a>
+<a href="file_tools.py.html#setuppy-63">63</a>
+<a href="file_tools.py.html#setuppy-64">64</a>
+<a href="file_tools.py.html#setuppy-65">65</a>
+<a href="file_tools.py.html#setuppy-66">66</a>
+<a href="file_tools.py.html#setuppy-67">67</a>
+<a href="file_tools.py.html#setuppy-68">68</a>
+<a href="file_tools.py.html#setuppy-69">69</a>
+<a href="file_tools.py.html#setuppy-70">70</a>
+<a href="file_tools.py.html#setuppy-71">71</a>
+<a href="file_tools.py.html#setuppy-72">72</a>
+<a href="file_tools.py.html#setuppy-73">73</a>
+<a href="file_tools.py.html#setuppy-74">74</a>
+<a href="file_tools.py.html#setuppy-75">75</a>
+<a href="file_tools.py.html#setuppy-76">76</a>
+<a href="file_tools.py.html#setuppy-77">77</a>
+<a href="file_tools.py.html#setuppy-78">78</a>
+<a href="file_tools.py.html#setuppy-79">79</a>
+<a href="file_tools.py.html#setuppy-80">80</a>
+<a href="file_tools.py.html#setuppy-81">81</a>
+<a href="file_tools.py.html#setuppy-82">82</a>
+<a href="file_tools.py.html#setuppy-83">83</a>
+<a href="file_tools.py.html#setuppy-84">84</a>
+<a href="file_tools.py.html#setuppy-85">85</a>
+<a href="file_tools.py.html#setuppy-86">86</a>
+<a href="file_tools.py.html#setuppy-87">87</a>
+<a href="file_tools.py.html#setuppy-88">88</a>
+<a href="file_tools.py.html#setuppy-89">89</a>
+<a href="file_tools.py.html#setuppy-90">90</a>
+<a href="file_tools.py.html#setuppy-91">91</a>
+<a href="file_tools.py.html#setuppy-92">92</a>
+<a href="file_tools.py.html#setuppy-93">93</a>
+<a href="file_tools.py.html#setuppy-94">94</a>
+<a href="file_tools.py.html#setuppy-95">95</a>
+<a href="file_tools.py.html#setuppy-96">96</a>
+<a href="file_tools.py.html#setuppy-97">97</a></pre></div></td><td class="code"><div class="code"><pre><a name="setuppy-1"></a><span class="c">#!/usr/bin/env python</span>
+<a name="setuppy-2"></a><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">keyword</span><span class="o">=</span><span class="s">'.jpg'</span><span class="p">,</span><span class="n">recursive</span><span class="o">=</span><span class="s">'n'</span><span class="p">):</span>
+<a name="setuppy-3"></a>    <span class="sd">''' Search for the files (default=.jpg) in the current or the subdirectories and return a list of the full paths.</span>
+<a name="setuppy-4"></a><span class="sd">    return: file_list (str list)</span>
+<a name="setuppy-5"></a><span class="sd">    usage: search_file(str keyword,str recursive)</span>
+<a name="setuppy-6"></a><span class="sd">    example: search_file(keyword='*.jpg',recursive='y')</span>
+<a name="setuppy-7"></a><span class="sd">    recursive: 'y'   # turn on the recursive searching in the subdirectories'''</span>
+<a name="setuppy-8"></a>    <span class="kn">import</span> <span class="nn">os</span>
+<a name="setuppy-9"></a>    <span class="kn">from</span> <span class="nn">fnmatch</span> <span class="kn">import</span> <span class="n">fnmatch</span>
+<a name="setuppy-10"></a>    <span class="n">file_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<a name="setuppy-11"></a>    <span class="k">if</span> <span class="n">recursive</span> <span class="o">==</span> <span class="s">'y'</span><span class="p">:</span> 
+<a name="setuppy-12"></a>        <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="s">'.'</span><span class="p">):</span>
+<a name="setuppy-13"></a>            <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+<a name="setuppy-14"></a>                <span class="k">if</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span>
+<a name="setuppy-15"></a>                    <span class="n">file_name</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">),</span><span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+<a name="setuppy-16"></a>                    <span class="n">file_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">file_name</span><span class="p">)</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">))</span>  <span class="c">#Using walk, the file name would start with './dir/file.dat'. Use lstrip('./') to remove the string. </span>
+<a name="setuppy-17"></a>
+<a name="setuppy-18"></a>
+<a name="setuppy-19"></a>
+<a name="setuppy-20"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="setuppy-21"></a>        <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s">'.'</span><span class="p">):</span>
+<a name="setuppy-22"></a>            <span class="k">if</span> <span class="n">fnmatch</span><span class="p">(</span><span class="n">file_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s">'./'</span><span class="p">),</span><span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+<a name="setuppy-23"></a>                <span class="n">file_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+<a name="setuppy-24"></a>
+<a name="setuppy-25"></a>
+<a name="setuppy-26"></a>    <span class="n">file_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<a name="setuppy-27"></a>    <span class="k">return</span> <span class="n">file_list</span>
+<a name="setuppy-28"></a>
+<a name="setuppy-29"></a><span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="n">file_list</span><span class="p">):</span>
+<a name="setuppy-30"></a>    <span class="sd">''' Delete the files by the file_list. Use search() first to determine the file_list'''</span>
+<a name="setuppy-31"></a>    <span class="kn">import</span> <span class="nn">os</span>
+<a name="setuppy-32"></a>    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span> <span class="o">==</span> <span class="s">'str'</span><span class="p">:</span>
+<a name="setuppy-33"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Delete '</span><span class="o">+</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-34"></a>        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-35"></a>    <span class="k">elif</span> <span class="n">tpye</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span> <span class="o">==</span> <span class="s">'list'</span><span class="p">:</span>
+<a name="setuppy-36"></a>        <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+<a name="setuppy-37"></a>            <span class="k">print</span><span class="p">(</span><span class="s">'Delete '</span><span class="o">+</span><span class="n">file_name</span><span class="p">)</span>
+<a name="setuppy-38"></a>            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+<a name="setuppy-39"></a>   
+<a name="setuppy-40"></a>
+<a name="setuppy-41"></a><span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
+<a name="setuppy-42"></a>    <span class="sd">''' Copy the files listed in the file_list to the destinate_list. Use search() first to</span>
+<a name="setuppy-43"></a><span class="sd">    determine the file_list. </span>
+<a name="setuppy-44"></a><span class="sd">    destinate_list may be a string(dir_path) or a list of full paths</span>
+<a name="setuppy-45"></a><span class="sd">    To copy the file to the current directory, specify '.' as the destinate_list'''</span>
+<a name="setuppy-46"></a>    <span class="kn">import</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<a name="setuppy-47"></a>    <span class="n">file_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
+<a name="setuppy-48"></a>    <span class="n">file_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-49"></a>    <span class="n">destinate_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
+<a name="setuppy-50"></a>    <span class="n">destinate_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">)</span>
+<a name="setuppy-51"></a>    <span class="k">if</span> <span class="n">file_list</span> <span class="o">!=</span> <span class="n">destinate_list</span><span class="p">:</span>
+<a name="setuppy-52"></a>        <span class="k">if</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">file_len</span> <span class="o">==</span> <span class="n">destinate_len</span><span class="p">:</span>
+<a name="setuppy-53"></a>            <span class="n">I0</span><span class="o">=</span><span class="mi">0</span>
+<a name="setuppy-54"></a>            <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+<a name="setuppy-55"></a>                <span class="k">print</span><span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span><span class="n">file_name</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">destinate_list</span><span class="p">[</span><span class="n">I0</span><span class="p">])</span>
+<a name="setuppy-56"></a>                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">[</span><span class="n">I0</span><span class="p">])</span>  
+<a name="setuppy-57"></a>                <span class="n">I0</span><span class="o">=</span><span class="n">I0</span><span class="o">+</span><span class="mi">1</span>
+<a name="setuppy-58"></a>      
+<a name="setuppy-59"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'list'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">destinate_list</span><span class="p">):</span>
+<a name="setuppy-60"></a><span class="c"># A list of files copied to a directory</span>
+<a name="setuppy-61"></a>           <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+<a name="setuppy-62"></a>                <span class="k">print</span><span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span><span class="n">file_name</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">destinate_list</span><span class="p">)</span>
+<a name="setuppy-63"></a>                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>
+<a name="setuppy-64"></a>
+<a name="setuppy-65"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'str'</span><span class="p">:</span>
+<a name="setuppy-66"></a><span class="c"># Copy one file</span>
+<a name="setuppy-67"></a>            <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>  
+<a name="setuppy-68"></a>        <span class="k">elif</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s">'str'</span> <span class="ow">and</span> <span class="n">destinate_type</span> <span class="o">==</span> <span class="s">'list'</span><span class="p">:</span>
+<a name="setuppy-69"></a>            <span class="n">multi_target_opt</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">"Copy one file to multiple targets. Are you sure? (y/n)</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<a name="setuppy-70"></a>            <span class="k">if</span> <span class="n">multi_target_opt</span> <span class="o">==</span> <span class="s">'y'</span><span class="p">:</span>
+<a name="setuppy-71"></a>                <span class="k">for</span> <span class="n">target_file_name</span> <span class="ow">in</span> <span class="n">destinate_list</span><span class="p">:</span>
+<a name="setuppy-72"></a>                    <span class="k">print</span> <span class="p">(</span><span class="s">'Copy '</span><span class="o">+</span> <span class="n">file_list</span><span class="o">+</span><span class="s">' to '</span><span class="o">+</span><span class="n">target_file_name</span><span class="p">)</span>
+<a name="setuppy-73"></a>                    <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">target_file_name</span><span class="p">)</span>
+<a name="setuppy-74"></a>
+<a name="setuppy-75"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="setuppy-76"></a>            <span class="k">print</span> <span class="p">(</span><span class="s">"Error occurs!Exit!"</span><span class="p">)</span>
+<a name="setuppy-77"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a name="setuppy-78"></a>
+<a name="setuppy-79"></a>
+<a name="setuppy-80"></a><span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="o">=</span><span class="s">'.'</span><span class="p">):</span>
+<a name="setuppy-81"></a>    <span class="sd">''' Move the files listed in the file_list to the destinate_list. Use searh() to determine</span>
+<a name="setuppy-82"></a><span class="sd">    the file_list'''</span>
+<a name="setuppy-83"></a>    <span class="k">print</span> <span class="p">(</span><span class="s">'Copying files...'</span><span class="p">)</span>
+<a name="setuppy-84"></a>    <span class="n">copy</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span><span class="n">destinate_list</span><span class="p">)</span>
+<a name="setuppy-85"></a>    <span class="n">remove_opt</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">'Delete the source files?(y/n)</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<a name="setuppy-86"></a>    <span class="k">if</span> <span class="n">remove_opt</span> <span class="o">==</span> <span class="s">'y'</span><span class="p">:</span>
+<a name="setuppy-87"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Deleting files...'</span><span class="p">)</span>
+<a name="setuppy-88"></a>        <span class="n">clear</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span>
+<a name="setuppy-89"></a>
+<a name="setuppy-90"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Moving files complete!'</span><span class="p">)</span>
+<a name="setuppy-91"></a>
+<a name="setuppy-92"></a>
+<a name="setuppy-93"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<a name="setuppy-94"></a>     <span class="n">search</span><span class="p">()</span>
+<a name="setuppy-95"></a>
+<a name="setuppy-96"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="setuppy-97"></a>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></section></div></div>
+<!--End of body content-->
+
+
+    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+    // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    controls: false,
+    progress: false,
+    history: false,
+    keyboard: false,
+    rollingLinks: false,
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/linear/none
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
+    ]
+    });
+    </script><script>
+    Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.scrollTo(0,0);
+    MathJax.Hub.Rerender(event.currentSlide);
+    });
+    </script><div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <div class="footerbox">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  Contents © 2013 <a href="https://www.facebook.com/M43Happiness">文遠爸</a> with <a href="http://nikola.ralsina.com.ar">Nikola</a> - It is a journey towards happiness.  <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"></a> <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml">RSS</a>  <a href="http://feeds.feedburner.com/github/NODC"><img src="http://feeds.feedburner.com/~fc/github/NODC?bg=FFFFFF&amp;fg=444444&amp;anim=1" height="26" width="88" style="border:0" alt=""></a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style" style="bottom:45px;right:0px;left:30px">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul></div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
