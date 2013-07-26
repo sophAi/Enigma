@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130727 00:33:33
+.. date: 20130727 00:42:46
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -30,19 +30,19 @@ DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新
 
 .. TEASER_END
 
-為了讓各位對於錄影畫質的提升有點概念，以下我們以GX1的MTS檔1:1截圖來檢視之，使用FSH(1080p30)模式錄影。
+為了讓各位對於錄影畫質的提升有點概念，以下我們以光源較不充足的室內，GX1錄製的MTS檔1:1截圖來檢視之，使用FSH(1080p30)模式錄影。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_01.png
    :align: center
 
-   GX1的MTS檔。通常在充滿細節的畫面，最容易出現塊狀瑕疵，不過1:1檢視下，無論是椅子上的網點，還是布偶的毛料，DREWnet T9幾乎觀察不到色塊的存在。
+   通常在充滿細節的畫面裡，最容易出現塊狀瑕疵，不過1:1檢視下，無論是椅子上的網點，還是布偶的毛料，DREWnet T9幾乎觀察不到色塊的存在。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
    :align: center
 
-　 偽色或英文所稱的color bending，最常出現在色階不連續的地方，其產生的不自然色彩，其實是macroblock所造成的，破解後的GX1，即使是低光下，皮膚的色階表現也很不錯。
+　 偽色或英文所稱的color bending最常出現在色階不連續的地方，其產生的不自然色彩，其實是macroblock所造成的，破解後的GX1，即使是低光下，皮膚的色階表現也很不錯。
 
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png
