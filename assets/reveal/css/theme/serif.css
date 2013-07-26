@@ -53,13 +53,14 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #51483d;
+  color: #437EA0;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   -ms-transition: color .15s ease;
   -o-transition: color .15s ease;
   transition: color .15s ease;
+  text-shadow: 0px 0px 1px #46688C;
 }
 
 .reveal a:not(.image):hover {
