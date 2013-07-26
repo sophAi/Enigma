@@ -56,20 +56,21 @@ MathJax.Hub.Config({
     <h1>Ptool更新軔體程序</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-07-26T20:38:58+08:00">2013-07-26 20:38</time>
+        發表於: <time class="published" datetime="2013-07-26T23:14:50+08:00">2013-07-26 23:14</time>
         
 
         
           |  更多相關文章：
             <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
 
-    </medium><hr><p>更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如平行輸入自香港的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改，即可隨時在PAL與NTSC(~30fps,1080p60或720p60)規格間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同，而容易在錄影中產生黃色移動的條紋，而NTSC規格比較不容易產生，不過後其的機種已經能透過更改快門速度來解決這個問題了。</p>
+    </medium><hr><p>有關Ptool的參數設定細節，請參考另一篇―<a class="reference external" href="ptool_settings.html">Ptool的參數檔</a>。</p>
+<p>更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如自香港平型輸入的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改後，即可隨時在PAL與NTSC(~30fps,1080p30/i60或720p60等)間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同步，容易在室內錄影畫面中產生移動的條紋，這現象困擾著許多人，而NTSC規格比較不容易產生類似的問題，不過後期的機種已經能透過更改快門速度來解決這個問題了。</p>
 <!-- TEASER_END -->
-<p>這裡我們以GH2與GX1為例來進行軔體修改與升級的分解步驟，詳細的相關資訊請參考<a class="reference external" href="http://www.gh1-hack.info/wiki/PToolSoftware">Ptool wiki</a>的原文頁面:</p>
+<p>這裡我們以GH2與GX1為例來進行軔體修改與升級的分解步驟，詳細的資訊請參考<a class="reference external" href="http://www.gh1-hack.info/wiki/PToolSoftware">Ptool wiki</a>的原文頁面:</p>
 <ol class="arabic simple"><li>務必使用「充飽電力」的「原廠電池」，請勿使用副廠電池。</li>
 <li>請下載<a class="reference external" href="http://www.gh1-hack.info/ptool3d.zip">Ptool3</a>，這是用來修改軔體參數的程式(ptool3.exe)。</li>
 <li>請下載<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html">GH2的官方軔體</a>或<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html">GX1的官方軔體</a>，我們將利用Ptool來更改軔體的參數(例如:GX1__V11.bin)。</li>
-<li><a class="reference external" href="ptool_settings.html">Ptool參數檔</a>，由於參數檔隨時更新，我將其集中在另一篇討論(例如setc.ini)。</li>
+<li>請下載<a class="reference external" href="ptool_settings.html">Ptool的參數檔</a>，由於參數檔隨時更新，我將其集中在另一篇討論(例如setc.ini)。</li>
 </ol><p>確實檢查上述的步驟，並確保下載的檔案完整，我們即可開始進行軔體修改與更新的動作，如果參數檔設定錯誤，頂多是讓相機動作不正常(例如錄影中斷)，並不至於導致相機故障，以我在論壇的經驗，也未曾聽聞過類似事件，唯一有可能造成故障的因素是使用「未充飽」或「非原廠」的電池，嚴重者可能會造成無法正常開機，所以請大家謹記這個守則，更新前務必檢查電池並確實充電，同時不要在軔體更新過程中關閉相機電源或進行任何操作，就可以安心進行破解程序了。另外更新後的相機，請不要進入所謂的「工程模式」，會使相機運作不正常，諸如抓不到鏡頭，如果不小心進入工程模式，只要跳出工程模式後，按照下列步驟重新更新一次軔體即可恢復正常。</p>
 <p>由於中文字型是由相機上的ROM而非軔體提供，因此日文介面的Panasonic相機，在經過軔體修改後僅能出現英文介面，中文字型是無法正常顯示的，而原本已有中文介面的相機，更新軔體前後均不受影響，中文與各式語言介面都可以保留。</p>
 <p>以下是軔體修改的分解動作:</p>
@@ -95,11 +96,11 @@ MathJax.Hub.Config({
 </div>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png" src="../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png"></a>
-<p class="caption">在專家設定裡，也修改了Scaling tables，這是與Quantization Parameter有關的設定。</p>
+<p class="caption">在專家設定裡，Scaling tables是與Quantization Parameter有關的設定。</p>
 </div>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png" src="../../../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png"></a>
-<p class="caption">這些專家選項是畫質與檔案流量維持平衡的關鍵。原則上選項應該都已經設定好，不需要做任何手動的更改。</p>
+<p class="caption">這些專家選項是畫質與檔案容量維持平衡的關鍵，相關的參數必須要經過耗時的測試才能得到。</p>
 </div>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png" src="../../../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png"></a>
@@ -161,7 +162,7 @@ MathJax.Hub.Config({
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg" src="../../../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg"></a>
 <p class="caption">更改成NTSC。如此一來，也比較能夠減輕室內日光燈下錄到閃爍燈頻的機率。</p>
 </div>
-<p>Ptool的參數檔是標準的ini檔案，有興趣的人可以使用記事本或編輯器檢視裏面的內容，或是直接將設定值複製與貼上，在Ptool論壇上也有許許多多不同的參數檔可供選擇，建議大家有興趣可以多方嘗試。</p>
+<p>Ptool的參數檔是標準的ini檔案，有興趣的人可以使用記事本或編輯器檢視裏面的內容，也可直接將設定值複製與貼上，在Ptool論壇裡也有許多不同的參數檔可供下載使用，建議大家有興趣可以多方嘗試，找出最適合自己的參數檔。</p>
 <!-- </body> -->
 <!-- <url> -->
 <!-- </url> -->
@@ -192,9 +193,7 @@ MathJax.Hub.Config({
     
     <div style="text-align:right">
         <ul class="pager"><li class="previous">
-                <a href="../Photo_Diary/20130616d.html">← 上一篇</a>
-            </li><li class="next">
-                <a href="ptool_settings.html">下一篇 →</a>
+                <a href="ptool_settings.html">← 上一篇</a>
         </li></ul></div>
 
     
