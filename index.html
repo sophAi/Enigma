@@ -52,27 +52,9 @@ MathJax.Hub.Config({
 <!--Body content-->
 <div class="reveal"><div class="slides">
     <section><section><div class="postbox">
-        <h1><a href="posts/M43/ptool.html">Ptool更新軔體程序</a>
-        <small>  
-             發表於: <time class="published" datetime="2013-07-26T23:14:50+08:00">2013-07-26 23:14</time></small></h1>
-        <hr><div><p>有關Ptool的參數設定細節，請參考另一篇―<a class="reference external" href="posts/M43/ptool_settings.html">Ptool的參數檔</a>。</p>
-<p>更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如自香港平型輸入的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改後，即可隨時在PAL與NTSC(~30fps,1080p30/i60或720p60等)間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同步，容易在室內錄影畫面中產生移動的條紋，這現象困擾著許多人，而NTSC規格比較不容易產生類似的問題，不過後期的機種已經能透過更改快門速度來解決這個問題了。</p>
-<p><a href="posts/M43/ptool.html">繼續閱讀...</a></p></div>
-        
-    <p>
-        <a href="posts/M43/ptool.html#/0/1" data-disqus-identifier="cache/posts/M43/ptool.html">Comments</a>
-
-        
-</p><div style="text-align:right">
-<ul class="pager"><li class="next">
-        <a href="index-2.html">較舊的文章 →</a>
-</li></ul></div>
-
-        </div>
-        </section><section><div class="postbox">
         <h1><a href="posts/M43/ptool_settings.html">GX1與GH2破解設定資訊</a>
         <small>  
-             發表於: <time class="published" datetime="2013-07-26T23:12:03+08:00">2013-07-26 23:12</time></small></h1>
+             發表於: <time class="published" datetime="2013-07-26T23:21:11+08:00">2013-07-26 23:21</time></small></h1>
         <hr><div><p>DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新</p>
 <p>環境: GX1+Sandisk 45MB/s USH-I與GH2+Toshiba Class 10 23MB/s 白卡</p>
 <p>我使用Ptool論壇<a class="reference external" href="http://www.personal-view.com/talks/discussion/7580/driftwood-cluster-x-series-3moon-t7%D0%85r%D1%96zz-t6nebula-t7drewnet-t9/p1">driftwood</a>所調整的<a class="reference external" href="../arch_2013/files_2013/M43/ptool_settings/seta.ini">DREWnet T8</a>錄影參數已經很久了，driftwood近期的設定檔算是Ptool論壇成立以來集大成之作，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的<a class="reference external" href="../arch_2013/files_2013/M43/ptool_settings/setc.ini">DREWnet T9</a>參數檔，使用了新的scaling matrix，對我來說是一大消息，也讓這篇Ptool的資訊分享延期。錄影畫質的破解，需要流量(bit rate, 8 bit=1 Byte)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片不同的是影片檔經常是在1:1的情況下觀看的，因為當今主流螢幕所提供的解析度(大於或等於1920x1080)，就是為了能完整播放FullHD的影片，因此影片畫質的差別很容易以肉眼分辨，而要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，而選擇DREWnet最重要的原因是其針對Scaling matrix做了許多調整，將流量平均分配給I/P/B frame，而非僅僅拉抬流量(通常也要設定auto quantizer)。流量過高往往也會降低錄影的穩定性，太複雜的場景容易使錄影中斷，因此在流量不過度暴增的前提下提升畫面的細節才是最聰明的辦法，在driftwood的描述裡，DREWnet T9具有以下特性:</p>
@@ -84,6 +66,24 @@ MathJax.Hub.Config({
         
     <p>
         <a href="posts/M43/ptool_settings.html#/0/1" data-disqus-identifier="cache/posts/M43/ptool_settings.html">Comments</a>
+
+        
+</p><div style="text-align:right">
+<ul class="pager"><li class="next">
+        <a href="index-2.html">較舊的文章 →</a>
+</li></ul></div>
+
+        </div>
+        </section><section><div class="postbox">
+        <h1><a href="posts/M43/ptool.html">Ptool更新軔體程序</a>
+        <small>  
+             發表於: <time class="published" datetime="2013-07-26T23:14:50+08:00">2013-07-26 23:14</time></small></h1>
+        <hr><div><p>有關Ptool的參數設定細節，請參考另一篇―<a class="reference external" href="posts/M43/ptool_settings.html">Ptool的參數檔</a>。</p>
+<p>更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如自香港平型輸入的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改後，即可隨時在PAL與NTSC(~30fps,1080p30/i60或720p60等)間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同步，容易在室內錄影畫面中產生移動的條紋，這現象困擾著許多人，而NTSC規格比較不容易產生類似的問題，不過後期的機種已經能透過更改快門速度來解決這個問題了。</p>
+<p><a href="posts/M43/ptool.html">繼續閱讀...</a></p></div>
+        
+    <p>
+        <a href="posts/M43/ptool.html#/0/1" data-disqus-identifier="cache/posts/M43/ptool.html">Comments</a>
 
         
 </p><div style="text-align:right">
