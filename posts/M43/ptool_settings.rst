@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130727 23:30:10
+.. date: 20130729 09:58:07
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -87,7 +87,7 @@ DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新
    這是原始的影片截圖，幾乎跟直接將靜態照片縮圖到FullHD大小的品質一樣!色階平順漂亮，細節保留完整。
 
 
-我還沒有時間好好觀察24p還有破解前後AVCHD畫質的差異，總括來說，只要Quantization的瑕疵不易被發覺，就達到破解的目了。真的要探究的話，下面列出driftwood量化的測試，其用一個灰階圖格來反映Quantization後的成像，顏色愈淡，表示影像品質愈好。
+我還沒有時間好好觀察24p還有破解前後AVCHD畫質的差異，總括來說，只要Quantization的瑕疵不易被發覺，就達到破解的目了。真的要探究的話，下面列出driftwood對於\ `DREWnet T8 量化的測試`_\ ，其用一個灰階圖格來反映Quantization後的成像，顏色愈淡，表示影像品質愈好。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/23_GH2_stock_24p.png
@@ -126,6 +126,8 @@ PS. 破解軔體前請確實閱讀Ptool軔體破解程序的需知，因為電�
 .. _DREWnet T8: ../../../arch_2013/files_2013/M43/ptool_settings/seta.ini
 
 .. _DREWnet T9: ../../../arch_2013/files_2013/M43/ptool_settings/setc.ini
+
+.. _DREWnet T8 量化的測試: http://www.personal-view.com/talks/discussion/5806/cluster-x-series-1-moon-Ѕrіzz-nebula-drewnet-slipstream/p1
 
 .. _探討網路照片的奧秘: sharpen.html
 
