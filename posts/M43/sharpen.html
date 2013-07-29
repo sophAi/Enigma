@@ -56,14 +56,14 @@ MathJax.Hub.Config({
     <h1>探討網路照片的奧秘</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-07-23T23:05:21+08:00">2013-07-23 23:05</time>
+        發表於: <time class="published" datetime="2013-07-29T15:21:47+08:00">2013-07-29 15:21</time>
         
 
         
           |  更多相關文章：
             <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
 
-    </medium><hr><!-- title: 探討網路照片的奧秘 --><!-- slug: sharpen --><!-- date: 20130723 23:05:21 --><!-- tags: 學習與閱讀 --><!-- link: --><!-- description: Created at 20130620 20:38:34 --><!-- ===================================Metadata↑================================================ --><!-- ● 記得加上tags: 人生，狗狗，程式，生活紀錄，英文，閱讀，教養，科學，mathjax --><!-- ● 記得加上slug，會以slug內容作為檔名(html檔)，同時將對應的內容放到對應的標籤裡。 --><!-- ===================================文章起始↓================================================ --><!-- <body> --><p>我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:</p>
+    </medium><hr><p>我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"><img alt="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg" src="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"></a>
 <p class="caption">原始圖檔縮小至640px，上傳至github。</p>
@@ -118,7 +118,7 @@ convert null: -filter LanczosSharp -define filter:verbose=1 -resize 2 null: | gr
 # scale_blur = 0.981251
 # practical_support = 2.94375
 </pre>
-<p>這就是LanczosSharp的細部參數。所謂的縮圖，其實跟tenser transformation有關，因為一張圖其實就是以一個龐大的矩陣儲存影像資訊，有關SincFast演算法可以參考<a class="reference external" href="http://www.imagemagick.org/Usage/filter/#gaussian_other">Resampling Filters</a> <a class="footnote-reference" href="sharpen.html#id6" id="id2">[2]</a>這方面的資訊。</p>
+<p>這就是LanczosSharp的細部參數。所謂的縮圖，其實跟tensor transformation有關，因為一張圖其實就是以一個龐大的矩陣儲存影像資訊，有關SincFast演算法可以參考<a class="reference external" href="http://www.imagemagick.org/Usage/filter/#gaussian_other">Resampling Filters</a> <a class="footnote-reference" href="sharpen.html#id6" id="id2">[2]</a>這方面的資訊。</p>
 <p>而對於銳化這部份，效果比較好的是使用Gaussian Mask，類似的方式如<a class="reference external" href="http://gimpguru.org/Tutorials/SmartSharpening2/">Smart Sharpen</a> <a class="footnote-reference" href="sharpen.html#id7" id="id3">[3]</a>，使用Photoshop或GIMP即可針對畫面線條的邊緣進行銳化，而跳過色階變化平滑的區域(例如膚色，或是天空)，這樣一來，就不會一併將雜訊銳化而造成不自然的雜點，而imagemagick使用-unsharp這個參數，unsharp mask這詞是來自於傳統底片式攝影所使用的暗房技術，目的是得到邊緣銳利化的結果，在數位影像裡，透過將原圖減去一定比例的模糊化影像，所得到的差異影像(邊緣)疊加回原圖，以造成邊緣銳利化的效果，更省去了滑鼠點來點去的繁瑣步驟，很適合用來一次處理大量的圖片。-unsharp參數在<a class="reference external" href="http://redskiesatnight.com/2005/04/06/sharpening-using-image-magick/">Eric Jeschke</a> <a class="footnote-reference" href="sharpen.html#id8" id="id4">[4]</a> 的文章裡有很詳細的解說，以我們所使用的銳化參數為例:</p>
 <pre class="literal-block">
 -unsharp 1x0.55+1.5+0.002
@@ -141,9 +141,7 @@ convert null: -filter LanczosSharp -define filter:verbose=1 -resize 2 null: | gr
 <!-- <footnote> -->
 <table class="docutils footnote" frame="void" id="id5" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="sharpen.html#id1">[1]</a></td><td><a class="reference external" href="http://www.imagemagick.org/Usage/filter/nicolas/">http://www.imagemagick.org/Usage/filter/nicolas/</a></td></tr></tbody></table><table class="docutils footnote" frame="void" id="id6" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="sharpen.html#id2">[2]</a></td><td><a class="reference external" href="http://www.imagemagick.org/Usage/filter/#gaussian_other">http://www.imagemagick.org/Usage/filter/#gaussian_other</a></td></tr></tbody></table><table class="docutils footnote" frame="void" id="id7" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="sharpen.html#id3">[3]</a></td><td><a class="reference external" href="http://gimpguru.org/Tutorials/SmartSharpening2/">http://gimpguru.org/Tutorials/SmartSharpening2/</a></td></tr></tbody></table><table class="docutils footnote" frame="void" id="id8" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="sharpen.html#id4">[4]</a></td><td><a class="reference external" href="http://redskiesatnight.com/2005/04/06/sharpening-using-image-magick/">http://redskiesatnight.com/2005/04/06/sharpening-using-image-magick/</a></td></tr></tbody></table><!-- </footnote> --><!-- <citation> --><!-- </citation> --><!-- ===================================文章結束↑/語法備忘錄↓==================================== --><!-- ● 格式1 ― 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) --><!-- ● 格式2 ― 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` --><!-- ● 項目 ― #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 --><!-- ● 插入teaser分頁 ― .. TEASER_END --><!-- ● 插入latex數學 ― 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 --><!-- ● 插入figure ― .. figure:: 路徑(換行):width: 320(換行):align: center(換行):target: 路徑 --><!-- ● 插入slides ― .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) --><!-- ● 插入youtube ― ..youtube:: 影片的hash string --><!-- ● 插入url ― 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) --><!-- ● 插入直接url ― \ `連結字串` <網址或路徑>`_ \    (包含< >) --><!-- ● 插入footnote ― 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 --><!-- ● 插入citation ― 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 --><!-- ● 插入sidebar ― ..sidebar:: (空一行) 內容 --><!-- ● 插入contents ― ..contents:: (換行) :depth: 目錄深入第幾層 --><!-- ● 插入原始文字區塊 ― 在段落尾端使用:: (空一行) 內容 (空一行) --><!-- ● 插入本機的程式碼 ― ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --><!-- ● 插入特定原始碼 ― ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --><!-- ● 插入gist ― ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --><!-- ============================================================================================ --><div style="text-align:right">
         <ul class="pager"><li class="previous">
-                <a href="../Photo_Diary/20130616b.html">← 上一篇</a>
-            </li><li class="next">
-                <a href="../Photo_Diary/20130616c.html">下一篇 →</a>
+                <a href="ptool_settings.html">← 上一篇</a>
         </li></ul></div>
 
     

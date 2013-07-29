@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness.</description><lastBuildDate>Mon, 29 Jul 2013 10:16:36 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GX1與GH2破解設定資訊</title><link>http://sophAi.github.com/Enigma/posts/M43/ptool_settings.html</link><description>&lt;div&gt;&lt;p&gt;由於破解軔體的步驟大同小異，我將其獨立於&lt;a class="reference external" href="/posts/M43/ptool.html"&gt;Ptool更新軔體程序&lt;/a&gt;一文，本文則不定時分享最新的破解參數設定，搭配Ptool則可進行錄影畫質的修改。&lt;/p&gt;
+<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness.</description><lastBuildDate>Mon, 29 Jul 2013 15:40:17 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>探討網路照片的奧秘</title><link>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</link><description>&lt;div&gt;&lt;p&gt;我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg" src="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;原始圖檔縮小至640px，上傳至github。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href="/posts/M43/sharpen.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>學習與閱讀</category><guid>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</guid><pubDate>Mon, 29 Jul 2013 07:21:47 GMT</pubDate></item><item><title>GX1與GH2破解設定資訊</title><link>http://sophAi.github.com/Enigma/posts/M43/ptool_settings.html</link><description>&lt;div&gt;&lt;p&gt;由於破解軔體的步驟大同小異，我將其獨立於&lt;a class="reference external" href="/posts/M43/ptool.html"&gt;Ptool更新軔體程序&lt;/a&gt;一文，本文則不定時分享最新的破解參數設定，搭配Ptool則可進行錄影畫質的修改。&lt;/p&gt;
 &lt;div class="section" id="drewnet-t9-trial-9-by-driftwood-2013-07-26"&gt;
 &lt;h2&gt;DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新&lt;/h2&gt;
 &lt;p&gt;環境: GX1+Sandisk 45MB/s USH-I與GH2+Toshiba Class 10 23MB/s 白卡&lt;/p&gt;
@@ -24,12 +29,7 @@
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130616/800/800_11_P1370373_4455514-03.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130616/800/800_11_P1370373_4455514-03.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130616/800/800_11_P1370373_4455514-03.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;弟弟的接球姿勢。&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130616c.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616c.html</guid><pubDate>Tue, 23 Jul 2013 15:58:32 GMT</pubDate></item><item><title>探討網路照片的奧秘</title><link>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</link><description>&lt;div&gt;&lt;p&gt;我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg" src="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;/a&gt;
-&lt;p class="caption"&gt;原始圖檔縮小至640px，上傳至github。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;a href="/posts/M43/sharpen.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>學習與閱讀</category><guid>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</guid><pubDate>Tue, 23 Jul 2013 15:05:21 GMT</pubDate></item><item><title>今日Photo Diary - 2013/06/16 (二)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616b.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130616c.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616c.html</guid><pubDate>Tue, 23 Jul 2013 15:58:32 GMT</pubDate></item><item><title>今日Photo Diary - 2013/06/16 (二)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616b.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130616/800/800_06_P1370273_4455514-03.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130616/800/800_06_P1370273_4455514-03.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130616/800/800_06_P1370273_4455514-03.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;夕陽西斜，享受河畔風光。&lt;/p&gt;
 &lt;/div&gt;

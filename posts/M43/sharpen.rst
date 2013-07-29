@@ -1,6 +1,6 @@
 .. title: 探討網路照片的奧秘
 .. slug: sharpen
-.. date: 20130723 23:05:21
+.. date: 20130729 15:21:47
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130620 20:38:34
@@ -91,7 +91,7 @@ imagemagick的參數如下::
     # scale_blur = 0.981251
     # practical_support = 2.94375
 
-這就是LanczosSharp的細部參數。所謂的縮圖，其實跟tenser transformation有關，因為一張圖其實就是以一個龐大的矩陣儲存影像資訊，有關SincFast演算法可以參考\ `Resampling Filters`_ [#]_\ 這方面的資訊。
+這就是LanczosSharp的細部參數。所謂的縮圖，其實跟tensor transformation有關，因為一張圖其實就是以一個龐大的矩陣儲存影像資訊，有關SincFast演算法可以參考\ `Resampling Filters`_ [#]_\ 這方面的資訊。
 
 而對於銳化這部份，效果比較好的是使用Gaussian Mask，類似的方式如\ `Smart Sharpen`_ [#]_\ ，使用Photoshop或GIMP即可針對畫面線條的邊緣進行銳化，而跳過色階變化平滑的區域(例如膚色，或是天空)，這樣一來，就不會一併將雜訊銳化而造成不自然的雜點，而imagemagick使用-unsharp這個參數，unsharp mask這詞是來自於傳統底片式攝影所使用的暗房技術，目的是得到邊緣銳利化的結果，在數位影像裡，透過將原圖減去一定比例的模糊化影像，所得到的差異影像(邊緣)疊加回原圖，以造成邊緣銳利化的效果，更省去了滑鼠點來點去的繁瑣步驟，很適合用來一次處理大量的圖片。-unsharp參數在\ `Eric Jeschke`_ [#]_\  的文章裡有很詳細的解說，以我們所使用的銳化參數為例::
 
