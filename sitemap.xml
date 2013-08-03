@@ -31,7 +31,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/08/index.html</loc>
-  <lastmod>2013-08-02</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -46,52 +46,57 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/</loc>
-  <lastmod>2013-07-31</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/gou-gou.html</loc>
-  <lastmod>2013-07-26</lastmod>
+  <lastmod>2013-08-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/categories/hai-zi-men-de-xia-tian.html</loc>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/index.html</loc>
-  <lastmod>2013-07-26</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/mathjax.html</loc>
-  <lastmod>2013-07-26</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ji-lu.html</loc>
-  <lastmod>2013-07-26</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-1.html</loc>
-  <lastmod>2013-08-02</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-2.html</loc>
-  <lastmod>2013-08-02</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji.html</loc>
-  <lastmod>2013-08-02</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/xue-xi-yu-yue-du.html</loc>
-  <lastmod>2013-07-30</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/zi-you-de-cheng-shi-ren-sheng.html</loc>
-  <lastmod>2013-07-26</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -116,12 +121,12 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-3.html</loc>
-  <lastmod>2013-08-02</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index.html</loc>
-  <lastmod>2013-08-02</lastmod>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -336,7 +341,12 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130627a.html</loc>
-  <lastmod>2013-08-02</lastmod>
+  <lastmod>2013-08-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130711a.html</loc>
+  <lastmod>2013-08-04</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
