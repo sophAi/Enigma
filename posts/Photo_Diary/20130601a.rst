@@ -1,6 +1,6 @@
-.. title: 今日Photo Diary - 2013/06/01 (一)
+.. title: Photo Diary - 2013/06/01 (一)
 .. slug: 20130601a
-.. date: 20130715 09:46:11
+.. date: 20130807 09:55:44
 .. tags: 生活日記
 .. link:
 .. description: Created at 20130714 14:37:19
