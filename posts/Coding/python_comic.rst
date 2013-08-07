@@ -1,6 +1,6 @@
 .. title: I'm flying - Python
 .. slug: python_comic
-.. date: 20130807 13:22:50
+.. date: 20130807 13:24:35
 .. tags: 自由的程式人生
 .. link: 
 .. description: Created at 20130807 12:59:48
@@ -37,7 +37,7 @@ Python是一個程式語言，大部分的人一想的程式語言就會退閉�
 
 .. TEASER_END
 
-Python跟一般程式有什麼不同呢?
+使用Python的人有什麼不同呢?
 
 .. figure:: ../../../arch_2013/files_2013/Coding/python_comic/02_img.jpg
    :target: ../../../arch_2013/files_2013/Coding/python_comic/02_img.jpg
