@@ -1,7 +1,7 @@
 .. title: I'm flying - Python
 .. slug: python_comic
-.. date: 20130807 13:21:06
-.. tags: 
+.. date: 20130807 13:22:50
+.. tags: 自由的程式人生
 .. link: 
 .. description: Created at 20130807 12:59:48
 .. ===================================Metadata↑================================================
