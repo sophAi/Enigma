@@ -1,6 +1,6 @@
 .. title: I'm flying - Python
 .. slug: python_comic
-.. date: 20130807 13:24:35
+.. date: 20130807 13:31:08
 .. tags: 自由的程式人生
 .. link: 
 .. description: Created at 20130807 12:59:48
@@ -51,7 +51,7 @@ Python是一個程式語言，大部分的人一想的程式語言就會退閉�
    :align: center
 
 
-Python並不單單是個語言，他是個哲學，例如::
+Python並不單單是個語言，他是個人生哲學，充滿反璞歸真的隱喻\ [#]_\ ::
 
     The Zen of Python (Tim Peters)
     • Beautiful is better than ugly.
@@ -75,7 +75,7 @@ Python並不單單是個語言，他是個哲學，例如::
     • Namespaces are one honking great idea -- let's do more of those!
 
 
-中文大意是說::
+中文大意是說\ [#]_\ ::
 
     • 美麗優於醜陋，明寫好過暗諭；簡潔勝過繁複，艱澀更不可取。
     • 層疊低於平鋪，綿密不如疏俊；易讀極有價值，應使村婦能近。
@@ -87,7 +87,7 @@ Python並不單單是個語言，他是個哲學，例如::
     • 極品命名空間，吾人應多實用！提姆彼特之禪，蠎迷長留心底。
 
 
-古詩裡也可以找到她的蹤影::
+古詩裡也可以找到她的蹤影\ [#]_\ ::
 
     • 妍優於寢 喻莫如敘
     • 是故簡勝繁 繁勝亂
@@ -103,8 +103,7 @@ Python並不單單是個語言，他是個哲學，例如::
 
 
 Let's do more python!!!
-
-
+  
 
 .. </body>
 .. <url>
@@ -114,7 +113,11 @@ Let's do more python!!!
 .. </url>
 .. <footnote>
 
+.. [#] Tim Peters
 
+.. [#] Pingooo
+
+.. [#] Aguai.
 
 .. </footnote>
 .. <citation>
