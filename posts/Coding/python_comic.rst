@@ -1,6 +1,6 @@
 .. title: I'm flying - Python
 .. slug: python_comic
-.. date: 20130807 13:15:16
+.. date: 20130807 13:21:06
 .. tags: 
 .. link: 
 .. description: Created at 20130807 12:59:48
@@ -53,92 +53,53 @@ Python跟一般程式有什麼不同呢?
 
 Python並不單單是個語言，他是個哲學，例如::
 
-The Zen of Python (Tim Peters)
-
-•Beautiful is better than ugly.
-
-• Explicit is better than implicit.
-
-• Simple is better than complex.
-
-• Complex is better than complicated.
-
-• Flat is better than nested.
-
-• Sparse is better than dense.
-
-• Readability counts.
-
-• Special cases aren't special enough to break the rules.
-
-• Although practicality beats purity.
-
-• Errors should never pass silently.
-
-• Unless explicitly silenced.
-
-• In the face of ambiguity, refuse the temptation to guess.
-
-• There should be one-- and preferably only one --obvious way to do it.
-
-• Although that way may not be obvious at first unless you're Dutch.
-
-• Now is better than never.
-
-• Although never is often better than *right* now.
-
-• If the implementation is hard to explain, it's a bad idea.
-
-• If the implementation is easy to explain, it may be a good idea.
-
-• Namespaces are one honking great idea -- let's do more of those!
+    The Zen of Python (Tim Peters)
+    • Beautiful is better than ugly.
+    • Explicit is better than implicit.
+    • Simple is better than complex.
+    • Complex is better than complicated.
+    • Flat is better than nested.
+    • Sparse is better than dense.
+    • Readability counts.
+    • Special cases aren't special enough to break the rules.
+    • Although practicality beats purity.
+    • Errors should never pass silently.
+    • Unless explicitly silenced.
+    • In the face of ambiguity, refuse the temptation to guess.
+    • There should be one-- and preferably only one --obvious way to do it.
+    • Although that way may not be obvious at first unless you're Dutch.
+    • Now is better than never.
+    • Although never is often better than *right* now.
+    • If the implementation is hard to explain, it's a bad idea.
+    • If the implementation is easy to explain, it may be a good idea.
+    • Namespaces are one honking great idea -- let's do more of those!
 
 
 中文大意是說::
 
-• 美麗優於醜陋，明寫好過暗諭；簡潔勝過繁複，艱澀更不可取。
-
-• 層疊低於平鋪，綿密不如疏俊；易讀極有價值，應使村婦能近。
-
-• 特例難免會有，不可打破原則；雖求程式純淨，切莫不切實際。
-
-• 有錯不應靜默，除非有意如此；混淆不明之時，堅拒衝動猜臆。
-
-• 顯而易見作法，應該只有一種；若非生於荷蘭，或許一時難覓。
-
-• 先人傳下智慧，凡事三思後行；然而坐著空談，不如立起而進。
-
-• 程式難以解釋，主意必定餿極；作品容易說明，點子或許優異。
-
-• 極品命名空間，吾人應多實用！提姆彼特之禪，蠎迷長留心底。
+    • 美麗優於醜陋，明寫好過暗諭；簡潔勝過繁複，艱澀更不可取。
+    • 層疊低於平鋪，綿密不如疏俊；易讀極有價值，應使村婦能近。
+    • 特例難免會有，不可打破原則；雖求程式純淨，切莫不切實際。
+    • 有錯不應靜默，除非有意如此；混淆不明之時，堅拒衝動猜臆。
+    • 顯而易見作法，應該只有一種；若非生於荷蘭，或許一時難覓。
+    • 先人傳下智慧，凡事三思後行；然而坐著空談，不如立起而進。
+    • 程式難以解釋，主意必定餿極；作品容易說明，點子或許優異。
+    • 極品命名空間，吾人應多實用！提姆彼特之禪，蠎迷長留心底。
 
 
 古詩裡也可以找到她的蹤影::
 
-
-
-• 妍優於寢 喻莫如敘
-
-• 是故簡勝繁 繁勝亂
-
-• 平舖勝汲營 綿密不如疏俊
-
-• 唯平易而已
-
-• 無例外於其例 不獨清於實際
-
-• 毋默於誤 其惡非務
-
-• 寧戚戚於尋徑 勿揣揣於模稜
-
-• 道謀於一 荷以得矣
-
-• 力行者宜立行於當下 利行者長三思而後行
-
-• 不可說之說不可說 可以道之道可以道
-
-• 名域鳴於域 可取
-
+    • 妍優於寢 喻莫如敘
+    • 是故簡勝繁 繁勝亂
+    • 平舖勝汲營 綿密不如疏俊
+    • 唯平易而已
+    • 無例外於其例 不獨清於實際
+    • 毋默於誤 其惡非務
+    • 寧戚戚於尋徑 勿揣揣於模稜
+    • 道謀於一 荷以得矣
+    • 力行者宜立行於當下 利行者長三思而後行
+    • 不可說之說不可說 可以道之道可以道
+    • 名域鳴於域 可取
 
 
 Let's do more python!!!
