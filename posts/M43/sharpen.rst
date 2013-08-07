@@ -1,6 +1,6 @@
-.. title: 探討網路照片的奧秘
+.. title: 數位照片的奧秘
 .. slug: sharpen
-.. date: 20130807 09:54:29
+.. date: 20130807 12:08:54
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130620 20:38:34
