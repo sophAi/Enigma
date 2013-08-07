@@ -1,6 +1,6 @@
 .. title: I'm flying - Python
 .. slug: python_comic
-.. date: 20130807 13:33:53
+.. date: 20130807 13:36:16
 .. tags: 自由的程式人生
 .. link: 
 .. description: Created at 20130807 12:59:48
@@ -44,7 +44,7 @@ Python是一個程式語言，大部分的人一想到程式語言就會退閉�
    :align: center
 
    
-如果要分類的話，python就像...
+如果要分類的話，Python就像...
 
 .. figure:: ../../../arch_2013/files_2013/Coding/python_comic/03_Comic145.gif
    :target: ../../../arch_2013/files_2013/Coding/python_comic/03_Comic145.gif
@@ -102,7 +102,7 @@ Python並不單單是個語言，他是個人生哲學，充滿反璞歸真的�
     • 名域鳴於域 可取
 
 
-Let's do more python!!!
+Let's do more Python!!!
   
 
 .. </body>
