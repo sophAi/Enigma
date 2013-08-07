@@ -1,6 +1,6 @@
 .. title: I'm flying - Python
 .. slug: python_comic
-.. date: 20130807 14:17:45
+.. date: 20130807 14:18:04
 .. tags: 自由的程式人生
 .. link: 
 .. description: Created at 20130807 12:59:48
@@ -14,7 +14,7 @@ Python是一個程式語言，大部分的人一想到程式語言就會退閉�
 
 #. 人類
 #. 家庭主婦
-#. 親子攝影師
+#. 親子攝影人士
 #. 投資客
 #. 上班族
 #. 6歲以上兒童
