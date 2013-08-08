@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/06/27 (二)
 .. slug: 20130627b
-.. date: 20130808 09:36:58
+.. date: 20130808 09:37:57
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130808 09:32:23
@@ -17,6 +17,7 @@
 
    一天傍晚，帶小兄弟去樓下吹個涼風。
 
+.. TEASER_END
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130627/800/07_800_P1180763.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130627/800/07_800_P1180763.jpg
