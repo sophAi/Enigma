@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness.</description><lastBuildDate>Tue, 13 Aug 2013 12:08:48 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Photo Diary - 2013/07/01 (一)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130701a.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness.</description><lastBuildDate>Tue, 13 Aug 2013 17:13:37 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>自動化縮圖與生成文章檔案</title><link>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg" src="/../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;&lt;li&gt;將滑鼠點擊的次數降到最低。&lt;/li&gt;
+&lt;li&gt;跨平台的可能性。&lt;/li&gt;
+&lt;li&gt;未來應用的擴充性。&lt;/li&gt;
+&lt;li&gt;方便性。&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;&lt;a href="/posts/Coding/jpg2rst.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>自由的程式人生</category><guid>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</guid><pubDate>Tue, 13 Aug 2013 08:51:57 GMT</pubDate></item><item><title>Photo Diary - 2013/07/01 (一)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130701a.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130701/800/800_01_P1180943.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_01_P1180943.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130701/800/800_01_P1180943.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;為了外出準備的遮陽帽。&lt;/p&gt;
 &lt;/div&gt;
@@ -53,8 +61,4 @@
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130627/800/01_800_P1180726.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130627/800/01_800_P1180726.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130627/800/01_800_P1180726.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;媽咪煮晚餐時，就是兄弟倆看影片的時間，最近是看朵拉與森林救難隊。&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130627a.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130627a.html</guid><pubDate>Wed, 07 Aug 2013 01:58:15 GMT</pubDate></item><item><title>Photo Diary - 2013/06/22 (四)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130622d.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130622/800/18_800_P1370491_4439980-01.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130622/800/18_800_P1370491_4439980-01.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130622/800/18_800_P1370491_4439980-01.jpg"&gt;&lt;/a&gt;
-&lt;p class="caption"&gt;回家的路上，看到的風景，遠方好像在下雨。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130622d.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130622d.html</guid><pubDate>Wed, 07 Aug 2013 01:58:06 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="/posts/Photo_Diary/20130627a.html"&gt;繼續閱讀...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130627a.html</guid><pubDate>Wed, 07 Aug 2013 01:58:15 GMT</pubDate></item></channel></rss>
