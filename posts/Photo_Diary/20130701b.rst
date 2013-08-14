@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/07/01 (二)
 .. slug: 20130701b
-.. date: 20130814 22:38:35
+.. date: 2013-08-14 23:39:23
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130814 22:03:34
@@ -29,7 +29,6 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_08_P1190033.jpg
    :align: center
 
-   .....
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_09_P1190035.jpg

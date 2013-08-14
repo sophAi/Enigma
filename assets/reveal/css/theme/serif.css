@@ -54,20 +54,20 @@ body {
  *********************************************/
 .reveal a:not(.image) {
   color: #437EA0;
+  text-shadow: 0px 0px 1px #46688C;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   -ms-transition: color .15s ease;
   -o-transition: color .15s ease;
   transition: color .15s ease;
-  text-shadow: 0px 0px 1px #46688C;
 }
 
 .reveal a:not(.image):hover {
   color: #2398EC;
+  text-decoration: underline;
   text-shadow: 0px 0px 1px #338EEF;
   border: none;
-  text-decoration: underline;
 }
 
 .reveal .roll span:after {

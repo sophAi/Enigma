@@ -1,4 +1,13 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20130712 23:17:53"><meta name="author" content="文遠爸"><title>自動化縮圖與生成文章檔案 | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="zh-tw">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="description" content="Created at 20130712 23:17:53">
+    <meta name="author" content="文遠爸">
+    <title>自動化縮圖與生成文章檔案 | 文以載道，寧靜以致遠</title>
+    
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,15 +18,42 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+</script>
+
+            <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]--></head><body><p>
         http://sophAi.github.io/Enigma/rss.xml
-            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16">
+
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="../../assets/reveal/css/reveal.css">
+    <!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables -->
+    <link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
     document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script><!--[if lt IE 9]>
+    </script>
+    <!--[if lt IE 9]>
     <script src="/assets/reveal/lib/js/html5shiv.js"></script>
-    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></p>
+    <![endif]-->
+    <link rel="stylesheet" href="../../assets/css/custom_reveal.css">
+
+    
+
+
+
+    
+
+</p>
 <!-- Menubar -->
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -35,15 +71,26 @@ MathJax.Hub.Config({
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
+                <ul class="nav">
+                    
+            <li><a href="../../archive.html">歷史存檔</a>
             </li><li><a href="../../categories/index.html">標籤分類</a>
             </li><li><a href="../../stories/about.html">關於這裡</a>
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
-                <ul class="nav pull-right"></ul></div>
+                <ul class="nav pull-right">
+                
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -51,11 +98,15 @@ MathJax.Hub.Config({
 
 <!--Body content-->
 <div class="reveal"><div class="slides">
-    <section><section><div class="postbox">
+    <section>
+        
+    <section>
+    <div class="postbox">
     
     <h1>自動化縮圖與生成文章檔案</h1>
 
-    <hr><medium>
+    <hr>
+    <medium>
         發表於: <time class="published" datetime="2013-08-13T16:51:57+08:00">2013-08-13 16:51</time>
         
 
@@ -63,15 +114,20 @@ MathJax.Hub.Config({
           |  更多相關文章：
             <a class="tag" href="../../categories/zi-you-de-cheng-shi-ren-sheng.html"><span class="badge badge-info">自由的程式人生</span></a>
 
-    </medium><hr><div class="figure align-center">
+    </medium>
+    <hr>
+    <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"><img alt="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg" src="../../../arch_2013/files_2013/Coding/jpg2rst/800/800_Collage.jpg"></a>
 </div>
 <p>在了解了縮圖對於照片的影響，以及Imagemagick的使用方法，我們現在將這些資訊實用化，應用在網路文章的寫作，我的目標有以下幾個:</p>
-<ol class="arabic simple"><li>將滑鼠點擊的次數降到最低。</li>
+<ol class="arabic simple">
+<li>將滑鼠點擊的次數降到最低。</li>
 <li>跨平台的可能性。</li>
 <li>未來應用的擴充性。</li>
 <li>方便性。</li>
-</ol><!-- TEASER_END --><p>這裡筆者以python程式進行上述目標的實作，請先去<a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php#iOS">Imagemagick</a> <a class="footnote-reference" href="jpg2rst.html#id2" id="id1">[1]</a>網站下載convert套件並安裝好，確定他可以執行如下的縮圖指令:</p>
+</ol>
+<!-- TEASER_END -->
+<p>這裡筆者以python程式進行上述目標的實作，請先去<a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php#iOS">Imagemagick</a> <a class="footnote-reference" href="jpg2rst.html#id2" id="id1">[1]</a>網站下載convert套件並安裝好，確定他可以執行如下的縮圖指令:</p>
 <pre class="literal-block">
 convert 原始圖檔.jpg -colorspace RGB -filter LanczosSharp -distort Resize 800x800 -unsharp 1x0.55+1.5+0.002 -colorspace sRGB -border 10 -quality 100 縮圖檔名.jpg
 </pre>
@@ -82,11 +138,13 @@ cd jpg2rst
 sudo easy_install *.egg
 </pre>
 <p>工作流程如下:</p>
-<ol class="arabic simple"><li>把想要縮圖的照片集中在一個目錄下。</li>
+<ol class="arabic simple">
+<li>把想要縮圖的照片集中在一個目錄下。</li>
 <li>執行jpg2rst.main()。</li>
 <li>自動產生所有照片的縮圖到對應解析度的目錄下。</li>
 <li>同時生成包含照片路徑的文件檔，這裡我們採用reStructuredText(ReST)格式。</li>
-</ol><p>這個檔案總共包含4個py檔，分別執行不同的工作，例如:</p>
+</ol>
+<p>這個檔案總共包含4個py檔，分別執行不同的工作，例如:</p>
 <p><a class="reference external" href="../../listings/jpg2rst/file_tools.py.html">jpg2rst/file_tools.py</a></p>
 <pre class="code literal-block">
 #!/usr/bin/env python
@@ -328,15 +386,53 @@ if __name__ == "__main__":
 <!-- <url> -->
 <!-- </url> -->
 <!-- <footnote> -->
-<table class="docutils footnote" frame="void" id="id2" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="jpg2rst.html#id1">[1]</a></td><td><a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php#iOS">http://www.imagemagick.org/script/binary-releases.php#iOS</a></td></tr></tbody></table><!-- </footnote> --><!-- <citation> --><!-- </citation> --><!-- ===================================文章結束↑/語法備忘錄↓==================================== --><!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) --><!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` --><!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 --><!-- 插入teaser分頁: .. TEASER_END --><!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 --><!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 --><!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) --><!-- 插入youtube: ..youtube:: 影片的hash string --><!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) --><!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) --><!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 --><!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 --><!-- 插入sidebar: ..sidebar:: (空一行) 內容 --><!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 --><!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) --><!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --><!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --><!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --><!-- ============================================================================================ --><div style="text-align:right">
-        <ul class="pager"><li class="previous">
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="jpg2rst.html#id1">[1]</a></td><td><a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php#iOS">http://www.imagemagick.org/script/binary-releases.php#iOS</a></td></tr>
+</tbody>
+</table>
+<!-- </footnote> -->
+<!-- <citation> -->
+<!-- </citation> -->
+<!-- ===================================文章結束↑/語法備忘錄↓==================================== -->
+<!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) -->
+<!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` -->
+<!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 -->
+<!-- 插入teaser分頁: .. TEASER_END -->
+<!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 -->
+<!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 -->
+<!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) -->
+<!-- 插入youtube: ..youtube:: 影片的hash string -->
+<!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) -->
+<!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) -->
+<!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 -->
+<!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 -->
+<!-- 插入sidebar: ..sidebar:: (空一行) 內容 -->
+<!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 -->
+<!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) -->
+<!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) -->
+<!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
+<!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
+<!-- ============================================================================================ -->
+    
+    <div style="text-align:right">
+        <ul class="pager">
+            <li class="previous">
                 <a href="../Photo_Diary/20130701a.html">← 上一篇</a>
-        </li></ul></div>
+            </li><li class="next">
+                <a href="../Photo_Diary/20130701b.html">下一篇 →</a>
+        </li></ul>
+    </div>
 
     
 
     </div>
-    <br><div id="disqus_thread"></div>
+#    </section>
+#    <section>
+    <br>
+    
+        <div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="enigma8850";
             var disqus_url="http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html";
@@ -350,14 +446,20 @@ if __name__ == "__main__":
             dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
-    </section></section></div></div>
+    </section>
+
+    </section>
+</div></div>
 <!--End of body content-->
 
 
-    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+    <script src="../../assets/reveal/lib/js/head.min.js"></script>
+    <script src="../../assets/reveal/js/reveal.min.js"></script>
+    <script>
     // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
     controls: false,
@@ -372,18 +474,26 @@ if __name__ == "__main__":
     { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
     ]
     });
-    </script><script>
+    </script>
+    <script>
     Reveal.addEventListener( 'slidechanged', function( event ) {
     window.scrollTo(0,0);
     MathJax.Hub.Rerender(event.currentSlide);
     });
-    </script><script>
+    </script>
+
+
+
+    <script>
     Reveal.initialize({
     controls: true,
     progress: true,
     history: true
     })
-    </script><div class="navbar navbar-fixed-bottom">
+    </script>
+
+
+<div class="navbar navbar-fixed-bottom">
     <div class="navbar-inner">
         <div class="footerbox">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  Contents © 2013 <a href="https://www.facebook.com/M43Happiness">文遠爸</a> with <a href="http://nikola.ralsina.com.ar">Nikola</a> - It is a journey towards happiness.  <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"></a> <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml">RSS</a>  <a href="http://feeds.feedburner.com/github/NODC"><img src="http://feeds.feedburner.com/~fc/github/NODC?bg=FFFFFF&amp;fg=444444&amp;anim=1" height="26" width="88" style="border:0" alt=""></a>
@@ -399,5 +509,18 @@ if __name__ == "__main__":
     </li><li><a class="addthis_button_google_plusone_share"></a>
     </li><li><a class="addthis_button_linkedin"></a>
     </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+            <script src="../../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+
+
+</body></html>
