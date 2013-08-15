@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/07/01 (三)
 .. slug: 20130701c
-.. date: 20130815 22:51:57
+.. date: 20130815 22:56:58
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130815 22:43:16
@@ -14,7 +14,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_13_P1190050.jpg
    :align: center
 
-   到戶外試試看新買的帽帽囉!
+   中午去幫媽咪買東西，順便試試新買的帽帽。
 
 .. TEASER_END
 
@@ -22,6 +22,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_14_P1190051.jpg
    :align: center
 
+   這樣看起還很冷嗎?
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_15_P1190053.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_15_P1190053.jpg
@@ -34,21 +35,21 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_16_P1190047.jpg
    :align: center
 
-
+   公園一個人也沒有，因為是中午啊!!
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_17_P1190077.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_17_P1190077.jpg
    :align: center
 
-   不過帽子不往上翻一點，會有陰影耶!真是失策!!
+   這時才發現帽子不往上翻一點，會有陰影耶!真是失策!!
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_18_P1190082.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_18_P1190082.jpg
    :align: center
 
-   不過能避免中暑才是最重要的，戶外活動也是很重要的。
+   不過能避免中暑才是最重要的，看起來防曬效果不錯。
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_19_P1190087.jpg
@@ -62,7 +63,9 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_20_P1190060.jpg
    :align: center
 
-   雖然哥哥玩得高興，但把把我可是快熱昏了。
+   雖然哥哥玩得高興，但我卻快熱昏了。大致玩完一輪就跟他說把把不行了!!我們快點回家吧!!...
+
+
 
 
 .. </body>
