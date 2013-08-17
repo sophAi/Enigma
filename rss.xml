@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness.</description><lastBuildDate>Fri, 16 Aug 2013 22:40:40 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Photo Diary - 2013/07/01 (四)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130701d.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+<rss version="2.0"><channel><title>文以載道，寧靜以致遠</title><link>http://sophAi.github.com/Enigma</link><description>It's a journey towards happiness.</description><lastBuildDate>Sat, 17 Aug 2013 19:38:57 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Photo Diary - 2013/07/04</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130704.html</link><description>&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130704/800/01_800_P1380014.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130704/800/01_800_P1380014.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130704/800/01_800_P1380014.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130704/800/02_800_P1380022.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130704/800/02_800_P1380022.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130704/800/02_800_P1380022.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130704/800/03_800_P1370966.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130704/800/03_800_P1370966.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130704/800/03_800_P1370966.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130704/800/04_800_P1380009.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130704/800/04_800_P1380009.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130704/800/04_800_P1380009.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- &lt;/body&gt; --&gt;
+&lt;!-- &lt;url&gt; --&gt;
+&lt;!-- &lt;/url&gt; --&gt;
+&lt;!-- &lt;footnote&gt; --&gt;
+&lt;!-- &lt;/footnote&gt; --&gt;
+&lt;!-- &lt;citation&gt; --&gt;
+&lt;!-- &lt;/citation&gt; --&gt;
+&lt;!-- ===================================文章結束↑/語法備忘錄↓==================================== --&gt;
+&lt;!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) --&gt;
+&lt;!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` --&gt;
+&lt;!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 --&gt;
+&lt;!-- 插入teaser分頁: .. TEASER_END --&gt;
+&lt;!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 --&gt;
+&lt;!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 --&gt;
+&lt;!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) --&gt;
+&lt;!-- 插入youtube: ..youtube:: 影片的hash string --&gt;
+&lt;!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) --&gt;
+&lt;!-- 插入直接url: \ `連結字串` &lt;網址或路徑&gt;`_ \    (包含&lt; &gt;) --&gt;
+&lt;!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 --&gt;
+&lt;!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 --&gt;
+&lt;!-- 插入sidebar: ..sidebar:: (空一行) 內容 --&gt;
+&lt;!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 --&gt;
+&lt;!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) --&gt;
+&lt;!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --&gt;
+&lt;!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --&gt;
+&lt;!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --&gt;
+&lt;!-- ============================================================================================ --&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130704.html</guid><pubDate>Sat, 17 Aug 2013 11:16:11 GMT</pubDate></item><item><title>Photo Diary - 2013/07/01 (四)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130701d.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130701/800/800_21_P1190097.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130701/800/800_21_P1190097.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130701/800/800_21_P1190097.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;來玩變裝秀吧!!我是潛水夫。&lt;/p&gt;
 &lt;/div&gt;
@@ -42,8 +80,4 @@
 &lt;a class="reference external image-reference" href="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg" src="/../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;原始圖檔縮小至640px，上傳至github。&lt;/p&gt;
 &lt;/div&gt;
-&lt;p class="more"&gt;&lt;a href="/posts/M43/sharpen.html"&gt;繼續閱讀…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>學習與閱讀</category><guid>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</guid><pubDate>Fri, 09 Aug 2013 03:42:06 GMT</pubDate></item><item><title>Photo Diary - 2013/06/27 (二)</title><link>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130627b.html</link><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="/../arch_2013/files_2013/Photo_Diary/20130627/800/06_800_P1180758.jpg"&gt;&lt;img alt="../../../arch_2013/files_2013/Photo_Diary/20130627/800/06_800_P1180758.jpg" src="/../arch_2013/files_2013/Photo_Diary/20130627/800/06_800_P1180758.jpg"&gt;&lt;/a&gt;
-&lt;p class="caption"&gt;一天傍晚，帶小兄弟去樓下吹個涼風。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p class="more"&gt;&lt;a href="/posts/Photo_Diary/20130627b.html"&gt;繼續閱讀…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>生活日記</category><guid>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130627b.html</guid><pubDate>Thu, 08 Aug 2013 01:37:57 GMT</pubDate></item></channel></rss>
+&lt;p class="more"&gt;&lt;a href="/posts/M43/sharpen.html"&gt;繼續閱讀…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>學習與閱讀</category><guid>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</guid><pubDate>Fri, 09 Aug 2013 03:42:06 GMT</pubDate></item></channel></rss>
