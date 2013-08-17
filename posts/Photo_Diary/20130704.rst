@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/07/04
 .. slug: 20130704
-.. date: 20130817 19:16:11
+.. date: 20130817 19:18:43
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130817 19:14:50
@@ -15,7 +15,7 @@
    :align: center
 
 
-
+.. TEASER_END
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130704/800/02_800_P1380022.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130704/800/02_800_P1380022.jpg
