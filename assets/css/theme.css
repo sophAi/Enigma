@@ -1,6 +1,14 @@
+body {
+  padding-top: 60px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
 #container {
     width: 960px;
-    margin: 0 auto;
+    margin: 50 auto;
 }
 
 #contentcolumn {
@@ -19,11 +27,7 @@ img {
     margin-bottom: 12px;
 }
 
-.titlebox {
-    text-align: right;
-}
-
-#addthisbox {margin-bottom: 12px;}
+.footerbox {padding: 15px; text-align: center; margin-bottom: 15px;}
 
 td.label {
     /* Issue #290 */
@@ -35,7 +39,6 @@ td.label {
     vertical-align: super;
     font-size: xx-small;
 }
-
 
 .caption {
     /* Issue 292 */
@@ -70,4 +73,3 @@ ul.bricks > li {
     white-space:nowrap;
     margin: 3px;
 }
-
