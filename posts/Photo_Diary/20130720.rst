@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/07/20
 .. slug: 20130720
-.. date: 20130828 15:26:13
+.. date: 20130828 15:55:38
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130828 09:27:00
@@ -29,7 +29,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130720/800/800_03_P1190756_2.jpg
    :align: center
 
-   這裡有好多畫畫的工具喔!!可以盡情的塗鴉。
+   這裡有好多畫畫的工具喔!!可以盡情的塗鴉耶！
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130720/800/800_04_P1190757_2.jpg
