@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/07/20
 .. slug: 20130720
-.. date: 20130828 14:24:02
+.. date: 20130828 15:17:25
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130828 09:27:00
@@ -50,7 +50,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130720/800/800_06_P1190798_2.jpg
    :align: center
 
-   喂!!你找阿公阿嬤啊!!可是我是弟弟啦!!你打錯了!
+   喂？你找阿公阿嬤啊!!可是我是弟弟啦!!你打錯了!
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130720/800/800_07_P1190799_2.jpg
