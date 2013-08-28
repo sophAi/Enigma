@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/07/20
 .. slug: 20130720
-.. date: 20130828 15:17:25
+.. date: 20130828 15:26:13
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130828 09:27:00
@@ -22,7 +22,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130720/800/800_02_P1190749_2.jpg
    :align: center
 
-   兩兄弟的最愛畫畫了。
+   兩兄弟最愛畫畫了。
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130720/800/800_03_P1190756_2.jpg
