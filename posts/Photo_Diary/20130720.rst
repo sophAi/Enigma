@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/07/20
 .. slug: 20130720
-.. date: 20130828 16:09:14
+.. date: 20130828 16:14:04
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130828 09:27:00
@@ -71,7 +71,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130720/800/800_09_P1380436.jpg
    :align: center
 
-   飛啊!!我是鹹蛋超人。
+   飛啊!!我是鹹蛋超人~
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130720/800/800_10_P1380438.jpg
