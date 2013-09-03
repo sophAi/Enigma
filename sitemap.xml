@@ -11,7 +11,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -35,8 +35,18 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://sophAi.github.com/Enigma/2013/09/</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/2013/09/index.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://sophAi.github.com/Enigma/2013/index.html</loc>
-  <lastmod>2013-08-28</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -76,22 +86,22 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-1.html</loc>
-  <lastmod>2013-08-28</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-2.html</loc>
-  <lastmod>2013-08-28</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-3.html</loc>
-  <lastmod>2013-08-28</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji.html</loc>
-  <lastmod>2013-08-28</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -136,12 +146,12 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-5.html</loc>
-  <lastmod>2013-08-28</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index.html</loc>
-  <lastmod>2013-08-28</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -326,7 +336,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616a.html</loc>
-  <lastmod>2013-08-28</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -477,6 +487,11 @@
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130720.html</loc>
   <lastmod>2013-08-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130725.html</loc>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
