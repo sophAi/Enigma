@@ -1,6 +1,6 @@
 .. title: GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係(v0.1)
 .. slug: shutter-angle
-.. date: 20130727 22:54:07
+.. date: 20130913 10:08:37
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130412 11:35:57
@@ -31,7 +31,7 @@
 
     1080p/24表示1920x1080 progressive, 24 frames per second 
 
-    720p/60表示12800x720 progressive, 60 frames per second 
+    720p/60表示1280x720 progressive, 60 frames per second 
 
 以此類推，然而1080p/30，1080p/60都是最早的AVCHD 1.0的規範裡尚未制定的，如果數位相機或錄影機的sensor output本身可以輸出30p 該如何是好呢?
 
