@@ -1,6 +1,6 @@
 .. title: 留給你們的復古DOS遊戲
 .. slug: dosgames
-.. date: 20130916 14:21:43
+.. date: 20130916 14:22:14
 .. tags: 骨灰記事, draft
 .. link: 
 .. description: Created at 20130916 13:47:42
@@ -95,6 +95,46 @@ Sierra的冒險遊戲攻略與密碼表
 
 Replacementdocs (一些手冊或攻略，尤其是創世紀系列，原文)
 
+
+• 先clone git
+
+∘ git clone https://github.com/munt/munt.git
+
+• 安裝libasound2-dev,libxpm-dev,cmake
+
+∘ apt-get install libasound2-dev libxpm-dev libxt-dev libX11-dev cmake
+
+• 到munt/mt32emu目錄下
+
+∘ cmake .
+
+∘ make
+
+∘ sudo make install
+
+∘ 會在/usr/local/lib/下建立libmt32emu.a以及/usr/local/include/mt32emu下建立mt32emu標頭檔
+
+• 進入munt/mt32emu_alsadrv
+
+∘ make
+
+∘ make install
+
+∘ 會將mt32d跟xmt32放到/usr/local/bin/下
+
+• 記得將所有*.ROM檔放到/usr/share/mt32-rom-data/裡
+
+• xmt32是一個虛擬的MT-32圖形介面模擬器，可以顯示虛擬的音源器畫面，秀出SYSEX訊號，直接修改reverb等級，還能錄製音樂。
+
+• xmt32或mt32d　--help可以顯示選項，如果會掉音建議用-i選項將buffer開大，預設是40 (40 msec)
+
+∘ mt32d -i 100 -x 200
+
+∘ 表示buffer至少100，最大200，改太大好像沒什麼用。CPU速度的因素比較大。
+
+• 啟動dosbox前，先在終端機執行mt32d或xmt32，會顯示目前的alsa port，預設應該是129:0，把這個設定加到dosbox.conf裡
+
+• 這個MT32 Emulator在K8 2.5雙核心上仍然跑得有點吃力，會掉音，但是在I5 3.6G四核心上就OK!
 
 
 .. </body>
