@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/08/10 (二)
 .. slug: 20130810b
-.. date: 20130928 07:55:10
+.. date: 20130928 08:20:25
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20130927 20:39:10
