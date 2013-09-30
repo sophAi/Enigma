@@ -1,6 +1,6 @@
 .. title: 網路相簿的Color banding(色階不連續)
 .. slug: banding
-.. date: 20130930 20:46:53
+.. date: 20130930 21:10:57
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130930 20:30:40
@@ -10,28 +10,6 @@
 .. ===================================文章起始↓================================================
 .. <body>
 
-.. figure:: ../../../arch_2013/files_2013/M43/banding/1024/1024_P1390829.jpg
-   :target: ../../../arch_2013/files_2013/M43/banding/1024/1204_P1390829.jpg
-   :align: center
-
-   Imagemagic縮圖至1024px並銳化，上傳至github pages。
-
-.. TEASER_END
-
-
-.. figure:: https://farm3.staticflickr.com/2870/10018447765_821c487da9_b.jpg
-   :target: https://farm3.staticflickr.com/2870/10018447765_821c487da9_b.jpg
-   :width: 1024px
-   :align: center
-
-   原圖上傳Flickr相簿，以1024px呈現。
-
-.. figure:: https://lh4.googleusercontent.com/-eNuSM9Av4YA/UkluUAk2s1I/AAAAAAABIYE/xDvrqmJ7Dt4/s800/P1390829.jpg" 
-   :target: https://lh4.googleusercontent.com/-eNuSM9Av4YA/UkluUAk2s1I/AAAAAAABIYE/xDvrqmJ7Dt4/s800/P1390829.jpg" 
-   :width: 1024px
-   :align: center
-
-   原圖上傳到google+(picasa)相簿，以1024px呈現。
 
 .. figure:: ../../../arch_2013/files_2013/M43/banding/800/800_P1390829.jpg
    :target: ../../../arch_2013/files_2013/M43/banding/800/800_P1390829.jpg
@@ -39,6 +17,8 @@
 
    Imagemagic縮圖至800px並銳化，上傳至github pages。
 
+
+.. TEASER_END
    
 .. figure:: https://farm3.staticflickr.com/2870/10018447765_821c487da9_c.jpg
    :target: https://farm3.staticflickr.com/2870/10018447765_821c487da9_c.jpg
@@ -74,6 +54,21 @@
    :align: center
 
    原圖上傳到google+(picasa)相簿，以640px呈現。
+
+
+.. figure:: ../../../arch_2013/files_2013/M43/banding/800/800_P1390829_band.jpg
+   :target: ../../../arch_2013/files_2013/M43/banding/800/800_P1390829_band.jpg
+   :align: center
+
+   Imagemagic縮圖至800px並銳化，降飽和提高對比，上傳至github pages。
+
+.. figure:: ../../../arch_2013/files_2013/M43/banding/800/800_flickr_band.jpg
+   :target: ../../../arch_2013/files_2013/M43/banding/800/800_flickr_band.jpg
+   :align: center
+
+   flickr下載的800px圖檔，降飽和提高對比(參數同上)，上傳至github pages。
+
+
 
 .. </body>
 .. <url>
