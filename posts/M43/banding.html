@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20130930 20:30:40"><meta name="author" content="文遠爸"><title>網路相簿的Color banding(色階不連續) | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20130930 20:30:40"><meta name="author" content="文遠爸"><title>數位照片的奧秘 - Color banding(色階不連續) | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -51,17 +51,18 @@ MathJax.Hub.Config({
 <div class="reveal"><div class="slides">
     <section><section><div class="postbox">
     
-    <h1>網路相簿的Color banding(色階不連續)</h1>
+    <h1>數位照片的奧秘 - Color banding(色階不連續)</h1>
 
     <hr><medium>
-        發表於: <time class="published" datetime="2013-09-30T22:04:10+08:00">2013-09-30 22:04</time>
+        發表於: <time class="published" datetime="2013-10-01T00:28:36+08:00">2013-10-01 00:28</time>
         
 
         
           |  更多相關文章：
             <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
 
-    </medium><hr><div class="figure align-center">
+    </medium><hr><p>我們先來看看下面幾張圖，請注意左上部位天空的色階。</p>
+<div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/banding/800/800_P1390829.jpg"><img alt="../../../arch_2013/files_2013/M43/banding/800/800_P1390829.jpg" src="../../../arch_2013/files_2013/M43/banding/800/800_P1390829.jpg"></a>
 <p class="caption">Imagemagic縮圖至800px並銳化，上傳至github pages。</p>
 </div>
@@ -86,6 +87,9 @@ MathJax.Hub.Config({
 <a class="reference external image-reference" href="https://lh4.googleusercontent.com/-eNuSM9Av4YA/UkluUAk2s1I/AAAAAAABIYE/xDvrqmJ7Dt4/s640/P1390829.jpg"><img alt="https://lh4.googleusercontent.com/-eNuSM9Av4YA/UkluUAk2s1I/AAAAAAABIYE/xDvrqmJ7Dt4/s640/P1390829.jpg" src="https://lh4.googleusercontent.com/-eNuSM9Av4YA/UkluUAk2s1I/AAAAAAABIYE/xDvrqmJ7Dt4/s640/P1390829.jpg" style="width: 640px;"></a>
 <p class="caption">原圖上傳到google+(picasa)相簿，以640px呈現。</p>
 </div>
+<p>從上面幾張圖清楚顯示所謂「色階不連續(color banding)」的現象，這個問題大多是在捨棄顏色資訊的過程中產生的(color reduction)，簡單來說，一張數位照片從按下快門開始，必須經過一連串捨棄色彩資訊的過程，例如36 bits 色彩深度(color dpeth)的Raw資訊，最後只有24 bits的色彩深度會塞進我們最終的成品(RGB)，即使這樣仍是很龐大的影像資訊，因此還要進一步以破壞性壓縮來降低檔案容量，例如色度採樣(Chroma subsampling)與量子化(Quantization)，兩者都會捨棄更多色彩的細節，這樣捨棄再捨棄的過程，造成幾乎無可避免的「色階不連續」呈現於大多數壓縮容量的影像裡。</p>
+<p>上面的例子赤裸裸的呈現不同的處理方式所產生的差異，我們分別採用先前提到的Imagemagick縮圖銳化程序，以及最多人使用的網路相簿，分別是Flickr網路相簿，以及Google+(Picasa)網路相簿，其中Picasa上傳時勾選了「保留原始圖檔的畫質」，以儘量減輕畫質的減損，所有照片都是由同一個原始圖檔生成的。而這個任何人都可以重覆的實驗告訴我們，這才是一個數位照片「畫質」區分的所在。</p>
+<p>為了更進一步了解這些照片經過哪些處理，下面分別將800px的圖檔經過加強對比與灰階化，其套用的Gamma曲線是一模一樣的，同樣的，我們把注意力放在左上半部的色彩區塊：</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/banding/800/800_P1390829_band.jpg"><img alt="../../../arch_2013/files_2013/M43/banding/800/800_P1390829_band.jpg" src="../../../arch_2013/files_2013/M43/banding/800/800_P1390829_band.jpg"></a>
 <p class="caption">Imagemagic縮圖至800px並銳化，降飽和提高對比，上傳至github pages。</p>
@@ -98,6 +102,8 @@ MathJax.Hub.Config({
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/banding/800/800_google_band.jpg"><img alt="../../../arch_2013/files_2013/M43/banding/800/800_google_band.jpg" src="../../../arch_2013/files_2013/M43/banding/800/800_google_band.jpg"></a>
 <p class="caption">google+下載的800px圖檔，降飽和提高對比(參數同上)，上傳至github pages。</p>
 </div>
+<p>我曾經一度懷疑Flickr有額外加強dither的程度，不過放大來看後，確定那些雜點分佈其實是高度量化的結果，也就是說，與第一張由Imagemagick縮圖並處理的圖檔相比，Flickr仍是屬於壓縮率較高的(檔案容量較小)，不過其結果跟最高畫質非常接近，而google+或是Picasa的成品則產生惱人的斷階，像年輪一般地破壞整個畫面，難以讓任何稍稍注重畫質的人接受，不過其檔案容量也是最小的。</p>
+<p>從這裡我們可以知道數位照片的「畫質」，並不一定會經由感光元件的動態，鏡頭的銳利度等硬體呈現出明顯差異，那是因為數位照片就是「一連串捨棄色彩與細節等資訊」的過程，許多人喜歡以1:1的比例來評斷畫質的好壞，卻沒有注意到100%像素檢視(也就是所謂的pixel peeping)離最終可完整檢視的照片還有一大段距離，只有經過縮圖後才是，高動態與完美細節的Raw資訊，亦離最終成品遠矣，只有將細節捨棄過後的東西才是，這些才是「畫質」真正決勝負的戰場。</p>
 <!-- </body> -->
 <!-- <url> -->
 <!-- </url> -->
@@ -138,7 +144,7 @@ MathJax.Hub.Config({
         <script type="text/javascript">
         var disqus_shortname ="enigma8850";
             var disqus_url="http://sophAi.github.com/Enigma//posts/M43/banding.html";
-        var disqus_title="\u7db2\u8def\u76f8\u7c3f\u7684Color banding(\u8272\u968e\u4e0d\u9023\u7e8c)";
+        var disqus_title="\u6578\u4f4d\u7167\u7247\u7684\u5967\u79d8 - Color banding(\u8272\u968e\u4e0d\u9023\u7e8c)";
         var disqus_identifier="cache/posts/M43/banding.html";
         var disqus_config = function () {
             this.language = "en";
