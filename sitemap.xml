@@ -116,7 +116,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/xue-xi-yu-yue-du.html</loc>
-  <lastmod>2013-09-26</lastmod>
+  <lastmod>2013-09-30</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -252,6 +252,11 @@
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Learning/mathjax.html</loc>
   <lastmod>2013-09-16</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/posts/M43/banding.html</loc>
+  <lastmod>2013-09-30</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
