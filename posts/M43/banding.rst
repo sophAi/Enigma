@@ -1,6 +1,6 @@
 .. title: 網路相簿的Color banding(色階不連續)
 .. slug: banding
-.. date: 20130930 21:10:57
+.. date: 20130930 22:04:10
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130930 20:30:40
@@ -68,6 +68,12 @@
 
    flickr下載的800px圖檔，降飽和提高對比(參數同上)，上傳至github pages。
 
+
+.. figure:: ../../../arch_2013/files_2013/M43/banding/800/800_google_band.jpg
+   :target: ../../../arch_2013/files_2013/M43/banding/800/800_google_band.jpg
+   :align: center
+
+   google+下載的800px圖檔，降飽和提高對比(參數同上)，上傳至github pages。
 
 
 .. </body>
