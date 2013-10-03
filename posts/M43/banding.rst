@@ -1,6 +1,6 @@
 .. title: 數位照片的奧秘 - Color banding(色階不連續)
 .. slug: banding
-.. date: 20131001 00:28:36
+.. date: 20131003 20:57:49
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130930 20:30:40
