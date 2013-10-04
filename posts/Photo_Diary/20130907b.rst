@@ -1,6 +1,6 @@
 .. title: 竹南火車之旅 - 2013/09/07 (二)
 .. slug: 20130907b
-.. date: 20131004 20:13:48
+.. date: 20131004 20:28:10
 .. tags: 孩子們的夏天
 .. link: 
 .. description: Created at 20131004 19:57:56
@@ -23,21 +23,21 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_19_P1390820.jpg
    :align: center
 
-   一望無際的農田，空氣清新。
+   空氣清新，還有一望無際的農田。
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_20_P1390952.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_20_P1390952.jpg
    :align: center
 
-   往遠方看去是鄭漢步道，不過不在我們今天的行程。
+   往遠方看去是鄭漢步道，不過不在我們今天的行程裡。
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_21_P1390832.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_21_P1390832.jpg
    :align: center
 
-   大夥而沿著鐵路旁的小路邊散步邊欣賞風景。
+   大夥兒沿著鐵路旁的小路邊散步邊欣賞風景。
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_22_P1390834.jpg
@@ -65,7 +65,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_25_P1390857.jpg
    :align: center
 
-   農田勾起了媽咪小時候的回憶啊!
+   農田勾起了媽咪小時候的回憶!
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_26_P1390868.jpg
