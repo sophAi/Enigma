@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/08/11
 .. slug: 20130811
-.. date: 20131009 13:41:35
+.. date: 20131009 14:24:58
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20131009 13:11:05
@@ -50,7 +50,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130811/800/800_P1200814.jpg
    :align: center
 
-   滿滿的鴨鴨!!回家可以進補囉!(啥!?..Q_Q)
+   滿滿的黃色小鴨!!回家可以進補囉!(啥!?..Q_Q)
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130811/800/800_P1200819.jpg
