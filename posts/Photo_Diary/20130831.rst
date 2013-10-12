@@ -1,6 +1,6 @@
 .. title: Photo Diary - 2013/08/31
 .. slug: 20130831
-.. date: 20131012 08:23:49
+.. date: 20131012 08:47:35
 .. tags: 生活日記
 .. link: 
 .. description: Created at 20131012 07:42:30
@@ -22,21 +22,21 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210462.jpg
    :align: center
 
-   一針一線都要縫好。
+   準備cosplay的衣服，一針一線都要縫好。
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210465.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210465.jpg
    :align: center
 
-
+   把拔還沒好嗎?
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210470.jpg
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210470.jpg
    :align: center
 
-   
+   無聊看一下窗外風景。
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210473.jpg
@@ -50,7 +50,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210479.jpg
    :align: center
 
-
+   把拔~~好了沒?
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210487.jpg
@@ -78,7 +78,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210495.jpg
    :align: center
 
-   換哥哥，吉他上那個車輪真是可疑...。
+   哥哥: 吉他上那個車輪真是可疑...。
 
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210499.jpg
@@ -92,7 +92,7 @@
    :target: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210516.jpg
    :align: center
 
-   「叮叮叮~登登登~咚咚鼕~」
+   「叮叮叮~登登登~咚咚咚~」
    
 
 .. figure:: ../../../arch_2013/files_2013/Photo_Diary/20130831/800/800_P1210518.jpg
