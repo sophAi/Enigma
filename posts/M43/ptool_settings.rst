@@ -1,6 +1,6 @@
 .. title: GX1與GH2破解設定資訊
 .. slug: ptool_settings
-.. date: 20130729 09:58:07
+.. date: 20131016 14:30:43
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130726 16:18:09
@@ -42,7 +42,7 @@ DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_02.png
    :align: center
 
-　 偽色或英文所稱的color bending最常出現在色階不連續的地方，其產生的不自然色彩，其實是macroblock所造成的，破解後的GX1，即使是低光下，皮膚的色階表現也很不錯。
+　 偽色或英文所稱的color banding最常出現在色階不連續的地方，其產生的不自然色彩，其實是macroblock所造成的，破解後的GX1，即使是低光下，皮膚的色階表現也很不錯。
 
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/GX1_Drewnet_03.png

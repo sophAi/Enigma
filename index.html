@@ -50,6 +50,51 @@ MathJax.Hub.Config({
 <!--Body content-->
 <div class="reveal"><div class="slides">
     <section><section><div class="postbox">
+        <h1><a href="posts/Photo_Diary/20130901.html">Photo Diary - 2013/09/01</a>
+        <small>  
+             發表於: <time class="published" datetime="2013-10-16T20:57:33+08:00">2013-10-16 20:57</time></small></h1>
+        <hr><div><div class="figure align-center">
+<a class="reference external image-reference" href="../arch_2013/files_2013/Photo_Diary/20130901/800/800_P1210628.jpg"><img alt="../../../arch_2013/files_2013/Photo_Diary/20130901/800/800_P1210628.jpg" src="../arch_2013/files_2013/Photo_Diary/20130901/800/800_P1210628.jpg"></a>
+<p class="caption">下雨天在家裡，好無聊，用把拔的褲褲來cosplay吧!</p>
+</div>
+<p class="more"><a href="posts/Photo_Diary/20130901.html">繼續閱讀…</a></p></div>
+        
+    <p>
+        <a href="posts/Photo_Diary/20130901.html#/0/1" data-disqus-identifier="cache/posts/Photo_Diary/20130901.html">Comments</a>
+
+        
+</p><div style="text-align:right">
+<ul class="pager"><li class="next">
+        <a href="index-8.html">較舊的文章 →</a>
+</li></ul></div>
+
+        </div>
+        </section><section><div class="postbox">
+        <h1><a href="posts/M43/ptool_settings.html">GX1與GH2破解設定資訊</a>
+        <small>  
+             發表於: <time class="published" datetime="2013-10-16T14:30:43+08:00">2013-10-16 14:30</time></small></h1>
+        <hr><div><p>由於破解軔體的步驟大同小異，我將其獨立於<a class="reference external" href="posts/M43/ptool.html">Ptool更新軔體程序</a>一文，本文則不定時分享最新的破解參數設定，搭配Ptool則可進行錄影畫質的修改。</p>
+<div class="section" id="drewnet-t9-trial-9-by-driftwood-2013-07-26">
+<h2>DREWnet T9 (Trial 9) by Driftwood - 2013/07/26更新</h2>
+<p>環境: GX1+Sandisk 45MB/s USH-I與GH2+Toshiba Class 10 23MB/s 白卡</p>
+<p>我使用Ptool論壇<a class="reference external" href="http://www.personal-view.com/talks/discussion/7580/driftwood-cluster-x-series-3moon-t7%D0%85r%D1%96zz-t6nebula-t7drewnet-t9/p1">driftwood</a>所調整的<a class="reference external" href="../arch_2013/files_2013/M43/ptool_settings/seta.ini">DREWnet T8</a>錄影參數已經很久了，driftwood近期的設定檔算是Ptool論壇成立以來集大成之作，其畫質與檔案容量取得很好的平衡，同時long GOP的特性使得長時間錄影的穩定性高，而前幾天才釋出的<a class="reference external" href="../arch_2013/files_2013/M43/ptool_settings/setc.ini">DREWnet T9</a>參數檔，使用了新的scaling matrix，對我來說是一大消息，也讓這篇Ptool的資訊分享延期。錄影畫質的破解，需要流量(bit rate, 8 bit=1 Byte)，Quantization Matrix，以及GOP互相配合，三者息息相關，與靜態照片不同的是影片檔經常是在1:1的情況下觀看的，因為當今主流螢幕所提供的解析度(大於或等於1920x1080)，就是為了能完整播放FullHD的影片，因此畫質的差別很容易以肉眼分辨，要達到良好的畫質，並不是無限上網地增加流量，而是在檔案大小與畫質間取得平衡，選擇DREWnet最重要的原因是其針對Scaling matrix做了許多調整，將流量平均分配給I/P/B frame，而非僅僅拉抬流量(通常也要設定auto quantizer)。流量過高往往也會降低錄影的穩定性，太複雜的場景容易使錄影中斷，因此在流量不過度暴增的前提下提升畫面的細節才是最聰明的辦法，在driftwood的描述裡，DREWnet T9具有以下特性:</p>
+<ol class="arabic simple"><li>80Mbps constant in 24p modes for exceptional quality.</li>
+<li>1080i/FSH Maybe only around 40Mbps but the quantisation and PSNR is brilliant!</li>
+<li>720p modes Just the best there is. (事實上1080i/FSH(同時也是GH2的HBR以及GX1的FSH)所採用的scaling matrices跟720p是相同的)。</li>
+</ol><p>由於平常我是GH2與GX1混合拍攝，為了將混合格式轉換禎率(pulldown)所需的成本降到最低，大多偏向採用1080p30(FSH)的錄影格式，使用DREWnet讓1080p30的錄影檔平均增加了約1.7倍的容量，對於生活錄影來說已經是很可觀的增長。24p無疑畫質更佳，但是所需的記憶卡空間也更多，如果各位拍攝影片的頻率非常高，例如紀錄小孩的成長，出外旅遊，同時還要兼顧靜態照片所需的額外容量，則FSH模式已經是綽綽有餘。不管是靜態還是動態攝影，「剛剛好」是很重要的原則。</p>
+<p class="more"><a href="posts/M43/ptool_settings.html">繼續閱讀…</a></p></div></div>
+        
+    <p>
+        <a href="posts/M43/ptool_settings.html#/0/1" data-disqus-identifier="cache/posts/M43/ptool_settings.html">Comments</a>
+
+        
+</p><div style="text-align:right">
+<ul class="pager"><li class="next">
+        <a href="index-8.html">較舊的文章 →</a>
+</li></ul></div>
+
+        </div>
+        </section><section><div class="postbox">
         <h1><a href="posts/Photo_Diary/20130831.html">Photo Diary - 2013/08/31</a>
         <small>  
              發表於: <time class="published" datetime="2013-10-12T08:47:35+08:00">2013-10-12 08:47</time></small></h1>
@@ -236,46 +281,6 @@ MathJax.Hub.Config({
         
     <p>
         <a href="posts/Photo_Diary/20130907b.html#/0/1" data-disqus-identifier="cache/posts/Photo_Diary/20130907b.html">Comments</a>
-
-        
-</p><div style="text-align:right">
-<ul class="pager"><li class="next">
-        <a href="index-8.html">較舊的文章 →</a>
-</li></ul></div>
-
-        </div>
-        </section><section><div class="postbox">
-        <h1><a href="posts/Photo_Diary/20130907a.html">竹南火車之旅 - 2013/09/07 (一)</a>
-        <small>  
-             發表於: <time class="published" datetime="2013-10-03T20:57:37+08:00">2013-10-03 20:57</time></small></h1>
-        <hr><div><div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/Photo_Diary/20130907/800/800_01_P1400097.jpg"><img alt="../../../arch_2013/files_2013/Photo_Diary/20130907/800/800_01_P1400097.jpg" src="../arch_2013/files_2013/Photo_Diary/20130907/800/800_01_P1400097.jpg"></a>
-<p class="caption">這是孩子們第二次火車之旅，這次將造訪崎頂，竹南，跟談文這三個車站。</p>
-</div>
-<p class="more"><a href="posts/Photo_Diary/20130907a.html">繼續閱讀…</a></p></div>
-        
-    <p>
-        <a href="posts/Photo_Diary/20130907a.html#/0/1" data-disqus-identifier="cache/posts/Photo_Diary/20130907a.html">Comments</a>
-
-        
-</p><div style="text-align:right">
-<ul class="pager"><li class="next">
-        <a href="index-8.html">較舊的文章 →</a>
-</li></ul></div>
-
-        </div>
-        </section><section><div class="postbox">
-        <h1><a href="posts/Photo_Diary/20130805.html">Photo Diary - 2013/08/05</a>
-        <small>  
-             發表於: <time class="published" datetime="2013-10-01T14:15:40+08:00">2013-10-01 14:15</time></small></h1>
-        <hr><div><div class="figure align-center">
-<a class="reference external image-reference" href="../arch_2013/files_2013/Photo_Diary/20130805/800/800_P1390269.jpg"><img alt="../../../arch_2013/files_2013/Photo_Diary/20130805/800/800_P1390269.jpg" src="../arch_2013/files_2013/Photo_Diary/20130805/800/800_P1390269.jpg"></a>
-<p class="caption">在路口轉角等紅綠燈時拍的。</p>
-</div>
-<p class="more"><a href="posts/Photo_Diary/20130805.html">繼續閱讀…</a></p></div>
-        
-    <p>
-        <a href="posts/Photo_Diary/20130805.html#/0/1" data-disqus-identifier="cache/posts/Photo_Diary/20130805.html">Comments</a>
 
         
 </p><div style="text-align:right">
