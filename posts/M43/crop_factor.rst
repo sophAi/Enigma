@@ -1,6 +1,6 @@
 .. title: 片幅的奧秘 V1.0
 .. slug: crop_factor
-.. date: 20131206 15:10:37
+.. date: 20131206 15:14:25
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20131130 22:19:38
@@ -16,6 +16,9 @@
 .. figure:: ../../../arch_2013/files_2013/M43/crop_factor/800/800_crop_factor_01.jpg
    :target: ../../../arch_2013/files_2013/M43/crop_factor/800/800_crop_factor_01.jpg
    :align: center
+
+
+.. TEASER_END
 
 假設上面這張照片是由135的片幅所拍的，那麼在其他拍攝條件維持不變的情況下，APS-C與4/3片幅可以拍攝的範圍如畫面中的白色框框所示，由於涵蓋的面積較小，無法完整紀錄整個畫面。
 
