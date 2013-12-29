@@ -71,7 +71,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/12/index.html</loc>
-  <lastmod>2013-12-07</lastmod>
+  <lastmod>2013-12-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -86,7 +86,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/</loc>
-  <lastmod>2013-10-01</lastmod>
+  <lastmod>2013-12-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -150,8 +150,13 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://sophAi.github.com/Enigma/categories/xue-xi-yu-yue-du-1.html</loc>
+  <lastmod>2013-12-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://sophAi.github.com/Enigma/categories/xue-xi-yu-yue-du.html</loc>
-  <lastmod>2013-12-07</lastmod>
+  <lastmod>2013-12-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -206,12 +211,12 @@
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-8.html</loc>
-  <lastmod>2013-12-06</lastmod>
+  <lastmod>2013-12-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index.html</loc>
-  <lastmod>2013-12-07</lastmod>
+  <lastmod>2013-12-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -300,8 +305,18 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://sophAi.github.com/Enigma/posts/M43/color_1.html</loc>
+  <lastmod>2013-12-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/crop_factor.html</loc>
-  <lastmod>2013-12-07</lastmod>
+  <lastmod>2013-12-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/posts/M43/monitorhood.html</loc>
+  <lastmod>2013-12-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
