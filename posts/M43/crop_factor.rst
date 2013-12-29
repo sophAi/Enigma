@@ -1,6 +1,6 @@
-.. title: 片幅的奧秘 V1.1
+.. title: 片幅的奧秘 v1.1
 .. slug: crop_factor
-.. date: 20131207 17:38:09
+.. date: 20131229 23:35:34
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20131130 22:19:38

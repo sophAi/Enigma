@@ -1,6 +1,6 @@
-.. title: 顯示色彩的奧秘
+.. title: 顯示色彩的奧秘 v0.1
 .. slug: color_1
-.. date: 20131221 23:07:10
+.. date: 20131229 23:35:16
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20131221 20:00:57
