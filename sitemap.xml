@@ -5,743 +5,575 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://sophAi.github.com/Enigma/</loc>
-  <lastmod>2013-10-08</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/2013/</loc>
-  <lastmod>2013-12-06</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/2013/07/</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://sophAi.github.com/Enigma/2013/07/index.html</loc>
-  <lastmod>2013-10-16</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/2013/08/</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/08/index.html</loc>
-  <lastmod>2013-09-06</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/2013/09/</loc>
-  <lastmod>2013-09-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/09/index.html</loc>
-  <lastmod>2013-10-01</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/2013/10/</loc>
-  <lastmod>2013-10-01</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/10/index.html</loc>
-  <lastmod>2013-10-19</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/2013/11/</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/11/index.html</loc>
-  <lastmod>2013-11-04</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/2013/12/</loc>
-  <lastmod>2013-12-06</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/12/index.html</loc>
-  <lastmod>2013-12-30</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/2013/index.html</loc>
-  <lastmod>2013-12-06</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/archive.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/categories/</loc>
-  <lastmod>2013-12-29</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/gou-gou.html</loc>
-  <lastmod>2013-10-07</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/categories/gou-gou.xml</loc>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/hai-zi-men-de-xia-tian-1.html</loc>
-  <lastmod>2013-10-07</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/hai-zi-men-de-xia-tian.html</loc>
-  <lastmod>2013-10-07</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/categories/hai-zi-men-de-xia-tian.xml</loc>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/index.html</loc>
-  <lastmod>2013-10-07</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/mathjax.html</loc>
-  <lastmod>2013-10-07</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/categories/mathjax.xml</loc>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ji-lu.html</loc>
   <lastmod>2013-10-07</lastmod>
-  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ji-lu.xml</loc>
+  <lastmod>2013-10-07</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-1.html</loc>
-  <lastmod>2013-10-19</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-2.html</loc>
-  <lastmod>2013-10-19</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-3.html</loc>
-  <lastmod>2013-10-19</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-4.html</loc>
-  <lastmod>2013-10-19</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji-5.html</loc>
-  <lastmod>2013-10-19</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji.html</loc>
-  <lastmod>2013-10-19</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/categories/sheng-huo-ri-ji.xml</loc>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/xue-xi-yu-yue-du-1.html</loc>
   <lastmod>2013-12-29</lastmod>
-  <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/xue-xi-yu-yue-du.html</loc>
-  <lastmod>2013-12-30</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/categories/xue-xi-yu-yue-du.xml</loc>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/categories/zi-you-de-cheng-shi-ren-sheng.html</loc>
-  <lastmod>2013-10-07</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
-  <loc>http://sophAi.github.com/Enigma/galleries/</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
+  <loc>http://sophAi.github.com/Enigma/categories/zi-you-de-cheng-shi-ren-sheng.xml</loc>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/galleries/index.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
+ </url>
+ <url>
+  <loc>http://sophAi.github.com/Enigma/galleries/rss.xml</loc>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-1.html</loc>
-  <lastmod>2013-10-16</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-2.html</loc>
-  <lastmod>2013-10-16</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-3.html</loc>
-  <lastmod>2013-10-16</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-4.html</loc>
-  <lastmod>2013-10-16</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-5.html</loc>
-  <lastmod>2013-10-16</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-6.html</loc>
-  <lastmod>2013-10-16</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-7.html</loc>
-  <lastmod>2013-10-16</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index-8.html</loc>
-  <lastmod>2013-12-29</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/index.html</loc>
-  <lastmod>2013-12-30</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/listings/</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/listings/index.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/listings/jpg2rst/</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/listings/jpg2rst/fig_tools.py.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/listings/jpg2rst/file_tools.py.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/listings/jpg2rst/index.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/listings/jpg2rst/jpg2rst.py.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/listings/jpg2rst/rst_tools.py.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/listings/jpg2rst/setup.py.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/listings/jpg2rst/update.html</loc>
-  <lastmod>2013-08-28</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Coding/jpg2rst.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Coding/python_comic.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Coding/raspberry_pi_case.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Dogs/lucy.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Learning/convolution.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Learning/mathjax.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/20mm_filter.html</loc>
-  <lastmod>2013-12-29</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/color_1.html</loc>
   <lastmod>2013-12-29</lastmod>
-  <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/crop_factor.html</loc>
-  <lastmod>2013-12-29</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/monitorhood.html</loc>
-  <lastmod>2013-12-30</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/ptool.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/ptool_settings.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/resize.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/sharpen.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/M43/shutter-angle.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130511.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130512.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130513.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130518.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130524.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130525.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130526.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130531.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130601c.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130602.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130608a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130608b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130615.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616c.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130616d.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130622.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130622a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130622b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130622d.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130627a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130627b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130630a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130630b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130630c.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130701a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130701b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130701c.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130701d.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130704.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130707.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130711a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130711b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130711c.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130711d.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130711e.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130713a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130713b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130713c.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130713d.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130717.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130718.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130720.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130725.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130726.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130726a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130726b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130726d.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130728.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130731.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130801.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130803aa.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130803ab.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130803ac.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130803ad.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130803b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130805.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130810a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130810b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130810c.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130810d.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130811.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130816.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130822.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130824.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130825.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130831.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130901.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130907a.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130907b.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130907c.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/posts/Photo_Diary/20130907d.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
-  <loc>http://sophAi.github.com/Enigma/rss.html</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://sophAi.github.com/Enigma/stories/</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
+  <loc>http://sophAi.github.com/Enigma/rss.xml</loc>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/stories/about.html</loc>
-  <lastmod>2013-11-03</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/stories/index.html</loc>
-  <lastmod>2013-09-06</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.com/Enigma/tipue_search.html</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-01-05</lastmod>
  </url>
 </urlset>
