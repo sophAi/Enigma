@@ -6,7 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://sophAi.github.io/Enigma/2013/07/index.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/2013/08/index.html</loc>
@@ -37,8 +37,12 @@
   <lastmod>2014-02-06</lastmod>
  </url>
  <url>
+  <loc>http://sophAi.github.io/Enigma/2014/02/index.html</loc>
+  <lastmod>2014-02-18</lastmod>
+ </url>
+ <url>
   <loc>http://sophAi.github.io/Enigma/2014/index.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/archive.html</loc>
@@ -118,11 +122,11 @@
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/categories/xue-xi-yu-yue-du.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/categories/xue-xi-yu-yue-du.xml</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/categories/zi-you-de-cheng-shi-ren-sheng.html</loc>
@@ -142,39 +146,39 @@
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index-1.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index-2.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index-3.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index-4.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index-5.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index-6.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index-7.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index-8.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/index.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/listings/index.html</loc>
@@ -226,7 +230,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/posts/Learning/convolution.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/posts/Learning/mathjax.html</loc>
@@ -238,7 +242,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/posts/M43/color_1.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/posts/M43/crop_factor.html</loc>
@@ -250,7 +254,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/posts/M43/ptool.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/posts/M43/ptool_settings.html</loc>
@@ -406,7 +410,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/posts/Photo_Diary/20130711a.html</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/posts/Photo_Diary/20130711b.html</loc>
@@ -570,7 +574,7 @@
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/rss.xml</loc>
-  <lastmod>2014-02-06</lastmod>
+  <lastmod>2014-02-18</lastmod>
  </url>
  <url>
   <loc>http://sophAi.github.io/Enigma/stories/about.html</loc>
