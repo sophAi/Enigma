@@ -1,6 +1,6 @@
 .. title: Ptool更新軔體程序
 .. slug: ptool
-.. date: 20140218 21:23:41
+.. date: 20140220 14:47:32
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130722 22:47:23
@@ -62,7 +62,7 @@
 
    檢查一下幾個重要的設定，例如Version increment一定要勾選，Interface與Movie related restrictions都勾選。
 
-有些相機需要將version increment的設為大於2的數字才能進行軔體更新，如果遇到無法更新軔體，請將version increment的數值由1改為3(感謝York Change網友發現這個問題)，這個設定主要是用來讓機身檢查軔體的版本時判斷軔體為新版本，如此才會進行軔體更新喔!!更新完後的軔體版本則以真正的軔體版本為主，也就是說，1.1版本的軔體，即使version increment設成5，成功更新軔體後，版本仍然會維持1.1，透過這樣的機制，就可以不受限制的重覆進行軔體更新或還原軔體。
+有些相機需要將version increment的設為大於2的數字才能進行軔體更新，如果遇到無法更新軔體，請將version increment的數值由1改為3(感謝York Chang網友發現這個問題)，這個設定主要是用來讓機身檢查軔體的版本時判斷軔體為新版本，如此才會進行軔體更新喔!!更新完後的軔體版本則以真正的軔體版本為主，也就是說，1.1版本的軔體，即使version increment設成5，成功更新軔體後，版本仍然會維持1.1，透過這樣的機制，就可以不受限制的重覆進行軔體更新或還原軔體。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png
