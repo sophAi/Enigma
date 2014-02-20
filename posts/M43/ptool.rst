@@ -1,6 +1,6 @@
 .. title: Ptool更新軔體程序
 .. slug: ptool
-.. date: 20140220 14:47:32
+.. date: 20140220 14:53:36
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130722 22:47:23
@@ -152,14 +152,14 @@
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/18_GX1_ntsc_format.JPG
    :align: center
 
-   更新軔體有可能會遇到這樣的錯誤訊息，其實是因為機身切換了視訊格式所致，不需要太擔心。只要在相機上重新格式化SD卡即可。
+   更新軔體有可能會遇到這樣的錯誤訊息，其實是因為機身切換了視訊格式，記憶卡裡的目錄結構也必須要有相應於NTSC或PAL視訊格式的改變，不需要太擔心。只要在相機上重新格式化SD卡，讓相機重新建立記憶卡的目錄即可。
 
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/19_GX1_video_out.JPG
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/19_GX1_video_out.JPG
    :align: center
 
-   香港是採用PAL規格，可以利用這個選項切換成適用於台灣的NTSC規格。
+   香港是採用PAL規格，可以利用這個選項切換成適於台灣的NTSC規格。
 
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/20_GX1_ntsc.JPG
