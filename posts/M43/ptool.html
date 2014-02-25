@@ -55,7 +55,7 @@ MathJax.Hub.Config({
     <h1>Ptool更新軔體程序</h1>
 
     <hr><medium>
-        Posted: <time class="published" datetime="2014-02-25T12:07:24+08:00">2014-02-25 12:07</time>
+        Posted: <time class="published" datetime="2014-02-25T13:06:53+08:00">2014-02-25 13:06</time>
         
 
         
@@ -70,7 +70,7 @@ MathJax.Hub.Config({
 <p>這裡我們以GH2與GX1為例來進行軔體修改與升級的分解步驟，詳細的資訊請參考<a class="reference external" href="http://www.gh1-hack.info/wiki/PToolSoftware">Ptool wiki</a>的原文頁面:</p>
 <ol class="arabic simple"><li>務必使用「充飽電力」的「原廠電池」，請勿使用副廠電池。</li>
 <li>請下載<a class="reference external" href="http://www.gh1-hack.info/ptool3d.zip">Ptool3</a>，這是用來修改軔體參數的程式(ptool3.exe)。</li>
-<li>請下載<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html">GH2的官方軔體</a>或<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html">GX1的官方軔體</a>，我們將利用Ptool來更改軔體的參數(例如:GX1__V11.bin)。</li>
+<li>請下載<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html">GH2的官方軔體</a>、<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html">GX1的官方軔體</a>、或<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/g3.html">G3的官方軔體</a>，我們將利用Ptool來更改軔體的參數(例如:GX1__V11.bin)。</li>
 <li>請下載<a class="reference external" href="ptool_settings.html">Ptool的參數檔</a>，由於參數檔隨時更新，我將其集中在另一篇討論(例如setc.ini)。</li>
 </ol><p>確實檢查上述的步驟，並確保下載的檔案完整，我們即可開始進行軔體修改與更新的動作，如果參數檔設定錯誤，頂多是讓相機動作不正常(例如錄影中斷)，並不至於導致相機故障，以我在論壇的經驗，也未曾聽聞過類似事件，唯一有可能造成故障的因素是使用「未充飽」或「非原廠」的電池，嚴重者可能會造成無法正常開機，所以請大家謹記這個守則，更新前務必檢查電池並確實充電，同時不要在軔體更新過程中關閉相機電源或進行任何操作，就可以安心進行破解程序了。另外更新後的相機，請不要進入所謂的「工程模式」，會使相機運作不正常，諸如抓不到鏡頭，如果不小心進入工程模式，只要跳出工程模式後，按照下列步驟重新更新一次軔體即可恢復正常。</p>
 <p>由於中文字型是由相機上的ROM而非軔體提供，因此日文介面的Panasonic相機，在經過軔體修改後僅能出現英文介面，中文字型是無法正常顯示的，而原本已有中文介面的相機，更新軔體前後均不受影響，中文與各式語言介面都可以保留。</p>
@@ -81,7 +81,7 @@ MathJax.Hub.Config({
 </div>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png" src="../../../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png"></a>
-<p class="caption">點選Load Firmware後，讀取由Panasonic官方網站所下載的軔體檔(.bin檔)。</p>
+<p class="caption">點選Load Firmware後，讀取由Panasonic官方網站所下載的軔體檔(.bin檔，如果下載的是.exe執行檔，例如GX1__V11.exe，表示這個是壓縮檔，直接執行就能夠解壓縮成GX1_V11.bin檔案)。</p>
 </div>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png" src="../../../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png"></a>
@@ -89,7 +89,7 @@ MathJax.Hub.Config({
 </div>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png" src="../../../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png"></a>
-<p class="caption">若要讀取seta.ini的設定，則用滑鼠按一下A的綠色按鈕即可將設定讀取進來。</p>
+<p class="caption">若要讀取setc.ini的設定，則用滑鼠左鍵點一下C的綠色按鈕即可將設定讀取進來，點選時會出現Settings loaded的提示字樣。</p>
 </div>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png" src="../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png"></a>

@@ -1,6 +1,6 @@
 .. title: Ptool更新軔體程序
 .. slug: ptool
-.. date: 20140225 12:07:24
+.. date: 20140225 13:06:53
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130722 22:47:23
@@ -20,7 +20,7 @@
 
 #. 務必使用「充飽電力」的「原廠電池」，請勿使用副廠電池。
 #. 請下載\ `Ptool3`_\ ，這是用來修改軔體參數的程式(ptool3.exe)。
-#. 請下載\ `GH2的官方軔體`_\ 或\ `GX1的官方軔體`_\ ，我們將利用Ptool來更改軔體的參數(例如:GX1__V11.bin)。
+#. 請下載\ `GH2的官方軔體`_\ 、\ `GX1的官方軔體`_\ 、或\ `G3的官方軔體`_\ ，我們將利用Ptool來更改軔體的參數(例如:GX1__V11.bin)。
 #. 請下載\ `Ptool的參數檔`_\ ，由於參數檔隨時更新，我將其集中在另一篇討論(例如setc.ini)。
 
 確實檢查上述的步驟，並確保下載的檔案完整，我們即可開始進行軔體修改與更新的動作，如果參數檔設定錯誤，頂多是讓相機動作不正常(例如錄影中斷)，並不至於導致相機故障，以我在論壇的經驗，也未曾聽聞過類似事件，唯一有可能造成故障的因素是使用「未充飽」或「非原廠」的電池，嚴重者可能會造成無法正常開機，所以請大家謹記這個守則，更新前務必檢查電池並確實充電，同時不要在軔體更新過程中關閉相機電源或進行任何操作，就可以安心進行破解程序了。另外更新後的相機，請不要進入所謂的「工程模式」，會使相機運作不正常，諸如抓不到鏡頭，如果不小心進入工程模式，只要跳出工程模式後，按照下列步驟重新更新一次軔體即可恢復正常。
@@ -40,7 +40,7 @@
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png
    :align: center
 
-   點選Load Firmware後，讀取由Panasonic官方網站所下載的軔體檔(.bin檔)。
+   點選Load Firmware後，讀取由Panasonic官方網站所下載的軔體檔(.bin檔，如果下載的是.exe執行檔，例如GX1__V11.exe，表示這個是壓縮檔，直接執行就能夠解壓縮成GX1_V11.bin檔案)。
 
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png
@@ -54,7 +54,7 @@
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png
    :align: center
 
-   若要讀取seta.ini的設定，則用滑鼠按一下A的綠色按鈕即可將設定讀取進來。
+   若要讀取setc.ini的設定，則用滑鼠左鍵點一下C的綠色按鈕即可將設定讀取進來，點選時會出現Settings loaded的提示字樣。
 
 .. figure:: ../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png
    :target: ../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png
@@ -198,6 +198,8 @@ Ptool的參數檔是標準的ini檔案，有興趣的人可以使用記事本或
 .. _GH2的官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html
 
 .. _GX1的官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html
+
+.. _G3的官方軔體: http://panasonic.jp/support/global/cs/dsc/download/fts/dl/g3.html
 
 .. _Ptool的參數檔: ptool_settings.html
 
