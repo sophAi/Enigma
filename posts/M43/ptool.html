@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20130722 22:47:23"><meta name="author" content="M43幸福之路/OASYS"><title>Ptool更新軔體程序 | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'center', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css"><link rel="canonical" href="http://sophAi.github.io/Enigma/posts/M43/ptool.html"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml"><link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+    document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script><!--[if lt IE 9]>
+    <script src="/assets/reveal/lib/js/html5shiv.js"></script>
+    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></head><body>
+
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top" id="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="http://sophAi.github.io/Enigma/">
+            文以載道，寧靜以致遠
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
+                </li><li><a href="../../categories/index.html">文章分類</a>
+                </li><li><a href="../../stories/about.html">關於這裡</a>
+                </li><li><a href="../../rss.xml">RSS</a>
+
+                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+<!-- End of custom search -->
+
+                <ul class="nav pull-right"></ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+
+<div class="reveal"><div class="slides">
+    <section><section><div class="postbox">
+    
+    <h1>Ptool更新軔體程序</h1>
+
+    <hr><medium>
+        Posted: <time class="published" datetime="2014-02-25T14:57:34+08:00">2014-02-25 14:57</time>
+        
+
+        
+          |  More posts about
+            <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
+
+          |  
+        
+    </medium><hr><div><p>有關Ptool的參數設定細節，請參考另一篇―<a class="reference external" href="ptool_settings.html">Ptool的參數檔</a>。</p>
+<p>更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如自香港平行輸入的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改後，即可隨時在PAL與NTSC(~30fps,1080p30/i60或720p60等)間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同步，容易在室內錄影畫面中產生移動的條紋，這現象困擾著許多人，而NTSC規格比較不容易產生類似的問題，不過後期的機種已經能透過更改快門速度來解決這個問題了。</p>
+<!-- TEASER_END -->
+<p>這裡我們以GH2與GX1為例來進行軔體修改與升級的分解步驟，詳細的資訊請參考<a class="reference external" href="http://www.gh1-hack.info/wiki/PToolSoftware">Ptool wiki</a>的原文頁面:</p>
+<ol class="arabic simple"><li>務必使用「充飽電力」的「原廠電池」，請勿使用副廠電池。</li>
+<li>請下載<a class="reference external" href="http://www.gh1-hack.info/ptool3d.zip">Ptool3</a>，這是用來修改軔體參數的程式(ptool3.exe)。</li>
+<li>請下載<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gh2.html">GH2的官方軔體</a>、<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/gx1.html">GX1的官方軔體</a>、或<a class="reference external" href="http://panasonic.jp/support/global/cs/dsc/download/fts/dl/g3.html">G3的官方軔體</a>，我們將利用Ptool來更改軔體的參數(例如:GX1__V11.bin)。</li>
+<li>請下載<a class="reference external" href="ptool_settings.html">Ptool的參數檔</a>，由於參數檔隨時更新，我將其集中在另一篇討論(例如setc.ini)。</li>
+</ol><p>確實檢查上述的步驟，並確保下載的檔案完整，我們即可開始進行軔體修改與更新的動作，如果參數檔設定錯誤，頂多是讓相機動作不正常(例如錄影中斷)，並不至於導致相機故障，以我在論壇的經驗，也未曾聽聞過類似事件，唯一有可能造成故障的因素是使用「未充飽」或「非原廠」的電池，嚴重者可能會造成無法正常開機，所以請大家謹記這個守則，更新前務必檢查電池並確實充電，同時不要在軔體更新過程中關閉相機電源或進行任何操作，就可以安心進行破解程序了。另外更新後的相機，請不要進入所謂的「工程模式」，會使相機運作不正常，諸如抓不到鏡頭，如果不小心進入工程模式，只要跳出工程模式後，按照下列步驟重新更新一次軔體即可恢復正常。</p>
+<p>由於中文字型是由相機上的ROM而非軔體提供，因此日文介面的Panasonic相機，在經過軔體修改後僅能出現英文介面，中文字型是無法正常顯示的，而原本已有中文介面的相機，更新軔體前後均不受影響，中文與各式語言介面都可以保留。</p>
+<p>以下是軔體修改的分解動作:</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/01_Ptool1.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/01_Ptool1.png" src="../../../arch_2013/files_2013/M43/ptool_settings/01_Ptool1.png"></a>
+<p class="caption">Windows下直接執行ptool3.exe，Linux與Mac則安裝wine來開啟。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png" src="../../../arch_2013/files_2013/M43/ptool_settings/02_Ptool2.png"></a>
+<p class="caption">點選Load Firmware後，讀取由Panasonic官方網站所下載的軔體檔(.bin檔，如果下載的是.exe執行檔，例如GX1__V11.exe，表示這個是壓縮檔，直接執行就能夠解壓縮成GX1_V11.bin檔案)。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png" src="../../../arch_2013/files_2013/M43/ptool_settings/03_Ptool3.png"></a>
+<p class="caption">如果設定檔(.ini檔)與Ptool放在同一個目錄下，則讀取軔體後，下方A~J的按鈕會亮起綠燈，分別對應seta.ini~setj.ini。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png" src="../../../arch_2013/files_2013/M43/ptool_settings/04_Ptool4.png"></a>
+<p class="caption">若要讀取setc.ini的設定，則用滑鼠左鍵點一下C的綠色按鈕即可將設定讀取進來，點選時會出現Settings loaded的提示字樣。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png" src="../../../arch_2013/files_2013/M43/ptool_settings/05_Ptool5.png"></a>
+<p class="caption">檢查一下幾個重要的設定，例如Version increment一定要勾選，Interface與Movie related restrictions都勾選。</p>
+</div>
+<p>有些相機需要將version increment設定成大於2的數字才能進行軔體更新，如果遇到無法更新軔體的情況，請將version increment的數值由1改為3(感謝York Chang網友發現這個問題)，這個設定是用來讓機身判斷記憶卡裡的軔體為新版本，如此才會進行更新的動作喔!!更新完後則以真正的軔體版本為主，也就是說，1.1版本的軔體，即使將version increment設成5，成功更新軔體後，版本仍然會維持1.1，透過這樣的機制，就可以不受限制的重覆進行軔體更新或還原軔體至初始設定。</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png" src="../../../arch_2013/files_2013/M43/ptool_settings/06_Ptool6.png"></a>
+<p class="caption">在專家設定裡，Scaling tables是與Quantization Parameter有關的設定。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png" src="../../../arch_2013/files_2013/M43/ptool_settings/07_Ptool7.png"></a>
+<p class="caption">這些專家選項是畫質與檔案容量維持平衡的關鍵，相關的參數必須要經過耗時的測試才能得到。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png" src="../../../arch_2013/files_2013/M43/ptool_settings/08_Ptool8.png"></a>
+<p class="caption">選擇Save Firmware，將修改過後的軔體檔存成GX1__V12.bin或GH2__V12.bin，將原來軔體編號加1即可，請勿將原始軔體覆蓋以備日後修改或還原。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/09_Ptool9.png"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/09_Ptool9.png" src="../../../arch_2013/files_2013/M43/ptool_settings/09_Ptool9.png"></a>
+<p class="caption">將一張由相機格式化過的SD卡連接上電腦，將剛剛的新軔體複製到記憶卡的根目錄。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/10_GH2_playback.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/10_GH2_playback.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/10_GH2_playback.JPG"></a>
+<p class="caption">將SD卡插回相機，開啟電源，確保使用原廠充飽的電池，按下播放鈕(Playback)。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/11_GH2_update.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/11_GH2_update.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/11_GH2_update.JPG"></a>
+<p class="caption">如果是日文介面，則應該如圖所示，選擇第一個選項進行更新軔體。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/12_GX1_update2.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/12_GX1_update2.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/12_GX1_update2.JPG"></a>
+<p class="caption">更新過程千萬不要中斷電源，或進行任何操作，放在安全的地方靜靜地等他完成。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/13_GX1_ver.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/13_GX1_ver.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/13_GX1_ver.JPG"></a>
+<p class="caption">更新完後，版本應該不會改變。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/14_GH2_lang.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/14_GH2_lang.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/14_GH2_lang.JPG"></a>
+<p class="caption">如果原本是日文機，更新完會多出語言選項，也會出現繁體中文的選項。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/15_GH2_miss_ch.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/15_GH2_miss_ch.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/15_GH2_miss_ch.JPG"></a>
+<p class="caption">但是中文字型是與軔體分開來的，也就是說，日文機身並不包含中文字型，所以即使出現中文選項，也無法正常顯示中文，所有的日文機應該都是這樣。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/16_GH2_en.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/16_GH2_en.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/16_GH2_en.JPG"></a>
+<p class="caption">因此如果您的相機是日文機種，還是選擇英文介面吧!</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/17_GH2_lang_en.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/17_GH2_lang_en.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/17_GH2_lang_en.JPG"></a>
+<p class="caption">如果是來自香港的平輸機器，機身已經包含中文字型，無論如何，中文介面都不會受到影響，可以安心使用。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/18_GX1_ntsc_format.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/18_GX1_ntsc_format.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/18_GX1_ntsc_format.JPG"></a>
+<p class="caption">更新軔體有可能會遇到這樣的錯誤訊息，其實是因為機身切換了視訊格式，記憶卡裡的目錄結構也必須要有相應於NTSC或PAL視訊格式的改變，不需要太擔心。只要在相機上重新格式化SD卡，讓相機重新建立記憶卡的目錄即可。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/19_GX1_video_out.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/19_GX1_video_out.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/19_GX1_video_out.JPG"></a>
+<p class="caption">香港是採用PAL規格，可以利用這個選項切換成適於台灣的NTSC規格。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/20_GX1_ntsc.JPG"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/20_GX1_ntsc.JPG" src="../../../arch_2013/files_2013/M43/ptool_settings/20_GX1_ntsc.JPG"></a>
+<p class="caption">這是GX1的設定，更改成NTSC即可。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/21_GH2_video_out.jpg"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/21_GH2_video_out.jpg" src="../../../arch_2013/files_2013/M43/ptool_settings/21_GH2_video_out.jpg"></a>
+<p class="caption">GH2也是一樣。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg"><img alt="../../../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg" src="../../../arch_2013/files_2013/M43/ptool_settings/22_GH2_ntsc.jpg"></a>
+<p class="caption">更改成NTSC。如此一來，也比較能夠減輕室內日光燈下錄到閃爍燈頻的機率。</p>
+</div>
+<p>更新完軔體後，請記得將SD卡根目錄下的軔體檔案刪除，不然下次開機按下播放鈕時，又會再次詢問是否要升級軔體喔!若想要還原軔體，只要重複上述步驟，僅點選version increment並設成3，其餘選項都取消勾選，即可將軔體還原回原廠的設定了。</p>
+<p>Ptool的參數檔是標準的ini檔案，有興趣的人可以使用記事本或編輯器檢視裏面的內容，也可直接將設定值複製與貼上，在Ptool論壇裡也有許多不同的參數檔可供下載使用，建議大家有興趣可以多方嘗試，找出最適合自己的參數檔。</p>
+<!-- </body> -->
+<!-- <url> -->
+<!-- </url> -->
+<!-- <footnote> -->
+<!-- </footnote> -->
+<!-- <citation> -->
+<!-- </citation> -->
+<!-- ===================================文章結束↑/語法備忘錄↓==================================== -->
+<!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) -->
+<!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` -->
+<!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 -->
+<!-- 插入teaser分頁: .. TEASER_END -->
+<!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 -->
+<!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 -->
+<!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) -->
+<!-- 插入youtube: ..youtube:: 影片的hash string -->
+<!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) -->
+<!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) -->
+<!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 -->
+<!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 -->
+<!-- 插入sidebar: ..sidebar:: (空一行) 內容 -->
+<!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 -->
+<!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) -->
+<!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) -->
+<!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
+<!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
+<!-- ============================================================================================ --></div>
+    
+    <div style="text-align:right">
+    <ul class="pager"><li class="previous">
+            <a href="monitorhood.html">← Previous post</a>
+        </li>
+        <li class="next">
+            <a href="color_1.html">Next post →</a>
+        </li>
+    </ul></div>
+
+    
+
+    </div>
+    <br><div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="enigma8850",
+            disqus_url="http://sophAi.github.io/Enigma/posts/M43/ptool.html",
+        disqus_title="Ptool\u66f4\u65b0\u8ed4\u9ad4\u7a0b\u5e8f",
+        disqus_identifier="cache/posts/M43/ptool.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </section></section></div></div>
+
+
+    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+    // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    controls: false,
+    progress: false,
+    history: false,
+    keyboard: false,
+    rollingLinks: false,
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/linear/none
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
+    ]
+    });
+    </script><script>
+    Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.scrollTo(0,0);
+    MathJax.Hub.Rerender(event.currentSlide);
+    });
+    </script><script>
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true
+    })
+    </script><div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <div class="footerbox">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  Contents © 2014 <a href="https://www.facebook.com/M43Happiness">M43幸福之路/OASYS</a> with <a href="http://nikola.ralsina.com.ar">Nikola</a> - It is a journey towards happiness.  <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"></a> <a href="http://feeds.feedburner.com/github/NODC" rel="alternate" type="application/rss+xml">RSS</a>  <a href="http://feeds.feedburner.com/github/NODC"><img src="http://feeds.feedburner.com/~fc/github/NODC?bg=FFFFFF&amp;fg=444444&amp;anim=1" height="26" width="88" style="border:0" alt=""></a>
+        </div>
+    </div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script></body></html>
