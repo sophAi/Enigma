@@ -1,6 +1,6 @@
 .. title: 自動化縮圖與生成文章檔案
 .. slug: jpg2rst
-.. date: 20140304 12:29:03
+.. date: 20140304 14:24:37
 .. tags: 自由的程式人生
 .. link: 
 .. description: Created at 20130712 23:17:53
@@ -44,15 +44,15 @@
 
 這個檔案總共包含4個py檔，分別執行不同的工作，例如:
 
-.. .. listing:: jpg2rst/file_tools.py
+.. listing:: jpg2rst/file_tools.py python
 
 其主要的任務是搜尋當前以及所有子目錄下的特定檔案，如同search()開頭所述，我們只要指定keyword，他就會將符合特徵的檔案列表傳回，我們將會利用這個列表來進行縮圖以及生成文字範例檔的工作，search()的用途當然不只是在縮圖，日後可以非常方便的用他來做大量處理檔案的工作。
 
-.. .. listing:: jpg2rst/fig_tools.py python
+.. listing:: jpg2rst/fig_tools.py python
 
 有了search()傳回的檔案列表，我們將其輸入至resize()這個函式裡，並指定圖形長與寬最大的解析度(例如800)，他會偵測並將縮圖輸出到一個新的目錄(800/)，同時也會自動略過已經縮圖過的圖檔，如果解析度的部份輸入none，則不會進行縮圖銳化的工作。
 
-.. .. listing:: jpg2rst/rst_tools.py python
+.. listing:: jpg2rst/rst_tools.py python
 
 resize()會輸出縮圖銳化後的檔案列表，我們可以進一步將其輸入到add_fig()函式裡，他會自動擷取vim的ReST範例檔，並且將所有縮圖的圖片連結加進去，例如 
 
