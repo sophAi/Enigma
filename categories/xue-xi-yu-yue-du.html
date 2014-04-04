@@ -51,9 +51,127 @@ MathJax.Hub.Config({
 
 <div class="reveal"><div class="slides">
     <section><section><div class="postbox">
+        <h1><a href="../posts/M43/colorspace.html">顯示色彩的奧秘 v0.2</a>
+        <small>  
+             Posted: <time class="published" datetime="2014-04-05T00:40:01+08:00">2014-04-05 00:40</time></small></h1>
+        <hr><div><div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png" src="../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png"></a>
+<p class="caption">螢幕校色的最終成果:白點(white point)色溫接近6500K，亮度接近120:math: <cite>cd/m^2</cite>，愈接近sRGB標準，而對比愈高，細節的呈現愈好。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/02_cal_results2.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/02_cal_results2.png" src="../../arch_2013/files_2013/M43/colorspace/02_cal_results2.png"></a>
+<p class="caption">螢幕校色的另一個重要項目，標準色差(color difference)，或是:math: <cite>Delta E</cite>愈小愈好，代表色彩愈準確。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/03_cal_results3.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/03_cal_results3.png" src="../../arch_2013/files_2013/M43/colorspace/03_cal_results3.png"></a>
+<p class="caption">一般人比較少注意到的，灰階的色偏(RGB gray balance)也是很重要的，對於背光源的LCD影響比較顯著。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/04_cal_results4.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/04_cal_results4.png" src="../../arch_2013/files_2013/M43/colorspace/04_cal_results4.png"></a>
+<p class="caption">真正的校色，需要耗費大量的時間對於各種顏色進行校正。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/05_Benq_cal_curve.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/05_Benq_cal_curve.png" src="../../arch_2013/files_2013/M43/colorspace/05_Benq_cal_curve.png"></a>
+<p class="caption">一個好的螢幕在校色後，必須要儘量降低損失的色階，以此圖為例，8 bit色階在校色後，每個通道約損失了12個色階，這已經是非常好的結果。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/05_Tone_response_curve.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/05_Tone_response_curve.png" src="../../arch_2013/files_2013/M43/colorspace/05_Tone_response_curve.png"></a>
+<p class="caption">校色軟體通常會一併顯示當前螢幕的色調響應曲線(tone response curves)，從這裡可以看出所有LCD螢幕的通病，也就是暗部(接近橫軸0處)有些微凸起，表示暗部並不是真的全黑，而是有些微亮度，這也是LCD螢幕的對比不佳的主要原因。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/06_Gamut.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/06_Gamut.png" src="../../arch_2013/files_2013/M43/colorspace/06_Gamut.png"></a>
+<p class="caption">另外一個就是顯示器涵蓋的色域範圍，然而並不是涵蓋率愈大，顏色就愈準，也有100%涵蓋，但校色完後色階嚴重喪失，標準色差降低不下來的例子，圖中為sRGB的色域。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/07_Good_uncalibrated.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/07_Good_uncalibrated.png" src="../../arch_2013/files_2013/M43/colorspace/07_Good_uncalibrated.png"></a>
+<p class="caption">一個適合校色的螢幕，必須俱備幾個基本條件:白點色溫接近6500K，亮度可以調整到接近120:math: <cite>cd/m^2</cite>，以及Gamma必須接近2.2，最後則是:math: <cite>Delta E</cite>愈小愈好。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/08_Lum_table.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/08_Lum_table.png" src="../../arch_2013/files_2013/M43/colorspace/08_Lum_table.png"></a>
+<p class="caption">測試網站提供的亮度設定與真實亮度的參數表，由於許多螢幕的預設值都遠超過120:math: <cite>cd/m^2</cite>，利用這個表可以了解到這個螢幕是否有能力調整到想要的亮度值。(圖表來自tftcentral網站)</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/09_Gamma_setting_table.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/09_Gamma_setting_table.png" src="../../arch_2013/files_2013/M43/colorspace/09_Gamma_setting_table.png"></a>
+<p class="caption">螢幕的Gamma設定更是非常重要的參考依據，可以知道這個螢幕在mode 2是最接近Gamma 2.2的，如果不管怎麼調都沒辦法接近2.2，代表這個螢幕校色後色階將會損失嚴重。(表來自tftcentral)</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/10_Temp_table.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/10_Temp_table.png" src="../../arch_2013/files_2013/M43/colorspace/10_Temp_table.png"></a>
+<p class="caption">白點色溫則是另外一個重點，也牽涉到色階能保留到何種程度，從這邊可知Normal已經很接近6500K了，若使用Custom模式則可以更為接近。(表來自tftcentral)</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/11_PWM.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/11_PWM.png" src="../../arch_2013/files_2013/M43/colorspace/11_PWM.png"></a>
+<p class="caption">由於螢幕的預設亮度都超高，降低亮度時，很容易產生閃爍的現象，這是因為LCD的亮度是由背光源一閃一滅的頻率來達到降低亮度的效果，頻率愈低，人眼的視覺暫留會感覺到亮度變低，也因為這樣，低亮度下比較容易因閃爍而造成眼睛的不適，LED背光的閃爍現象經常比CCFL(陰極管)還明顯，因此這也是要考慮的重點之一。(圖來自tftcentral)</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/12_Bad_delta_E.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/12_Bad_delta_E.png" src="../../arch_2013/files_2013/M43/colorspace/12_Bad_delta_E.png"></a>
+<p class="caption">這邊舉一個不適合用來校色的例子，從圖中可以看到預設的色溫十分偏離6500K，Gamma來到2.3，而:math: <cite>Delta E</cite>則很高，但是這個螢幕其實是高價位的廣色域螢幕，這代表不是螢幕愈貴，色域愈廣就愈好，有時反而會弄巧成拙。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/13_Bad_temp.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/13_Bad_temp.png" src="../../arch_2013/files_2013/M43/colorspace/13_Bad_temp.png"></a>
+<p class="caption">這張圖看似比上一張圖好多了，但是關鍵的白點色溫，會讓校色完的色溫大大的喪失，因此一個好的螢幕其實各方面都必須要滿足，不能只看某幾項。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/14_Dell_cal_curve.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/14_Dell_cal_curve.png" src="../../arch_2013/files_2013/M43/colorspace/14_Dell_cal_curve.png"></a>
+<p class="caption">這個是上面的螢幕校色後的結果，可以看到色階損失了26階，這就是白點色溫不準確的問題所在。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/15_eizo_cal_curve.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/15_eizo_cal_curve.png" src="../../arch_2013/files_2013/M43/colorspace/15_eizo_cal_curve.png"></a>
+<p class="caption">這是另外一個螢幕的校正曲線，喪失的色階約19左右，這個螢幕和上一張都是來自於高階與高價的螢幕，反而是我們前面提到的幾個良好的校正結果，都是來自於某款平價的螢幕，這說明了價位與顏色準不準其實是兩回事，透過測試網站判斷螢幕是否適合校色才是最準確與科學的方法。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/16_Reading_mode.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/16_Reading_mode.png" src="../../arch_2013/files_2013/M43/colorspace/16_Reading_mode.png"></a>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg"><img alt="../../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg" src="../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg"></a>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/colorspace/18_colorspace2.jpg"><img alt="../../../arch_2013/files_2013/M43/colorspace/18_colorspace2.jpg" src="../../arch_2013/files_2013/M43/colorspace/18_colorspace2.jpg"></a>
+</div>
+<!-- </body> -->
+<!-- <url> -->
+<!-- </url> -->
+<!-- <footnote> -->
+<!-- </footnote> -->
+<!-- <citation> -->
+<!-- </citation> -->
+<!-- ===================================文章結束↑/語法備忘錄↓==================================== -->
+<!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) -->
+<!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` -->
+<!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 -->
+<!-- 插入teaser分頁: .. TEASER_END -->
+<!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 -->
+<!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 -->
+<!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) -->
+<!-- 插入youtube: ..youtube:: 影片的hash string -->
+<!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) -->
+<!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) -->
+<!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 -->
+<!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 -->
+<!-- 插入sidebar: ..sidebar:: (空一行) 內容 -->
+<!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 -->
+<!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) -->
+<!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) -->
+<!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
+<!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
+<!-- ============================================================================================ --></div>
+            
+        
+    <p>
+        <a href="../posts/M43/colorspace.html#disqus_thread" data-disqus-identifier="cache/posts/M43/colorspace.html">Comments</a>
+
+
+        
+</p><div style="text-align:right">
+<ul class="pager"><li class="next">
+        <a href="xue-xi-yu-yue-du-1.html">Older posts →</a>
+    </li>
+</ul></div>
+
+        </div>
+        </section><section><div class="postbox">
         <h1><a href="../posts/M43/color_1.html">顯示色彩的奧秘 v0.1</a>
         <small>  
-             Posted: <time class="published" datetime="2014-02-26T15:22:14+08:00">2014-02-26 15:22</time></small></h1>
+             Posted: <time class="published" datetime="2014-04-04T23:37:33+08:00">2014-04-04 23:37</time></small></h1>
         <hr><div><p>這篇的重點在於如何選購一個「好的螢幕」，我們儘量從淺顯易懂的應用出發，對於基礎知識與理論有興趣的朋友可以搜尋這些關鍵字。對於不同族群，好的定義是不同的，以選購螢幕來說，遊戲玩家需要反應快速，低殘影的螢幕，文書工作者需要俱備良好的護眼與閱讀模式的螢幕，而對於影像處理的人而言，則需要「色彩準確」的螢幕。</p>
 <p>若要說跟攝影器材一樣重要的東西，莫過於用來處理與修正照片的螢幕了，一個色彩正確的螢幕，是影像輸出的最後關卡，如果螢幕顏色不對，其產生的效應或許不會立刻浮現，但是卻會像滾小雪球般愈滾愈大，在一群拍照的人當中，真正重視顯色正確性的人恐怕是少數中的少數，如果您是一個非常重視自己所紀錄照片的人，攝影器材可以少，但正確的顯示設備(好螢幕+好校色器)卻不可少，因為到了遙遠未來的某一天，您會發現因為色彩不正確而造成調整錯誤的影像累積到不可收拾的地步。</p>
 <p>從很多專業的測試網站可以得知，就算是價格不菲的螢幕也是需要校色的，而且用來表示色彩正確度的DeltaE有時甚至還不小，這裡我們要先破除一些迷思:</p>
@@ -321,30 +439,6 @@ MathJax.Hub.Config({
         
     <p>
         <a href="../posts/Learning/convolution.html#disqus_thread" data-disqus-identifier="cache/posts/Learning/convolution.html">Comments</a>
-
-
-        
-</p><div style="text-align:right">
-<ul class="pager"><li class="next">
-        <a href="xue-xi-yu-yue-du-1.html">Older posts →</a>
-    </li>
-</ul></div>
-
-        </div>
-        </section><section><div class="postbox">
-        <h1><a href="../posts/M43/resize.html">感光元件的差異對縮圖的影響</a>
-        <small>  
-             Posted: <time class="published" datetime="2013-07-13T09:27:27+08:00">2013-07-13 09:27</time></small></h1>
-        <hr><div><p>感謝Happyspirit兄二話不說大力相助，提供這三張測試照片，分別是採用<a class="reference external" href="http://en.wikipedia.org/wiki/Foveon_X3">Foveon X3</a>的Sigma DP2 Merrill (DP2M)<a class="footnote-reference" href="../posts/M43/resize.html#id6" id="id1">[1]</a>，採用一般常見的<a class="reference external" href="http://en.wikipedia.org/wiki/Bayer_filter">Bayer</a> <a class="footnote-reference" href="../posts/M43/resize.html#id7" id="id2">[2]</a>排列<a class="reference external" href="http://en.wikipedia.org/wiki/Live_MOS">live MOS</a> <a class="footnote-reference" href="../posts/M43/resize.html#id8" id="id3">[3]</a>的Panasonic GH2搭配20mm F1.7餅乾鏡，以及具有<a class="reference external" href="http://en.wikipedia.org/wiki/Ultra_Pixel_Technology">Ultra Pixel</a> <a class="footnote-reference" href="../posts/M43/resize.html#id9" id="id4">[4]</a>感光元件的智慧型手機HTC New One，這三台性格迥異的相機正好讓小弟實驗縮圖情況下不同感光元件所呈現的差異，由於每台相機的自動白平衡有些許差異，使用的鏡頭也不同，因此我們將重點放在畫面的中心部位的清晰度，也就是理論上最能夠呈現照片解析力的地方，以下是這三張圖片，經過一般的銳利化過程，也就是我們先前所使用Flickr銳化參數所得到的成品。</p>
-<div class="figure align-center">
-<a class="reference external image-reference" href="../../arch_2013/files_2013/M43/sharpen/800_01_DP2M.jpg"><img alt="../../../arch_2013/files_2013/M43/sharpen/800_01_DP2M.jpg" src="../../arch_2013/files_2013/M43/sharpen/800_01_DP2M.jpg"></a>
-<p class="caption">DP2M測試照，原始圖檔的尺寸為4704x3136(3:2)。</p>
-</div>
-<p class="more"><a href="../posts/M43/resize.html">Read more…</a></p></div>
-            
-        
-    <p>
-        <a href="../posts/M43/resize.html#disqus_thread" data-disqus-identifier="cache/posts/M43/resize.html">Comments</a>
 
 
         

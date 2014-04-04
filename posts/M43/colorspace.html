@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20140404 21:46:01"><meta name="author" content="M43幸福之路/OASYS"><title>顯示色彩的奧秘 v0.2 | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'center', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css"><link rel="canonical" href="http://sophAi.github.io/Enigma/posts/M43/colorspace.html"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml"><link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+    document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script><!--[if lt IE 9]>
+    <script src="/assets/reveal/lib/js/html5shiv.js"></script>
+    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></head><body>
+
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top" id="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="http://sophAi.github.io/Enigma/">
+            文以載道，寧靜以致遠
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
+                </li><li><a href="../../categories/index.html">文章分類</a>
+                </li><li><a href="../../stories/about.html">關於這裡</a>
+                </li><li><a href="../../rss.xml">RSS</a>
+
+                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+<!-- End of custom search -->
+
+                <ul class="nav pull-right"></ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+
+<div class="reveal"><div class="slides">
+    <section><section><div class="postbox">
+    
+    <h1>顯示色彩的奧秘 v0.2</h1>
+
+    <hr><medium>
+        Posted: <time class="published" datetime="2014-04-05T00:40:01+08:00">2014-04-05 00:40</time>
+        
+
+        
+          |  More posts about
+            <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
+
+          |  
+        
+    </medium><hr><div><div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png" src="../../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png"></a>
+<p class="caption">螢幕校色的最終成果:白點(white point)色溫接近6500K，亮度接近120:math: <cite>cd/m^2</cite>，愈接近sRGB標準，而對比愈高，細節的呈現愈好。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/02_cal_results2.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/02_cal_results2.png" src="../../../arch_2013/files_2013/M43/colorspace/02_cal_results2.png"></a>
+<p class="caption">螢幕校色的另一個重要項目，標準色差(color difference)，或是:math: <cite>Delta E</cite>愈小愈好，代表色彩愈準確。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/03_cal_results3.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/03_cal_results3.png" src="../../../arch_2013/files_2013/M43/colorspace/03_cal_results3.png"></a>
+<p class="caption">一般人比較少注意到的，灰階的色偏(RGB gray balance)也是很重要的，對於背光源的LCD影響比較顯著。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/04_cal_results4.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/04_cal_results4.png" src="../../../arch_2013/files_2013/M43/colorspace/04_cal_results4.png"></a>
+<p class="caption">真正的校色，需要耗費大量的時間對於各種顏色進行校正。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/05_Benq_cal_curve.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/05_Benq_cal_curve.png" src="../../../arch_2013/files_2013/M43/colorspace/05_Benq_cal_curve.png"></a>
+<p class="caption">一個好的螢幕在校色後，必須要儘量降低損失的色階，以此圖為例，8 bit色階在校色後，每個通道約損失了12個色階，這已經是非常好的結果。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/05_Tone_response_curve.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/05_Tone_response_curve.png" src="../../../arch_2013/files_2013/M43/colorspace/05_Tone_response_curve.png"></a>
+<p class="caption">校色軟體通常會一併顯示當前螢幕的色調響應曲線(tone response curves)，從這裡可以看出所有LCD螢幕的通病，也就是暗部(接近橫軸0處)有些微凸起，表示暗部並不是真的全黑，而是有些微亮度，這也是LCD螢幕的對比不佳的主要原因。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/06_Gamut.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/06_Gamut.png" src="../../../arch_2013/files_2013/M43/colorspace/06_Gamut.png"></a>
+<p class="caption">另外一個就是顯示器涵蓋的色域範圍，然而並不是涵蓋率愈大，顏色就愈準，也有100%涵蓋，但校色完後色階嚴重喪失，標準色差降低不下來的例子，圖中為sRGB的色域。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/07_Good_uncalibrated.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/07_Good_uncalibrated.png" src="../../../arch_2013/files_2013/M43/colorspace/07_Good_uncalibrated.png"></a>
+<p class="caption">一個適合校色的螢幕，必須俱備幾個基本條件:白點色溫接近6500K，亮度可以調整到接近120:math: <cite>cd/m^2</cite>，以及Gamma必須接近2.2，最後則是:math: <cite>Delta E</cite>愈小愈好。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/08_Lum_table.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/08_Lum_table.png" src="../../../arch_2013/files_2013/M43/colorspace/08_Lum_table.png"></a>
+<p class="caption">測試網站提供的亮度設定與真實亮度的參數表，由於許多螢幕的預設值都遠超過120:math: <cite>cd/m^2</cite>，利用這個表可以了解到這個螢幕是否有能力調整到想要的亮度值。(圖表來自tftcentral網站)</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/09_Gamma_setting_table.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/09_Gamma_setting_table.png" src="../../../arch_2013/files_2013/M43/colorspace/09_Gamma_setting_table.png"></a>
+<p class="caption">螢幕的Gamma設定更是非常重要的參考依據，可以知道這個螢幕在mode 2是最接近Gamma 2.2的，如果不管怎麼調都沒辦法接近2.2，代表這個螢幕校色後色階將會損失嚴重。(表來自tftcentral)</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/10_Temp_table.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/10_Temp_table.png" src="../../../arch_2013/files_2013/M43/colorspace/10_Temp_table.png"></a>
+<p class="caption">白點色溫則是另外一個重點，也牽涉到色階能保留到何種程度，從這邊可知Normal已經很接近6500K了，若使用Custom模式則可以更為接近。(表來自tftcentral)</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/11_PWM.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/11_PWM.png" src="../../../arch_2013/files_2013/M43/colorspace/11_PWM.png"></a>
+<p class="caption">由於螢幕的預設亮度都超高，降低亮度時，很容易產生閃爍的現象，這是因為LCD的亮度是由背光源一閃一滅的頻率來達到降低亮度的效果，頻率愈低，人眼的視覺暫留會感覺到亮度變低，也因為這樣，低亮度下比較容易因閃爍而造成眼睛的不適，LED背光的閃爍現象經常比CCFL(陰極管)還明顯，因此這也是要考慮的重點之一。(圖來自tftcentral)</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/12_Bad_delta_E.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/12_Bad_delta_E.png" src="../../../arch_2013/files_2013/M43/colorspace/12_Bad_delta_E.png"></a>
+<p class="caption">這邊舉一個不適合用來校色的例子，從圖中可以看到預設的色溫十分偏離6500K，Gamma來到2.3，而:math: <cite>Delta E</cite>則很高，但是這個螢幕其實是高價位的廣色域螢幕，這代表不是螢幕愈貴，色域愈廣就愈好，有時反而會弄巧成拙。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/13_Bad_temp.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/13_Bad_temp.png" src="../../../arch_2013/files_2013/M43/colorspace/13_Bad_temp.png"></a>
+<p class="caption">這張圖看似比上一張圖好多了，但是關鍵的白點色溫，會讓校色完的色溫大大的喪失，因此一個好的螢幕其實各方面都必須要滿足，不能只看某幾項。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/14_Dell_cal_curve.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/14_Dell_cal_curve.png" src="../../../arch_2013/files_2013/M43/colorspace/14_Dell_cal_curve.png"></a>
+<p class="caption">這個是上面的螢幕校色後的結果，可以看到色階損失了26階，這就是白點色溫不準確的問題所在。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/15_eizo_cal_curve.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/15_eizo_cal_curve.png" src="../../../arch_2013/files_2013/M43/colorspace/15_eizo_cal_curve.png"></a>
+<p class="caption">這是另外一個螢幕的校正曲線，喪失的色階約19左右，這個螢幕和上一張都是來自於高階與高價的螢幕，反而是我們前面提到的幾個良好的校正結果，都是來自於某款平價的螢幕，這說明了價位與顏色準不準其實是兩回事，透過測試網站判斷螢幕是否適合校色才是最準確與科學的方法。</p>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/16_Reading_mode.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/16_Reading_mode.png" src="../../../arch_2013/files_2013/M43/colorspace/16_Reading_mode.png"></a>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg"><img alt="../../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg" src="../../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg"></a>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/18_colorspace2.jpg"><img alt="../../../arch_2013/files_2013/M43/colorspace/18_colorspace2.jpg" src="../../../arch_2013/files_2013/M43/colorspace/18_colorspace2.jpg"></a>
+</div>
+<!-- </body> -->
+<!-- <url> -->
+<!-- </url> -->
+<!-- <footnote> -->
+<!-- </footnote> -->
+<!-- <citation> -->
+<!-- </citation> -->
+<!-- ===================================文章結束↑/語法備忘錄↓==================================== -->
+<!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) -->
+<!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` -->
+<!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 -->
+<!-- 插入teaser分頁: .. TEASER_END -->
+<!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 -->
+<!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 -->
+<!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) -->
+<!-- 插入youtube: ..youtube:: 影片的hash string -->
+<!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) -->
+<!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) -->
+<!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 -->
+<!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 -->
+<!-- 插入sidebar: ..sidebar:: (空一行) 內容 -->
+<!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 -->
+<!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) -->
+<!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) -->
+<!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
+<!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
+<!-- ============================================================================================ --></div>
+    
+    <div style="text-align:right">
+    <ul class="pager"><li class="previous">
+            <a href="color_1.html">← Previous post</a>
+        </li>
+    </ul></div>
+
+    
+
+    </div>
+    <br><div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="enigma8850",
+            disqus_url="http://sophAi.github.io/Enigma/posts/M43/colorspace.html",
+        disqus_title="\u986f\u793a\u8272\u5f69\u7684\u5967\u79d8 v0.2",
+        disqus_identifier="cache/posts/M43/colorspace.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </section></section></div></div>
+
+
+    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+    // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    controls: false,
+    progress: false,
+    history: false,
+    keyboard: false,
+    rollingLinks: false,
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/linear/none
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
+    ]
+    });
+    </script><script>
+    Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.scrollTo(0,0);
+    MathJax.Hub.Rerender(event.currentSlide);
+    });
+    </script><script>
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true
+    })
+    </script><div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <div class="footerbox">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  © 2014 <a href="https://www.facebook.com/M43Happiness">M43幸福之路/OASYS</a>
+        </div>
+    </div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script></body></html>
