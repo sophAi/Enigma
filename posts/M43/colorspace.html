@@ -55,7 +55,7 @@ MathJax.Hub.Config({
     <h1>顯示色彩的奧秘 v0.2</h1>
 
     <hr><medium>
-        Posted: <time class="published" datetime="2014-04-15T10:16:01+08:00">2014-04-15 10:16</time>
+        Posted: <time class="published" datetime="2014-04-15T10:18:15+08:00">2014-04-15 10:18</time>
         
 
         
@@ -95,10 +95,10 @@ MathJax.Hub.Config({
 <div class="section" id="id3">
 <h2>螢幕校色的標準</h2>
 <p>目前電腦系統有兩大色彩空間，一個是sRGB，一個是Adobe RGB，經過前面的解說，各位應該了解到sRGB的校色絕對是要優先進行的，也足以應付幾乎所有的情況，雖然他的缺點也很明顯，就是沒辦法完全利用CMYK的所有色彩，以及從Raw資料轉換初期就因為色域空間較小，造成色彩相對於Adobe RGB失真更多(但也只有那一次而已)，好處是之後的後製、色彩調整、影像輸出可以維持最佳的一致性，而這個「一致性」就是我們校色的真正目的。那麼我們來看看，要符合sRGB標準必須要俱備的條件:</p>
-<ol class="arabic simple"><li>白點，也就是white point的色溫必須接近6500K</li>
-<li>亮度接近120 cd/m^2</li>
-<li>Gamma為2.2</li>
-<li>色彩的差異(color difference)愈小愈好，通常是以Delta E表示，</li>
+<ol class="arabic simple"><li>白點，也就是white point的色溫必須接近6500K。</li>
+<li>亮度接近120 cd/m^2。</li>
+<li>Gamma為2.2。</li>
+<li>色彩的差異(color difference)愈小愈好，通常是以Delta E表示。</li>
 </ol><p>通常愈符合前3點，最後一點更容易達成，另外有一個很重要的概念必須要澄清，就是校色是屬於一種破壞性的過程，他不會讓螢幕顯示的畫面更楚楚動人，光彩鮮豔，只有可能看起來更平淡，甚至出現色階不連續，也就是說，經過校色的螢幕或設備會出現程度不一的色階損失，而這點就是我們判斷這個螢幕適不適合用來校色與作為美工用途的重要指標。一個色彩艷麗飽和的顯示設備，在校正(將加料的部份還原)的過程反而有可能丟棄掉更多色階。</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png"><img alt="../../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png" src="../../../arch_2013/files_2013/M43/colorspace/01_cal_results1.png"></a>
