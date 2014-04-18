@@ -43,7 +43,10 @@ MathJax.Hub.Config({
 <input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
 <!-- End of custom search -->
 
-                <ul class="nav pull-right"></ul></div>
+                <ul class="nav pull-right"><li>
+            <a href="colorspace.rst" id="sourcelink">Source</a>
+        </li>
+                </ul></div>
         </div>
     </div>
 </div>
@@ -55,7 +58,7 @@ MathJax.Hub.Config({
     <h1>顯示色彩的奧秘 v0.2</h1>
 
     <hr><medium>
-        Posted: <time class="published" datetime="2014-04-15T13:50:52+08:00">2014-04-15 13:50</time>
+        Posted: <time class="published" datetime="2014-04-18T13:42:30+08:00">2014-04-18 13:42</time>
         
 
         
@@ -70,7 +73,7 @@ MathJax.Hub.Config({
 <p>有關這個色彩空間是如何建立起來，有興趣的人可以去參考維基百科或去網路上搜尋，簡單來說，這個色彩空間裡所包含的色度資訊是人眼所能辨識的範圍，而印刷、以及螢幕的顯示則大多遠小於這個範圍。這也隱含一個意義--就是色彩是有「標準」可依尋的，雖然你看的紅色與另外一個人看的紅色可能稍稍不同，但是就電磁波的波長來說(光是一種電磁波)，他們是一樣的，這也就是為什麼CIE 1931色彩空間是以波長來定義邊界，有了這樣唯一的定義，跟顏色有關的準確度就是儀器測量的問題，而不會受到人的感知所影響。</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg"><img alt="../../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg" src="../../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg"></a>
-<p class="caption">(圖) 可以看到最大的馬蹄形區域就是CIE 1931色彩空間，他的邊界是由光的波長定義，單位為nm，而內部所畫出的各種多邊形，分別是sRGB、Adobe RGB與CMYK的色彩空間範圍，也就是他們能顯示範圍。</p>
+<p class="caption">(圖) 可以看到最大的馬蹄形區域就是CIE 1931色彩空間，他的邊界是由光的波長定義，單位為nm，而內部所畫出的各種多邊形，分別是sRGB(白線)、Adobe RGB(黑線)與CMYK(虛線)的色彩空間範圍，也就是他們的涵蓋範圍。</p>
 </div>
 <!-- TEASER_END -->
 <p>前面說過螢幕與印刷品的色彩空間均遠小於CIE 1931空間，我們可以從圖中得知，色域的涵蓋率分別是Adobe RGB大於sRGB，而CMYK則是介於其中，其實還有非常多色彩空間，但是對於數位攝影來說，最重要的色域空間是這三種。</p>

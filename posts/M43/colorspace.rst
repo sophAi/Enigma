@@ -1,6 +1,6 @@
 .. title: 顯示色彩的奧秘 v0.2
 .. slug: colorspace
-.. date: 20140415 13:50:52
+.. date: 20140418 13:42:30
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20140404 21:46:01
@@ -22,7 +22,7 @@
    :target: ../../../arch_2013/files_2013/M43/colorspace/17_colorspace1.jpg
    :align: center
 
-   (圖) 可以看到最大的馬蹄形區域就是CIE 1931色彩空間，他的邊界是由光的波長定義，單位為nm，而內部所畫出的各種多邊形，分別是sRGB、Adobe RGB與CMYK的色彩空間範圍，也就是他們能顯示範圍。
+   (圖) 可以看到最大的馬蹄形區域就是CIE 1931色彩空間，他的邊界是由光的波長定義，單位為nm，而內部所畫出的各種多邊形，分別是sRGB(白線)、Adobe RGB(黑線)與CMYK(虛線)的色彩空間範圍，也就是他們的涵蓋範圍。
 
 .. TEASER_END
 
