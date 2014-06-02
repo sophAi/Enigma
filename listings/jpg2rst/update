@@ -1,0 +1,5 @@
+#!/bin/bash
+python setup.py bdist_egg
+sudo easy_install dist/*
+rm -rf build/
+rm -rf dist/

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/categories/gou-gou.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/categories/hai-zi-men-de-xia-tian.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/categories/mathjax.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/categories/sheng-huo-ri-ji.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/categories/xue-xi-yu-yue-du.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/categories/zi-you-de-cheng-shi-ren-sheng.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/galleries/rss.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/rss.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sophAi.github.io/Enigma/sitemap.xml</loc>
+  <lastmod>2014-06-02</lastmod>
+ </sitemap>
+</sitemapindex>
