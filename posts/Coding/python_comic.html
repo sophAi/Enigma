@@ -1,4 +1,24 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20130807 12:59:48"><meta name="author" content="M43幸福之路/OASYS"><title>I'm flying - Python | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Created at 20130807 12:59:48">
+    <meta name="viewport" content="width=device-width">
+    <title>I'm flying - Python | 文以載道，寧靜以致遠</title>
+
+    
+            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+    
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+
+      <link rel="canonical" href="http://sophAi.github.io/Enigma/posts/Coding/python_comic.html">
+
+            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16">
+
+
+    
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,16 +29,50 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css"><link rel="canonical" href="http://sophAi.github.io/Enigma/posts/Coding/python_comic.html"><!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml"><link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+</script>
+
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="../../assets/reveal/css/reveal.css">
+    <!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables -->
+    <link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
     document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script><!--[if lt IE 9]>
+    </script>
+    <!--[if lt IE 9]>
     <script src="/assets/reveal/lib/js/html5shiv.js"></script>
-    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></head><body>
+    <![endif]-->
+    <link rel="stylesheet" href="../../assets/css/custom_reveal.css">
+
+
+    
+
+    <meta name="author" content="M43幸福之路/OASYS">
+    
+        <meta name="og:title" content="I'm flying - Python">
+        <meta name="og:url" content="http://sophAi.github.io/Enigma/posts/Coding/python_comic.html">
+            <meta name="og:description" content="Created at 20130807 12:59:48">
+        <meta name="og:site_name" content="文以載道，寧靜以致遠">
+        <meta name="og:type" content="article">
+
+    
+
+    
+
+
+
+</head>
+<body>
 
 <!-- Menubar -->
-<div class="navbar navbar-fixed-top" id="navbar">
+
+<div class="navbar navbar-fixed-top" id="navbar" style="font-family: Open Sans;">
     <div class="navbar-inner">
         <div class="container">
 
@@ -30,45 +84,80 @@ MathJax.Hub.Config({
         </a>
 
             <a class="brand" href="http://sophAi.github.io/Enigma/">
-            文以載道，寧靜以致遠
+
+                <span id="blog-title">文以載道，寧靜以致遠</span>
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
-                </li><li><a href="../../categories/index.html">文章分類</a>
-                </li><li><a href="../../stories/about.html">關於這裡</a>
-                </li><li><a href="../../rss.xml">RSS</a>
+                <ul class="nav">
+                    
+                <li>
+<a href="../../archive.html">歷史存檔</a>
+                </li>
+<li>
+<a href="../../categories/index.html">文章分類</a>
+                </li>
+<li>
+<a href="../../stories/about.html">關於這裡</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS</a>
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                    
+                </li>
+</ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
-                <ul class="nav pull-right"><li>
-            <a href="python_comic.rst" id="sourcelink">Source</a>
-        </li>
-                </ul></div>
+                <ul class="nav pull-right">
+                
+                
+                    <li>
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 <!-- End of Menubar -->
 
 <div class="reveal"><div class="slides">
-    <section><section><div class="postbox">
+    <section>
+        
+<section>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1>I'm flying - Python</h1>
+    <header>
+        
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">I'm flying - Python</a></h1>
 
-    <hr><medium>
-        Posted: <time class="published" datetime="2013-08-07T14:18:04+08:00">2013-08-07 14:18</time>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">M43幸福之路/OASYS</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2013-08-07T14:18:04+08:00" itemprop="datePublished" title="Publication date">2013-08-07 14:18</time></a></p>
+                <p class="commentline">
+        
+    <a href="python_comic.html#disqus_thread" data-disqus-identifier="cache/posts/Coding/python_comic.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="python_comic.rst" id="sourcelink">Source</a></p>
+
+                <meta name="description" itemprop="description" content="Created at 20130807 12:59:48">
+        </div>
         
 
-        
-          |  More posts about
-            <a class="tag" href="../../categories/zi-you-de-cheng-shi-ren-sheng.html"><span class="badge badge-info">自由的程式人生</span></a>
+    </header>
 
-          |  
-        
-    </medium><hr><div><p>Python是一個程式語言，大部分的人一想到程式語言就會退閉三舍，不過幸好Python被發明出來了，她主要的對象如下:</p>
-<ol class="arabic simple"><li>人類</li>
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <p>Python是一個程式語言，大部分的人一想到程式語言就會退閉三舍，不過幸好Python被發明出來了，她主要的對象如下:</p>
+<ol class="arabic simple">
+<li>人類</li>
 <li>家庭主婦</li>
 <li>親子攝影人士</li>
 <li>投資客</li>
@@ -83,7 +172,8 @@ MathJax.Hub.Config({
 <li>任何需要出作業的老師</li>
 <li>任何需要寫程式的人</li>
 <li>任何不需要寫程式的人</li>
-</ol><p>由上可知，我實在是想不出什麼理由不應該學Python，基於如此強大的理由，只好硬著頭皮學了。至於Python能用來做什麼，下面這個圖片可以說明。</p>
+</ol>
+<p>由上可知，我實在是想不出什麼理由不應該學Python，基於如此強大的理由，只好硬著頭皮學了。至於Python能用來做什麼，下面這個圖片可以說明。</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/Coding/python_comic/01_python.png"><img alt="../../../arch_2013/files_2013/Coding/python_comic/01_python.png" src="../../../arch_2013/files_2013/Coding/python_comic/01_python.png"></a>
 <p class="caption">import antigravity就可以飛起來了。</p>
@@ -154,21 +244,71 @@ The Zen of Python (Tim Peters)
 <!-- <url> -->
 <!-- </url> -->
 <!-- <footnote> -->
-<table class="docutils footnote" frame="void" id="id2" rules="none"><colgroup><col class="label"><col></colgroup><tbody valign="top"><tr><td class="label"><a class="fn-backref" href="python_comic.html#id1">[1]</a></td><td>Aguai.</td></tr></tbody></table><!-- </footnote> --><!-- <citation> --><!-- </citation> --><!-- ===================================文章結束↑/語法備忘錄↓==================================== --><!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) --><!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` --><!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 --><!-- 插入teaser分頁: .. TEASER_END --><!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 --><!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 --><!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) --><!-- 插入youtube: ..youtube:: 影片的hash string --><!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) --><!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) --><!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 --><!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 --><!-- 插入sidebar: ..sidebar:: (空一行) 內容 --><!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 --><!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) --><!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --><!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --><!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --><!-- ============================================================================================ --></div>
-    
-    <div style="text-align:right">
-    <ul class="pager"><li class="previous">
-            <a href="../Learning/convolution.html">← Previous post</a>
-        </li>
-        <li class="next">
-            <a href="../M43/sharpen.html">Next post →</a>
-        </li>
-    </ul></div>
-
-    
-
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="python_comic.html#id1">[1]</a></td>
+<td>Aguai.</td>
+</tr>
+</tbody>
+</table>
+<!-- </footnote> -->
+<!-- <citation> -->
+<!-- </citation> -->
+<!-- ===================================文章結束↑/語法備忘錄↓==================================== -->
+<!-- 格式1: 粗體(**字串**)  斜體(*字串*)  大字(\ :big:`字串`\ )  小字(\ :small:`字串`\ ) -->
+<!-- 格式2: 上標(\ :sup:`字串`\ )  下標(\ :sub:`字串`\ )  ``去除格式字串`` -->
+<!-- 項目: #. (換行) #.　或是a. (換行) #. 或是I(i). 換行 #.  或是*. -. +. 子項目前面要多空一格 -->
+<!-- 插入teaser分頁: .. TEASER_END -->
+<!-- 插入latex數學: 段落裡加入\ :math:`latex數學`\ 語法，或獨立行.. math:: (換行) Latex數學 -->
+<!-- 插入figure: .. figure:: 路徑(換):width: 寬度(換):align: left(換):target: 路徑(空行對齊)圖標 -->
+<!-- 插入slides: .. slides:: (空一行) 圖擋路徑1 (換行) 圖擋路徑2 ... (空一行) -->
+<!-- 插入youtube: ..youtube:: 影片的hash string -->
+<!-- 插入url: 段落裡加入\ `連結字串`_\  URL區加上對應的.. _連結字串: 網址 (儘量用這個) -->
+<!-- 插入直接url: \ `連結字串` <網址或路徑>`_ \    (包含< >) -->
+<!-- 插入footnote: 段落裡加入\ [#]_\ 註腳    註腳區加上對應順序排列.. [#] 註腳內容 -->
+<!-- 插入citation: 段落裡加入\ [引用字串]_\ 名字字串  引用區加上.. [引用字串] 引用內容 -->
+<!-- 插入sidebar: ..sidebar:: (空一行) 內容 -->
+<!-- 插入contents: ..contents:: (換行) :depth: 目錄深入第幾層 -->
+<!-- 插入原始文字區塊: 在段落尾端使用:: (空一行) 內容 (空一行) -->
+<!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) -->
+<!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
+<!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
+<!-- ============================================================================================ -->
     </div>
-    <br><div id="disqus_thread"></div>
+    <aside class="postpromonav">
+    <nav>
+    
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../../categories/zi-you-de-cheng-shi-ren-sheng.html" rel="tag">自由的程式人生</a></li>
+        </ul>
+
+    
+        <ul class="pager">
+            <li class="previous">
+                <a href="../Learning/convolution.html" rel="prev" title="Convolution(摺積)的物理意義">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="raspberry_pi_case.html" rel="next" title="Raspberry Pi 使用體驗">Next post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+    
+
+</article>
+</section>
+<section>
+        <section class="comments">
+        <h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="enigma8850",
             disqus_url="http://sophAi.github.io/Enigma/posts/Coding/python_comic.html",
@@ -182,14 +322,27 @@ The Zen of Python (Tim Peters)
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-    </section></section></div></div>
+        </section>
+
+        
+       <script>var disqus_shortname="enigma8850";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 
 
-    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+</section>
+
+    </section>
+</div></div>
+
+
+    <script src="../../assets/reveal/lib/js/head.min.js"></script>
+    <script src="../../assets/reveal/js/reveal.min.js"></script>
+    <script>
     // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
     controls: false,
@@ -204,18 +357,26 @@ The Zen of Python (Tim Peters)
     { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
     ]
     });
-    </script><script>
+    </script>
+    <script>
     Reveal.addEventListener( 'slidechanged', function( event ) {
     window.scrollTo(0,0);
     MathJax.Hub.Rerender(event.currentSlide);
     });
-    </script><script>
+    </script>
+
+
+
+    <script>
     Reveal.initialize({
     controls: true,
     progress: true,
     history: true
     })
-    </script><div class="navbar navbar-fixed-bottom">
+    </script>
+
+
+<div class="navbar navbar-fixed-bottom" style="font-family: Open Sans;">
     <div class="navbar-inner">
         <div class="footerbox">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  © 2014 <a href="https://www.facebook.com/M43Happiness">M43幸福之路/OASYS</a>
@@ -224,18 +385,39 @@ The Zen of Python (Tim Peters)
 </div>
 
 
-            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+            <script src="../../assets/js/all-nocdn.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
-<ul><li><a class="addthis_button_facebook"></a>
-</li><li><a class="addthis_button_google_plusone_share"></a>
-</li><li><a class="addthis_button_linkedin"></a>
-</li><li><a class="addthis_button_twitter"></a>
-</li></ul></div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
     $(window).on('hashchange', function(){
         if (location.hash && $(location.hash)[0]) {
             $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
         }
     });
     $(document).ready(function(){$(window).trigger('hashchange')});
-    </script></body></html>
+    </script>
+   
+   
+</body>
+</html>

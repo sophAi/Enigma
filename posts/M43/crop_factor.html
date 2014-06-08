@@ -1,4 +1,24 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20131130 22:19:38"><meta name="author" content="M43幸福之路/OASYS"><title>片幅的奧秘 v1.1 | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Created at 20131130 22:19:38">
+    <meta name="viewport" content="width=device-width">
+    <title>片幅的奧秘 v1.1 | 文以載道，寧靜以致遠</title>
+
+    
+            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+    
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+
+      <link rel="canonical" href="http://sophAi.github.io/Enigma/posts/M43/crop_factor.html">
+
+            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16">
+
+
+    
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,16 +29,50 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css"><link rel="canonical" href="http://sophAi.github.io/Enigma/posts/M43/crop_factor.html"><!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml"><link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+</script>
+
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="../../assets/reveal/css/reveal.css">
+    <!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables -->
+    <link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
     document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script><!--[if lt IE 9]>
+    </script>
+    <!--[if lt IE 9]>
     <script src="/assets/reveal/lib/js/html5shiv.js"></script>
-    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></head><body>
+    <![endif]-->
+    <link rel="stylesheet" href="../../assets/css/custom_reveal.css">
+
+
+    
+
+    <meta name="author" content="M43幸福之路/OASYS">
+    
+        <meta name="og:title" content="片幅的奧秘 v1.1">
+        <meta name="og:url" content="http://sophAi.github.io/Enigma/posts/M43/crop_factor.html">
+            <meta name="og:description" content="Created at 20131130 22:19:38">
+        <meta name="og:site_name" content="文以載道，寧靜以致遠">
+        <meta name="og:type" content="article">
+
+    
+
+    
+
+
+
+</head>
+<body>
 
 <!-- Menubar -->
-<div class="navbar navbar-fixed-top" id="navbar">
+
+<div class="navbar navbar-fixed-top" id="navbar" style="font-family: Open Sans;">
     <div class="navbar-inner">
         <div class="container">
 
@@ -30,44 +84,78 @@ MathJax.Hub.Config({
         </a>
 
             <a class="brand" href="http://sophAi.github.io/Enigma/">
-            文以載道，寧靜以致遠
+
+                <span id="blog-title">文以載道，寧靜以致遠</span>
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
-                </li><li><a href="../../categories/index.html">文章分類</a>
-                </li><li><a href="../../stories/about.html">關於這裡</a>
-                </li><li><a href="../../rss.xml">RSS</a>
+                <ul class="nav">
+                    
+                <li>
+<a href="../../archive.html">歷史存檔</a>
+                </li>
+<li>
+<a href="../../categories/index.html">文章分類</a>
+                </li>
+<li>
+<a href="../../stories/about.html">關於這裡</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS</a>
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                    
+                </li>
+</ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
-                <ul class="nav pull-right"><li>
-            <a href="crop_factor.rst" id="sourcelink">Source</a>
-        </li>
-                </ul></div>
+                <ul class="nav pull-right">
+                
+                
+                    <li>
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 <!-- End of Menubar -->
 
 <div class="reveal"><div class="slides">
-    <section><section><div class="postbox">
+    <section>
+        
+<section>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1>片幅的奧秘 v1.1</h1>
+    <header>
+        
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">片幅的奧秘 v1.1</a></h1>
 
-    <hr><medium>
-        Posted: <time class="published" datetime="2013-12-29T23:35:34+08:00">2013-12-29 23:35</time>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">M43幸福之路/OASYS</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2013-12-29T23:35:34+08:00" itemprop="datePublished" title="Publication date">2013-12-29 23:35</time></a></p>
+                <p class="commentline">
+        
+    <a href="crop_factor.html#disqus_thread" data-disqus-identifier="cache/posts/M43/crop_factor.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="crop_factor.rst" id="sourcelink">Source</a></p>
+
+                <meta name="description" itemprop="description" content="Created at 20131130 22:19:38">
+        </div>
         
 
-        
-          |  More posts about
-            <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
+    </header>
 
-          |  
-        
-    </medium><hr><div><p>片幅對於照相有兩個直接的作用，一個是放大率，另一個則是裁切因子(Crop Factor)，兩者其實是息息相關的，而且會影響照片的視場。我們常聽到所謂相對於135片幅的「等效焦距」，也就是一顆鏡頭接在片幅大小不同的機身上必須換算焦距，其實「等效焦距」的說法容易讓人產生困惑，因此我們傾向區分為等效的水平與垂直視場，在開始解釋前，我們先將問題單純化，假設拍攝的主題與相機的距離是固定的，鏡頭也是使用同一顆，唯一變動的只有片幅的大小，這裡我們以三種常見的片幅尺寸為例，分別約為135 (36mm x 24mm)，APS-C (22.2mm x 14.8mm)，以及4/3 (17.3mm x 13mm)，135相當於最常見的35mm傳統底片大小，APS-C與4/3則是比135更小的片幅，其中135與APS-C的長與寬比例均為3:2，而4/3片幅如其名，長與寬的比例為4:3。同一顆鏡頭接在不同片幅的機身上，加上長寬比例的不同，會帶來完全不同感受的視場。</p>
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <p>片幅對於照相有兩個直接的作用，一個是放大率，另一個則是裁切因子(Crop Factor)，兩者其實是息息相關的，而且會影響照片的視場。我們常聽到所謂相對於135片幅的「等效焦距」，也就是一顆鏡頭接在片幅大小不同的機身上必須換算焦距，其實「等效焦距」的說法容易讓人產生困惑，因此我們傾向區分為等效的水平與垂直視場，在開始解釋前，我們先將問題單純化，假設拍攝的主題與相機的距離是固定的，鏡頭也是使用同一顆，唯一變動的只有片幅的大小，這裡我們以三種常見的片幅尺寸為例，分別約為135 (36mm x 24mm)，APS-C (22.2mm x 14.8mm)，以及4/3 (17.3mm x 13mm)，135相當於最常見的35mm傳統底片大小，APS-C與4/3則是比135更小的片幅，其中135與APS-C的長與寬比例均為3:2，而4/3片幅如其名，長與寬的比例為4:3。同一顆鏡頭接在不同片幅的機身上，加上長寬比例的不同，會帶來完全不同感受的視場。</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../../arch_2013/files_2013/M43/crop_factor/800/800_crop_factor_01.jpg"><img alt="../../../arch_2013/files_2013/M43/crop_factor/800/800_crop_factor_01.jpg" src="../../../arch_2013/files_2013/M43/crop_factor/800/800_crop_factor_01.jpg"></a>
 </div>
@@ -94,12 +182,14 @@ MathJax.Hub.Config({
 </div>
 <p>如果是Full HD錄影，採用多比例感光元件的4/3相機更拉近與135片幅的距離，相對於裁切成16:9的135，GH2的水平與垂直比率來到了1/1.928，如果APS-C也裁切成16:9，則與GH2的差距變得更接近了(上圖)。</p>
 <p>如果與一般的4/3相機相比，例如GX1，在Full HD模式下(16:9)，水平範圍的差距約為1.928(GH2)比2.08(GX1)，這就是為什麼同樣是4/3片幅，不同相機間視場卻有些許差異，對於機身防手震的機種(例如Olympus品牌的機身)，其有效紀錄範圍勢必再縮小，這是因為要預留給防手震演算一些空間，同樣的桶狀變形的數位修正也會影響到視場，在變形修正的文章裡會提到，對於在12mm與14mm徘徊的消費者，可以將片幅差異與機身防震功能等的因素考量進去，或許就會發現兩者並沒有太大的差別，例如20mm的鏡頭在16:9下(多比例)，水平視場是接近38.56mm，相反的，17.5mm的鏡頭在一般的4/3機身上則水平視場約為36.4mm，這是橫拍的情境，對於直拍來說，4:3的比例或許比較有利的(無論是否為多比例)，因為他提供更寬的範圍，不過這裡並不是要驗證哪種模式是最好的，而是拍攝者根據當下的場景，以及拍攝角度(直拍或橫拍)，因時制宜變換不同的比例才能達到最大的功效。若要總結上面的資訊:</p>
-<ol class="arabic simple"><li>非多比例感光元件的機身，如果可以事後裁切，以原生4:3比例拍攝較有利。</li>
+<ol class="arabic simple">
+<li>非多比例感光元件的機身，如果可以事後裁切，以原生4:3比例拍攝較有利。</li>
 <li>多比例感光元件的機身，若有廣角需求，切換成16:9可以得到更廣的水平視場。</li>
 <li>多比例模式並不包含1:1，如果有1:1的需求，使用4:3紀錄再裁切較有利。</li>
 <li>片幅限制了鏡頭的最小體積，片幅愈小，鏡頭體積愈容易跟著縮小。</li>
 <li>目前具有多比例感光元件功能的只有Panasonic GH1與GH2。</li>
-</ol><p>到這裡應該對於片幅與視場之間的關係有比較深刻的了解，片幅愈小對望遠端比較有利(在畫質不減損的情況)，大片幅則有近拍的優勢，當然事後裁切畫面也可以達到小片幅的效果，然而世界上並沒有完美無缺的事物，片幅愈大，代表透過鏡頭投射到感光元件的涵蓋範圍要愈大，鏡頭體積勢必不能太小，需要更大的口徑來彙集足夠的光量，鏡頭的重量與成本也會大幅增加，對於機動性與便利性來說並不是有利的因素，若強制縮小鏡頭的體積，則大大考驗光學的設計，也必須承擔邊緣影像品質惡化的風險。相對來說，片幅小到某種程度，像素感光能力將受到半導體製程的限制，同時鏡頭體積通常是比較小的，孔徑縮小，所能產生的散景效果也跟著受到限制，總而言之，不是愈大或是愈小就是最好，而是在各方面取得一個平衡點，例如同時考量鏡頭的體積--實體焦距愈短的鏡頭體積愈容易縮小，焦距愈長體積縮小的難度增加，加上這些要素，才是片幅與鏡頭之間真正需要仔細思量的地方。</p>
+</ol>
+<p>到這裡應該對於片幅與視場之間的關係有比較深刻的了解，片幅愈小對望遠端比較有利(在畫質不減損的情況)，大片幅則有近拍的優勢，當然事後裁切畫面也可以達到小片幅的效果，然而世界上並沒有完美無缺的事物，片幅愈大，代表透過鏡頭投射到感光元件的涵蓋範圍要愈大，鏡頭體積勢必不能太小，需要更大的口徑來彙集足夠的光量，鏡頭的重量與成本也會大幅增加，對於機動性與便利性來說並不是有利的因素，若強制縮小鏡頭的體積，則大大考驗光學的設計，也必須承擔邊緣影像品質惡化的風險。相對來說，片幅小到某種程度，像素感光能力將受到半導體製程的限制，同時鏡頭體積通常是比較小的，孔徑縮小，所能產生的散景效果也跟著受到限制，總而言之，不是愈大或是愈小就是最好，而是在各方面取得一個平衡點，例如同時考量鏡頭的體積--實體焦距愈短的鏡頭體積愈容易縮小，焦距愈長體積縮小的難度增加，加上這些要素，才是片幅與鏡頭之間真正需要仔細思量的地方。</p>
 <!-- </body> -->
 <!-- <url> -->
 <!-- </url> -->
@@ -127,21 +217,37 @@ MathJax.Hub.Config({
 <!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) -->
 <!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) -->
 <!-- ============================================================================================ -->
-</div></div>
-    
-    <div style="text-align:right">
-    <ul class="pager"><li class="previous">
-            <a href="20mm_filter.html">← Previous post</a>
-        </li>
-        <li class="next">
-            <a href="monitorhood.html">Next post →</a>
-        </li>
-    </ul></div>
-
-    
-
+</div>
     </div>
-    <br><div id="disqus_thread"></div>
+    <aside class="postpromonav">
+    <nav>
+    
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../../categories/xue-xi-yu-yue-du.html" rel="tag">學習與閱讀</a></li>
+        </ul>
+
+    
+        <ul class="pager">
+            <li class="previous">
+                <a href="20mm_filter.html" rel="prev" title="DIY - 解決20mm餅乾鏡濾鏡轉接環卡死的問題。">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="monitorhood.html" rel="next" title="自製百元螢幕遮光罩">Next post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+    
+
+</article>
+</section>
+<section>
+        <section class="comments">
+        <h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="enigma8850",
             disqus_url="http://sophAi.github.io/Enigma/posts/M43/crop_factor.html",
@@ -155,14 +261,27 @@ MathJax.Hub.Config({
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-    </section></section></div></div>
+        </section>
+
+        
+       <script>var disqus_shortname="enigma8850";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 
 
-    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+</section>
+
+    </section>
+</div></div>
+
+
+    <script src="../../assets/reveal/lib/js/head.min.js"></script>
+    <script src="../../assets/reveal/js/reveal.min.js"></script>
+    <script>
     // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
     controls: false,
@@ -177,18 +296,26 @@ MathJax.Hub.Config({
     { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
     ]
     });
-    </script><script>
+    </script>
+    <script>
     Reveal.addEventListener( 'slidechanged', function( event ) {
     window.scrollTo(0,0);
     MathJax.Hub.Rerender(event.currentSlide);
     });
-    </script><script>
+    </script>
+
+
+
+    <script>
     Reveal.initialize({
     controls: true,
     progress: true,
     history: true
     })
-    </script><div class="navbar navbar-fixed-bottom">
+    </script>
+
+
+<div class="navbar navbar-fixed-bottom" style="font-family: Open Sans;">
     <div class="navbar-inner">
         <div class="footerbox">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  © 2014 <a href="https://www.facebook.com/M43Happiness">M43幸福之路/OASYS</a>
@@ -197,18 +324,39 @@ MathJax.Hub.Config({
 </div>
 
 
-            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+            <script src="../../assets/js/all-nocdn.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
-<ul><li><a class="addthis_button_facebook"></a>
-</li><li><a class="addthis_button_google_plusone_share"></a>
-</li><li><a class="addthis_button_linkedin"></a>
-</li><li><a class="addthis_button_twitter"></a>
-</li></ul></div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
     $(window).on('hashchange', function(){
         if (location.hash && $(location.hash)[0]) {
             $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
         }
     });
     $(document).ready(function(){$(window).trigger('hashchange')});
-    </script></body></html>
+    </script>
+   
+   
+</body>
+</html>

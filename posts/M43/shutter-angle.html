@@ -1,4 +1,24 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="Created at 20130412 11:35:57"><meta name="author" content="M43幸福之路/OASYS"><title>GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係(v0.1) | 文以載道，寧靜以致遠</title><script type="text/x-mathjax-config">
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Created at 20130412 11:35:57">
+    <meta name="viewport" content="width=device-width">
+    <title>GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係(v0.1) | 文以載道，寧靜以致遠</title>
+
+    
+            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+    
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+
+      <link rel="canonical" href="http://sophAi.github.io/Enigma/posts/M43/shutter-angle.html">
+
+            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16">
+
+
+    
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,16 +29,50 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css"><link rel="canonical" href="http://sophAi.github.io/Enigma/posts/M43/shutter-angle.html"><!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml"><link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="../../assets/reveal/css/reveal.css"><!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme"><!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
+</script>
+
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="../../assets/reveal/css/reveal.css">
+    <!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables -->
+    <link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
     document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script><!--[if lt IE 9]>
+    </script>
+    <!--[if lt IE 9]>
     <script src="/assets/reveal/lib/js/html5shiv.js"></script>
-    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css"></head><body>
+    <![endif]-->
+    <link rel="stylesheet" href="../../assets/css/custom_reveal.css">
+
+
+    
+
+    <meta name="author" content="M43幸福之路/OASYS">
+    
+        <meta name="og:title" content="GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的">
+        <meta name="og:url" content="http://sophAi.github.io/Enigma/posts/M43/shutter-angle.html">
+            <meta name="og:description" content="Created at 20130412 11:35:57">
+        <meta name="og:site_name" content="文以載道，寧靜以致遠">
+        <meta name="og:type" content="article">
+
+    
+
+    
+
+
+
+</head>
+<body>
 
 <!-- Menubar -->
-<div class="navbar navbar-fixed-top" id="navbar">
+
+<div class="navbar navbar-fixed-top" id="navbar" style="font-family: Open Sans;">
     <div class="navbar-inner">
         <div class="container">
 
@@ -30,44 +84,78 @@ MathJax.Hub.Config({
         </a>
 
             <a class="brand" href="http://sophAi.github.io/Enigma/">
-            文以載道，寧靜以致遠
+
+                <span id="blog-title">文以載道，寧靜以致遠</span>
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../../archive.html">歷史存檔</a>
-                </li><li><a href="../../categories/index.html">文章分類</a>
-                </li><li><a href="../../stories/about.html">關於這裡</a>
-                </li><li><a href="../../rss.xml">RSS</a>
+                <ul class="nav">
+                    
+                <li>
+<a href="../../archive.html">歷史存檔</a>
+                </li>
+<li>
+<a href="../../categories/index.html">文章分類</a>
+                </li>
+<li>
+<a href="../../stories/about.html">關於這裡</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS</a>
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                    
+                </li>
+</ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
-                <ul class="nav pull-right"><li>
-            <a href="shutter-angle.rst" id="sourcelink">Source</a>
-        </li>
-                </ul></div>
+                <ul class="nav pull-right">
+                
+                
+                    <li>
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 <!-- End of Menubar -->
 
 <div class="reveal"><div class="slides">
-    <section><section><div class="postbox">
+    <section>
+        
+<section>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1>GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係(v0.1)</h1>
+    <header>
+        
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">GH2/GX1 - 24p, 60i, 30p, 還有60p，以及快門速度(shutter speed or shutter angle)的關係(v0.1)</a></h1>
 
-    <hr><medium>
-        Posted: <time class="published" datetime="2013-09-13T10:08:37+08:00">2013-09-13 10:08</time>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">M43幸福之路/OASYS</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2013-09-13T10:08:37+08:00" itemprop="datePublished" title="Publication date">2013-09-13 10:08</time></a></p>
+                <p class="commentline">
+        
+    <a href="shutter-angle.html#disqus_thread" data-disqus-identifier="cache/posts/M43/shutter-angle.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="shutter-angle.rst" id="sourcelink">Source</a></p>
+
+                <meta name="description" itemprop="description" content="Created at 20130412 11:35:57">
+        </div>
         
 
-        
-          |  More posts about
-            <a class="tag" href="../../categories/xue-xi-yu-yue-du.html"><span class="badge badge-info">學習與閱讀</span></a>
+    </header>
 
-          |  
-        
-    </medium><hr><div><p>5/23更新，有人提到以GH2錄影時，60i或60p比24p還流暢，其實是忽略了錄影階段shutter speed才是真正的影響因素，不然現今的電影錄製(24p)都不能應用在動作片上了。GH2比GX1以及其他類似的相機方便的地方就是，他的shutter speed是可以手動選擇的，GX1則只能在1/50s,1/60s,1/100s,以及1/120s間切換，至於其他不能手動調整快門速度的相機呢?我猜frame rate是多少，快門速度就固定是多少吧!另外，日光燈下的水波紋也是跟shutter speed有關，例如GX1的PAL機身，只要將shutter speed設成1/60s的倍數，就可以消除60Hz電壓頻率下日光燈的閃爍紋。那為什麼有人會強調只有NTSC的機身才能消除呢?原因在於這些機身的shutter speed都是固定在frame rate的倍數無法調整， 總而言之，GX1以後的Panasonic M43相機應該就不會再有PAL或NTSC的日光燈水波紋問題了，最後內文小更新有關高frame rate對slow motion的幫助。</p>
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <p>5/23更新，有人提到以GH2錄影時，60i或60p比24p還流暢，其實是忽略了錄影階段shutter speed才是真正的影響因素，不然現今的電影錄製(24p)都不能應用在動作片上了。GH2比GX1以及其他類似的相機方便的地方就是，他的shutter speed是可以手動選擇的，GX1則只能在1/50s,1/60s,1/100s,以及1/120s間切換，至於其他不能手動調整快門速度的相機呢?我猜frame rate是多少，快門速度就固定是多少吧!另外，日光燈下的水波紋也是跟shutter speed有關，例如GX1的PAL機身，只要將shutter speed設成1/60s的倍數，就可以消除60Hz電壓頻率下日光燈的閃爍紋。那為什麼有人會強調只有NTSC的機身才能消除呢?原因在於這些機身的shutter speed都是固定在frame rate的倍數無法調整， 總而言之，GX1以後的Panasonic M43相機應該就不會再有PAL或NTSC的日光燈水波紋問題了，最後內文小更新有關高frame rate對slow motion的幫助。</p>
 <p>5/10更新，把一些該加上去的連結都補上了。</p>
 <!-- TEASER_END -->
 <p>開始前，先麻煩各位惡補一下interlaced跟progressive的分別，以及field(場)與frame(影格，禎)的區別</p>
@@ -94,21 +182,37 @@ MathJax.Hub.Config({
 <p>那麼24p, 30p, 60p(frame rate)真正影響的是什麼呢?有兩個層面，一個是播放端的更新頻率，例如LCD為60Hz, CRT可能為72Hz，那麼24p在60Hz的設備上播放就產生同步的問題，同理，30/60p在72Hz的設備上也有同步的問題，這個就跟播放軟體，顯示卡，以及螢幕間的設定與協調有關，小弟的建議是使用60Hz設備的人儘量用30/60p，或是將24p轉成30/60p也是可以(2-3 pulldown)，在播放與處理影片面臨的問題最小，另一層面則是frame rate愈小，panning的果凍效應(jello effect)也會愈明顯，這是因為GH2/GX1是採用Rolling shutter的機制紀錄畫面，因此拍動作的場景可以使用GH2的720p/60格式(sensor output 60fps)大幅改善直線搖擺的問題，而GX1的720p/60的sensor output還是30 fps，因此果凍效應跟切換到1080i60模式(PsF)是差不多的，另外60p/i的錄製，對於slow motion的後製效果也比較好，因為每秒取得的畫面更多。</p>
 <p>而1080p/60是屬於AVCHD2.0的規範，由上可知無論是1080i60或是1080p60都可以涵蓋1080p30的影片內容，因此看不到真正有關1080p/30的規範，未來的播放與錄影設備應該會漸漸朝向1080p/60發展。</p>
 <p>希望以上一次釐清所有跟錄影模式有關的問題。</p>
-<!-- </body> --></div>
-    
-    <div style="text-align:right">
-    <ul class="pager"><li class="previous">
-            <a href="../Coding/raspberry_pi_case.html">← Previous post</a>
-        </li>
-        <li class="next">
-            <a href="ptool_settings.html">Next post →</a>
-        </li>
-    </ul></div>
-
-    
-
+<!-- </body> -->
     </div>
-    <br><div id="disqus_thread"></div>
+    <aside class="postpromonav">
+    <nav>
+    
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../../categories/xue-xi-yu-yue-du.html" rel="tag">學習與閱讀</a></li>
+        </ul>
+
+    
+        <ul class="pager">
+            <li class="previous">
+                <a href="../Coding/raspberry_pi_case.html" rel="prev" title="Raspberry Pi 使用體驗">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="ptool_settings.html" rel="next" title="GX1與GH2破解設定資訊">Next post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+    
+
+</article>
+</section>
+<section>
+        <section class="comments">
+        <h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="enigma8850",
             disqus_url="http://sophAi.github.io/Enigma/posts/M43/shutter-angle.html",
@@ -122,14 +226,27 @@ MathJax.Hub.Config({
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-    </section></section></div></div>
+        </section>
+
+        
+       <script>var disqus_shortname="enigma8850";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 
 
-    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
+</section>
+
+    </section>
+</div></div>
+
+
+    <script src="../../assets/reveal/lib/js/head.min.js"></script>
+    <script src="../../assets/reveal/js/reveal.min.js"></script>
+    <script>
     // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
     controls: false,
@@ -144,18 +261,26 @@ MathJax.Hub.Config({
     { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
     ]
     });
-    </script><script>
+    </script>
+    <script>
     Reveal.addEventListener( 'slidechanged', function( event ) {
     window.scrollTo(0,0);
     MathJax.Hub.Rerender(event.currentSlide);
     });
-    </script><script>
+    </script>
+
+
+
+    <script>
     Reveal.initialize({
     controls: true,
     progress: true,
     history: true
     })
-    </script><div class="navbar navbar-fixed-bottom">
+    </script>
+
+
+<div class="navbar navbar-fixed-bottom" style="font-family: Open Sans;">
     <div class="navbar-inner">
         <div class="footerbox">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  © 2014 <a href="https://www.facebook.com/M43Happiness">M43幸福之路/OASYS</a>
@@ -164,18 +289,39 @@ MathJax.Hub.Config({
 </div>
 
 
-            <script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+            <script src="../../assets/js/all-nocdn.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
-<ul><li><a class="addthis_button_facebook"></a>
-</li><li><a class="addthis_button_google_plusone_share"></a>
-</li><li><a class="addthis_button_linkedin"></a>
-</li><li><a class="addthis_button_twitter"></a>
-</li></ul></div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
     $(window).on('hashchange', function(){
         if (location.hash && $(location.hash)[0]) {
             $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
         }
     });
     $(document).ready(function(){$(window).trigger('hashchange')});
-    </script></body></html>
+    </script>
+   
+   
+</body>
+</html>
