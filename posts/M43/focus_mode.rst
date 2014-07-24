@@ -1,6 +1,6 @@
 .. title: focus_mode.rst
 .. slug: focus_mode
-.. date: 20131007 13:57:00
+.. date: 20140724 22:00:54
 .. tags: draft, 學習與閱讀
 .. link: 
 .. description: Created at 20131007 13:42:58

@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Created at 20130524 13:37:06">
-    <meta name="viewport" content="width=device-width">
-    <title>Convolution(摺積)的物理意義 | 文以載道，寧靜以致遠</title>
-
-    
-            <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-
-    
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-
-      <link rel="canonical" href="http://sophAi.github.io/Enigma/posts/Learning/convolution.html">
-
-            <link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16">
-
-
-    
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Created at 20130524 13:37:06">
+<meta name="viewport" content="width=device-width">
+<title>Convolution(摺積)的物理意義 | 文以載道，寧靜以致遠</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://sophAi.github.io/Enigma/posts/Learning/convolution.html">
+<link rel="icon" href="../../favicon/camera_GH2.ico" sizes="16x16">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -29,44 +20,21 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script>
-
-        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
-
-    
-
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="../../assets/reveal/css/reveal.css">
-    <!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables -->
-    <link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme">
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="../../assets/reveal/css/reveal.css">
+<!-- If you use another reveal.css, DO NOT forget to delete overflow: hidden from global variables --><link rel="stylesheet" href="../../assets/reveal/css/theme/serif.css" id="theme">
+<!-- If the query includes 'print-pdf', use the PDF print sheet --><script>
     document.write( '<link rel="stylesheet" href="/assets/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
-    <!--[if lt IE 9]>
+    </script><!--[if lt IE 9]>
     <script src="/assets/reveal/lib/js/html5shiv.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="../../assets/css/custom_reveal.css">
-
-
-    
-
-    <meta name="author" content="M43幸福之路/OASYS">
-    
-        <meta name="og:title" content="Convolution(摺積)的物理意義">
-        <meta name="og:url" content="http://sophAi.github.io/Enigma/posts/Learning/convolution.html">
-            <meta name="og:description" content="Created at 20130524 13:37:06">
-        <meta name="og:site_name" content="文以載道，寧靜以致遠">
-        <meta name="og:type" content="article">
-
-    
-
-    
-
-
-
+    <![endif]--><link rel="stylesheet" href="../../assets/css/custom_reveal.css">
+<meta name="author" content="M43幸福之路/OASYS">
+<meta name="og:title" content="Convolution(摺積)的物理意義">
+<meta name="og:url" content="http://sophAi.github.io/Enigma/posts/Learning/convolution.html">
+<meta name="og:description" content="Created at 20130524 13:37:06">
+<meta name="og:site_name" content="文以載道，寧靜以致遠">
+<meta name="og:type" content="article">
 </head>
 <body>
 
@@ -90,8 +58,7 @@ MathJax.Hub.Config({
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    
-                <li>
+<li>
 <a href="../../archive.html">歷史存檔</a>
                 </li>
 <li>
@@ -106,35 +73,23 @@ MathJax.Hub.Config({
                     
                 </li>
 </ul>
-                    
-<!-- Custom search with google-->
-<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:sophAi.github.io/Enigma">
-<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+<!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:sophAi.github.io/Enigma"><input type="text" name="q" maxlength="255" results="0" placeholder="Search">
 </form>
 <!-- End of custom search -->
 
                 <ul class="nav pull-right">
-                
-                
-                    <li>
+<li>
                 
                 </ul>
-            </div>
+</div>
         </div>
     </div>
 </div>
 <!-- End of Menubar -->
 
 <div class="reveal"><div class="slides">
-    <section>
-        
-<section>
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
-    
-    <header>
-        
-    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Convolution(摺積)的物理意義</a></h1>
+    <section><section><article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Convolution(摺積)的物理意義</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">M43幸福之路/OASYS</span></p>
@@ -149,12 +104,10 @@ MathJax.Hub.Config({
 <p class="sourceline"><a href="convolution.rst" id="sourcelink">原始碼</a></p>
 
                 <meta name="description" itemprop="description" content="Created at 20130524 13:37:06">
-        </div>
+</div>
         
 
-    </header>
-
-    <div class="e-content entry-content" itemprop="articleBody text">
+    </header><div class="e-content entry-content" itemprop="articleBody text">
     <div class="section" id="id1">
 <h2>問題</h2>
 <p>假設一個黑盒子(black box)是一個線性系統(LTI,Linear time invariant)，已知他的operator特性為<span class="math">\(g(t''), t''=0 \rightarrow \infty\)</span>
@@ -204,36 +157,19 @@ y(t)\equiv{f*g}=\int^{t}_{0}f(\tau)g(t-\tau)d\tau
 <!-- </body> -->
 </div>
     </div>
-    <aside class="postpromonav">
-    <nav>
-    
-        <ul itemprop="keywords" class="tags">
-           <li><a class="tag p-category" href="../../categories/mathjax.html" rel="tag">mathjax</a></li>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/mathjax.html" rel="tag">mathjax</a></li>
            <li><a class="tag p-category" href="../../categories/xue-xi-yu-yue-du.html" rel="tag">學習與閱讀</a></li>
         </ul>
-
-    
-        <ul class="pager">
-            <li class="previous">
+<ul class="pager">
+<li class="previous">
                 <a href="../M43/resize.html" rel="prev" title="感光元件的差異對縮圖的影響">前一篇</a>
             </li>
             <li class="next">
                 <a href="../Coding/python_comic.html" rel="next" title="I'm flying - Python">下一篇</a>
             </li>
-        </ul>
-
-    </nav>
-    </aside>
-    
-        <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});</script>
-        <script src="../../assets/js/mathjax.js"></script>
-
-</article>
-</section>
-<section>
-        <section class="comments">
-        <h2>評論</h2>
+        </ul></nav></aside><script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});</script><script src="../../assets/js/mathjax.js"></script></article></section><section><section class="comments"><h2>評論</h2>
         
         
         <div id="disqus_thread"></div>
@@ -250,27 +186,16 @@ y(t)\equiv{f*g}=\int^{t}_{0}f(\tau)g(t-\tau)d\tau
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
     <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-        </section>
-
-        
-       <script>var disqus_shortname="enigma8850";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
-
-
-</section>
-
-    </section>
+        </section><script>var disqus_shortname="enigma8850";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script></section></section>
 </div></div>
 
 
-    <script src="../../assets/reveal/lib/js/head.min.js"></script>
-    <script src="../../assets/reveal/js/reveal.min.js"></script>
-    <script>
+    <script src="../../assets/reveal/lib/js/head.min.js"></script><script src="../../assets/reveal/js/reveal.min.js"></script><script>
     // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
     controls: false,
@@ -285,26 +210,18 @@ y(t)\equiv{f*g}=\int^{t}_{0}f(\tau)g(t-\tau)d\tau
     { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } }
     ]
     });
-    </script>
-    <script>
+    </script><script>
     Reveal.addEventListener( 'slidechanged', function( event ) {
     window.scrollTo(0,0);
     MathJax.Hub.Rerender(event.currentSlide);
     });
-    </script>
-
-
-
-    <script>
+    </script><script>
     Reveal.initialize({
     controls: true,
     progress: true,
     history: true
     })
-    </script>
-
-
-<div class="navbar navbar-fixed-bottom" style="font-family: Open Sans;">
+    </script><div class="navbar navbar-fixed-bottom" style="font-family: Open Sans;">
     <div class="navbar-inner">
         <div class="footerbox">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png"></a>  © 2014 <a href="https://www.facebook.com/M43Happiness">M43幸福之路/OASYS</a>
@@ -313,10 +230,7 @@ y(t)\equiv{f*g}=\int^{t}_{0}f(\tau)g(t-\tau)d\tau
 </div>
 
 
-            <script src="../../assets/js/all-nocdn.js"></script>
-    
-<!-- Social buttons -->
-<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+            <script src="../../assets/js/all-nocdn.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
 <ul>
 <li>
@@ -333,11 +247,7 @@ y(t)\equiv{f*g}=\int^{t}_{0}f(\tau)g(t-\tau)d\tau
 </li>
 </ul>
 </div>
-<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
-<!-- End of social buttons -->
-
-
-    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
     $(window).on('hashchange', function(){
         if (location.hash && $(location.hash)[0]) {
             $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
@@ -345,7 +255,5 @@ y(t)\equiv{f*g}=\int^{t}_{0}f(\tau)g(t-\tau)d\tau
     });
     $(document).ready(function(){$(window).trigger('hashchange')});
     </script>
-   
-   
 </body>
 </html>
