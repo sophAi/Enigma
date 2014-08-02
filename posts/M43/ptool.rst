@@ -1,6 +1,6 @@
 .. title: Ptool更新軔體程序
 .. slug: ptool
-.. date: 20140225 14:57:34
+.. date: 20140802 18:42:02
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130722 22:47:23
