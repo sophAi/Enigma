@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>文以載道，寧靜以致遠 (學習與閱讀)</title><link>http://sophAi.github.io/Enigma/</link><description></description><language>en</language><lastBuildDate>Sun, 24 Aug 2014 14:47:19 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>dispcalGUI校正程序</title><link>http://sophAi.github.io/Enigma/posts/M43/dispcalGUI_screen.html</link><dc:creator>M43幸福之路/OASYS</dc:creator><description>&lt;div class="figure align-center"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>文以載道，寧靜以致遠 (學習與閱讀)</title><link>http://sophAi.github.io/Enigma/</link><description></description><language>en</language><lastBuildDate>Sun, 24 Aug 2014 16:45:19 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>校色的奧秘</title><link>http://sophAi.github.io/Enigma/posts/M43/dispcalGUI_screen.html</link><dc:creator>M43幸福之路/OASYS</dc:creator><description>&lt;p&gt;我們在之前的「顯示色彩的奧秘」一節中提到，一個完整的影像色彩修正必須要有3個要
+素:&lt;/p&gt;
+&lt;p&gt;#.適合校色的螢幕
+#.生成正確的色彩定義檔(ICC profile)
+#.支援ICC profile的軟體或作業系統&lt;/p&gt;
+&lt;p&gt;一個完整且正確的校色三者是缺一不可，環環相扣，舉個例子來說，一個高檔的螢幕卻缺乏正確的校色，或是生成了校色檔卻沒有適當的軟體支援，都會產生色彩失真的風險，在了解了螢幕的選擇對於校色的影響之後，本節將著重在軟體的部份，也就是ICC profile的生成步驟，而我們這裡採用的，其實是許多專業人士一致推薦的dispcalGUI，由於他支援的校色器非常廣泛，所提供的校色選項非常豐富且面面俱到，功能與叫色的精準度甚至讓許多官方校色軟體汗顏。光是採用的測試色塊數目就遠超過許多官方的校色軟體，還能生成非常詳細的校色報告，因此很多人反而棄原廠軟體不用而採用它，而他最大的好處就是資源非常豐富，還是跨平台的自由軟體，Windows/Linux/OSX都可以使用，甚至還能夠對手機或平板裝置進行校色。&lt;/p&gt;
+&lt;p&gt;由於dispcalGUI改版非常迅速，有關其安裝的方法請參考官方首頁，最重要的步驟是安裝argyll這個軟體，他既提供校色器的硬體支援，也是所有校色功能的核心提供者，dispcalGUI則是一個前端的介面，以Linux系統來說，只要下載他的deb或rpm檔即可安裝，同時以套件管理程式安裝argyll即可，非常方面，以ubuntu/Linux Mint來說，只要在終端機裡輸入:&lt;/p&gt;
+&lt;p&gt;apt-get install argyll&lt;/p&gt;
+&lt;p&gt;dpkg -i dispcalGUI的deb檔&lt;/p&gt;
+&lt;p&gt;即可。&lt;/p&gt;
+&lt;p&gt;dispcalGUI的畫面可以驅分成三大部份:&lt;/p&gt;
+&lt;p&gt;#.Display device
+#.Calibration settings
+#.Profiling settings&lt;/p&gt;
+&lt;p&gt;這三者構成了校色的3個主要的步驟，其中比較需要解釋的是Calibration與Profiling settings之間的差別，Calibration主要是著重在螢幕硬體的設定，例如螢幕的色溫，亮度設定等，這部份需要透過操作螢幕的按鈕來進行調整，如果沒有確實做好這部份，最後的校色結果可能會造成嚴重的掉階，喪失動態。&lt;/p&gt;
+&lt;p&gt;而Profiling則是生成ICC profile的設定，這個部份會決定測試色塊的數目，ICC profile的精確度等，因此實際校色的過程，其實就是先校正(calibrating)螢幕，再測試色塊生成ICC profile(profiling)&lt;/p&gt;
+&lt;p&gt;dispcalGUI的選項眾多，以下我們一一介紹&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="http://sophAi.github.io/arch_2014/files_2014/M43/dispcalGUI_screen/800/800_01_dispcalGUI_device.png"&gt;&lt;img alt="../../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_01_dispcalGUI_device.png" src="http://sophAi.github.io/arch_2014/files_2014/M43/dispcalGUI_screen/800/800_01_dispcalGUI_device.png"&gt;&lt;/a&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Settings&lt;/strong&gt;: 也就是當前的校色設定，最右邊的按鈕可以顯示當前Profile的資訊、校正曲線、螢幕的特性、與色域空間涵蓋率等&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update calibration&lt;/strong&gt;: 決定是否要覆蓋當前的Profile，還是要重新生成新的Profile&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Display device&lt;/strong&gt;: 顯示螢幕的型號&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instrument&lt;/strong&gt;: 顯示校色器的型號，Mode則是設定校色器的校色方式，例如這邊使用LCD (generic) Adaptive HiRes是比較建議採用的選項，可以提供比較精確的校色結果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;White level drift compensation&lt;/strong&gt;: 有些螢幕的白色亮度(white level)會不斷浮動，理論上比較好的螢幕亮度應該是不會隨時間有些微改變的，因此打勾這個選項會對這個問題進行修正，在色塊校正的過程會不時穿插白色的色塊，讓校色器不斷對白色做校正，得到更精確的結果，缺點是校色的時間會大幅拉長，除非螢幕的亮度真的有問題，不然其實可以不需要勾選這個選項。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Black level drift compensation&lt;/strong&gt;: 功能同上，只是針對黑色的亮度，也就是如果螢幕有漏光的問題，有可能會讓黑色的亮度浮動，同樣在測試色塊的過程中會穿插大量的黑色色塊，基本上勾選該選項能提供更準確的結果，但是也會讓校色時間拉長。&lt;/p&gt;
+&lt;p&gt;接著是螢幕校正(Calibration Settings)的區塊，這個部份會設定螢幕調整的目標值，也就是說，如果我們想要螢幕符合sRGB的標準，則必須在這邊設定，dispcalGUI會根據這邊的設定提示我們如何操作螢幕的按鈕來達到這個標準，同時也會決定ICC profile裡R/G/B Gamma的修正曲線。&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="http://sophAi.github.io/arch_2014/files_2014/M43/dispcalGUI_screen/800/800_02_dispcalGUI_calibration.png"&gt;&lt;img alt="../../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_02_dispcalGUI_calibration.png" src="http://sophAi.github.io/arch_2014/files_2014/M43/dispcalGUI_screen/800/800_02_dispcalGUI_calibration.png"&gt;&lt;/a&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Whitepoint&lt;/strong&gt;: 決定白點的色溫，這個選項會決定R/G/B Gamma曲線所呈現的色溫，以sRGB來說選擇Color temperature 6500K, Daylight即可，只有在很特殊的情況下(例如環境光源的色溫差異太大，例如有個螢幕旁邊有個紅色的光源之類的，才需要用到Measure對環境光源進行修正，不過若遇到這種情況下，改善環境光源才是優先要考慮的事項。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;White level&lt;/strong&gt;: 決定螢幕的亮度，以sRGB來說約120cd/m^2，如果您是先已經對螢幕做校正，調整螢幕的亮度讓他接近120cd/m^2，這個選項可以使用As measure，如此一來可以多保留些色階，畢竟要剛剛好落在120cd/m^2也是不太可能的事。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Black level&lt;/strong&gt;: 大部分的LCD螢幕黑色的亮度都不等於0，除非黑色的亮度太過於明顯，甚至影響到灰階的表現，不然建議使用As measure，強制設定成0可能會造成色階喪失不連續等問題。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tone curve&lt;/strong&gt;: 決定Gamma值，sRGB的Gamma為2.2，除非螢幕偏離2.2許多，不然選擇sRGB即可，這個選項也會影響色階能保留的數目，因此可以多方嘗試。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Black output offset&lt;/strong&gt;: 透過R/G/B Gamma曲線來修正黑色亮度不等於0的問題，建議100%即可&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="http://sophAi.github.io/arch_2014/files_2014/M43/dispcalGUI_screen/800/800_03_dispcalGUI_profile.png"&gt;&lt;img alt="../../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_03_dispcalGUI_profile.png" src="http://sophAi.github.io/arch_2014/files_2014/M43/dispcalGUI_screen/800/800_03_dispcalGUI_profile.png"&gt;&lt;/a&gt;
 &lt;/div&gt;
@@ -20,6 +49,9 @@
 &lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="http://sophAi.github.io/arch_2014/files_2014/M43/dispcalGUI_screen/800/800_07_discalGUI_display_cal2.png"&gt;&lt;img alt="../../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_07_discalGUI_display_cal2.png" src="http://sophAi.github.io/arch_2014/files_2014/M43/dispcalGUI_screen/800/800_07_discalGUI_display_cal2.png"&gt;&lt;/a&gt;
 &lt;/div&gt;
+&lt;p&gt;截至目前為止，我們終於生成了ICC profile，但是故事還沒結束，最重要的部份，也就是軟體支援的部份才是重點，我們必須知道，ICC profile決定了兩個重要的步驟，一個是R/G/B Gamma曲線的修正，這個會決定顯示的色溫，暗部與亮部的表現，但這只是一半的步驟，另外一個則是矩陣轉換，也就是透過LUT(Look up table)將不準確的色彩修正成準確的色彩，一般通稱LUT Matrix的轉換，以Mac OS X來說，他的ColorSync是由作業系統底層掌管色彩管理，目的是讓所有程式都能在底層就完成完整的色彩管理的步驟，對於美術與影像處理人員來說無疑是首選的系統。&lt;/p&gt;
+&lt;p&gt;相對來說，Windows系統在色彩管理則以應用程式的支援為主，只有少數應用程式完整支援ICC Profile，例如Photoshop，色彩管理的部份必須由應用軟體的廠商來實現，大部分的程式其實是無法受惠於ICC profile的。&lt;/p&gt;
+&lt;p&gt;以Linux來進行影像處理是比較少見的情況，但其實他的色彩管理非常開放，有提供通用的函式庫供大家使用，以Gnome/Mate桌面系統來說，色彩管理是由liblcms來進行，因此許多軟體，例如基本的秀圖軟體eyeofgnome/eyeofmate都能完整支援ICC profile，其他諸如GIMP，Inkscape，Firefox，pdf軟體，Raw處理軟體都完整支援ICC profile，通常Linux系統載入ICC profile時只會進行Gamma修正，LUT Matrix的轉換則是交由應用程式去執行，幾乎可以說90%以上的影像處理場合都可以從ICC profile獲得好處，只要記得到應用程式的相關色彩管理設定裡選擇Use system color profile即可。&lt;/p&gt;
 &lt;!-- &lt;/body&gt; --&gt;
 &lt;!-- &lt;url&gt; --&gt;
 &lt;!-- &lt;/url&gt; --&gt;
@@ -46,7 +78,7 @@
 &lt;!-- 插入本機的程式碼: ..listing:: 放在listings目錄裡的程式碼檔名 (讓原始碼跟隨網站) --&gt;
 &lt;!-- 插入特定原始碼: ..code::python (或cpp) (換行) :number-lines: (把程式碼行數列出) --&gt;
 &lt;!-- 插入gist: ..gist:: gist編號 (要先到github的gist裡貼上程式代碼) --&gt;
-&lt;!-- ============================================================================================ --&gt;</description><category>學習與閱讀</category><guid>http://sophAi.github.io/Enigma/posts/M43/dispcalGUI_screen.html</guid><pubDate>Sun, 24 Aug 2014 06:43:36 GMT</pubDate></item><item><title>Ptool更新軔體程序</title><link>http://sophAi.github.io/Enigma/posts/M43/ptool.html</link><dc:creator>M43幸福之路/OASYS</dc:creator><description>&lt;p&gt;有關Ptool的參數設定細節，請參考另一篇―&lt;a class="reference external" href="http://sophAi.github.io/Enigma/posts/M43/ptool_settings.html"&gt;Ptool的參數檔&lt;/a&gt;。&lt;/p&gt;
+&lt;!-- ============================================================================================ --&gt;</description><category>學習與閱讀</category><guid>http://sophAi.github.io/Enigma/posts/M43/dispcalGUI_screen.html</guid><pubDate>Sun, 24 Aug 2014 08:39:09 GMT</pubDate></item><item><title>Ptool更新軔體程序</title><link>http://sophAi.github.io/Enigma/posts/M43/ptool.html</link><dc:creator>M43幸福之路/OASYS</dc:creator><description>&lt;p&gt;有關Ptool的參數設定細節，請參考另一篇―&lt;a class="reference external" href="http://sophAi.github.io/Enigma/posts/M43/ptool_settings.html"&gt;Ptool的參數檔&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;更新軔體除了可以替日文機增加英文介面，提升錄影畫質，還能在PAL與NTSC規格切換；例如自香港平行輸入的繁體中文GX1，其為PAL規格，因此他只提供~25fps(1080p50或720p50)的錄影模式，同時還有30分鐘的錄影限制，經過軔體修改後，即可隨時在PAL與NTSC(~30fps,1080p30/i60或720p60等)間切換，也可以移除30分鐘錄影的限制，台灣與日本地區是屬於NTSC。早期PAL規格的相機，因為與台灣日光燈掃描頻率不同步，容易在室內錄影畫面中產生移動的條紋，這現象困擾著許多人，而NTSC規格比較不容易產生類似的問題，不過後期的機種已經能透過更改快門速度來解決這個問題了。&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://sophAi.github.io/Enigma/posts/M43/ptool.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;</description><category>學習與閱讀</category><guid>http://sophAi.github.io/Enigma/posts/M43/ptool.html</guid><pubDate>Sat, 02 Aug 2014 10:42:02 GMT</pubDate></item><item><title>數位照片的奧秘</title><link>http://sophAi.github.io/Enigma/posts/M43/sharpen.html</link><dc:creator>M43幸福之路/OASYS</dc:creator><description>&lt;p&gt;我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:&lt;/p&gt;
 &lt;div class="figure align-center"&gt;

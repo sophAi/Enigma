@@ -80,10 +80,10 @@ MathJax.Hub.Config({
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="../posts/M43/dispcalGUI_screen.html" class="u-url">dispcalGUI校正程序</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="../posts/M43/dispcalGUI_screen.html" class="u-url">校色的奧秘</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">M43幸福之路/OASYS</span></p>
-            <p class="dateline"><a href="../posts/M43/dispcalGUI_screen.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-24T14:43:36+08:00" itemprop="datePublished" title="Publication date">2014-08-24 14:43</time></a></p>
+            <p class="dateline"><a href="../posts/M43/dispcalGUI_screen.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-24T16:39:09+08:00" itemprop="datePublished" title="Publication date">2014-08-24 16:39</time></a></p>
                 <p class="commentline">
         
     <a href="../posts/M43/dispcalGUI_screen.html#disqus_thread" data-disqus-identifier="cache/posts/M43/dispcalGUI_screen.html">Comments</a>
@@ -92,12 +92,41 @@ MathJax.Hub.Config({
         </p>
 </div>
     </header><div class="p-summary entry-summary">
-    <div class="figure align-center">
+    <p>我們在之前的「顯示色彩的奧秘」一節中提到，一個完整的影像色彩修正必須要有3個要
+素:</p>
+<p>#.適合校色的螢幕
+#.生成正確的色彩定義檔(ICC profile)
+#.支援ICC profile的軟體或作業系統</p>
+<p>一個完整且正確的校色三者是缺一不可，環環相扣，舉個例子來說，一個高檔的螢幕卻缺乏正確的校色，或是生成了校色檔卻沒有適當的軟體支援，都會產生色彩失真的風險，在了解了螢幕的選擇對於校色的影響之後，本節將著重在軟體的部份，也就是ICC profile的生成步驟，而我們這裡採用的，其實是許多專業人士一致推薦的dispcalGUI，由於他支援的校色器非常廣泛，所提供的校色選項非常豐富且面面俱到，功能與叫色的精準度甚至讓許多官方校色軟體汗顏。光是採用的測試色塊數目就遠超過許多官方的校色軟體，還能生成非常詳細的校色報告，因此很多人反而棄原廠軟體不用而採用它，而他最大的好處就是資源非常豐富，還是跨平台的自由軟體，Windows/Linux/OSX都可以使用，甚至還能夠對手機或平板裝置進行校色。</p>
+<p>由於dispcalGUI改版非常迅速，有關其安裝的方法請參考官方首頁，最重要的步驟是安裝argyll這個軟體，他既提供校色器的硬體支援，也是所有校色功能的核心提供者，dispcalGUI則是一個前端的介面，以Linux系統來說，只要下載他的deb或rpm檔即可安裝，同時以套件管理程式安裝argyll即可，非常方面，以ubuntu/Linux Mint來說，只要在終端機裡輸入:</p>
+<p>apt-get install argyll</p>
+<p>dpkg -i dispcalGUI的deb檔</p>
+<p>即可。</p>
+<p>dispcalGUI的畫面可以驅分成三大部份:</p>
+<p>#.Display device
+#.Calibration settings
+#.Profiling settings</p>
+<p>這三者構成了校色的3個主要的步驟，其中比較需要解釋的是Calibration與Profiling settings之間的差別，Calibration主要是著重在螢幕硬體的設定，例如螢幕的色溫，亮度設定等，這部份需要透過操作螢幕的按鈕來進行調整，如果沒有確實做好這部份，最後的校色結果可能會造成嚴重的掉階，喪失動態。</p>
+<p>而Profiling則是生成ICC profile的設定，這個部份會決定測試色塊的數目，ICC profile的精確度等，因此實際校色的過程，其實就是先校正(calibrating)螢幕，再測試色塊生成ICC profile(profiling)</p>
+<p>dispcalGUI的選項眾多，以下我們一一介紹</p>
+<div class="figure align-center">
 <a class="reference external image-reference" href="../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_01_dispcalGUI_device.png"><img alt="../../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_01_dispcalGUI_device.png" src="../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_01_dispcalGUI_device.png"></a>
 </div>
+<p><strong>Settings</strong>: 也就是當前的校色設定，最右邊的按鈕可以顯示當前Profile的資訊、校正曲線、螢幕的特性、與色域空間涵蓋率等</p>
+<p><strong>Update calibration</strong>: 決定是否要覆蓋當前的Profile，還是要重新生成新的Profile</p>
+<p><strong>Display device</strong>: 顯示螢幕的型號</p>
+<p><strong>Instrument</strong>: 顯示校色器的型號，Mode則是設定校色器的校色方式，例如這邊使用LCD (generic) Adaptive HiRes是比較建議採用的選項，可以提供比較精確的校色結果。</p>
+<p><strong>White level drift compensation</strong>: 有些螢幕的白色亮度(white level)會不斷浮動，理論上比較好的螢幕亮度應該是不會隨時間有些微改變的，因此打勾這個選項會對這個問題進行修正，在色塊校正的過程會不時穿插白色的色塊，讓校色器不斷對白色做校正，得到更精確的結果，缺點是校色的時間會大幅拉長，除非螢幕的亮度真的有問題，不然其實可以不需要勾選這個選項。</p>
+<p><strong>Black level drift compensation</strong>: 功能同上，只是針對黑色的亮度，也就是如果螢幕有漏光的問題，有可能會讓黑色的亮度浮動，同樣在測試色塊的過程中會穿插大量的黑色色塊，基本上勾選該選項能提供更準確的結果，但是也會讓校色時間拉長。</p>
+<p>接著是螢幕校正(Calibration Settings)的區塊，這個部份會設定螢幕調整的目標值，也就是說，如果我們想要螢幕符合sRGB的標準，則必須在這邊設定，dispcalGUI會根據這邊的設定提示我們如何操作螢幕的按鈕來達到這個標準，同時也會決定ICC profile裡R/G/B Gamma的修正曲線。</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_02_dispcalGUI_calibration.png"><img alt="../../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_02_dispcalGUI_calibration.png" src="../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_02_dispcalGUI_calibration.png"></a>
 </div>
+<p><strong>Whitepoint</strong>: 決定白點的色溫，這個選項會決定R/G/B Gamma曲線所呈現的色溫，以sRGB來說選擇Color temperature 6500K, Daylight即可，只有在很特殊的情況下(例如環境光源的色溫差異太大，例如有個螢幕旁邊有個紅色的光源之類的，才需要用到Measure對環境光源進行修正，不過若遇到這種情況下，改善環境光源才是優先要考慮的事項。</p>
+<p><strong>White level</strong>: 決定螢幕的亮度，以sRGB來說約120cd/m^2，如果您是先已經對螢幕做校正，調整螢幕的亮度讓他接近120cd/m^2，這個選項可以使用As measure，如此一來可以多保留些色階，畢竟要剛剛好落在120cd/m^2也是不太可能的事。</p>
+<p><strong>Black level</strong>: 大部分的LCD螢幕黑色的亮度都不等於0，除非黑色的亮度太過於明顯，甚至影響到灰階的表現，不然建議使用As measure，強制設定成0可能會造成色階喪失不連續等問題。</p>
+<p><strong>Tone curve</strong>: 決定Gamma值，sRGB的Gamma為2.2，除非螢幕偏離2.2許多，不然選擇sRGB即可，這個選項也會影響色階能保留的數目，因此可以多方嘗試。</p>
+<p><strong>Black output offset</strong>: 透過R/G/B Gamma曲線來修正黑色亮度不等於0的問題，建議100%即可</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_03_dispcalGUI_profile.png"><img alt="../../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_03_dispcalGUI_profile.png" src="../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_03_dispcalGUI_profile.png"></a>
 </div>
@@ -113,6 +142,9 @@ MathJax.Hub.Config({
 <div class="figure align-center">
 <a class="reference external image-reference" href="../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_07_discalGUI_display_cal2.png"><img alt="../../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_07_discalGUI_display_cal2.png" src="../../arch_2014/files_2014/M43/dispcalGUI_screen/800/800_07_discalGUI_display_cal2.png"></a>
 </div>
+<p>截至目前為止，我們終於生成了ICC profile，但是故事還沒結束，最重要的部份，也就是軟體支援的部份才是重點，我們必須知道，ICC profile決定了兩個重要的步驟，一個是R/G/B Gamma曲線的修正，這個會決定顯示的色溫，暗部與亮部的表現，但這只是一半的步驟，另外一個則是矩陣轉換，也就是透過LUT(Look up table)將不準確的色彩修正成準確的色彩，一般通稱LUT Matrix的轉換，以Mac OS X來說，他的ColorSync是由作業系統底層掌管色彩管理，目的是讓所有程式都能在底層就完成完整的色彩管理的步驟，對於美術與影像處理人員來說無疑是首選的系統。</p>
+<p>相對來說，Windows系統在色彩管理則以應用程式的支援為主，只有少數應用程式完整支援ICC Profile，例如Photoshop，色彩管理的部份必須由應用軟體的廠商來實現，大部分的程式其實是無法受惠於ICC profile的。</p>
+<p>以Linux來進行影像處理是比較少見的情況，但其實他的色彩管理非常開放，有提供通用的函式庫供大家使用，以Gnome/Mate桌面系統來說，色彩管理是由liblcms來進行，因此許多軟體，例如基本的秀圖軟體eyeofgnome/eyeofmate都能完整支援ICC profile，其他諸如GIMP，Inkscape，Firefox，pdf軟體，Raw處理軟體都完整支援ICC profile，通常Linux系統載入ICC profile時只會進行Gamma修正，LUT Matrix的轉換則是交由應用程式去執行，幾乎可以說90%以上的影像處理場合都可以從ICC profile獲得好處，只要記得到應用程式的相關色彩管理設定裡選擇Use system color profile即可。</p>
 <!-- </body> -->
 <!-- <url> -->
 <!-- </url> -->
