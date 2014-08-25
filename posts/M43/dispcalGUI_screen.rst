@@ -1,6 +1,6 @@
 .. title: 校色的奧秘
 .. slug: dispcalGUI_screen
-.. date: 20140825 11:14:12
+.. date: 20140825 13:44:43
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20140824 14:38:28
@@ -13,11 +13,9 @@
 我們在之前的「顯示色彩的奧秘」一節中提到，一個完整的影像色彩修正必須要有3個要
 素:
 
-#.適合校色的螢幕
-
-#.生成正確的色彩定義檔(ICC profile)
-
-#.支援ICC profile的軟體或作業系統
+#. 適合校色的螢幕
+#. 生成正確的色彩定義檔(ICC profile)
+#. 支援ICC profile的軟體或作業系統
 
 .. TEASER_END
 
@@ -33,11 +31,9 @@ dpkg -i dispcalGUI的deb檔
 
 dispcalGUI的畫面可以驅分成三大部份:
 
-#.Display device
-
-#.Calibration settings
-
-#.Profiling settings
+#. Display device
+#. Calibration settings
+#. Profiling settings
 
 這三者構成了校色的3個主要的步驟，其中比較需要解釋的是Calibration與Profiling settings之間的差別，Calibration主要是著重在螢幕硬體的設定，例如螢幕的色溫，亮度設定等，這部份需要透過操作螢幕的按鈕來進行調整，如果沒有確實做好這部份，最後的校色結果可能會造成嚴重的掉階，喪失動態。
 

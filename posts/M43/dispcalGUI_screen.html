@@ -94,7 +94,7 @@ MathJax.Hub.Config({
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">M43幸福之路/OASYS</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-08-25T11:14:12+08:00" itemprop="datePublished" title="Publication date">2014-08-25 11:14</time></a></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-08-25T13:44:43+08:00" itemprop="datePublished" title="Publication date">2014-08-25 13:44</time></a></p>
                 <p class="commentline">
         
     <a href="dispcalGUI_screen.html#disqus_thread" data-disqus-identifier="cache/posts/M43/dispcalGUI_screen.html">Comments</a>
@@ -111,19 +111,22 @@ MathJax.Hub.Config({
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>我們在之前的「顯示色彩的奧秘」一節中提到，一個完整的影像色彩修正必須要有3個要
 素:</p>
-<p>#.適合校色的螢幕</p>
-<p>#.生成正確的色彩定義檔(ICC profile)</p>
-<p>#.支援ICC profile的軟體或作業系統</p>
-<!-- TEASER_END -->
-<p>一個完整且正確的校色三者是缺一不可，環環相扣，舉個例子來說，一個高檔的螢幕卻缺乏正確的校色，或是生成了校色檔卻沒有適當的軟體支援，都會產生色彩失真的風險，在了解了螢幕的選擇對於校色的影響之後，本節將著重在軟體的部份，也就是ICC profile的生成步驟，而我們這裡採用的，其實是許多專業人士一致推薦的dispcalGUI，由於他支援的校色器非常廣泛，所提供的校色選項非常豐富且面面俱到，功能與叫色的精準度甚至讓許多官方校色軟體汗顏。光是採用的測試色塊數目就遠超過許多官方的校色軟體，還能生成非常詳細的校色報告，因此很多人反而棄原廠軟體不用而採用它，而他最大的好處就是資源非常豐富，還是跨平台的自由軟體，Windows/Linux/OSX都可以使用，甚至還能夠對手機或平板裝置進行校色。</p>
+<ol class="arabic simple">
+<li>適合校色的螢幕</li>
+<li>生成正確的色彩定義檔(ICC profile)</li>
+<li>支援ICC profile的軟體或作業系統</li>
+</ol>
+<!-- TEASER_END --><p>一個完整且正確的校色三者是缺一不可，環環相扣，舉個例子來說，一個高檔的螢幕卻缺乏正確的校色，或是生成了校色檔卻沒有適當的軟體支援，都會產生色彩失真的風險，在了解了螢幕的選擇對於校色的影響之後，本節將著重在軟體的部份，也就是ICC profile的生成步驟，而我們這裡採用的，其實是許多專業人士一致推薦的dispcalGUI，由於他支援的校色器非常廣泛，所提供的校色選項非常豐富且面面俱到，功能與叫色的精準度甚至讓許多官方校色軟體汗顏。光是採用的測試色塊數目就遠超過許多官方的校色軟體，還能生成非常詳細的校色報告，因此很多人反而棄原廠軟體不用而採用它，而他最大的好處就是資源非常豐富，還是跨平台的自由軟體，Windows/Linux/OSX都可以使用，甚至還能夠對手機或平板裝置進行校色。</p>
 <p>由於dispcalGUI改版非常迅速，有關其安裝的方法請參考官方首頁，最重要的步驟是安裝argyll這個軟體，他既提供校色器的硬體支援，也是所有校色功能的核心提供者，dispcalGUI則是一個前端的介面，以Linux系統來說，只要下載他的deb或rpm檔即可安裝，同時以套件管理程式安裝argyll即可，非常方面，以ubuntu/Linux Mint來說，只要在終端機裡輸入:</p>
 <p>apt-get install argyll</p>
 <p>dpkg -i dispcalGUI的deb檔</p>
 <p>即可。</p>
 <p>dispcalGUI的畫面可以驅分成三大部份:</p>
-<p>#.Display device</p>
-<p>#.Calibration settings</p>
-<p>#.Profiling settings</p>
+<ol class="arabic simple">
+<li>Display device</li>
+<li>Calibration settings</li>
+<li>Profiling settings</li>
+</ol>
 <p>這三者構成了校色的3個主要的步驟，其中比較需要解釋的是Calibration與Profiling settings之間的差別，Calibration主要是著重在螢幕硬體的設定，例如螢幕的色溫，亮度設定等，這部份需要透過操作螢幕的按鈕來進行調整，如果沒有確實做好這部份，最後的校色結果可能會造成嚴重的掉階，喪失動態。</p>
 <p>而Profiling則是生成ICC profile的設定，這個部份會決定測試色塊的數目，ICC profile的精確度等，因此實際校色的過程，其實就是先校正(calibrating)螢幕，再測試色塊生成ICC profile(profiling)</p>
 <p>dispcalGUI的選項眾多，以下我們一一介紹</p>
