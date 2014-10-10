@@ -1,6 +1,6 @@
 .. title: 數位照片的奧秘
 .. slug: sharpen
-.. date: 20140707 22:00:11
+.. date: 20141010 17:12:28
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20130620 20:38:34
@@ -10,44 +10,16 @@
 .. ===================================文章起始↓================================================
 .. <body>
 
-我們先來看看下面四張長與寬最大640px的圖，其來源都是同一張相片:
+我們先來看看下面兩張長與寬最大800px的圖，其來源都是同一張相片:
 
-.. figure:: ../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg
-   :target: ../../../arch_2013/files_2013/M43/sharpen/640_P1370103.jpg
-   :align: center
-
-   原始圖檔縮小至640px，上傳至github。
-
-.. TEASER_END
-
-.. figure:: https://lh4.googleusercontent.com/-P554w0SP0GE/Ud-TC2G5TSI/AAAAAAAA-0g/8EPfB0i7z24/s640/P1370103_4429113-08.jpg
-   :target: https://lh4.googleusercontent.com/-P554w0SP0GE/Ud-TC2G5TSI/AAAAAAAA-0g/8EPfB0i7z24/s640/P1370103_4429113-08.jpg
-   :align: center
-   :width: 640px
- 
-   原始圖檔上傳至google相簿，以640px呈現。
-
-.. figure:: https://farm6.staticflickr.com/5504/9093131904_94d84757d5_c.jpg
-   :target: https://farm6.staticflickr.com/5504/9093131904_94d84757d5_c.jpg
-   :width: 640px
-   :align: center
-      
-   原始圖檔上傳至Flickr相簿，以640px呈現。
-
-.. figure:: ../../../arch_2013/files_2013/M43/sharpen/640_P1370103_sharpen.jpg
-   :target: ../../../arch_2013/files_2013/M43/sharpen/640_P1370103_sharpen.jpg
-   :align: center
-
-   Imagemagick 縮圖至640px並銳化，上傳到github。
-
-
-接著來看800px解析度下的結果:
 
 .. figure:: ../../../arch_2013/files_2013/M43/sharpen/800_P1370032.jpg
    :target: ../../../arch_2013/files_2013/M43/sharpen/800_P1370032.jpg
    :align: center
  
    原始圖檔直接縮小至800px，上傳至github。
+
+.. TEASER_END
 
 .. figure:: https://lh5.googleusercontent.com/-Fh9yCjBNUF0/Ud-pSM5JRnI/AAAAAAAA-0s/WSAKPSTyzgY/s800/P1370032_4429113-08.jpg
    :target: https://lh5.googleusercontent.com/-Fh9yCjBNUF0/Ud-pSM5JRnI/AAAAAAAA-0s/WSAKPSTyzgY/s800/P1370032_4429113-08.jpg
