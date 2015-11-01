@@ -1,6 +1,6 @@
 .. title: 校色的奧秘
 .. slug: dispcalGUI_screen
-.. date: 20140825 13:44:43
+.. date: 20151101 20:35:43
 .. tags: 學習與閱讀
 .. link: 
 .. description: Created at 20140824 14:38:28
